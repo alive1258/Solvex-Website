@@ -31,13 +31,16 @@ const Navbar = () => {
     setOpen(!open);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const handleSidebar = () => {
+    setOpen(!open);
+  };
 
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-[500] bg-[#fff] shadow-sm transition-all duration-500 ease-in-out `}
+        className={`sticky top-0 w-full z-[500] bg-[#fff] shadow-sm transition-all duration-500 ease-in-out `}
       >
-        <div className="max-w-[1440px]  uppercase mx-auto w-full px-5 md:px-20 flex items-center justify-between  h-[96px] text-[#18181B] text-[16px] font-medium">
+        <div className="max-w-[1440px]  uppercase mx-auto w-full md:px-6 px-5 flex items-center justify-between  h-[96px] text-[#18181B] text-[16px] font-medium">
           <Link href="/">
             <Image
               className="w-[125px] h-10"
@@ -51,7 +54,7 @@ const Navbar = () => {
           {/* Hamburger Button for Mobile Start */}
           <button
             className="md:hidden  focus:outline-none"
-            onClick={handleToggle}
+            onClick={handleSidebar}
             aria-label="Toggle Menu"
           >
             {!open ? (
@@ -97,16 +100,15 @@ const Navbar = () => {
           {/* Hamburger Button for Mobile Start */}
 
           {/* Nav Items Start */}
-
           <ul
             className={`${
               open
-                ? "left-0 top-0 opacity-100 visible"
-                : "-left-full top-0 opacity-0 invisible"
-            } md:opacity-100 md:visible md:static md:mt-0 mt-36 absolute w-full md:w-auto h-screen md:h-auto bg-[#fff] md:bg-transparent flex flex-col md:flex-row md:items-center gap-y-4 gap-x-14  transition-all duration-500 ease-in-out`}
+                ? "left-0 top-0 z-50  bg-[#fff]"
+                : "-left-full top-0  z-50 bg-[#fff]"
+            }  md:static  md:mt-0 mt-24 absolute w-full md:w-auto h-screen md:h-auto bg-[#fff]  flex flex-col md:flex-row md:items-center gap-y-4 gap-x-14  transition-all duration-500 ease-in-out`}
           >
             {/* Home  */}
-            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-[#E4E4E7] md:pb-0 pb-3">
+            <li className="relative md:block hidden group md:border-0 border-b  md:mx-0 mx-5 border-[#E4E4E7] md:pb-0 pb-3">
               <Link href="#">
                 <span className="font-medium text-[#18181B] ">Home</span>
                 <div className="absolute right-0  md:pb-0 pb-3 md:left-12 top-1/2 transform -translate-y-1/2">
@@ -345,10 +347,7 @@ const Navbar = () => {
 
             {/*-------- mobile menu-----------  */}
             {/* mobile menu Home  */}
-            <li
-              className=" 
-              md:hidden "
-            >
+            <li className=" pt-14 md:hidden ">
               <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-[#E4E4E7]  pb-3">
                 <span className="font-medium text-[#18181B] ">Home</span>
                 <div onClick={() => toggleModal("home")}>
@@ -714,7 +713,6 @@ const Navbar = () => {
               </div>
             </div>
           </ul>
-
           {/* Nav Items End */}
         </div>
       </nav>

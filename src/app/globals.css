@@ -7,4 +7,45 @@
   .btn {
     @apply inline-flex text-[16px] cursor-pointer h-14 px-6 py-4 justify-center items-center gap-1 rounded-full bg-gradient-to-r from-[#2154FF] to-[#5079FF] text-[#fff] hover:opacity-90 focus:ring-4 focus:outline-none focus:ring-blue-500;
   }
+  .glassmorphism {
+    @apply rounded-[16px] border border-[#93C5FD] bg-white/5 backdrop-blur-md px-4 py-6 w-[300px] md:w-[224px] text-white;
+  }
+}
+
+/* ========= Work Process Background ========= */
+.work-process-bg {
+  background-image: url("/images/backround/workPorcess.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 636px;
+  width: 636px;
+  position: relative;
+}
+
+/* ========= Hero Section Background ========= */
+.hero-section-bg {
+  background-image: url("/images/backround/lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+/* ========= Mobile Responsive ========= */
+@media (max-width: 768px) {
+  .work-process-bg {
+    background-image: none;
+  }
+
+  .hero-section-bg {
+    background-image: none;
+    height: 100%;
+  }
+  .mobile-hero-section-bg {
+    background: url("/images/backround/lines.png") rgb(250, 250, 250) 0% 0% /
+      30px 30px repeat;
+  }
 }
