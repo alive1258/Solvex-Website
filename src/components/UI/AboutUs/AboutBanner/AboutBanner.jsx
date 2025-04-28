@@ -3,11 +3,11 @@ import React from "react";
 
 const AboutBanner = () => {
   return (
-    <div className="about-us-section-bg md:h-[338px]">
+    <div className="about-us-section-bg md:h-[338px] h-[150px]">
       <div className="bg-[#000] opacity-70 w-full h-full">
         <div className="container flex  h-full justify-center items-center">
           <div className="z-50 text-white">
-            <h1 className="text-[48px] text-[#FAFAFA] uppercase font-extrabold">
+            <h1 className="md:text-[48px] text-[#FAFAFA] text-center uppercase font-extrabold">
               About Us
             </h1>
             <div className="flex justify-center items-center mt-3">
