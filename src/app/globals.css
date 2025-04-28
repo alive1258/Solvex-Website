@@ -33,6 +33,15 @@
   width: 100%;
   position: relative;
 }
+/* ========= About US Section Background ========= */
+.about-us-section-bg {
+  background-image: url("/images/aboutUs/aboutBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 100%;
+}
 
 /* ========= Mobile Responsive ========= */
 @media (max-width: 768px) {
