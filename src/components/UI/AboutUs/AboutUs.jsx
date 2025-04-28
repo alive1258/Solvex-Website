@@ -1,18 +1,21 @@
 import React from "react";
+import AboutBanner from "./AboutBanner/AboutBanner";
+import AboutWhoWeAre from "./AboutWhoWeAre/AboutWhoWeAre";
+import Testimonials from "../HomePage/Testimonials/Testimonials";
+import DigitalFuture from "../HomePage/DigitalFuture/DigitalFuture";
+import WhyChoose from "./WhyChoose/WhyChoose";
+import MeetOurTeam from "./MeetOurTeam/MeetOurTeam";
 
 const AboutUs = () => {
   return (
-    <div className="about-us-section-bg md:h-[338px]">
-      <div className="bg-[#000] opacity-70 w-full h-full">
-        <div className="container flex  h-full justify-center items-center">
-          <div className="z-50 text-white">
-            <h1 className="text-[48px] text-[#FAFAFA] uppercase font-extrabold">
-              About Us
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <AboutBanner />
+      <AboutWhoWeAre />
+      <WhyChoose />
+      <MeetOurTeam />
+      <Testimonials />
+      <DigitalFuture />
+    </>
   );
 };
 

@@ -1,4 +1,3 @@
-import Footer from "@/components/common/Footer";
 import Blog from "@/components/UI/HomePage/Blog/Blog";
 import CaseStudies from "@/components/UI/HomePage/CaseStudies/CaseStudies";
 import ContactUs from "@/components/UI/HomePage/ContactUs/ContactUs";
