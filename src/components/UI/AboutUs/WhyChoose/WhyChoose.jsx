@@ -3,7 +3,7 @@ import Button from "../../Button/Button";
 
 const WhyChoose = () => {
   return (
-    <div className="bg-[#18181B] mt-14">
+    <div className="bg-[#18181B]">
       <div className="py-20 container lg:grid lg:grid-cols-2 grid-cols-1 gap-12">
         <div className="md:mt-8">
           <div className="flex items-center space-x-2">

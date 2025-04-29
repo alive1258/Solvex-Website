@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutWhoWeAre = () => {
   return (
-    <div className="container mt-14">
+    <div className="container my-14">
       <BadgeLabel text="Who We Are" />
       <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
         A Passionate Team of Innovators & Developers.

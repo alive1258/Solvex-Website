@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 
-const PricingPlans = () => {
+const PricingPlans = ({ status = false }) => {
   const categories = ["Monthly", "Yearly"];
   const pricingPlansData = [
     {
@@ -135,9 +135,13 @@ const PricingPlans = () => {
   const filteredData = pricingPlansData?.filter(
     (item) => item.category === selectedCategory
   );
-
+  // className={`absolute ${status === true ? "md:block" : "hidden"}`}
   return (
-    <div className="bg-[#FAFAFA] md:my-14 my-12 relative overflow-hidden">
+    <div
+      className={`bg-[#FAFAFA] ${
+        status === true ? "md:my-14 my-12" : "my-0"
+      }  relative overflow-hidden`}
+    >
       <div
         className="absolute"
         style={{
@@ -150,7 +154,7 @@ const PricingPlans = () => {
         }}
       ></div>
       <div
-        className="absolute"
+        className={`absolute ${status === true ? "md:block" : "hidden"}`}
         style={{
           width: "594px",
           height: "4px",

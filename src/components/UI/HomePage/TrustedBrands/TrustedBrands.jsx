@@ -3,11 +3,11 @@ import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Button from "../../Button/Button";
 import Image from "next/image";
 
-const TrustedBrands = () => {
+const TrustedBrands = ({ status = false }) => {
   return (
-    <div className="bg-[#F4F4F5] mt-14 relative overflow-hidden">
+    <div className="bg-[#F4F4F5]  relative overflow-hidden">
       <div
-        className="absolute"
+        className={`absolute ${status === true ? "md:block" : "hidden"}`}
         style={{
           width: "594px",
           height: "4px",
@@ -18,7 +18,7 @@ const TrustedBrands = () => {
         }}
       ></div>
       <div
-        className="absolute"
+        className={`absolute ${status === true ? "md:block" : "hidden"}`}
         style={{
           width: "594px",
           height: "4px",

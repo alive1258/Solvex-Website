@@ -62,7 +62,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className=" mt-14 md:px-0 px-5">
+    <div className=" my-14 md:px-0 px-5">
       <BadgeLabel text="Testimonials" />
       <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
         What Our Clients Say

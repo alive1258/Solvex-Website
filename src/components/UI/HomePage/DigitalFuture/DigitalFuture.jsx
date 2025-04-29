@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-const DigitalFuture = () => {
+const DigitalFuture = ({ status = false }) => {
   return (
-    <div className="bg-[#EFF6FF] mt-14 relative">
+    <div className="bg-[#EFF6FF]  relative">
       {/* Bottom Gradient Line */}
       <div
-        className="absolute"
+        className={`absolute ${status === true ? "md:block" : "hidden"}`}
         style={{
           width: "594px",
           height: "4px",

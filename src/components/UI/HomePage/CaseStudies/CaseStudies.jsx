@@ -191,7 +191,7 @@ const CaseStudies = () => {
       : caseStudiesData.filter((item) => item.category === selectedCategory);
 
   return (
-    <div className="container md:mt-14 mt-20">
+    <div className="container md:my-14 my-20">
       <BadgeLabel text="Case Studies" />
       <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
         Our Work Speaks for Itself
