@@ -61,9 +61,9 @@ const CustomSolutions = () => {
         </svg>
 
         {/* Text Content */}
-        <div className="relative z-10 mt-14 h-full">
+        <div className="relative z-10 md:mt-14 mt-12 h-full">
           <div className="flex justify-center">
-            <h1 className="text-[56px] font-extrabold max-w-[954px] w-full text-center text-gray-900">
+            <h1 className="md:text-[56px] text-[32px] font-extrabold max-w-[954px] w-full text-center text-gray-900">
               Custom Web Development Solutions For Modern Businesses
             </h1>
           </div>
@@ -71,10 +71,10 @@ const CustomSolutions = () => {
             From dynamic websites to complex web applications — we develop
             solutions that scale with your growth.
           </p>
-          <div className="mt-20 flex justify-center uppercase">
+          <div className="md:mt-20 mt-12 flex justify-center uppercase">
             <Button content=" Let’s Build Your Website" />
           </div>
-          <div className="mt-[120px]">
+          <div className="md:mt-[120px] mt-10">
             <WorkGallery />
           </div>
         </div>

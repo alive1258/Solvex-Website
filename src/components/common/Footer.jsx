@@ -62,7 +62,7 @@ const Footer = () => {
 
       {/* Footer  */}
       <div className="bg-[#18181B]">
-        <div className="container py-14 grid md:grid-cols-5 grid-cols-1 gap-6 text-white ">
+        <div className="container py-14 grid md:grid-cols-6 grid-cols-1 gap-x-4 text-white ">
           <div className=" md:col-span-2 ">
             <div className="flex items-center space-x-4">
               <svg
@@ -192,7 +192,7 @@ const Footer = () => {
               </svg>
             </div>
             <div className="mt-10">
-              <p className="text-[#FAFAFA] font-medium text-[16px]">
+              <p className="text-[#FAFAFA] font-medium text-[16px] w-full max-w-[410px]">
                 Solvex is a digital agency dedicated to creating innovative,
                 user-centered designs for startups and businesses. We turn your
                 vision into reality with engaging, responsive, and modern
@@ -559,12 +559,12 @@ const Footer = () => {
             </div>
           </div>
           {/* Subscribe newsletter  */}
-          <div className=" md:col-span-1 md:mt-0 mt-10">
+          <div className=" md:col-span-2 md:mt-0 mt-10">
             <h2 className="text-[#FAFAFA] font-bold text-lg w-fit border-b pb-1 uppercase border-[#3B82F6]">
               Subscribe newsletter
             </h2>
             <div className="mt-10 space-y-4">
-              <div className="bg-[#27272A] border-[#3F3F46] w-[334px] flex items-center justify-between px-4 py-2 rounded-lg">
+              <div className="bg-[#27272A] border-[#3F3F46] w-full max-w-[334px] flex items-center justify-between px-4 py-2 rounded-lg">
                 <p className="text-[#A1A1AA] text-[16px font-medium">
                   Email address
                 </p>

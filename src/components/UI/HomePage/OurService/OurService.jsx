@@ -119,7 +119,7 @@ const OurService = ({ status = false }) => {
           vision to life.
         </p>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-8 mt-14 ">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-8 mt-14 place-items-center">
           {displayedServices?.map((service) => (
             <div
               key={service.id}

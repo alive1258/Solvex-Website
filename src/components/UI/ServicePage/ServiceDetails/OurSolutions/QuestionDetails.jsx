@@ -17,7 +17,8 @@ const QuestionDetails = ({ accordion, isActive, onClick, index }) => {
             <div
               className={`${
                 isActive ? "bg-[#3B82F6]" : "bg-[#F4F4F5]"
-              } hidden  cursor-pointer border size-10 md:flex justify-center items-center border-[#E4E4E7] rounded-full`}
+              }   cursor-pointer border size-10 
+              flex justify-center items-center border-[#E4E4E7] rounded-full`}
             >
               {isActive ? (
                 <svg
