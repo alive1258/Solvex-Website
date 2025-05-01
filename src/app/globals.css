@@ -39,8 +39,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   width: 100%;
+}
+.single-team-section-bg {
+  background-image: url("/images/team/frame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 297px;
+  height: 462px;
 }
 
 /* ========= Mobile Responsive ========= */

@@ -39,11 +39,14 @@ const DigitalFuture = ({ status = false }) => {
           <div className="flex justify-center md:py-20 py-16">
             <div className="text-[#fff] text-center ">
               <h2 className="md:text-[32px] text-2xl font-black">
-                Work With Solvex - Let’s Build Your Digital Future!
+                {status === true
+                  ? "Work With Solvex - Let’s Build Your Digital Future!"
+                  : "Your Vision + Our Team = Digital Magic"}
               </h2>
-              <p className="mt-5 font-medium text-[16px]">
-                Your business deserves a winning digital solution. Let's
-                collaborate and <br /> create something extraordinary!
+              <p className="mt-5 font-medium text-[16px] w-full max-w-[430px] mx-auto">
+                {status === true
+                  ? " Your business deserves a winning digital solution. Let's  collaborate and  create something extraordinary"
+                  : "Let’s connect and create something groundbreaking. Join forces with Solvex today."}
               </p>
 
               <div className="mt-12 flex justify-center items-center">

@@ -86,13 +86,6 @@ const Technologies = () => {
               <h5 className="text-[#3B82F6] text-lg font-bold">
                 {techGroup?.title}
               </h5>
-              <div
-                className="absolute w-full mt-4 h-[3px] max-w-[617px]"
-                style={{
-                  background:
-                    "linear-gradient(85deg, #2154FF 0%, rgba(255, 255, 255, 0.00) 100%)",
-                }}
-              ></div>
 
               <div className="mt-10">
                 <>

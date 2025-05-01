@@ -12,7 +12,7 @@ const AboutUs = () => {
       <AboutBanner />
       <AboutWhoWeAre />
       <WhyChoose />
-      <MeetOurTeam />
+      <MeetOurTeam status={true} />
       <Testimonials />
       <DigitalFuture />
     </>

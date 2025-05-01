@@ -4,7 +4,7 @@ import Button from "../../Button/Button";
 
 const ContactUs = () => {
   return (
-    <div className="bg-[#FAFAFA] md:mt-14 relative overflow-hidden">
+    <div className="bg-[#FAFAFA]  relative overflow-hidden">
       <div
         className="absolute"
         style={{

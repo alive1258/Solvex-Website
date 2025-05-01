@@ -78,8 +78,9 @@ const formatSegment = (segment) => {
 };
 
 const AboutBanner = () => {
-  const pathname = usePathname(); // e.g., /services/web-development
-  const pathSegments = pathname.split("/").filter(Boolean); // ["services", "web-development"]
+  const pathname = usePathname();
+
+  const pathSegments = pathname.split("/").filter(Boolean);
 
   return (
     <div className="about-us-section-bg md:h-[338px] h-[150px]">
