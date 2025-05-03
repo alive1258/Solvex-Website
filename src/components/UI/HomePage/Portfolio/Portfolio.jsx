@@ -182,7 +182,7 @@ const caseStudiesData = [
   },
 ];
 
-const CaseStudies = () => {
+const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredData =
@@ -192,7 +192,7 @@ const CaseStudies = () => {
 
   return (
     <div className="container md:my-14 my-20">
-      <BadgeLabel text="Case Studies" />
+      <BadgeLabel text="Portfolio" />
       <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
         Our Work Speaks for Itself
       </h1>
@@ -299,4 +299,4 @@ const CaseStudies = () => {
   );
 };
 
-export default CaseStudies;
+export default Portfolio;
