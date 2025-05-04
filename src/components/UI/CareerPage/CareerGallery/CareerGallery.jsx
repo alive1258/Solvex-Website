@@ -4,7 +4,7 @@ import React from "react";
 const CareerGallery = () => {
   return (
     <div className="py-14  overflow-hidden">
-      <div className="grid grid-cols-2 gap-6 relative container ">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-6 relative container ">
         {/* section 1  */}
         <div
           className="absolute rounded-full opacity-50 blur-[175px] z-0 "
