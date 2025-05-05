@@ -207,7 +207,7 @@ const Portfolio = () => {
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={`border cursor-pointer rounded-3xl px-6 py-2 font-medium transition-all duration-300 ease-in-out ${
+            className={`border cursor-pointer text-sm rounded-3xl px-6 py-2 font-medium transition-all duration-300 ease-in-out ${
               selectedCategory === cat
                 ? "text-[#fff] bg-[#3B82F6] border-[#3B82F6]"
                 : "text-[#52525B] border-[#71717A] hover:text-[#3B82F6] hover:border-[#3B82F6]"

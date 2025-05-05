@@ -4,11 +4,11 @@ const CareerDetailsHero = () => {
   return (
     <div className="bg-[#F4F4F5]">
       <div className="container py-[72px]">
-        <div className="flex justify-between items-center border-b pb-4  border-[#D4D4D8]">
-          <h1 className="text-[56px] text-[#18181B] font-bold">
+        <div className="md:flex justify-between items-center border-b pb-4  border-[#D4D4D8]">
+          <h1 className="md:text-[56px] text-3xl text-[#18181B] font-bold">
             Senior UI/UX Designer
           </h1>
-          <div className="flex space-x-3 items-center">
+          <div className="flex space-x-3 md:mt-0 mt-4 items-center ">
             <p>Share:</p>
             <div className="px-5  flex items-center space-x-3">
               <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
@@ -127,7 +127,7 @@ const CareerDetailsHero = () => {
           </div>
         </div>
 
-        <div className="flex mt-6 justify-between items-center">
+        <div className="md:flex mt-6 justify-between items-center md:space-y-0 space-y-2">
           <p className="text-[#71717A] text-lg font-medium">
             <span className="text-[#3B82F6]">Atlassian</span> - Sydney Australia
           </p>
@@ -136,7 +136,7 @@ const CareerDetailsHero = () => {
           </p>
         </div>
 
-        <div className="mt-16 flex items-center space-x-4">
+        <div className="mt-16 flex flex-col items-center justify-center  space-y-6 md:flex-row md:space-x-8 md:space-y-0">
           {/* card 1  */}
           <div
             className="border w-full max-w-[244px] border-[#E4E4E7] bg-[#F4F4F5] rounded-lg  p-4"
