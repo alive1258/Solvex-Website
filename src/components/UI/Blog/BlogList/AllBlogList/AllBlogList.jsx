@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const AllBlogGrid = () => {
+const AllBlogList = () => {
   const categories = [
     "All",
     "Design & UI/UX",
@@ -480,75 +480,91 @@ const AllBlogGrid = () => {
         ))}
       </div>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
-        {filteredData?.slice(0, 6).map((post) => (
+      <div className="grid  grid-cols-1 gap-6 mt-12">
+        {filteredData?.slice(0, 6).map((post, idx) => (
           <div
             key={post.id}
-            className="border group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 border-[#E4E4E7] bg-white p-4 rounded-2xl"
+            className="border grid grid-cols-2 gap-x-8  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 border-[#E4E4E7] bg-white p-4 rounded-2xl"
           >
-            <Image
-              className="rounded-2xl shadow-lg"
-              src={post.image}
-              alt={post.title}
-              height={240}
-              width={500}
-            />
-            <div className="mt-6 flex justify-between items-center">
-              <div
-                className={`border rounded-[99px] w-fit px-3 py-1.5 ${post.categoryColor}`}
-              >
-                <p className="text-sm font-medium">{post.category}</p>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="bg-[#F4F4F5] rounded-lg flex justify-center items-center p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="none"
-                  >
-                    <path
-                      d="M7.99967 1.33301C11.6817 1.33301 14.6663 4.31767 14.6663 7.99967C14.6663 11.6817 11.6817 14.6663 7.99967 14.6663C4.31767 14.6663 1.33301 11.6817 1.33301 7.99967C1.33301 4.31767 4.31767 1.33301 7.99967 1.33301ZM7.99967 3.99967C8.16296 3.9997 8.32057 4.05965 8.44259 4.16815C8.56461 4.27666 8.64257 4.42617 8.66167 4.58834L8.66634 4.66634V7.72367L10.471 9.52834C10.5906 9.64831 10.66 9.8093 10.6652 9.9786C10.6703 10.1479 10.6109 10.3128 10.4988 10.4399C10.3868 10.5669 10.2306 10.6465 10.062 10.6626C9.89341 10.6787 9.725 10.6299 9.59101 10.5263L9.52834 10.471L7.52834 8.47101C7.42473 8.36731 7.35818 8.23234 7.33901 8.08701L7.33301 7.99967V4.66634C7.33301 4.48953 7.40325 4.31996 7.52827 4.19494C7.65329 4.06991 7.82286 3.99967 7.99967 3.99967Z"
-                      fill="#71717A"
-                    />
-                  </svg>
-                </div>
-                <p className="text-[#71717A] text-[16px] font-medium">
-                  {post.date}
-                </p>
-              </div>
+            <div className={`${idx % 2 !== 0 ? "md:order-2" : "md:order-1"}`}>
+              <Image
+                className="rounded-2xl shadow-lg w-full h-full max-h-[350px] object-cover"
+                src={post.image}
+                alt={post.title}
+                height={240}
+                width={500}
+              />
             </div>
-            <div className="mt-6">
-              <h1 className="text-[#27272A] group-hover:text-[#3B82F6] font-bold text-2xl">
-                {post.title}
-              </h1>
-              <p className="mt-6 text-[#71717A] text-[16px] font-medium">
-                {post.excerpt}
-              </p>
-            </div>
-            <div className="mt-6">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4">
-                  <Image
-                    className="rounded-full size-12"
-                    src={post.author.image}
-                    alt={post.author.name}
-                    height={48}
-                    width={48}
-                  />
-                  <div>
-                    <h4 className="font-bold text-lg text-[#52525B]">
-                      {post.author.name}
-                    </h4>
-                    <p className="font-medium text-sm text-[#71717A]">
-                      {post.author.role}
+            <div className={`${idx % 2 !== 0 ? "md:order-1" : "md:order-2"}`}>
+              <div className="flex flex-col h-full justify-between">
+                <div>
+                  {/* Top Content */}
+                  <div className="mt-6 flex justify-between items-center">
+                    {/* Category */}
+                    <div
+                      className={`border rounded-[99px] w-fit px-3 py-1.5 ${post.categoryColor}`}
+                    >
+                      <p className="text-sm font-medium">{post.category}</p>
+                    </div>
+                    {/* Date */}
+                    <div className="flex items-center space-x-3">
+                      <div className="bg-[#F4F4F5] rounded-lg flex justify-center items-center p-2">
+                        {/* Clock Icon */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.99967 1.33301C11.6817 1.33301 14.6663 4.31767 14.6663 7.99967C14.6663 11.6817 11.6817 14.6663 7.99967 14.6663C4.31767 14.6663 1.33301 11.6817 1.33301 7.99967C1.33301 4.31767 4.31767 1.33301 7.99967 1.33301ZM7.99967 3.99967C8.16296 3.9997 8.32057 4.05965 8.44259 4.16815C8.56461 4.27666 8.64257 4.42617 8.66167 4.58834L8.66634 4.66634V7.72367L10.471 9.52834C10.5906 9.64831 10.66 9.8093 10.6652 9.9786C10.6703 10.1479 10.6109 10.3128 10.4988 10.4399C10.3868 10.5669 10.2306 10.6465 10.062 10.6626C9.89341 10.6787 9.725 10.6299 9.59101 10.5263L9.52834 10.471L7.52834 8.47101C7.42473 8.36731 7.35818 8.23234 7.33901 8.08701L7.33301 7.99967V4.66634C7.33301 4.48953 7.40325 4.31996 7.52827 4.19494C7.65329 4.06991 7.82286 3.99967 7.99967 3.99967Z"
+                            fill="#71717A"
+                          />
+                        </svg>
+                      </div>
+                      <p className="text-[#71717A] text-[16px] font-medium">
+                        {post.date}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Title & Excerpt */}
+                  <div className="mt-16">
+                    <h1 className="text-[#27272A] group-hover:text-[#3B82F6] font-bold text-2xl">
+                      {post.title}
+                    </h1>
+                    <p className="mt-7 text-[#71717A] text-[16px] font-medium">
+                      {post.excerpt}
                     </p>
                   </div>
                 </div>
-                <div className="bg-[#F4F4F5] px-4 py-2 rounded-lg">
-                  <p className="text-[#71717A] text-sm font-medium">
-                    {post.readTime}
-                  </p>
+
+                {/* Author Section at Bottom */}
+                <div className="">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-4">
+                      <Image
+                        className="rounded-full size-12"
+                        src={post.author.image}
+                        alt={post.author.name}
+                        height={48}
+                        width={48}
+                      />
+                      <div>
+                        <h4 className="font-bold text-lg text-[#52525B]">
+                          {post.author.name}
+                        </h4>
+                        <p className="font-medium text-sm text-[#71717A]">
+                          {post.author.role}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="bg-[#F4F4F5] px-4 py-2 rounded-lg">
+                      <p className="text-[#71717A] text-sm font-medium">
+                        {post.readTime}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -616,4 +632,4 @@ const AllBlogGrid = () => {
   );
 };
 
-export default AllBlogGrid;
+export default AllBlogList;
