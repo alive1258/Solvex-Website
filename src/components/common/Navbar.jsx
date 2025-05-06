@@ -735,7 +735,7 @@ const Navbar = () => {
         <div className="hidden lg:flex fixed flex-col right-0  mr-4 bottom-4">
           <div className="space-y-4 relative">
             {/* Scroll percentage circle */}
-            <div
+            {/* <div
               className={`absolute right-0  mr-4 bottom-0 transition-opacity duration-500 ${
                 scrollPercent === 100
                   ? "opacity-0 pointer-events-none"
@@ -753,6 +753,52 @@ const Navbar = () => {
                 <div className="size-11 bg-white rounded-full flex items-center justify-center text-sm font-medium text-[#3B82F6]">
                   {scrollPercent}%
                 </div>
+              </div>
+            </div> */}
+            <div
+              className={`absolute right-0 mr-4 bottom-0 transition-opacity duration-500 ${
+                scrollPercent === 100
+                  ? "opacity-0 pointer-events-none"
+                  : "opacity-100"
+              }`}
+            >
+              <div
+                className="group relative size-14 rounded-full flex justify-center items-center border-2 border-border-base bg-white"
+                style={{
+                  background: `conic-gradient(#3B82F6 ${
+                    scrollPercent * 3.6
+                  }deg, #E4E4E7 ${scrollPercent * 3.6}deg)`,
+                }}
+              >
+                {/* Inner Circle with Percentage */}
+                <div className="size-11 bg-white rounded-full flex items-center justify-center text-sm font-medium text-[#3B82F6]">
+                  {scrollPercent}%
+                </div>
+
+                {/* Scroll to top button (only visible on hover) */}
+                <button
+                  aria-label="Scroll to top"
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                  className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full hover:bg-[#3B82F6] hover:border-[#3B82F6] cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M3.29279 9.70679C3.10532 9.51926 3 9.26495 3 8.99979C3 8.73462 3.10532 8.48031 3.29279 8.29279L9.29279 2.29279C9.48031 2.10532 9.73462 2 9.99979 2C10.265 2 10.5193 2.10532 10.7068 2.29279L16.7068 8.29279C16.8889 8.48139 16.9897 8.73399 16.9875 8.99619C16.9852 9.25838 16.88 9.5092 16.6946 9.6946C16.5092 9.88001 16.2584 9.98518 15.9962 9.98746C15.734 9.98974 15.4814 9.88894 15.2928 9.70679L10.9998 5.41379V16.9998C10.9998 17.265 10.8944 17.5194 10.7069 17.7069C10.5194 17.8944 10.265 17.9998 9.99979 17.9998C9.73457 17.9998 9.48022 17.8944 9.29268 17.7069C9.10514 17.5194 8.99979 17.265 8.99979 16.9998V5.41379L4.70679 9.70679C4.51926 9.89426 4.26495 9.99957 3.99979 9.99957C3.73462 9.99957 3.48031 9.89426 3.29279 9.70679Z"
+                      className="text-white"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
 

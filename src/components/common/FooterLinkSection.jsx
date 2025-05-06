@@ -4,7 +4,7 @@ import React from "react";
 const FooterLinkSection = ({ title, links }) => {
   return (
     <div className="md:col-span-1 md:mt-0 mt-10">
-      <h2 className="text-[#FAFAFA] font-bold text-lg w-2/3 border-b pb-1 uppercase border-[#3B82F6]">
+      <h2 className="text-[#FAFAFA] font-bold text-lg w-3/4 border-b pb-1 uppercase border-[#3B82F6]">
         {title}
       </h2>
       <div className="mt-10 space-y-4">

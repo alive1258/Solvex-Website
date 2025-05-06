@@ -74,17 +74,7 @@ const Testimonials = () => {
       {/* section 1  */}
 
       <div className="mt-12">
-        <Marquee
-          speed={100}
-          direction="left"
-          gradient={true}
-          gradientColor={[255, 255, 255]}
-          gradientWidth={250}
-          pauseOnHover={true}
-          style={{
-            overflow: "hidden",
-          }}
-        >
+        <Marquee speed={90} direction="left" pauseOnHover={true}>
           {testimonials?.map((testimonial) => (
             <div
               key={testimonial.id}

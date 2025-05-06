@@ -9,30 +9,23 @@ const Footer = () => {
     "UX/UI Design",
     "Branding & Graphic Design",
     "Social Media Marketing",
+    "iOS & Android App Design",
     "Digital Marketing",
+    "UI/UX Design",
     "Content Creation & Copywriting",
     "UX/UI Design",
     "iOS & Android App Design",
+    "Social Media Marketing",
+    "UI/UX Design",
   ];
 
   return (
     <div>
-      <div className="bg-[#3B82F6] py-4 flex items-center space-x-6 uppercase">
+      <div className="bg-[#3B82F6] py-4  uppercase">
         {/* service 1  */}
-        <Marquee
-          speed={100}
-          direction="left"
-          gradient={true}
-          gradientColor={[255, 255, 255]}
-          gradientWidth={250}
-          pauseOnHover={true}
-          style={{
-            overflow: "hidden",
-          }}
-          className="uppercase space-x-6"
-        >
+        <Marquee direction="left" pauseOnHover={true} speed={90}>
           {services?.map((service, index) => (
-            <div key={index} className="mx-4 flex items-center space-x-3">
+            <div key={index} className="mx-4 flex space-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
@@ -55,7 +48,9 @@ const Footer = () => {
                   </clipPath>
                 </defs>
               </svg>
-              <p className="text-white-base text-[20px] font-bold">{service}</p>
+              <span className="text-white-base text-[20px] font-bold">
+                {service}
+              </span>
             </div>
           ))}
         </Marquee>
@@ -63,8 +58,8 @@ const Footer = () => {
 
       {/* Footer  */}
       <div className="bg-[#18181B]">
-        <div className="container py-14 grid md:grid-cols-6 grid-cols-1 gap-x-4 text-white ">
-          <div className=" md:col-span-2 ">
+        <div className="container py-14 grid md:grid-cols-12 grid-cols-1 gap-6 text-white w-full">
+          <div className=" md:col-span-5 ">
             <div className="flex items-center space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -340,7 +335,7 @@ const Footer = () => {
             </div>
           </div>
           {/* Special links  */}
-          <div className=" md:col-span-1  md:mt-0 mt-10">
+          <div className=" md:col-span-2  md:mt-0 mt-10">
             <FooterLinkSection
               title="Special links"
               links={[
@@ -354,7 +349,7 @@ const Footer = () => {
             />
           </div>
           {/* quick links  */}
-          <div className=" md:col-span-1 md:mt-0 mt-10">
+          <div className=" md:col-span-2 md:mt-0 mt-10">
             <FooterLinkSection
               title="Quick links"
               links={[
@@ -368,7 +363,7 @@ const Footer = () => {
             />
           </div>
           {/* Subscribe newsletter  */}
-          <div className=" md:col-span-2 md:mt-0 mt-10">
+          <div className=" md:col-span-3 md:mt-0 mt-10">
             <h2 className="text-[#FAFAFA] font-bold text-lg w-fit border-b pb-1 uppercase border-[#3B82F6]">
               Subscribe newsletter
             </h2>
