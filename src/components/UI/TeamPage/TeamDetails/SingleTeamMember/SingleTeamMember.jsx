@@ -82,8 +82,8 @@ const SingleTeamMember = () => {
         </div>
 
         <div>
-          <h1 className="text-[32px] font-bold text-[#3F3F46]">Sarah Lee</h1>
-          <p className="text-lg font-medium text-[#3F3F46]">
+          <h1 className="text-[32px] font-bold text-primary-base">Sarah Lee</h1>
+          <p className="text-lg font-medium text-primary-base">
             Lead UI/UX Designer
           </p>
           <p className="text-[16px] font-medium text-[#71717A] mt-8">
@@ -123,12 +123,12 @@ const SingleTeamMember = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <h1 className="text-[#3F3F46] text-lg font-bold">{title}</h1>
+                <h1 className="text-primary-base text-lg font-bold">{title}</h1>
               </div>
             ))}
           </div>
           <div className="mt-16">
-            <h2 className="text-lg font-bold text-[#3F3F46]">Social Link</h2>
+            <h2 className="text-lg font-bold text-primary-base">Social Link</h2>
             <div
               className="absolute w-full mt-4 h-[2px] max-w-[617px]"
               style={{
@@ -137,7 +137,7 @@ const SingleTeamMember = () => {
               }}
             ></div>
             <div className="mt-8   flex items-center space-x-3">
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -151,7 +151,7 @@ const SingleTeamMember = () => {
                   />
                 </svg>
               </div>
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -174,7 +174,7 @@ const SingleTeamMember = () => {
                   </defs>
                 </svg>
               </div>
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -190,7 +190,7 @@ const SingleTeamMember = () => {
                   />
                 </svg>
               </div>
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -204,7 +204,7 @@ const SingleTeamMember = () => {
                   />
                 </svg>
               </div>
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

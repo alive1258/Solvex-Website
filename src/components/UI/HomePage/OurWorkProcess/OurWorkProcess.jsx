@@ -4,7 +4,7 @@ const OurWorkProcess = () => {
   return (
     <div className="container md:mt-20 mt-12">
       <BadgeLabel text="Our Work Process" />
-      <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
         A streamlined approach for delivering high-quality <br /> web solutions.
       </h1>
 
@@ -36,10 +36,10 @@ const OurWorkProcess = () => {
                       </defs>
                     </svg>
                   </div>
-                  <h2 className="text-lg pt-6 text-[#27272A] font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-[#52525B] font-medium pt-4">
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -72,10 +72,10 @@ const OurWorkProcess = () => {
                       </defs>
                     </svg>
                   </div>
-                  <h2 className="text-lg pt-6 text-[#27272A] font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-[#52525B] font-medium pt-4">
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -97,10 +97,10 @@ const OurWorkProcess = () => {
                       />
                     </svg>
                   </div>
-                  <h2 className="text-lg pt-6 text-[#27272A] font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
                     Development & Coding
                   </h2>
-                  <p className="text-sm text-[#52525B] font-medium pt-4">
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -195,10 +195,10 @@ const OurWorkProcess = () => {
                       </defs>
                     </svg>
                   </div>
-                  <h2 className="text-lg pt-6 text-[#27272A] font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-[#52525B] font-medium pt-4">
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -244,10 +244,10 @@ const OurWorkProcess = () => {
                       </defs>
                     </svg>
                   </div>
-                  <h2 className="text-lg pt-6 text-[#27272A] font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-[#52525B] font-medium pt-4">
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -273,10 +273,10 @@ const OurWorkProcess = () => {
                       />
                     </svg>
                   </div>
-                  <h2 className="text-lg pt-6 text-[#27272A] font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-[#52525B] font-medium pt-4">
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>

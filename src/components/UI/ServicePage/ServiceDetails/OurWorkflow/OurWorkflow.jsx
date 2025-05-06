@@ -3,7 +3,7 @@ import React from "react";
 const OurWorkflow = () => {
   return (
     <div className="container py-14">
-      <h1 className="md:text-[40px] text-[32px] font-bold md:text-start text-center text-[#27272A]">
+      <h1 className="md:text-[40px] text-[32px] font-bold md:text-start text-center text-secondary-base">
         Our Web Development Workflow
       </h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  md:gap-10">
@@ -32,7 +32,7 @@ const OurWorkflow = () => {
                 />
               </svg>
             </div>
-            <h2 className="text-[#27272A] font-bold text-2xl">
+            <h2 className="text-secondary-base font-bold text-2xl">
               Discovery & Strategy
             </h2>
           </div>
@@ -74,7 +74,7 @@ const OurWorkflow = () => {
                 </defs>
               </svg>
             </div>
-            <h2 className="text-[#27272A] font-bold text-2xl">
+            <h2 className="text-secondary-base font-bold text-2xl">
               Wireframing & Prototyping
             </h2>
           </div>
@@ -109,7 +109,7 @@ const OurWorkflow = () => {
                 />
               </svg>
             </div>
-            <h2 className="text-[#27272A] font-bold text-2xl">
+            <h2 className="text-secondary-base font-bold text-2xl">
               UI/UX Design Integration
             </h2>
           </div>
@@ -146,7 +146,7 @@ const OurWorkflow = () => {
                 </defs>
               </svg>
             </div>
-            <h2 className="text-[#27272A] font-bold text-2xl">
+            <h2 className="text-secondary-base font-bold text-2xl">
               Front-End Development
             </h2>
           </div>
@@ -188,7 +188,7 @@ const OurWorkflow = () => {
                 </defs>
               </svg>
             </div>
-            <h2 className="text-[#27272A] font-bold text-2xl">
+            <h2 className="text-secondary-base font-bold text-2xl">
               Back-End Development
             </h2>
           </div>
@@ -218,7 +218,9 @@ const OurWorkflow = () => {
                 />
               </svg>
             </div>
-            <h2 className="text-[#27272A] font-bold text-2xl">Testing & QA</h2>
+            <h2 className="text-secondary-base font-bold text-2xl">
+              Testing & QA
+            </h2>
           </div>
 
           <p className="text-[#71717A] text-[16px] font-medium">

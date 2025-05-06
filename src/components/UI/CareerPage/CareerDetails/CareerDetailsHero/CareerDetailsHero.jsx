@@ -9,9 +9,9 @@ const CareerDetailsHero = () => {
             Senior UI/UX Designer
           </h1>
           <div className="flex space-x-3 md:mt-0 mt-4 items-center ">
-            <p className="text-[#3F3F46] font-bold text-lg ">Share:</p>
+            <p className="text-primary-base font-bold text-lg ">Share:</p>
             <div className=" flex items-center space-x-3">
-              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -27,7 +27,7 @@ const CareerDetailsHero = () => {
                 </svg>
               </div>
 
-              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -52,7 +52,7 @@ const CareerDetailsHero = () => {
                   </defs>
                 </svg>
               </div>
-              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -69,7 +69,7 @@ const CareerDetailsHero = () => {
                   />
                 </svg>
               </div>
-              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -84,7 +84,7 @@ const CareerDetailsHero = () => {
                   />
                 </svg>
               </div>
-              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="group cursor-pointer size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -139,7 +139,7 @@ const CareerDetailsHero = () => {
           <p className="text-[#71717A] text-lg font-medium">
             <span className="text-[#3B82F6]">Atlassian</span> - Sydney Australia
           </p>
-          <p className="text-[#3F3F46] text-lg font-medium">
+          <p className="text-primary-base text-lg font-medium">
             Posted 1 week ago - 15 Applicants
           </p>
         </div>
@@ -147,61 +147,61 @@ const CareerDetailsHero = () => {
         <div className="mt-16 flex flex-col items-center justify-center  space-y-6 md:flex-row md:space-x-8 md:space-y-0">
           {/* card 1  */}
           <div
-            className="border w-full max-w-[244px] border-[#E4E4E7] bg-[#F4F4F5] rounded-lg  p-4"
+            className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
             <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-[#27272A] text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
           {/* card 1  */}
           <div
-            className="border w-full max-w-[244px] border-[#E4E4E7] bg-[#F4F4F5] rounded-lg  p-4"
+            className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
             <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-[#27272A] text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
           {/* card 1  */}
           <div
-            className="border w-full max-w-[244px] border-[#E4E4E7] bg-[#F4F4F5] rounded-lg  p-4"
+            className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
             <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-[#27272A] text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
           {/* card 1  */}
           <div
-            className="border w-full max-w-[244px] border-[#E4E4E7] bg-[#F4F4F5] rounded-lg  p-4"
+            className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
             <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-[#27272A] text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
           {/* card 1  */}
           <div
-            className="border w-full max-w-[244px] border-[#E4E4E7] bg-[#F4F4F5] rounded-lg  p-4"
+            className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
             <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-[#27272A] text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
               Full Time
             </h3>
           </div>

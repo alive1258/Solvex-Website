@@ -22,7 +22,7 @@ const RelatedProduct = () => {
           }}
         ></div>
 
-        <div className="mt-6 md:flex items-center space-x-6">
+        <div className="mt-6 md:flex items-center justify-center space-x-6">
           <div className="">
             <Image
               src="/images/portfolio/related1.png"

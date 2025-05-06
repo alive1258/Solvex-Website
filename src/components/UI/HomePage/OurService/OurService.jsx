@@ -111,7 +111,7 @@ const OurService = ({ status = false }) => {
 
       <div className="container md:py-16 py-12">
         <BadgeLabel text="Our Services" />
-        <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto">
+        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto">
           Our Expertise in Web Development
         </h1>
         <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
@@ -126,7 +126,7 @@ const OurService = ({ status = false }) => {
               className="cursor-pointer group w-full max-w-[312px]"
             >
               <div
-                className={`bg-[#fff] py-6 px-4 rounded-2xl group-hover:border border border-transparent  group-hover:border-[${service.borderColor}]`}
+                className={`bg-white-base py-6 px-4 rounded-2xl group-hover:border border border-transparent  group-hover:border-[${service.borderColor}]`}
               >
                 <div
                   style={{ backgroundColor: service.bgColor }}

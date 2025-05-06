@@ -117,7 +117,9 @@ const BlogDetailSection = () => {
                   width={48}
                 />
                 <div>
-                  <h4 className="font-bold text-lg text-[#fff]">Jane Cooper</h4>
+                  <h4 className="font-bold text-lg text-white-base">
+                    Jane Cooper
+                  </h4>
                   <p className="font-medium text-sm text-[#A1A1AA]">
                     Web Developer
                   </p>
@@ -125,7 +127,7 @@ const BlogDetailSection = () => {
               </div>
               <div className="flex md:mt-0 mt-4 space-x-8">
                 <div>
-                  <h4 className="font-bold text-lg text-[#fff]">
+                  <h4 className="font-bold text-lg text-white-base">
                     February 18, 2025
                   </h4>
                   <p className="font-medium text-sm text-[#A1A1AA]">
@@ -133,7 +135,9 @@ const BlogDetailSection = () => {
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg text-[#fff]">5 min read</h4>
+                  <h4 className="font-bold text-lg text-white-base">
+                    5 min read
+                  </h4>
                   <p className="font-medium text-sm text-[#A1A1AA]">
                     Reading Time
                   </p>
@@ -193,7 +197,9 @@ const BlogDetailSection = () => {
           </div>
 
           <div className="mt-11">
-            <h1 className="text-2xl text-[#3F3F46] font-bold">{trend.title}</h1>
+            <h1 className="text-2xl text-primary-base font-bold">
+              {trend.title}
+            </h1>
             <div className="mt-6 space-y-4">
               {trend.points.map((point, i) => (
                 <div key={i} className="flex items-center space-x-4">
@@ -203,14 +209,14 @@ const BlogDetailSection = () => {
                     width={24}
                     height={24}
                   />
-                  <p className="text-[20px] font-medium text-[#52525B]">
+                  <p className="text-[20px] font-medium text-tertiary-base">
                     {point}
                   </p>
                 </div>
               ))}
             </div>
             <div className="mt-14">
-              <p className="text-[20px] font-medium text-[#52525B]">
+              <p className="text-[20px] font-medium text-tertiary-base">
                 {trend.description}
               </p>
             </div>

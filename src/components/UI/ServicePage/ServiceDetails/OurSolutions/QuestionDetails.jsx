@@ -9,7 +9,9 @@ const QuestionDetails = ({ accordion, isActive, onClick, index }) => {
           onClick={onClick}
         >
           <div className="flex items-center justify-between">
-            <h1 className={`text-[#52525B] font-bold text-[18px] md:text-2xl`}>
+            <h1
+              className={`text-tertiary-base font-bold text-[18px] md:text-2xl`}
+            >
               <span className="mr-1">0{index + 1}.</span>
               <span>{accordion?.question}</span>
             </h1>
@@ -18,7 +20,7 @@ const QuestionDetails = ({ accordion, isActive, onClick, index }) => {
               className={`${
                 isActive ? "bg-[#3B82F6]" : "bg-[#F4F4F5]"
               }   cursor-pointer border size-10 
-              flex justify-center items-center border-[#E4E4E7] rounded-full`}
+              flex justify-center items-center border-border-base rounded-full`}
             >
               {isActive ? (
                 <svg
@@ -52,7 +54,7 @@ const QuestionDetails = ({ accordion, isActive, onClick, index }) => {
         </div>
         {isActive && (
           <div className="flex gap-1.5 md:gap-3 pt-4 ">
-            <h6 className="text-[16px] text-[#52525B] pr-4">
+            <h6 className="text-[16px] text-tertiary-base pr-4">
               {accordion?.answer}
             </h6>
           </div>

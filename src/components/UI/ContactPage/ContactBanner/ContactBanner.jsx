@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-const PortfolioBanner = () => {
+const ContactBanner = () => {
   return (
     <div className="about-us-section-bg md:h-[338px] h-[150px]">
       <div className="bg-[#000] opacity-70 w-full h-full">
         <div className="container flex h-full justify-center items-center">
           <div className="z-50 text-white">
             <h1 className="md:text-[48px] text-[#FAFAFA] text-center uppercase font-extrabold">
-              Portfolio
+              Contact
             </h1>
             <div className="flex justify-center items-center mt-3">
               <div className="bg-[#27272A] w-fit px-4 py-2 rounded-3xl flex items-center justify-center space-x-2">
@@ -33,9 +33,8 @@ const PortfolioBanner = () => {
                     />
                   </svg>
                 </span>
-
                 <span className="text-[#FAFAFA] text-[16px] font-medium">
-                  Portfolio
+                  Contact
                 </span>
               </div>
             </div>
@@ -46,4 +45,4 @@ const PortfolioBanner = () => {
   );
 };
 
-export default PortfolioBanner;
+export default ContactBanner;

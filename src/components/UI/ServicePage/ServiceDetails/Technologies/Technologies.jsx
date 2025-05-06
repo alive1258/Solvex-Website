@@ -74,7 +74,7 @@ const Technologies = () => {
   return (
     <div className="bg-[#F4F4F5]">
       <div className="container py-14">
-        <h1 className="text-[40px] font-bold  md:text-start text-center text-[#27272A]">
+        <h1 className="text-[40px] font-bold  md:text-start text-center text-secondary-base">
           Technologies We Master
         </h1>
         <div className="mt-12 grid lg:grid-cols-2 grid-cols-1 gap-6">
@@ -93,7 +93,7 @@ const Technologies = () => {
                     {techGroup.items.map((item) => (
                       <div
                         key={item.id} // ensure unique key if IDs are not unique
-                        className="bg-[#fff] shadow-md py-6 px-4 rounded-lg border border-[#E4E4E7] md:flex  justify-center items-center space-x-2 w-full max-w-[184px]"
+                        className="bg-white-base shadow-md py-6 px-4 rounded-lg border border-border-base md:flex  justify-center items-center space-x-2 w-full max-w-[184px]"
                       >
                         <div className="md:block flex items-center justify-center">
                           <Image
@@ -103,7 +103,7 @@ const Technologies = () => {
                             width={25}
                           />
                         </div>
-                        <p className="text-[#27272A] text-lg font-medium md:text-start text-center">
+                        <p className="text-secondary-base text-lg font-medium md:text-start text-center">
                           {item?.name}
                         </p>
                       </div>

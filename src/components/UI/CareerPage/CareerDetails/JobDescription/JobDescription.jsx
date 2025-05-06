@@ -57,8 +57,10 @@ const JobDescription = () => {
   return (
     <div className="container my-16">
       <div>
-        <h1 className="text-2xl text-[#3F3F46] font-bold">Job Description</h1>
-        <p className="text-[20px] font-medium text-[#52525B] mt-6">
+        <h1 className="text-2xl text-primary-base font-bold">
+          Job Description
+        </h1>
+        <p className="text-[20px] font-medium text-tertiary-base mt-6">
           {jobDescriptionData?.intro}
         </p>
       </div>
@@ -66,7 +68,7 @@ const JobDescription = () => {
       <div>
         {jobDescriptionData?.sections?.map((section, index) => (
           <div className="mt-14" key={index}>
-            <h1 className="text-2xl text-[#3F3F46] font-bold">
+            <h1 className="text-2xl text-primary-base font-bold">
               {section?.title}
             </h1>
             <div className="mt-6 space-y-4">
@@ -78,7 +80,7 @@ const JobDescription = () => {
                     width={24}
                     height={24}
                   />
-                  <p className="text-[20px] font-medium text-[#52525B]">
+                  <p className="text-[20px] font-medium text-tertiary-base">
                     {item}
                   </p>
                 </div>

@@ -7,7 +7,7 @@ const Faq = () => {
   return (
     <div className="container md:my-14 mt-12">
       <BadgeLabel text="frequently asked questions" />
-      <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
         Got Questions? We’ve Got Answers!
       </h1>
       <p className="text-[16px] font-medium text-[#71717A] w-full max-w-[420px] mx-auto mt-6 text-center">
@@ -15,7 +15,7 @@ const Faq = () => {
         further assistance, feel free to contact us.
       </p>
       <div className="mt-14 grid md:grid-cols-3 gap-8">
-        <div className="col-span-1 h-fit border border-[#E4E4E7] rounded-lg bg-[#F4F4F5] px-4 py-6 md:w-full w-[385px]">
+        <div className="col-span-1 h-fit border border-border-base rounded-lg bg-[#F4F4F5] px-4 py-6 md:w-full w-[385px]">
           <div className=" flex justify-center ">
             <div className="flex md:w-[172px] w-[148px] md:h-[172px] h-[148px] p-[14px] items-center gap-[8px] rounded-full bg-[linear-gradient(357deg,_#FFF_2.79%,_#D9E2FF_97.39%)]">
               <div className="flex md:w-[144px] w-[116px] md:h-[144px] h-[116px] py-[48px] justify-center items-center shrink-0 rounded-full border border-white bg-[linear-gradient(85deg,_#2154FF_0%,_#5079FF_100%)]">
@@ -55,10 +55,10 @@ const Faq = () => {
             </div>
           </div>
 
-          <h3 className="text-[#27272A] mt-10 font-bold text-2xl text-center">
+          <h3 className="text-secondary-base mt-10 font-bold text-2xl text-center">
             Ask a Questions
           </h3>
-          <p className="text-[#52525B] mt-8 font-medium text-[16px] text-center">
+          <p className="text-tertiary-base mt-8 font-medium text-[16px] text-center">
             Have questions about our services? Find quick answers below! If you
             need further assistance, feel free to contact us.
           </p>

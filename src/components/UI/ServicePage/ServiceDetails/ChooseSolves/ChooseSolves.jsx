@@ -11,7 +11,7 @@ const ChooseSolves = () => {
 
         <div className="mt-14 flex flex-col items-center justify-center space-y-6 md:flex-row md:space-x-6 md:space-y-0">
           {/* Card 1*/}
-          <div className="relative flex w-full max-w-[312px] py-8 px-4 flex-col items-center gap-6 rounded-lg border border-[#27272A] bg-[rgba(39,39,42,0.3)] text-[#fff]">
+          <div className="relative flex w-full max-w-[312px] py-8 px-4 flex-col items-center gap-6 rounded-lg border border-[#27272A] bg-[rgba(39,39,42,0.3)] text-white-base">
             {/* Top Gradient Line */}
             <div className="absolute top-0  left-1/2 transform -translate-x-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
 
@@ -33,7 +33,7 @@ const ChooseSolves = () => {
             </p>
           </div>
           {/* Card 2*/}
-          <div className="relative flex w-full max-w-[312px] py-8 px-4 flex-col items-center gap-6 rounded-lg border border-[#27272A] bg-[rgba(39,39,42,0.3)] text-[#fff]">
+          <div className="relative flex w-full max-w-[312px] py-8 px-4 flex-col items-center gap-6 rounded-lg border border-[#27272A] bg-[rgba(39,39,42,0.3)] text-white-base">
             {/* Top Gradient Line */}
             <div className="absolute top-0  left-1/2 transform -translate-x-1/2 w-1/2 h-[2px]  bg-[linear-gradient(90deg,_rgba(0,_0,_0,_0)_0%,_#F43F5E_50%,_rgba(0,_0,_0,_0)_100%)]" />
 
@@ -55,7 +55,7 @@ const ChooseSolves = () => {
             </p>
           </div>
           {/* Card 3*/}
-          <div className="relative flex w-full max-w-[312px] py-8 px-4 flex-col items-center gap-6 rounded-lg border border-[#27272A] bg-[rgba(39,39,42,0.3)] text-[#fff]">
+          <div className="relative flex w-full max-w-[312px] py-8 px-4 flex-col items-center gap-6 rounded-lg border border-[#27272A] bg-[rgba(39,39,42,0.3)] text-white-base">
             {/* Top Gradient Line */}
             <div className="absolute top-0  left-1/2 transform -translate-x-1/2 w-1/2 h-[2px] bg-[linear-gradient(90deg,rgba(0,0,0,0)_0%,#84CC16_50%,rgba(0,0,0,0)_100%)]" />
 
@@ -75,7 +75,7 @@ const ChooseSolves = () => {
             </p>
           </div>
           {/* Card 4*/}
-          <div className="relative flex w-full max-w-[312px] py-8 px-4 flex-col items-center gap-6 rounded-lg border border-[#27272A] bg-[rgba(39,39,42,0.3)] text-[#fff]">
+          <div className="relative flex w-full max-w-[312px] py-8 px-4 flex-col items-center gap-6 rounded-lg border border-[#27272A] bg-[rgba(39,39,42,0.3)] text-white-base">
             {/* Top Gradient Line */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/2 h-[2px] bg-[linear-gradient(90deg,rgba(0,0,0,0)_0%,#3B82F6_50%,rgba(0,0,0,0)_100%)]" />
 

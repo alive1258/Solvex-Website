@@ -36,7 +36,7 @@ const WhoWeAre = () => {
 
       <div className="container md:px-20 px-5">
         <BadgeLabel text="Who We Are" />
-        <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
           A Passionate Team of Innovators & Developers.
         </h1>
         <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
@@ -132,7 +132,7 @@ const WhoWeAre = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[#27272A] text-lg font-bold">
+                <h4 className="text-secondary-base text-lg font-bold">
                   10+ Years of Experience
                 </h4>
                 <p className="text-[#71717A] text-sm font-medium mt-2">
@@ -164,7 +164,7 @@ const WhoWeAre = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[#27272A] text-lg font-bold">
+                <h4 className="text-secondary-base text-lg font-bold">
                   Expert Team of Developers & Designers
                 </h4>
                 <p className="text-[#71717A] text-sm font-medium mt-2">
@@ -203,7 +203,7 @@ const WhoWeAre = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[#27272A] text-lg font-bold">
+                <h4 className="text-secondary-base text-lg font-bold">
                   Client-Centric Approach
                 </h4>
                 <p className="text-[#71717A] text-sm font-medium mt-2">
@@ -235,7 +235,7 @@ const WhoWeAre = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[#27272A] text-lg font-bold">
+                <h4 className="text-secondary-base text-lg font-bold">
                   100% Satisfaction Guarantee
                 </h4>
                 <p className="text-[#71717A] text-sm font-medium mt-2">
@@ -326,7 +326,7 @@ const WhoWeAre = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[#27272A] text-lg font-bold">
+                <h4 className="text-secondary-base text-lg font-bold">
                   10+ Years of Experience
                 </h4>
                 <p className="text-[#71717A] text-sm font-medium mt-2">
@@ -417,7 +417,7 @@ const WhoWeAre = () => {
                 </svg>
               </div>
               <div>
-                <h4 className="text-[#27272A] text-lg font-bold">
+                <h4 className="text-secondary-base text-lg font-bold">
                   10+ Years of Experience
                 </h4>
                 <p className="text-[#71717A] text-sm font-medium mt-2">

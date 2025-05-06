@@ -52,10 +52,10 @@ const HeroSection = () => {
 
         {/* Main Content */}
         <div className="pt-12 container ">
-          <h1 className="text-[#27272A] md:text-[64px] w-full max-w-[900px] mx-auto text-[32px] font-bold uppercase text-center ">
+          <h1 className="text-secondary-base md:text-[64px] w-full max-w-[900px] mx-auto text-[32px] font-bold uppercase text-center ">
             We Build Scalable & High- Performance Websites That Convert
           </h1>
-          <p className="text-center w-full max-w-[900px] mx-auto pt-12 md:text-2xl text-[16px] font-medium text-[#3F3F46]">
+          <p className="text-center w-full max-w-[900px] mx-auto pt-12 md:text-2xl text-[16px] font-medium text-primary-base">
             We specialize in designing and developing fast, secure, and
             user-friendly websites that drive business growth. From startups to
             enterprises, we create web solutions that make an impact.

@@ -74,7 +74,7 @@ const EmployeeBenefits = () => {
     <div className="bg-[#F4F4F5] mt-14">
       <div className="container py-12">
         <BadgeLabel text="Employee Benefits" />
-        <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
           Employee Benefits at Solvex — Empowering You to Thrive
         </h1>
         <p className="text-[16px] w-full max-w-[560px] mx-auto font-medium text-[#71717A] mt-6 text-center">
@@ -95,7 +95,7 @@ const EmployeeBenefits = () => {
                 {/* Replace this static SVG with dynamic icon rendering if needed */}
                 <Image height={30} width={30} src={benefit?.icon} alt="icon" />
               </div>
-              <h3 className="text-lg mt-4 text-[#3F3F46] font-bold">
+              <h3 className="text-lg mt-4 text-primary-base font-bold">
                 {benefit.title}
               </h3>
               <p className="text-[#71717A] text-sm font-medium mt-4">

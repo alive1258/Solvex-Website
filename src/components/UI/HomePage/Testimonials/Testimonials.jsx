@@ -64,7 +64,7 @@ const Testimonials = () => {
   return (
     <div className=" my-14 md:px-0 px-5">
       <BadgeLabel text="Testimonials" />
-      <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
         What Our Clients Say
       </h1>
       <p className="text-[16px] font-medium text-[#71717A] mt-6 w-full max-w-[420px] mx-auto text-center ">
@@ -88,7 +88,7 @@ const Testimonials = () => {
           {testimonials?.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-[#F9FAFB] md:w-full w-[375px]  md:max-w-[424px] h-[228px] rounded-lg p-4 border border-[#E4E4E7] mx-4"
+              className="bg-[#F9FAFB] md:w-full w-[375px]  md:max-w-[424px] h-[228px] rounded-lg p-4 border border-border-base mx-4"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4">
@@ -100,7 +100,7 @@ const Testimonials = () => {
                     width={48}
                   />
                   <div>
-                    <h4 className="font-bold text-lg text-[#52525B]">
+                    <h4 className="font-bold text-lg text-tertiary-base">
                       {testimonial.name}
                     </h4>
                     <p className="font-medium text-sm text-[#71717A]">
@@ -108,7 +108,7 @@ const Testimonials = () => {
                     </p>
                   </div>
                 </div>
-                <div className="border border-[#E4E4E7] flex space-x-1 items-center px-2 py-1 rounded-2xl">
+                <div className="border border-border-base flex space-x-1 items-center px-2 py-1 rounded-2xl">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -127,7 +127,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <h4 className="font-bold mt-8 text-lg text-[#52525B]">
+              <h4 className="font-bold mt-8 text-lg text-tertiary-base">
                 {testimonial.name}
               </h4>
               <p>{testimonial.feedback}</p>
@@ -152,7 +152,7 @@ const Testimonials = () => {
           {testimonials?.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-[#F9FAFB] md:w-full w-[375px]  md:max-w-[424px] h-[228px] rounded-lg p-4 border border-[#E4E4E7] mx-4"
+              className="bg-[#F9FAFB] md:w-full w-[375px]  md:max-w-[424px] h-[228px] rounded-lg p-4 border border-border-base mx-4"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4">
@@ -164,7 +164,7 @@ const Testimonials = () => {
                     width={48}
                   />
                   <div>
-                    <h4 className="font-bold text-lg text-[#52525B]">
+                    <h4 className="font-bold text-lg text-tertiary-base">
                       {testimonial.name}
                     </h4>
                     <p className="font-medium text-sm text-[#71717A]">
@@ -172,7 +172,7 @@ const Testimonials = () => {
                     </p>
                   </div>
                 </div>
-                <div className="border border-[#E4E4E7] flex space-x-1 items-center px-2 py-1 rounded-2xl">
+                <div className="border border-border-base flex space-x-1 items-center px-2 py-1 rounded-2xl">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -191,7 +191,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <h4 className="font-bold mt-8 text-lg text-[#52525B]">
+              <h4 className="font-bold mt-8 text-lg text-tertiary-base">
                 {testimonial.name}
               </h4>
               <p>{testimonial.feedback}</p>

@@ -10,28 +10,28 @@ const Accordion = ({ accordion, isActive, onClick }) => {
       >
         <div
           className={` font-medium cursor-pointer  rounded-lg duration-150 ${
-            isActive ? "" : "text-[#27272A] group"
+            isActive ? "" : "text-secondary-base group"
           }`}
           onClick={onClick}
         >
           <h1
             className={`md:text-[20px] text-[18px] ${
               isActive ? "border-b pb-1 border-[#D4D4D8]" : ""
-            }  font-bold text-[#27272A]`}
+            }  font-bold text-secondary-base`}
           >
             {accordion?.question}
           </h1>
         </div>
         {isActive && (
           <div className="flex gap-1.5 md:gap-3 pt-4">
-            <h6 className="text-[16px] text-[#52525B] pr-4">
+            <h6 className="text-[16px] text-tertiary-base pr-4">
               {accordion?.answer}
             </h6>
           </div>
         )}
       </div>
       <div
-        className={`bg-[#F4F4F5]  hidden cursor-pointer border size-14 md:flex justify-center items-center border-[#E4E4E7] rounded-full`}
+        className={`bg-[#F4F4F5]  hidden cursor-pointer border size-14 md:flex justify-center items-center border-border-base rounded-full`}
         onClick={onClick}
       >
         {isActive ? (

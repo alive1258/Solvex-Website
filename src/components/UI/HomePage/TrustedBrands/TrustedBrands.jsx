@@ -36,7 +36,7 @@ const TrustedBrands = ({ status = false }) => {
               <p className="text-[#3B82F6] text-sm md:text-start text-center font-medium">
                 We Work With the Best
               </p>
-              <h1 className="md:text-start text-center text-[#52525B] mt-6 text-2xl font-bold">
+              <h1 className="md:text-start text-center text-tertiary-base mt-6 text-2xl font-bold">
                 Trusted by Leading Brands & Businesses
               </h1>
               <p className="text-[#71717A] md:text-start text-center mt-6 text-[16px] font-medium">
@@ -52,7 +52,7 @@ const TrustedBrands = ({ status = false }) => {
           <div className="flex flex-col  space-y-3">
             {/* card 1  */}
             <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF]  w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF]  w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand1.png"
@@ -60,11 +60,11 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   CloudSync{" "}
                 </h5>
               </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand1.png"
@@ -72,14 +72,14 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   CloudSync{" "}
                 </h5>
               </div>
             </div>
             {/* card 2  */}
             <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand2.png"
@@ -87,11 +87,11 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   CodeCrafters{" "}
                 </h5>
               </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand2.png"
@@ -99,14 +99,14 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   CodeCrafters{" "}
                 </h5>
               </div>
             </div>
             {/* card 3  */}
             <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand3.png"
@@ -114,11 +114,11 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   TechStore{" "}
                 </h5>
               </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand4.png"
@@ -126,14 +126,14 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   CloudSync
                 </h5>
               </div>
             </div>
             {/* card 4  */}
             <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand5.png"
@@ -141,11 +141,11 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   TrendyWear
                 </h5>
               </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand6.png"
@@ -153,14 +153,14 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   TrendyWear
                 </h5>
               </div>
             </div>
             {/* card 5  */}
             <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand2.png"
@@ -168,11 +168,11 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   TechStore{" "}
                 </h5>
               </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand1.png"
@@ -180,14 +180,14 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   CodeCrafters
                 </h5>
               </div>
             </div>
             {/* card 6  */}
             <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand4.png"
@@ -195,11 +195,11 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   HealthTrack
                 </h5>
               </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand6.png"
@@ -207,14 +207,14 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   TechStore{" "}
                 </h5>
               </div>
             </div>
             {/* card 7  */}
             <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand1.png"
@@ -222,11 +222,11 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   TechStore{" "}
                 </h5>
               </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand2.png"
@@ -234,14 +234,14 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   TechStore{" "}
                 </h5>
               </div>
             </div>
             {/* card 8  */}
             <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand4.png"
@@ -249,11 +249,11 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   TechStore{" "}
                 </h5>
               </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-[#E4E4E7] p-4">
+              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
                 <Image
                   className=""
                   src="/images/brands/brand6.png"
@@ -261,7 +261,7 @@ const TrustedBrands = ({ status = false }) => {
                   height={32}
                   width={32}
                 />
-                <h5 className="text-[#52525B] font-bold md:text-[28px] text-[18px]">
+                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
                   HealthTrack
                 </h5>
               </div>

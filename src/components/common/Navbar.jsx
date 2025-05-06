@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logoSolvex from "../../../public/images/logo/LogoSolvex.svg";
 import Image from "next/image";
 import Button from "../UI/Button/Button";
@@ -35,10 +35,25 @@ const Navbar = () => {
     setOpen(!open);
   };
 
+  const [scrollPercent, setScrollPercent] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const scroll = Math.min((scrollTop / docHeight) * 100, 100);
+      setScrollPercent(Math.round(scroll));
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <nav
-        className={`sticky top-0 w-full z-[500] bg-[#fff] shadow-sm transition-all duration-500 ease-in-out `}
+        className={`sticky top-0 w-full z-[500] bg-white-base shadow-sm transition-all duration-500 ease-in-out `}
       >
         <div className="max-w-[1440px]  uppercase mx-auto w-full md:px-6 px-5 flex items-center justify-between  h-[96px] text-[#18181B] text-[16px] font-medium">
           <Link href="/">
@@ -103,12 +118,12 @@ const Navbar = () => {
           <ul
             className={`${
               open
-                ? "left-0 top-0 z-50  bg-[#fff]"
-                : "-left-full top-0  z-50 bg-[#fff]"
-            }  md:static  md:mt-0 mt-24 absolute w-full md:w-auto h-screen md:h-auto bg-[#fff]  flex flex-col md:flex-row md:items-center gap-y-4 gap-x-14  transition-all duration-500 ease-in-out`}
+                ? "left-0 top-0 z-50  bg-white-base"
+                : "-left-full top-0  z-50 bg-white-base"
+            }  md:static  md:mt-0 mt-24 absolute w-full md:w-auto h-screen md:h-auto bg-white-base  flex flex-col md:flex-row md:items-center gap-y-4 gap-x-14  transition-all duration-500 ease-in-out`}
           >
             {/* Home  */}
-            <li className="relative md:block hidden group md:border-0 border-b  md:mx-0 mx-5 border-[#E4E4E7] md:pb-0 pb-3">
+            <li className="relative md:block hidden group md:border-0 border-b  md:mx-0 mx-5 border-border-base md:pb-0 pb-3">
               <Link href="#">
                 <span className="font-medium text-[#18181B] ">Home</span>
                 <div className="absolute right-0  md:pb-0 pb-3 md:left-12 top-1/2 transform -translate-y-1/2">
@@ -134,10 +149,10 @@ const Navbar = () => {
               <ul className="absolute left-0 w-[213px] bg-transparent rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
                 <div className="mt-8">
                   <div className="bg-white space-y-2 shadow-2xl">
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/digital-agency">Digital Agency</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/digital-marketing">Digital Marketing</Link>
                     </li>
                     <li className="px-4 py-2 hover:text-[#3B82F6]">
@@ -149,7 +164,7 @@ const Navbar = () => {
             </li>
 
             {/* Services */}
-            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-[#E4E4E7] md:pb-0 pb-3">
+            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-border-base md:pb-0 pb-3">
               <Link href="#">
                 <span className="font-medium text-[#18181B]">Services</span>
                 <div className="absolute right-0 md:left-[71px] top-1/2 transform -translate-y-1/2">
@@ -175,10 +190,10 @@ const Navbar = () => {
               <ul className="sub-menu absolute left-0 w-[213px] bg-transparent rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
                 <div className="mt-10">
                   <div className="bg-white shadow-2xl">
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6] ">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6] ">
                       <Link href="/service">Service </Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/service-details">Service Details</Link>
                     </li>
                   </div>
@@ -186,7 +201,7 @@ const Navbar = () => {
               </ul>
             </li>
             {/* Page */}
-            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-[#E4E4E7] md:pb-0 pb-3">
+            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-border-base md:pb-0 pb-3">
               <Link href="#">
                 <span className="font-medium text-[#18181B]">Page</span>
                 <div className="absolute right-0  md:left-10 top-1/2 transform -translate-y-1/2">
@@ -212,25 +227,25 @@ const Navbar = () => {
               <ul className="sub-menu absolute left-0 w-[213px] bg-transparent rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
                 <div className="mt-10">
                   <div className="bg-white shadow-2xl">
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/about-us">About Us</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/team">Team</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/team-details">Team Details</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/pricing">Pricing</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/career">Career</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/career-details">Career Details</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/faqs">Faqs</Link>
                     </li>
                   </div>
@@ -238,7 +253,7 @@ const Navbar = () => {
               </ul>
             </li>
             {/* Portfolio */}
-            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-[#E4E4E7] md:pb-0 pb-3">
+            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-border-base md:pb-0 pb-3">
               <Link href="#">
                 <span className="font-medium text-[#18181B]">Portfolio</span>
                 <div className="absolute right-0  md:left-[85px] top-1/2 transform -translate-y-1/2">
@@ -264,10 +279,10 @@ const Navbar = () => {
               <ul className="sub-menu absolute left-0 w-[213px] bg-transparent rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
                 <div className="mt-10">
                   <div className="bg-white shadow-2xl">
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/portfolio">Portfolio </Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/portfolio-details">Portfolio Details</Link>
                     </li>
                   </div>
@@ -275,7 +290,7 @@ const Navbar = () => {
               </ul>
             </li>
             {/* Blog */}
-            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-[#E4E4E7] md:pb-0 pb-3">
+            <li className="relative md:block hidden group md:border-0 border-b md:mx-0 mx-5 border-border-base md:pb-0 pb-3">
               <Link href="#">
                 <span className="font-medium text-[#18181B]">Blog</span>
                 <div className="absolute right-0  md:left-10 top-1/2 transform -translate-y-1/2">
@@ -311,13 +326,13 @@ const Navbar = () => {
                     
                     bg-white shadow-2xl`}
                   >
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/blog-grid">Blog Gird</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/blog-list">Blog List</Link>
                     </li>
-                    <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/blog-details">Blog Details</Link>
                     </li>
                   </div>
@@ -332,13 +347,13 @@ const Navbar = () => {
                      }
                     bg-red-400 z-50 md:hidden shadow-2xl`}
                 >
-                  <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/blog-grid">Blog Gird</Link>
                   </li>
-                  <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/blog-list">Blog List</Link>
                   </li>
-                  <li className="px-4 py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/blog-details">Blog Details</Link>
                   </li>
                 </div>
@@ -348,7 +363,7 @@ const Navbar = () => {
             {/*-------- mobile menu-----------  */}
             {/* mobile menu Home  */}
             <li className=" pt-14 md:hidden ">
-              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-[#E4E4E7]  pb-3">
+              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-border-base  pb-3">
                 <span className="font-medium text-[#18181B] ">Home</span>
                 <div onClick={() => toggleModal("home")}>
                   <svg
@@ -378,10 +393,10 @@ const Navbar = () => {
                 }`}
               >
                 <div className="bg-white space-y-2 shadow-2xl">
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/digital-agency">Digital Agency</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/digital-marketing">Digital Marketing</Link>
                   </li>
                   <li className=" py-2 hover:text-[#3B82F6]">
@@ -393,7 +408,7 @@ const Navbar = () => {
 
             {/*------ mobile menu Services --------- */}
             <li className="md:hidden ">
-              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-[#E4E4E7]  pb-3">
+              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-border-base  pb-3">
                 <span className="font-medium text-[#18181B]">Services</span>
                 <div onClick={() => toggleModal("services")}>
                   <svg
@@ -423,10 +438,10 @@ const Navbar = () => {
                 }`}
               >
                 <div className=" bg-white shadow-2xl">
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6] ">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6] ">
                     <Link href="/service">Service </Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/service-details">Service Details</Link>
                   </li>
                 </div>
@@ -434,7 +449,7 @@ const Navbar = () => {
             </li>
             {/*mobile menu Page */}
             <li className=" md:hidden ">
-              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-[#E4E4E7]  pb-3">
+              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-border-base  pb-3">
                 <span className="font-medium text-[#18181B]">Page</span>
                 <div onClick={() => toggleModal("page")}>
                   <svg
@@ -464,25 +479,25 @@ const Navbar = () => {
                 }`}
               >
                 <div className="bg-white shadow-2xl">
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/about-us">About Us</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/team">Team</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/team-details">Team Details</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/pricing">Pricing</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/career">Career</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/career-details">Career Details</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/faqs">Faqs</Link>
                   </li>
                 </div>
@@ -490,7 +505,7 @@ const Navbar = () => {
             </li>
             {/*mobile menu Portfolio */}
             <li className="md:hidden">
-              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-[#E4E4E7]  pb-3">
+              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-border-base  pb-3">
                 <span className="font-medium text-[#18181B]">Portfolio</span>
                 <div onClick={() => toggleModal("portfolio")}>
                   <svg
@@ -520,10 +535,10 @@ const Navbar = () => {
                 }`}
               >
                 <div className="bg-white shadow-2xl">
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/portfolio">Portfolio </Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/portfolio-details">Portfolio Details</Link>
                   </li>
                 </div>
@@ -531,7 +546,7 @@ const Navbar = () => {
             </li>
             {/*mobile menu Blog */}
             <li className="md:hidden  ">
-              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-[#E4E4E7]  pb-3">
+              <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-border-base  pb-3">
                 <span className="font-medium text-[#18181B]">Blog</span>
                 <div onClick={() => toggleModal("blog")}>
                   <svg
@@ -567,13 +582,13 @@ const Navbar = () => {
                     
                     bg-white shadow-2xl`}
                 >
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/blog-grid">Blog Gird</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/blog-list">Blog List</Link>
                   </li>
-                  <li className=" py-2 border-b border-[#E4E4E7] hover:text-[#3B82F6]">
+                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
                     <Link href="/blog-details">Blog Details</Link>
                   </li>
                 </div>
@@ -594,12 +609,12 @@ const Navbar = () => {
                 <Button content="Get a Free Consultation" />
               </Link>
             </li>
-            <li className="mt-8 mx-5 inline-block md:hidden md:mt-0 border-b pb-3 border-[#E4E4E7]">
+            <li className="mt-8 mx-5 inline-block md:hidden md:mt-0 border-b pb-3 border-border-base">
               <span>Follow Us</span>
             </li>
 
             <div className="mt-6 px-5  md:hidden flex items-center space-x-3">
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -613,7 +628,7 @@ const Navbar = () => {
                   />
                 </svg>
               </div>
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -636,7 +651,7 @@ const Navbar = () => {
                   </defs>
                 </svg>
               </div>
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -652,7 +667,7 @@ const Navbar = () => {
                   />
                 </svg>
               </div>
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -666,7 +681,7 @@ const Navbar = () => {
                   />
                 </svg>
               </div>
-              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+              <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -714,6 +729,60 @@ const Navbar = () => {
             </div>
           </ul>
           {/* Nav Items End */}
+        </div>
+
+        {/* scroll Percent section  */}
+        <div className="hidden lg:flex fixed flex-col right-0  mr-4 bottom-4">
+          <div className="space-y-4 relative">
+            {/* Scroll percentage circle */}
+            <div
+              className={`absolute right-0  mr-4 bottom-0 transition-opacity duration-500 ${
+                scrollPercent === 100
+                  ? "opacity-0 pointer-events-none"
+                  : "opacity-100"
+              }`}
+            >
+              <div
+                className="relative size-14 rounded-full flex justify-center items-center border-2 border-border-base bg-white"
+                style={{
+                  background: `conic-gradient(#3B82F6 ${
+                    scrollPercent * 3.6
+                  }deg, #E4E4E7 ${scrollPercent * 3.6}deg)`,
+                }}
+              >
+                <div className="size-11 bg-white rounded-full flex items-center justify-center text-sm font-medium text-[#3B82F6]">
+                  {scrollPercent}%
+                </div>
+              </div>
+            </div>
+
+            {/* Scroll to top button */}
+            <div
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className={`absolute right-0  mr-4 bottom-4 bg-white size-14 ml-2 border-4 transition-all duration-500 ease-in-out group cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center border-[#3B82F6] ${
+                scrollPercent === 100
+                  ? "opacity-100"
+                  : "opacity-0 pointer-events-none"
+              }`}
+            >
+              {/* Icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M3.29279 9.70679C3.10532 9.51926 3 9.26495 3 8.99979C3 8.73462 3.10532 8.48031 3.29279 8.29279L9.29279 2.29279C9.48031 2.10532 9.73462 2 9.99979 2C10.265 2 10.5193 2.10532 10.7068 2.29279L16.7068 8.29279C16.8889 8.48139 16.9897 8.73399 16.9875 8.99619C16.9852 9.25838 16.88 9.5092 16.6946 9.6946C16.5092 9.88001 16.2584 9.98518 15.9962 9.98746C15.734 9.98974 15.4814 9.88894 15.2928 9.70679L10.9998 5.41379V16.9998C10.9998 17.265 10.8944 17.5194 10.7069 17.7069C10.5194 17.8944 10.265 17.9998 9.99979 17.9998C9.73457 17.9998 9.48022 17.8944 9.29268 17.7069C9.10514 17.5194 8.99979 17.265 8.99979 16.9998V5.41379L4.70679 9.70679C4.51926 9.89426 4.26495 9.99957 3.99979 9.99957C3.73462 9.99957 3.48031 9.89426 3.29279 9.70679Z"
+                  className="text-[#3B82F6] group-hover:text-white"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </nav>
     </>

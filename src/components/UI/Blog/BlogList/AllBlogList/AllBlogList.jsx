@@ -456,7 +456,7 @@ const AllBlogList = () => {
 
   return (
     <div className="container md:my-14 my-12">
-      <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
         News, insights and more
       </h1>
       <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
@@ -471,8 +471,8 @@ const AllBlogList = () => {
             onClick={() => setSelectedCategory(cat)}
             className={`border cursor-pointer text-sm rounded-3xl px-6 py-2 font-medium transition-all duration-300 ease-in-out ${
               selectedCategory === cat
-                ? "text-[#fff] bg-[#3B82F6] border-[#3B82F6]"
-                : "text-[#52525B] border-[#71717A] hover:text-[#3B82F6] hover:border-[#3B82F6]"
+                ? "text-white-base bg-[#3B82F6] border-[#3B82F6]"
+                : "text-tertiary-base border-[#71717A] hover:text-[#3B82F6] hover:border-[#3B82F6]"
             }`}
           >
             {cat}
@@ -484,7 +484,7 @@ const AllBlogList = () => {
         {filteredData?.slice(0, 6).map((post, idx) => (
           <div
             key={post.id}
-            className="border grid grid-cols-2 gap-x-8  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 border-[#E4E4E7] bg-white p-4 rounded-2xl"
+            className="border grid grid-cols-2 gap-x-8  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 border-border-base bg-white p-4 rounded-2xl"
           >
             <div className={`${idx % 2 !== 0 ? "md:order-2" : "md:order-1"}`}>
               <Image
@@ -530,7 +530,7 @@ const AllBlogList = () => {
 
                   {/* Title & Excerpt */}
                   <div className="mt-16">
-                    <h1 className="text-[#27272A] group-hover:text-[#3B82F6] font-bold text-2xl">
+                    <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
                       {post.title}
                     </h1>
                     <p className="mt-7 text-[#71717A] text-[16px] font-medium">
@@ -551,7 +551,7 @@ const AllBlogList = () => {
                         width={48}
                       />
                       <div>
-                        <h4 className="font-bold text-lg text-[#52525B]">
+                        <h4 className="font-bold text-lg text-tertiary-base">
                           {post.author.name}
                         </h4>
                         <p className="font-medium text-sm text-[#71717A]">
@@ -574,7 +574,7 @@ const AllBlogList = () => {
 
       <div className="mt-20 flex justify-center items-center">
         <div className="flex items-center space-x-4">
-          <div className="group border bg-[#fff] hover:bg-[#3B82F6] cursor-pointer hover:text-[#fff] duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
+          <div className="group border bg-white-base hover:bg-[#3B82F6] cursor-pointer hover:text-white-base duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="19"
@@ -593,22 +593,22 @@ const AllBlogList = () => {
             </svg>
           </div>
 
-          <div className="border bg-[#fff] hover:bg-[#3B82F6] cursor-pointer hover:text-[#fff] duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
+          <div className="border bg-white-base hover:bg-[#3B82F6] cursor-pointer hover:text-white-base duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
             <p className=" text-lg font-medium">1</p>
           </div>
-          <div className="border bg-[#fff] hover:bg-[#3B82F6] cursor-pointer hover:text-[#fff] duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
+          <div className="border bg-white-base hover:bg-[#3B82F6] cursor-pointer hover:text-white-base duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
             <p className=" text-lg font-medium">2</p>
           </div>
-          <div className="border bg-[#fff] hover:bg-[#3B82F6] cursor-pointer hover:text-[#fff] duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
+          <div className="border bg-white-base hover:bg-[#3B82F6] cursor-pointer hover:text-white-base duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
             <p className=" text-lg font-medium">3</p>
           </div>
-          <div className="border bg-[#fff] hover:bg-[#3B82F6] cursor-pointer hover:text-[#fff] duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
+          <div className="border bg-white-base hover:bg-[#3B82F6] cursor-pointer hover:text-white-base duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
             <p className=" text-lg font-medium">4</p>
           </div>
-          <div className="border bg-[#fff] hover:bg-[#3B82F6] cursor-pointer hover:text-[#fff] duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
+          <div className="border bg-white-base hover:bg-[#3B82F6] cursor-pointer hover:text-white-base duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
             <p className=" text-lg font-medium">5</p>
           </div>
-          <div className="group border bg-[#fff] hover:bg-[#3B82F6] cursor-pointer hover:text-[#fff] duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
+          <div className="group border bg-white-base hover:bg-[#3B82F6] cursor-pointer hover:text-white-base duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="19"

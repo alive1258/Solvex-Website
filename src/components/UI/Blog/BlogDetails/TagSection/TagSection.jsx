@@ -1,3 +1,4 @@
+import Button from "@/components/UI/Button/Button";
 import Image from "next/image";
 import React from "react";
 
@@ -7,23 +8,23 @@ const TagSection = () => {
       <div className="  border-t  border-[#D4D4D8] ">
         <div className="mt-6 md:flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <h4 className="text-[#3F3F46] text-2xl font-bold">Tags:</h4>
+            <h4 className="text-primary-base text-2xl font-bold">Tags:</h4>
             <div className="flex w-fit items-center justify-center gap-2 px-4 py-2 rounded-full   bg-[#D4D4D8] ">
-              <p className="text-[#3F3F46] text-lg">Web Design</p>
+              <p className="text-primary-base text-lg">Web Design</p>
             </div>
             <div className="flex w-fit items-center justify-center gap-2 px-4 py-2 rounded-full   bg-[#D4D4D8] ">
-              <p className="text-[#3F3F46] text-lg">Web Development</p>
+              <p className="text-primary-base text-lg">Web Development</p>
             </div>
             <div className="flex w-fit items-center justify-center gap-2 px-4 py-2 rounded-full   bg-[#D4D4D8] ">
-              <p className="text-[#3F3F46] text-lg">Web Tips</p>
+              <p className="text-primary-base text-lg">Web Tips</p>
             </div>
           </div>
-
+          {/* Share  */}
           <div>
             <div className="flex items-center space-x-4">
-              <h4 className="text-[#3F3F46] text-2xl font-bold">Share:</h4>
+              <h4 className="text-primary-base text-2xl font-bold">Share:</h4>
               <div className=" flex items-center space-x-3">
-                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -39,7 +40,7 @@ const TagSection = () => {
                   </svg>
                 </div>
 
-                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -64,7 +65,7 @@ const TagSection = () => {
                     </defs>
                   </svg>
                 </div>
-                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -81,7 +82,7 @@ const TagSection = () => {
                     />
                   </svg>
                 </div>
-                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -96,7 +97,7 @@ const TagSection = () => {
                     />
                   </svg>
                 </div>
-                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -154,7 +155,7 @@ const TagSection = () => {
               style={{
                 boxShadow: "0px 0px 96px 0px rgba(59, 130, 246, 0.16)",
               }}
-              className="p-6  rounded-2xl border border-[#E4E4E7] bg-white"
+              className="p-6  rounded-2xl border border-border-base bg-white"
             >
               <div className="flex items-center space-x-4">
                 <Image
@@ -165,7 +166,7 @@ const TagSection = () => {
                   width={88}
                 />
                 <div>
-                  <h4 className="font-bold text-2xl text-[#27272A]">
+                  <h4 className="font-bold text-2xl text-secondary-base">
                     Ethan Carter
                   </h4>
                   <p className="font-medium text-lg text-[#71717A]">
@@ -173,7 +174,7 @@ const TagSection = () => {
                   </p>
                 </div>
               </div>
-              <p className="font-medium text-lg mt-8 text-[#3F3F46]">
+              <p className="font-medium text-lg mt-8 text-primary-base">
                 Ethan Carter is a Senior Web Developer at Solvex with over 8
                 years of experience in front-end and back-end technologies.
                 Passionate about AI-driven web development, he specializes in
@@ -184,7 +185,7 @@ const TagSection = () => {
               <div>
                 <div className="mt-8">
                   <div className=" flex items-center space-x-3">
-                    <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                    <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -200,7 +201,7 @@ const TagSection = () => {
                       </svg>
                     </div>
 
-                    <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                    <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -225,7 +226,7 @@ const TagSection = () => {
                         </defs>
                       </svg>
                     </div>
-                    <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                    <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -242,7 +243,7 @@ const TagSection = () => {
                         />
                       </svg>
                     </div>
-                    <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8]">
+                    <div className="group cursor-pointer size-10 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-border-base border border-[#D4D4D8]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -277,14 +278,14 @@ const TagSection = () => {
                     width={48}
                   />
                   <div>
-                    <h4 className="font-bold text-[20px] text-[#27272A]">
+                    <h4 className="font-bold text-[20px] text-secondary-base">
                       John Doe
                     </h4>
                     <p className="font-medium text-sm text-[#71717A]">
                       12 July 2025
                     </p>
 
-                    <p className="text-[#3F3F46] text-lg mt-6">
+                    <p className="text-primary-base text-lg mt-6">
                       I totally agree! AI-powered coding assistants will
                       definitely revolutionize web development. Great insights!
                     </p>
@@ -321,17 +322,84 @@ const TagSection = () => {
                     width={48}
                   />
                   <div>
-                    <h4 className="font-bold text-[20px] text-[#27272A]">
+                    <h4 className="font-bold text-[20px] text-secondary-base">
                       John Doe
                     </h4>
                     <p className="font-medium text-sm text-[#71717A]">
                       12 July 2025
                     </p>
 
-                    <p className="text-[#3F3F46] text-lg mt-6">
+                    <p className="text-primary-base text-lg mt-6">
                       I totally agree! AI-powered coding assistants will
                       definitely revolutionize web development. Great insights!
                     </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-20">
+                <h2 className="text-[#3B82F6] uppercase text-2xl font-bold">
+                  leave a comment
+                </h2>
+                <div className="bg-white-base mt-12 p-7  rounded-xl border border-border-base">
+                  <div className=" mt-3 ">
+                    <form>
+                      <div className="grid md:grid-cols-2 gap-4 mt-3">
+                        <div>
+                          <label
+                            htmlFor="fname"
+                            className="text-secondary-base text-lg font-medium"
+                          >
+                            Full name:
+                          </label>
+                          <br />
+                          <input
+                            type="text"
+                            id="fname"
+                            name="fname"
+                            placeholder="Enter Full Name"
+                            className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
+                          />
+                        </div>
+                        <div>
+                          <label
+                            htmlFor="fname"
+                            className="text-secondary-base text-lg font-medium"
+                          >
+                            Email Address *
+                          </label>
+                          <br />
+                          <input
+                            type="text"
+                            id="fname"
+                            name="fname"
+                            placeholder="Enter Email Address "
+                            className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="mt-3">
+                        <label
+                          htmlFor="Massage"
+                          className="text-secondary-base text-lg font-medium"
+                        >
+                          Massage:
+                        </label>
+                        <br />
+                        <textarea
+                          id="Massage"
+                          name="Massage"
+                          placeholder="Enter Massage"
+                          className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
+                          rows={4}
+                        />
+                      </div>
+
+                      <div className="mt-2">
+                        <Button content="Submit now" />
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -340,9 +408,9 @@ const TagSection = () => {
 
           {/* section right side  */}
           <div className="col-span-1">
-            <div className="space-y-6">
+            <div className="space-y-8">
               {/* card 1  */}
-              <div className="border  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300  border-[#E4E4E7] group bg-[#fff] p-4 rounded-2xl">
+              <div className="border h-full max-h-[492px]  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300  border-border-base group bg-white-base p-4 rounded-2xl">
                 <Image
                   className="rounded-2xl shadow-lg"
                   src="/images/blogs/blog1.png"
@@ -350,7 +418,7 @@ const TagSection = () => {
                   height={240}
                   width={500}
                 />
-                <div className="mt-6 flex justify-between items-center">
+                <div className="mt-5 flex justify-between items-center">
                   <div className="border  rounded-[99px] w-fit bg-[#CFFAFE] border-[#67E8F9] px-3 py-1.5">
                     <p className="text-[#06B6D4] text-sm font-medium">
                       Web Development
@@ -376,46 +444,19 @@ const TagSection = () => {
                     </p>
                   </div>
                 </div>
-                <div className="mt-6">
-                  <h1 className="text-[#27272A] group-hover:text-[#3B82F6] font-bold text-2xl">
+                <div className="mt-5">
+                  <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
                     How to Optimize Your Website for SEO in 2025
                   </h1>
-                  <p className="mt-6 text-[#71717A] text-[16px] font-medium">
+                  <p className="mt-5 text-[#71717A] text-[16px] font-medium">
                     Explore the emerging trends shaping the future of web
                     development — from AI integrations to progressive web
                     apps...
                   </p>
                 </div>
-
-                <div className="mt-6">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
-                      <Image
-                        className="rounded-full size-12 "
-                        src="/images/blogs/author2.png"
-                        alt="workGallery1"
-                        height={48}
-                        width={48}
-                      />
-                      <div>
-                        <h4 className="font-bold text-lg text-[#52525B]">
-                          Ronald Richards
-                        </h4>
-                        <p className="font-medium text-sm text-[#71717A]">
-                          Web Developer
-                        </p>
-                      </div>
-                    </div>
-                    <div className=" bg-[#F4F4F5]  px-4 py-2 rounded-lg">
-                      <p className="text-[#71717A]  text-sm font-medium">
-                        5 Min Read
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
               {/* card 2  */}
-              <div className="border group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 border-[#E4E4E7] group bg-[#fff] p-4 rounded-2xl">
+              <div className="border h-full max-h-[492px]  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 border-border-base group bg-white-base p-4 rounded-2xl">
                 <Image
                   className="rounded-2xl shadow-lg"
                   src="/images/blogs/blog2.png"
@@ -423,7 +464,7 @@ const TagSection = () => {
                   height={240}
                   width={500}
                 />
-                <div className="mt-6 flex justify-between items-center">
+                <div className="mt-5 flex justify-between items-center">
                   <div className="border  rounded-[99px] w-fit bg-[#F3E8FF] border-[#C4B5FD] px-3 py-1.5">
                     <p className="text-[#8B5CF6] text-sm font-medium">
                       SEO & Marketing
@@ -449,47 +490,19 @@ const TagSection = () => {
                     </p>
                   </div>
                 </div>
-                <div className="mt-6">
-                  <h1 className="text-[#27272A] group-hover:text-[#3B82F6]  font-bold text-2xl">
+                <div className="mt-5">
+                  <h1 className="text-secondary-base group-hover:text-[#3B82F6]  font-bold text-2xl">
                     Top 5 Web Development Trends in 2025
                   </h1>
-                  <p className="mt-6 text-[#71717A] text-[16px] font-medium">
+                  <p className="mt-5 text-[#71717A] text-[16px] font-medium">
                     Explore the emerging trends shaping the future of web
                     development — from AI integrations to progressive web
                     apps...
                   </p>
                 </div>
-
-                <div className="mt-6">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
-                      <Image
-                        className="rounded-full size-12 "
-                        src="/images/blogs/author3.png"
-                        alt="workGallery1"
-                        height={48}
-                        width={48}
-                      />
-                      <div>
-                        <h4 className="font-bold text-lg text-[#52525B]">
-                          {" "}
-                          Mike Anderson
-                        </h4>
-                        <p className="font-medium text-sm text-[#71717A]">
-                          SEO & Marketing
-                        </p>
-                      </div>
-                    </div>
-                    <div className=" bg-[#F4F4F5]  px-4 py-2 rounded-lg">
-                      <p className="text-[#71717A]  text-sm font-medium">
-                        8 Min Read
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
               {/* card 3  */}
-              <div className="border group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300  border-[#E4E4E7] group bg-[#fff] p-4 rounded-2xl">
+              <div className="border h-full max-h-[492px]  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300  border-border-base group bg-white-base p-4 rounded-2xl">
                 <Image
                   className="rounded-2xl shadow-lg"
                   src="/images/blogs/blog3.png"
@@ -497,7 +510,7 @@ const TagSection = () => {
                   height={240}
                   width={500}
                 />
-                <div className="mt-6 flex justify-between items-center">
+                <div className="mt-5 flex justify-between items-center">
                   <div className="border  rounded-[99px] w-fit bg-[#E0E7FF] border-[#A5B4FC] px-3 py-1.5">
                     <p className="text-[#6366F1] text-sm font-medium">
                       UI/UX Design
@@ -523,42 +536,15 @@ const TagSection = () => {
                     </p>
                   </div>
                 </div>
-                <div className="mt-6">
-                  <h1 className="text-[#27272A] group-hover:text-[#3B82F6] font-bold text-2xl">
+                <div className="mt-5">
+                  <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
                     The Power of UI/UX: Why Design Matters for Your Business
                   </h1>
-                  <p className="mt-6 text-[#71717A] text-[16px] font-medium">
+                  <p className="mt-5 text-[#71717A] text-[16px] font-medium">
                     Explore the emerging trends shaping the future of web
                     development — from AI integrations to progressive web
                     apps...
                   </p>
-                </div>
-
-                <div className="mt-6">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
-                      <Image
-                        className="rounded-full size-12 "
-                        src="/images/blogs/Author1.png"
-                        alt="workGallery1"
-                        height={48}
-                        width={48}
-                      />
-                      <div>
-                        <h4 className="font-bold text-lg text-[#52525B]">
-                          Bessie Cooper
-                        </h4>
-                        <p className="font-medium text-sm text-[#71717A]">
-                          UI/UX Design
-                        </p>
-                      </div>
-                    </div>
-                    <div className=" bg-[#F4F4F5]  px-4 py-2 rounded-lg">
-                      <p className="text-[#71717A]  text-sm font-medium">
-                        6 Min Read
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

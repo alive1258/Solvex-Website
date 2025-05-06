@@ -97,7 +97,7 @@ const MeetOurTeam = ({ status = false }) => {
       ></div>
       <div className="container py-14">
         <BadgeLabel text="Meet Our Team" />
-        <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
           The Creative Minds Behind Solvex
         </h1>
         <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center w-full max-w-[520px] mx-auto">

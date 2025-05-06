@@ -70,10 +70,10 @@ const OurSolutions = () => {
           </div>
 
           <div className="mt-8">
-            <h1 className="text-[40px] md:text-start text-center font-bold text-[#3F3F46]">
+            <h1 className="text-[40px] md:text-start text-center font-bold text-primary-base">
               Custom Web Solutions Designed for Impact
             </h1>
-            <p className="text-[20px] md:text-start text-center font-medium text-[#3F3F46] mt-8">
+            <p className="text-[20px] md:text-start text-center font-medium text-primary-base mt-8">
               From sleek websites to dynamic web applications, we build
               solutions that don’t just look good — they work flawlessly.
             </p>

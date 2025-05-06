@@ -66,7 +66,7 @@ const SuccessRate = () => {
               <h3 className="text-[48px] text-[#3B82F6] font-bold">
                 {card.count}
               </h3>
-              <h5 className="text-[20px] uppercase font-bold mt-4 text-[#27272A]">
+              <h5 className="text-[20px] uppercase font-bold mt-4 text-secondary-base">
                 {card.title}
               </h5>
               <p className="text-sm font-medium mt-4 text-[#71717A]">

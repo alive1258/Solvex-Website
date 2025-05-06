@@ -1,12 +1,13 @@
 import React from "react";
 import ContactUs from "../../HomePage/ContactUs/ContactUs";
-import AboutBanner from "../../AboutUs/AboutBanner/AboutBanner";
+
 import SingleTeamMember from "./SingleTeamMember/SingleTeamMember";
+import TeamDetailsBanner from "./TeamDetailsBanner/TeamDetailsBanner";
 
 const TeamDetails = () => {
   return (
     <div>
-      <AboutBanner />
+      <TeamDetailsBanner />
       <SingleTeamMember />
       <ContactUs />
     </div>

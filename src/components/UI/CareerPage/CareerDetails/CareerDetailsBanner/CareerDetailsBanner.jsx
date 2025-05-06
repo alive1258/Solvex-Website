@@ -33,6 +33,28 @@ const CareerDetailsBanner = () => {
                     />
                   </svg>
                 </span>
+                <Link href="/career">
+                  <span className="text-[#A1A1AA] text-[16px] font-medium">
+                    Career
+                  </span>
+                </Link>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.5 12.75L11.25 9L7.5 5.25"
+                      stroke="white"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
                 <span className="text-[#FAFAFA] text-[16px] font-medium">
                   Career Details
                 </span>

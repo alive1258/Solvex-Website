@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <div className="container md:my-14 my-12">
       <BadgeLabel text="Blog" />
-      <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
         News, insights and more
       </h1>
       <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
@@ -17,7 +17,7 @@ const Blog = () => {
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-6 mt-12">
         {/* card 1  */}
-        <div className="border  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300  border-[#E4E4E7] group bg-[#fff] p-4 rounded-2xl">
+        <div className="border  group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300  border-border-base group bg-white-base p-4 rounded-2xl">
           <Image
             className="rounded-2xl shadow-lg"
             src="/images/blogs/blog1.png"
@@ -52,7 +52,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="mt-6">
-            <h1 className="text-[#27272A] group-hover:text-[#3B82F6] font-bold text-2xl">
+            <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
               How to Optimize Your Website for SEO in 2025
             </h1>
             <p className="mt-6 text-[#71717A] text-[16px] font-medium">
@@ -72,7 +72,7 @@ const Blog = () => {
                   width={48}
                 />
                 <div>
-                  <h4 className="font-bold text-lg text-[#52525B]">
+                  <h4 className="font-bold text-lg text-tertiary-base">
                     Ronald Richards
                   </h4>
                   <p className="font-medium text-sm text-[#71717A]">
@@ -89,7 +89,7 @@ const Blog = () => {
           </div>
         </div>
         {/* card 2  */}
-        <div className="border group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 border-[#E4E4E7] group bg-[#fff] p-4 rounded-2xl">
+        <div className="border group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 border-border-base group bg-white-base p-4 rounded-2xl">
           <Image
             className="rounded-2xl shadow-lg"
             src="/images/blogs/blog2.png"
@@ -124,7 +124,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="mt-6">
-            <h1 className="text-[#27272A] group-hover:text-[#3B82F6]  font-bold text-2xl">
+            <h1 className="text-secondary-base group-hover:text-[#3B82F6]  font-bold text-2xl">
               Top 5 Web Development Trends in 2025
             </h1>
             <p className="mt-6 text-[#71717A] text-[16px] font-medium">
@@ -144,7 +144,7 @@ const Blog = () => {
                   width={48}
                 />
                 <div>
-                  <h4 className="font-bold text-lg text-[#52525B]">
+                  <h4 className="font-bold text-lg text-tertiary-base">
                     {" "}
                     Mike Anderson
                   </h4>
@@ -162,7 +162,7 @@ const Blog = () => {
           </div>
         </div>
         {/* card 3  */}
-        <div className="border group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300  border-[#E4E4E7] group bg-[#fff] p-4 rounded-2xl">
+        <div className="border group cursor-pointer hover:scale-105 transition-all ease-in-out duration-300  border-border-base group bg-white-base p-4 rounded-2xl">
           <Image
             className="rounded-2xl shadow-lg"
             src="/images/blogs/blog3.png"
@@ -195,7 +195,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="mt-6">
-            <h1 className="text-[#27272A] group-hover:text-[#3B82F6] font-bold text-2xl">
+            <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
               The Power of UI/UX: Why Design Matters for Your Business
             </h1>
             <p className="mt-6 text-[#71717A] text-[16px] font-medium">
@@ -215,7 +215,7 @@ const Blog = () => {
                   width={48}
                 />
                 <div>
-                  <h4 className="font-bold text-lg text-[#52525B]">
+                  <h4 className="font-bold text-lg text-tertiary-base">
                     Bessie Cooper
                   </h4>
                   <p className="font-medium text-sm text-[#71717A]">

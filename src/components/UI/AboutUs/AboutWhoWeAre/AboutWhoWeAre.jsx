@@ -6,7 +6,7 @@ const AboutWhoWeAre = () => {
   return (
     <div className="container my-14">
       <BadgeLabel text="Who We Are" />
-      <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
         A Passionate Team of Innovators & Developers.
       </h1>
       <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center w-full max-w-[520px] mx-auto">
@@ -33,7 +33,7 @@ const AboutWhoWeAre = () => {
             <h2 className="text-[#18181B] md:text-[48px] text-[40px] font-black">
               130+
             </h2>
-            <h3 className="text-[#27272A] md:text-[20px] text-lg font-bold uppercase mt-4">
+            <h3 className="text-secondary-base md:text-[20px] text-lg font-bold uppercase mt-4">
               Successful Projects
             </h3>
             <p className="text-[#71717A] text-sm font-medium  mt-4">
@@ -54,7 +54,7 @@ const AboutWhoWeAre = () => {
             <h2 className="text-[#18181B] md:text-[48px] text-[40px] font-black">
               45+
             </h2>
-            <h3 className="text-[#27272A] md:text-[20px] text-lg font-bold uppercase mt-4">
+            <h3 className="text-secondary-base md:text-[20px] text-lg font-bold uppercase mt-4">
               Creative Minds
             </h3>
             <p className="text-[#71717A] text-sm font-medium  mt-4">
@@ -75,7 +75,7 @@ const AboutWhoWeAre = () => {
             <h2 className="text-[#18181B] md:text-[48px] text-[40px] font-black">
               15+
             </h2>
-            <h3 className="text-[#27272A] md:text-[20px] text-lg font-bold uppercase mt-4">
+            <h3 className="text-secondary-base md:text-[20px] text-lg font-bold uppercase mt-4">
               Countries Served
             </h3>
             <p className="text-[#71717A] text-sm font-medium  mt-4">
@@ -95,7 +95,7 @@ const AboutWhoWeAre = () => {
             <h2 className="text-[#18181B] md:text-[48px] text-[40px] font-black">
               98+
             </h2>
-            <h3 className="text-[#27272A] md:text-[20px] text-lg font-bold uppercase mt-4">
+            <h3 className="text-secondary-base md:text-[20px] text-lg font-bold uppercase mt-4">
               Client Satisfaction
             </h3>
             <p className="text-[#71717A] text-sm font-medium  mt-4">

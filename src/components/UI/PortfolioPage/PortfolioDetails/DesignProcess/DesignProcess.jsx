@@ -104,7 +104,7 @@ const DesignProcess = () => {
   return (
     <div className="container mt-24">
       <BadgeLabel text="design process " />
-      <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
         From Concept to Conversion — A Strategic Design Journey
       </h1>
       <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center w-full max-w-[420px] mx-auto">
@@ -121,7 +121,7 @@ const DesignProcess = () => {
             >
               {/* Content Side */}
               <div className={`${idx % 2 !== 0 ? "md:order-2" : "md:order-1"}`}>
-                <h1 className="text-2xl font-bold text-[#3F3F46]">
+                <h1 className="text-2xl font-bold text-primary-base">
                   {feature.main_title}
                 </h1>
 
@@ -161,7 +161,7 @@ const DesignProcess = () => {
                       <h5 className="text-[20px] font-bold text-[#71717A]">
                         {step.title}
                       </h5>
-                      <p className="text-lg font-medium text-[#3F3F46]">
+                      <p className="text-lg font-medium text-primary-base">
                         {step.description}
                       </p>
                     </div>
@@ -189,7 +189,7 @@ const DesignProcess = () => {
                         alt={tool.name}
                         className="w-6 h-6"
                       />
-                      <span className="text-[#3F3F46] text-lg font-medium">
+                      <span className="text-primary-base text-lg font-medium">
                         {tool.name}
                       </span>
                     </div>

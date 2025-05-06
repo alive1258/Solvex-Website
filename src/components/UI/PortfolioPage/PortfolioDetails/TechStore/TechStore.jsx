@@ -4,7 +4,7 @@ import React from "react";
 const TechStore = () => {
   return (
     <div className="container mt-14">
-      <h1 className="text-[#3F3F46] text-[48px] font-bold text-center w-full max-w-[890px] mx-auto">
+      <h1 className="text-primary-base text-[48px] font-bold text-center w-full max-w-[890px] mx-auto">
         TechStore Inc. — Revolutionizing Online Tech Shopping
       </h1>
       <div className="md:flex justify-center items-center space-x-24 mt-16">

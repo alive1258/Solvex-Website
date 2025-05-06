@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import FooterLinkSection from "./FooterLinkSection";
 
 const Footer = () => {
   const services = [
@@ -54,7 +55,7 @@ const Footer = () => {
                   </clipPath>
                 </defs>
               </svg>
-              <p className="text-[#fff] text-[20px] font-bold">{service}</p>
+              <p className="text-white-base text-[20px] font-bold">{service}</p>
             </div>
           ))}
         </Marquee>
@@ -199,12 +200,12 @@ const Footer = () => {
                 design.
               </p>
               <div className="mt-10">
-                <h4 className="w-fit  border-b pb-3 border-[#E4E4E7]">
+                <h4 className="w-fit  border-b pb-3 border-border-base">
                   Follow Us
                 </h4>
 
                 <div className="mt-6   flex items-center space-x-3">
-                  <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center  bg-[#27272A] border border-[#3F3F46]">
+                  <div className="footer-social-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -227,7 +228,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </div>
-                  <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center  bg-[#27272A] border border-[#3F3F46]">
+                  <div className="footer-social-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -243,7 +244,7 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center  bg-[#27272A] border border-[#3F3F46]">
+                  <div className="footer-social-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -288,7 +289,7 @@ const Footer = () => {
                       />
                     </svg>
                   </div>
-                  <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center  bg-[#27272A] border border-[#3F3F46]">
+                  <div className="footer-social-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -311,7 +312,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </div>
-                  <div className="size-12 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center  bg-[#27272A] border border-[#3F3F46]">
+                  <div className="footer-social-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -340,239 +341,51 @@ const Footer = () => {
           </div>
           {/* Special links  */}
           <div className=" md:col-span-1  md:mt-0 mt-10">
-            <h2 className="text-[#FAFAFA] uppercase font-bold text-lg w-2/3 border-b pb-1 border-[#3B82F6]">
-              Special links
-            </h2>
-            <div className="mt-10 space-y-4">
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Case Studies
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Client Testimonials
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Blogs
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Careers
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Privacy Policy
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Terms & Conditions
-                </p>
-              </div>
-            </div>
+            <FooterLinkSection
+              title="Special links"
+              links={[
+                "Case Studies",
+                "Client Testimonials",
+                "Blogs",
+                "Careers",
+                "Privacy Policy",
+                "Terms & Conditions",
+              ]}
+            />
           </div>
           {/* quick links  */}
           <div className=" md:col-span-1 md:mt-0 mt-10">
-            <h2 className="text-[#FAFAFA] font-bold text-lg w-2/3 border-b pb-1 uppercase border-[#3B82F6]">
-              quick links
-            </h2>
-            <div className="mt-10 space-y-4">
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Home
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Services
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Portfolio
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Contact Us
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  About Us
-                </p>
-              </div>
-              <div className="flex items-center space-x-2 cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M13.293 7.29279C13.1055 7.48031 13.0002 7.73462 13.0002 7.99979C13.0002 8.26495 13.1055 8.51926 13.293 8.70679L15.586 10.9998H8C7.73478 10.9998 7.48043 11.1051 7.29289 11.2927C7.10536 11.4802 7 11.7346 7 11.9998C7 12.265 7.10536 12.5194 7.29289 12.7069C7.48043 12.8944 7.73478 12.9998 8 12.9998H15.586L13.293 15.2928C13.1055 15.4803 13.0002 15.7346 13.0002 15.9998C13.0002 16.265 13.1055 16.5193 13.293 16.7068C13.4805 16.8943 13.7348 16.9996 14 16.9996C14.2652 16.9996 14.5195 16.8943 14.707 16.7068L19.414 11.9998L14.707 7.29279C14.5195 7.10532 14.2652 7 14 7C13.7348 7 13.4805 7.10532 13.293 7.29279Z"
-                    fill="#D4D4D8"
-                  />
-                </svg>
-                <p className="text-[#D4D4D8] hover:text-[#3B82F6] text-[16px] font-medium">
-                  Support
-                </p>
-              </div>
-            </div>
+            <FooterLinkSection
+              title="Quick links"
+              links={[
+                "Home",
+                "Services",
+                "Portfolio",
+                "Contact Us",
+                "About Us",
+                "Support",
+              ]}
+            />
           </div>
           {/* Subscribe newsletter  */}
           <div className=" md:col-span-2 md:mt-0 mt-10">
             <h2 className="text-[#FAFAFA] font-bold text-lg w-fit border-b pb-1 uppercase border-[#3B82F6]">
               Subscribe newsletter
             </h2>
+
             <div className="mt-10 space-y-4">
-              <div className="bg-[#27272A] border-[#3F3F46] w-full max-w-[334px] flex items-center justify-between px-4 py-2 rounded-lg">
-                <p className="text-[#A1A1AA] text-[16px font-medium">
-                  Email address
-                </p>
+              <div className="bg-[#27272A] border border-[#3F3F46] w-full max-w-[334px] flex items-center justify-between px-2 py-2 rounded-lg">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  className="bg-transparent text-[#A1A1AA] text-[16px] font-medium placeholder-[#A1A1AA] outline-none "
+                />
                 <button className="bg-[#3B82F6] px-4 py-3 rounded-lg text-[#FFF] font-medium">
                   Sign Up
                 </button>
               </div>
             </div>
+
             <div className="mt-10">
               <h4 className="text-[#FAFAFA] md:text-start text-center uppercase font-bold text-[16px]">
                 we are available{" "}

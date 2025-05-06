@@ -37,7 +37,7 @@ const DigitalFuture = ({ status = false }) => {
 
           {/* Text Content */}
           <div className="flex justify-center md:py-20 py-16">
-            <div className="text-[#fff] text-center ">
+            <div className="text-white-base text-center ">
               <h2 className="md:text-[32px] text-2xl font-black">
                 {status === true
                   ? "Work With Solvex - Let’s Build Your Digital Future!"
@@ -50,7 +50,7 @@ const DigitalFuture = ({ status = false }) => {
               </p>
 
               <div className="mt-12 flex justify-center items-center">
-                <button className="inline-flex uppercase font-medium text-[16px] cursor-pointer h-14 px-6  py-4 justify-center items-center gap-1 rounded-full bg-[#000] text-[#fff] hover:opacity-90 focus:ring-4 focus:outline-none">
+                <button className="inline-flex uppercase font-medium text-[16px] cursor-pointer h-14 px-6  py-4 justify-center items-center gap-1 rounded-full bg-[#000] text-white-base hover:opacity-90 focus:ring-4 focus:outline-none">
                   Schedule a Free Consultation
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

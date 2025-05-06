@@ -193,7 +193,7 @@ const Portfolio = () => {
   return (
     <div className="container md:my-14 my-20">
       <BadgeLabel text="Portfolio" />
-      <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
         Our Work Speaks for Itself
       </h1>
       <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center w-full max-w-[420px] mx-auto">
@@ -209,8 +209,8 @@ const Portfolio = () => {
             onClick={() => setSelectedCategory(cat)}
             className={`border cursor-pointer text-sm rounded-3xl px-6 py-2 font-medium transition-all duration-300 ease-in-out ${
               selectedCategory === cat
-                ? "text-[#fff] bg-[#3B82F6] border-[#3B82F6]"
-                : "text-[#52525B] border-[#71717A] hover:text-[#3B82F6] hover:border-[#3B82F6]"
+                ? "text-white-base bg-[#3B82F6] border-[#3B82F6]"
+                : "text-tertiary-base border-[#71717A] hover:text-[#3B82F6] hover:border-[#3B82F6]"
             }`}
           >
             {cat}
@@ -246,11 +246,11 @@ const Portfolio = () => {
                   height={40}
                   width={40}
                 />
-                <h4 className="text-[#27272A] md:text-2xl text-[20px] font-bold">
+                <h4 className="text-secondary-base md:text-2xl text-[20px] font-bold">
                   {item?.company}
                 </h4>
               </div>
-              <h1 className="text-[#3F3F46] md:text-[32px] text-2xl mt-10 font-bold">
+              <h1 className="text-primary-base md:text-[32px] text-2xl mt-10 font-bold">
                 {item?.title}
               </h1>
               <p className="text-[#71717A] text-[16px] mt-6 font-medium">
@@ -260,7 +260,7 @@ const Portfolio = () => {
                 {item?.tags?.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="border cursor-pointer transition-all duration-300 ease-in-out text-[#52525B] hover:text-[#3B82F6] rounded-3xl hover:border-[#3B82F6] border-[#71717A] px-4 py-2 text-sm"
+                    className="border cursor-pointer transition-all duration-300 ease-in-out text-tertiary-base hover:text-[#3B82F6] rounded-3xl hover:border-[#3B82F6] border-[#71717A] px-4 py-2 text-sm"
                   >
                     {tag}
                   </span>

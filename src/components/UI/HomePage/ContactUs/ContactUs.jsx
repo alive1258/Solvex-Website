@@ -18,7 +18,7 @@ const ContactUs = () => {
       ></div>
       <div className="container py-14">
         <BadgeLabel text="Contact Us" />
-        <h1 className="text-2xl font-bold text-[#3F3F46] mt-6 text-center">
+        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
           Let’s Work Together to Build Something Great
         </h1>
         <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center w-full max-w-[420px] mx-auto ">
@@ -27,13 +27,13 @@ const ContactUs = () => {
         </p>
         <div className="mt-12 grid md:grid-cols-5 gap-6">
           <div className="md:col-span-2 ">
-            <div className="bg-[#fff] p-6 rounded-xl border border-[#E4E4E7]">
-              <h1 className="text-[#27272A] text-[32px] uppercase text-center font-bold">
+            <div className="bg-white-base p-6 rounded-xl border border-border-base">
+              <h1 className="text-secondary-base text-[32px] uppercase text-center font-bold">
                 get in touch
               </h1>
               <div className="mt-10">
                 {/* contact 1 */}
-                <div className="border border-[#E4E4E7] p-4 rounded-lg flex items-center space-x-4">
+                <div className="border border-border-base p-4 rounded-lg flex items-center space-x-4">
                   <div className="flex justify-center p-4 w-fit items-center border border-[#3B82F6] rounded-lg bg-[#EFF6FF]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -49,14 +49,16 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-[#27272A] text-lg font-bold">
+                    <h5 className="text-secondary-base text-lg font-bold">
                       Phone Number
                     </h5>
-                    <p className="text-[#52525B] text-[16px]">+123 456 789</p>
+                    <p className="text-tertiary-base text-[16px]">
+                      +123 456 789
+                    </p>
                   </div>
                 </div>
                 {/* contact 2 */}
-                <div className="border mt-8 border-[#E4E4E7] p-4 rounded-lg flex items-center space-x-4">
+                <div className="border mt-8 border-border-base p-4 rounded-lg flex items-center space-x-4">
                   <div className="flex justify-center p-4 w-fit items-center border border-[#3B82F6] rounded-lg bg-[#EFF6FF]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -72,14 +74,16 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-[#27272A] text-lg font-bold">
+                    <h5 className="text-secondary-base text-lg font-bold">
                       Phone Number
                     </h5>
-                    <p className="text-[#52525B] text-[16px]">+123 456 789</p>
+                    <p className="text-tertiary-base text-[16px]">
+                      +123 456 789
+                    </p>
                   </div>
                 </div>
                 {/* contact 3 */}
-                <div className="border mt-8 border-[#E4E4E7] p-4 rounded-lg flex items-center space-x-4">
+                <div className="border mt-8 border-border-base p-4 rounded-lg flex items-center space-x-4">
                   <div className="flex justify-center p-4 w-fit items-center border border-[#3B82F6] rounded-lg bg-[#EFF6FF]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -95,22 +99,55 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-[#27272A] text-lg font-bold">
+                    <h5 className="text-secondary-base text-lg font-bold">
                       Phone Number
                     </h5>
-                    <p className="text-[#52525B] text-[16px]">+123 456 789</p>
+                    <p className="text-tertiary-base text-[16px]">
+                      +123 456 789
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             {/* follow us on  */}
-            <div className="bg-[#fff] p-6 mt-6 rounded-xl border border-[#E4E4E7]">
-              <h1 className="text-[#27272A] border-b pb-1 border-[#E4E4E7] text-[28px] uppercase text-center font-bold">
+            <div className="bg-white-base p-6 mt-6 rounded-xl border border-border-base">
+              <h1 className="text-secondary-base border-b pb-1 border-border-base text-[28px] uppercase text-center font-bold">
                 follow us on
               </h1>
 
               <div className="mt-6   flex items-center justify-center space-x-3">
-                <div className="size-14 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
+                <div className="size-14 duration-300 transition-all ease-in-out group cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="text-[#3B82F6] group-hover:text-white"
+                  >
+                    <path
+                      d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M3 16V8C3 6.67392 3.52678 5.40215 4.46447 4.46447C5.40215 3.52678 6.67392 3 8 3H16C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21H8C6.67392 21 5.40215 20.4732 4.46447 19.5355C3.52678 18.5979 3 17.3261 3 16Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                    <path
+                      d="M17.5 6.51002L17.51 6.49902"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <div className="size-14 duration-300 transition-all ease-in-out group cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -120,14 +157,16 @@ const ContactUs = () => {
                   >
                     <path
                       d="M16.435 12.667H15.3337C14.0763 12.667 13.4483 12.667 13.0577 13.0577C12.667 13.4483 12.667 14.0763 12.667 15.3337V26.667C12.667 27.9243 12.667 28.5523 13.0577 28.943C13.4483 29.3337 14.0763 29.3337 15.3337 29.3337H16.0003C17.2577 29.3337 17.8857 29.3337 18.2763 28.943C18.667 28.5523 18.667 27.9243 18.667 26.667V22.0003C18.667 19.791 19.371 18.0003 21.451 18.0003C22.491 18.0003 23.3337 18.8963 23.3337 20.0003V26.0003C23.3337 27.2577 23.3337 27.8857 23.7243 28.2763C24.115 28.667 24.743 28.667 26.0003 28.667H26.6657C27.9217 28.667 28.551 28.667 28.9417 28.2763C29.331 27.8857 29.3323 27.2577 29.3323 26.0017L29.3337 18.667C29.3337 15.3523 26.1817 12.667 23.063 12.667C21.287 12.667 19.703 13.5363 18.667 14.8977C18.667 14.0577 18.667 13.6377 18.4843 13.3257C18.3688 13.1282 18.2044 12.9639 18.007 12.8483C17.695 12.6657 17.275 12.6657 16.435 12.6657M6.00033 12.667H5.33366C4.07633 12.667 3.44833 12.667 3.05766 13.0577C2.66699 13.4483 2.66699 14.0763 2.66699 15.3337V26.667C2.66699 27.9243 2.66699 28.5523 3.05766 28.943C3.44833 29.3337 4.07633 29.3337 5.33366 29.3337H6.00033C7.25766 29.3337 7.88566 29.3337 8.27632 28.943C8.66699 28.5523 8.66699 27.9243 8.66699 26.667V15.3337C8.66699 14.0763 8.66699 13.4483 8.27632 13.0577C7.88566 12.667 7.25766 12.667 6.00033 12.667ZM8.66699 5.66699C8.66699 6.46264 8.35092 7.2257 7.78831 7.78831C7.2257 8.35092 6.46264 8.66699 5.66699 8.66699C4.87134 8.66699 4.10828 8.35092 3.54567 7.78831C2.98306 7.2257 2.66699 6.46264 2.66699 5.66699C2.66699 4.87134 2.98306 4.10828 3.54567 3.54567C4.10828 2.98306 4.87134 2.66699 5.66699 2.66699C6.46264 2.66699 7.2257 2.98306 7.78831 3.54567C8.35092 4.10828 8.66699 4.87134 8.66699 5.66699Z"
-                      stroke="#3B82F6"
+                      // stroke="#3B82F6"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      stroke="currentColor"
+                      className="text-[#3B82F6] group-hover:text-white"
                     />
                   </svg>
                 </div>
-                <div className="size-14 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
+                <div className="size-14 duration-300 transition-all ease-in-out group cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
@@ -139,79 +178,76 @@ const ContactUs = () => {
                       fillRule="evenodd"
                       clipRule="evenodd"
                       d="M13.9842 5.05067C15.2967 3.73786 17.0771 3.00022 18.9335 3H22.5335C22.7987 3 23.0531 3.10536 23.2406 3.29289C23.4281 3.48043 23.5335 3.73478 23.5335 4V8.8C23.5335 9.06522 23.4281 9.31957 23.2406 9.50711C23.0531 9.69464 22.7987 9.8 22.5335 9.8H18.9335C18.9072 9.8 18.8812 9.80517 18.857 9.81522C18.8327 9.82528 18.8106 9.84001 18.7921 9.85858C18.7735 9.87715 18.7588 9.8992 18.7487 9.92346C18.7387 9.94773 18.7335 9.97374 18.7335 10V12.6H22.5335C22.6855 12.5999 22.8356 12.6345 22.9722 12.7011C23.1089 12.7677 23.2285 12.8646 23.3221 12.9844C23.4157 13.1042 23.4807 13.2438 23.5123 13.3925C23.5438 13.5412 23.5411 13.6952 23.5042 13.8427L22.3042 18.6427C22.25 18.8591 22.1251 19.0512 21.9492 19.1884C21.7733 19.3256 21.5566 19.4001 21.3335 19.4H18.7335V28C18.7335 28.2652 18.6281 28.5196 18.4406 28.7071C18.2531 28.8946 17.9987 29 17.7335 29H12.9335C12.6683 29 12.4139 28.8946 12.2264 28.7071C12.0389 28.5196 11.9335 28.2652 11.9335 28V19.4H9.3335C9.06828 19.4 8.81393 19.2946 8.62639 19.1071C8.43885 18.9196 8.3335 18.6652 8.3335 18.4V13.6C8.3335 13.4687 8.35936 13.3386 8.40962 13.2173C8.45987 13.096 8.53353 12.9858 8.62639 12.8929C8.71925 12.8 8.82949 12.7264 8.95081 12.6761C9.07214 12.6259 9.20217 12.6 9.3335 12.6H11.9335V10C11.9337 8.14357 12.6714 6.36325 13.9842 5.05067ZM18.9335 5C17.6074 5 16.3356 5.52678 15.398 6.46447C14.4603 7.40215 13.9335 8.67392 13.9335 10V13.6C13.9335 13.8652 13.8281 14.1196 13.6406 14.3071C13.4531 14.4946 13.1987 14.6 12.9335 14.6H10.3335V17.4H12.9335C13.1987 17.4 13.4531 17.5054 13.6406 17.6929C13.8281 17.8804 13.9335 18.1348 13.9335 18.4V27H16.7335V18.4C16.7335 18.1348 16.8389 17.8804 17.0264 17.6929C17.2139 17.5054 17.4683 17.4 17.7335 17.4H20.5522L21.2522 14.6H17.7335C17.4683 14.6 17.2139 14.4946 17.0264 14.3071C16.8389 14.1196 16.7335 13.8652 16.7335 13.6V10C16.7335 9.41652 16.9653 8.85695 17.3779 8.44437C17.7904 8.03179 18.35 7.8 18.9335 7.8H21.5335V5H18.9335Z"
-                      fill="#3B82F6"
+                      className="text-[#3B82F6] group-hover:text-white"
+                      fill="currentColor"
                     />
                   </svg>
                 </div>
-                <div className="size-14 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
+
+                <div className="size-14 duration-300 transition-all ease-in-out group cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    className="text-[#3B82F6] group-hover:text-white"
+                    fill="currentColor"
                   >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M6.99135 2.52533C7.64764 1.86893 8.5378 1.50011 9.46602 1.5H11.266C11.3986 1.5 11.5258 1.55268 11.6196 1.64645C11.7133 1.74021 11.766 1.86739 11.766 2V4.4C11.766 4.53261 11.7133 4.65979 11.6196 4.75355C11.5258 4.84732 11.3986 4.9 11.266 4.9H9.46602C9.45288 4.9 9.43988 4.90259 9.42775 4.90761C9.41561 4.91264 9.40459 4.92 9.39531 4.92929C9.38602 4.93858 9.37865 4.9496 9.37363 4.96173C9.3686 4.97386 9.36602 4.98687 9.36602 5V6.3H11.266C11.342 6.29996 11.4171 6.31725 11.4854 6.35055C11.5537 6.38386 11.6135 6.43231 11.6603 6.49221C11.7071 6.55211 11.7396 6.6219 11.7554 6.69626C11.7712 6.77062 11.7698 6.84759 11.7513 6.92133L11.1513 9.32133C11.1243 9.42954 11.0618 9.52559 10.9739 9.59421C10.8859 9.66282 10.7776 9.70006 10.666 9.7H9.36602V14C9.36602 14.1326 9.31334 14.2598 9.21957 14.3536C9.1258 14.4473 8.99862 14.5 8.86602 14.5H6.46602C6.33341 14.5 6.20623 14.4473 6.11246 14.3536C6.01869 14.2598 5.96602 14.1326 5.96602 14V9.7H4.66602C4.53341 9.7 4.40623 9.64732 4.31246 9.55355C4.21869 9.45979 4.16602 9.33261 4.16602 9.2V6.8C4.16602 6.73434 4.17895 6.66932 4.20408 6.60866C4.2292 6.548 4.26603 6.49288 4.31246 6.44645C4.35889 6.40002 4.41401 6.36319 4.47467 6.33806C4.53534 6.31293 4.60035 6.3 4.66602 6.3H5.96602V5C5.96613 4.07178 6.33495 3.18163 6.99135 2.52533ZM9.46602 2.5C8.80297 2.5 8.16709 2.76339 7.69825 3.23223C7.22941 3.70107 6.96602 4.33696 6.96602 5V6.8C6.96602 6.93261 6.91334 7.05979 6.81957 7.15355C6.7258 7.24732 6.59862 7.3 6.46602 7.3H5.16602V8.7H6.46602C6.59862 8.7 6.7258 8.75268 6.81957 8.84645C6.91334 8.94021 6.96602 9.06739 6.96602 9.2V13.5H8.36602V9.2C8.36602 9.06739 8.41869 8.94021 8.51246 8.84645C8.60623 8.75268 8.73341 8.7 8.86602 8.7H10.2753L10.6253 7.3H8.86602C8.73341 7.3 8.60623 7.24732 8.51246 7.15355C8.41869 7.05979 8.36602 6.93261 8.36602 6.8V5C8.36602 4.70826 8.48191 4.42847 8.6882 4.22218C8.89449 4.01589 9.17428 3.9 9.46602 3.9H10.766V2.5H9.46602Z"
-                      fill="#27272A"
-                    />
+                    <g clipPath="url(#clip0_2749_7987)">
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M19.753 4.659C19.8395 4.56011 19.9056 4.44516 19.9477 4.32071C19.9897 4.19626 20.0069 4.06475 19.9981 3.93368C19.9893 3.80261 19.9548 3.67455 19.8965 3.55682C19.8383 3.43908 19.7574 3.33398 19.6585 3.2475C19.5596 3.16102 19.4447 3.09487 19.3202 3.05282C19.1958 3.01077 19.0642 2.99364 18.9332 3.00242C18.8021 3.01119 18.6741 3.0457 18.5563 3.10396C18.4386 3.16223 18.3335 3.24311 18.247 3.342L13.137 9.182L8.8 3.4C8.70685 3.2758 8.58607 3.175 8.44721 3.10557C8.30836 3.03614 8.15525 3 8 3H4C3.81429 3 3.63225 3.05171 3.47427 3.14935C3.31629 3.24698 3.18863 3.38668 3.10557 3.55279C3.02252 3.71889 2.98736 3.90484 3.00404 4.08981C3.02072 4.27477 3.08857 4.45143 3.2 4.6L9.637 13.182L4.247 19.342C4.16053 19.4409 4.09437 19.5558 4.05232 19.6803C4.01027 19.8047 3.99314 19.9363 4.00192 20.0673C4.01069 20.1984 4.0452 20.3264 4.10347 20.4442C4.16173 20.5619 4.24261 20.667 4.3415 20.7535C4.44039 20.84 4.55534 20.9061 4.67979 20.9482C4.80424 20.9902 4.93575 21.0074 5.06682 20.9986C5.19789 20.9898 5.32595 20.9553 5.44368 20.897C5.56142 20.8388 5.66652 20.7579 5.753 20.659L10.863 14.818L15.2 20.6C15.2931 20.7242 15.4139 20.825 15.5528 20.8944C15.6916 20.9639 15.8448 21 16 21H20C20.1857 21 20.3678 20.9483 20.5257 20.8507C20.6837 20.753 20.8114 20.6133 20.8944 20.4472C20.9775 20.2811 21.0126 20.0952 20.996 19.9102C20.9793 19.7252 20.9114 19.5486 20.8 19.4L14.363 10.818L19.753 4.659ZM16.5 19L6 5H7.5L18 19H16.5Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2749_7987">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
                   </svg>
                 </div>
-                <div className="size-14 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                  >
-                    <path
-                      d="M11.5149 3L8.46281 6.4889L5.82368 3H2L6.56777 8.97225L2.23887 13.92H4.09236L7.43343 10.1018L10.3536 13.92H14.0813L9.31991 7.62519L13.3672 3H11.5149ZM10.8649 12.8112L4.16384 4.05015H5.26531L11.8912 12.8106L10.8649 12.8112Z"
-                      fill="#27272A"
-                    />
-                  </svg>
-                </div>
-                <div className="size-14 hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
+
+                <div className="size-14 duration-300 transition-all ease-in-out group cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
                     fill="none"
+                    className="text-[#3B82F6] group-hover:text-white"
                   >
                     <path
                       d="M28 16C28.0019 17.5806 27.6907 19.1459 27.0842 20.6055C26.4777 22.065 25.5881 23.39 24.4666 24.5038C23.3542 25.6141 22.0339 26.4944 20.5811 27.0942C19.1284 27.6941 17.5717 28.0019 16 28C9.3724 28 4.00001 22.6276 4.00001 16C3.99569 12.923 5.17763 9.96283 7.30001 7.735C8.41974 6.55328 9.76887 5.61251 11.2648 4.97029C12.7608 4.32807 14.372 3.9979 16 4.00001C17.5717 3.99807 19.1284 4.30584 20.5811 4.90573C22.0339 5.50562 23.3542 6.38588 24.4666 7.4962C25.5881 8.60998 26.4777 9.93493 27.0842 11.3945C27.6907 12.8541 28.0019 14.4194 28 16Z"
-                      stroke="#3B82F6"
+                      stroke="currentColor"
                       strokeWidth="2.4"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                     <path
                       d="M27.9997 16.0007C26.2489 16.0007 21.419 15.3407 17.096 17.2385C12.3998 19.3007 8.99958 22.4999 7.51758 24.4889"
-                      stroke="#3B82F6"
+                      stroke="currentColor"
                       strokeWidth="2.4"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                     <path
                       d="M11.5 4.87207C13.378 6.60547 17.476 11.0185 19 15.3997C20.524 19.7808 21.088 25.1676 21.436 26.7006"
-                      stroke="#3B82F6"
+                      stroke="currentColor"
                       strokeWidth="2.4"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                     <path
                       d="M4.09229 14.5008C6.35908 14.6376 12.3597 14.7606 16.1997 13.1208C20.0397 11.481 23.3439 8.46481 24.4772 7.50781M4.89988 20.5686C5.95744 23.128 7.86442 25.245 10.2999 26.5632"
-                      stroke="#3B82F6"
+                      stroke="currentColor"
                       strokeWidth="2.4"
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
                     <path
                       d="M4.00001 16C3.99569 12.923 5.17763 9.96283 7.30001 7.735C8.41974 6.55328 9.76887 5.61251 11.2648 4.97029C12.7608 4.32807 14.372 3.9979 16 4.00001M20.8 4.99841C22.1668 5.59588 23.4102 6.44295 24.4666 7.4962C25.5881 8.60998 26.4777 9.93493 27.0842 11.3945C27.6907 12.8541 28.0019 14.4194 28 16C28 17.4772 27.733 18.8926 27.244 20.2M16 28C17.5717 28.0019 19.1284 27.6941 20.5811 27.0942C22.0339 26.4944 23.3542 25.6141 24.4666 24.5038"
-                      stroke="#3B82F6"
+                      stroke="currentColor"
                       strokeWidth="2.4"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -222,13 +258,13 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="md:col-span-3">
-            <div className="bg-[#fff] md:p-6 rounded-xl border border-[#E4E4E7]">
+            <div className="bg-white-base md:p-6 rounded-xl border border-border-base">
               <div className=" mt-3 p-4">
                 <form>
                   <div>
                     <label
                       htmlFor="fname"
-                      className="text-[#27272A] text-lg font-medium"
+                      className="text-secondary-base text-lg font-medium"
                     >
                       Full name:
                     </label>
@@ -238,14 +274,14 @@ const ContactUs = () => {
                       id="fname"
                       name="fname"
                       placeholder="Enter Full Name"
-                      className="border border-[#E4E4E7] p-4 w-full mt-1 mb-3 rounded-lg"
+                      className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
                     />
                   </div>
                   <div className="grid md:grid-cols-2 gap-4 mt-3">
                     <div>
                       <label
                         htmlFor="fname"
-                        className="text-[#27272A] text-lg font-medium"
+                        className="text-secondary-base text-lg font-medium"
                       >
                         Email Address *
                       </label>
@@ -255,13 +291,13 @@ const ContactUs = () => {
                         id="fname"
                         name="fname"
                         placeholder="Enter Email Address "
-                        className="border border-[#E4E4E7] p-4 w-full mt-1 mb-3 rounded-lg"
+                        className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
                       />
                     </div>
                     <div>
                       <label
                         htmlFor="fname"
-                        className="text-[#27272A] text-lg font-medium"
+                        className="text-secondary-base text-lg font-medium"
                       >
                         Phone Number:
                       </label>
@@ -271,14 +307,15 @@ const ContactUs = () => {
                         id="fname"
                         name="fname"
                         placeholder="Enter Phone Number"
-                        className="border border-[#E4E4E7] p-4 w-full mt-1 mb-3 rounded-lg"
+                        className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
                       />
                     </div>
                   </div>
-                  <div className="mt-3">
+
+                  <div className="mt-3 relative">
                     <label
                       htmlFor="serviceType"
-                      className="text-[#27272A] text-lg font-medium"
+                      className="text-secondary-base text-lg font-medium"
                     >
                       Project/Service Type *
                     </label>
@@ -286,10 +323,14 @@ const ContactUs = () => {
                     <select
                       id="serviceType"
                       name="serviceType"
-                      className="border border-[#E4E4E7] cursor-pointer focus:outline-none p-4 w-full mt-1 mb-3 rounded-lg"
+                      className="appearance-none border border-border-base cursor-pointer focus:outline-none p-4 w-full mt-1 mb-3 rounded-lg pr-10"
                       defaultValue=""
                     >
-                      <option className="opacity-50" value="" disabled>
+                      <option
+                        className="opacity-50 text-[#A1A1AA]"
+                        value=""
+                        disabled
+                      >
                         Select Project/Service Type
                       </option>
                       <option value="web">Website Development</option>
@@ -298,11 +339,31 @@ const ContactUs = () => {
                       <option value="seo">SEO Services</option>
                       <option value="other">Other</option>
                     </select>
+
+                    {/* Custom Arrow Icon */}
+                    <div className="pointer-events-none absolute right-4 top-[58%] transform -translate-y-1/2 text-[#A1A1AA]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M7 10L12 15L17 10"
+                          stroke="#A1A1AA"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
                   </div>
+
                   <div className="mt-3">
                     <label
                       htmlFor="Massage"
-                      className="text-[#27272A] text-lg font-medium"
+                      className="text-secondary-base text-lg font-medium"
                     >
                       Massage:
                     </label>
@@ -311,7 +372,7 @@ const ContactUs = () => {
                       id="Massage"
                       name="Massage"
                       placeholder="Enter Massage"
-                      className="border border-[#E4E4E7] p-4 w-full mt-1 mb-3 rounded-lg"
+                      className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
                       rows={4}
                     />
                   </div>
