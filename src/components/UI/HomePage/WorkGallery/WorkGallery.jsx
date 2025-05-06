@@ -15,17 +15,7 @@ const images = [
 const WorkGallery = () => {
   return (
     <div className="relative mt-5 ">
-      <Marquee
-        speed={100}
-        direction="left"
-        gradient={true}
-        gradientColor={[255, 255, 255]}
-        gradientWidth={250}
-        pauseOnHover={true}
-        style={{
-          overflow: "hidden",
-        }}
-      >
+      <Marquee speed={90} pauseOnHover={true} direction="left">
         {images.map((src, index) => (
           <div
             key={index}
