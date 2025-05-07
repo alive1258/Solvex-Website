@@ -2,6 +2,8 @@ import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import AnimatedText from "@/components/common/AnimatedText";
+import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 
 const Testimonials = () => {
   const testimonials = [
@@ -64,13 +66,19 @@ const Testimonials = () => {
   return (
     <div className=" my-14 md:px-0 px-5">
       <BadgeLabel text="Testimonials" />
-      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
-        What Our Clients Say
-      </h1>
-      <p className="text-[16px] font-medium text-[#71717A] mt-6 w-full max-w-[420px] mx-auto text-center ">
-        Our clients love working with us, and their words speak for our success.
-        Here’s what they have to say!
-      </p>
+      <AnimatedText
+        lines={["What Our Clients Say"]}
+        className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
+      />
+      <AnimatedParagraph
+        text=" Our clients love working with us, and their words speak for our success.
+        Here’s what they have to say!"
+        className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
+        once={false}
+        duration={0.8}
+        yOffset={100}
+      />
+
       {/* section 1  */}
 
       <div className="mt-12">

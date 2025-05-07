@@ -2,6 +2,8 @@ import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import Button from "../../Button/Button";
+import AnimatedText from "@/components/common/AnimatedText";
+import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 
 const WhoWeAre = () => {
   return (
@@ -36,14 +38,19 @@ const WhoWeAre = () => {
 
       <div className="container md:px-20 px-5">
         <BadgeLabel text="Who We Are" />
-        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
-          A Passionate Team of Innovators & Developers.
-        </h1>
-        <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
-          We are a team of dedicated professionals committed to building digital
-          solutions that help businesses thrive. <br /> With years of
-          experience, we deliver cutting-edge websites, applications, and UI/UX
-        </p>
+        <AnimatedText
+          lines={["A Passionate Team of Innovators & Developers."]}
+          className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
+        />
+        <AnimatedParagraph
+          text="We are a team of dedicated professionals committed to building digital
+          solutions that help businesses thrive.  With years of
+          experience, we deliver cutting-edge websites, applications, and UI/UX"
+          className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
+          once={false}
+          duration={0.8}
+          yOffset={100}
+        />
 
         <div className="my-14 grid md:grid-cols-2 gap-x-6">
           <div>

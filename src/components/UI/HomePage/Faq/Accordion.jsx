@@ -1,4 +1,4 @@
-const Accordion = ({ accordion, isActive, onClick }) => {
+const Accordion = ({ accordion, isActive, onClick, delay = 0 }) => {
   return (
     <div className="flex items-center space-x-4  justify-baseline w-full">
       <div

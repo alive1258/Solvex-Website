@@ -2,6 +2,8 @@ import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedText from "@/components/common/AnimatedText";
+import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 
 const OurService = ({ status = false }) => {
   // 8 Cards Data
@@ -111,13 +113,19 @@ const OurService = ({ status = false }) => {
 
       <div className="container md:py-16 py-12">
         <BadgeLabel text="Our Services" />
-        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto">
-          Our Expertise in Web Development
-        </h1>
-        <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
-          We provide full-cycle web development solutions to <br /> bring your
-          vision to life.
-        </p>
+        <AnimatedText
+          lines={[" Our Expertise in Web Development"]}
+          className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
+        />
+        <AnimatedParagraph
+          text="  We provide full-cycle web development solutions to  bring your
+          vision to life.   We provide full-cycle web development solutions to  bring your
+          vision to life."
+          className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
+          once={false}
+          duration={0.8}
+          yOffset={100}
+        />
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-8 mt-14 place-items-center">
           {displayedServices?.map((service) => (

@@ -61,24 +61,7 @@ const HeroSection = () => {
             ]}
             className="text-secondary-base text-center font-bold uppercase max-w-[900px] mx-auto md:text-[64px] text-[32px]"
           />
-          {/* <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.8,
-                ease: "easeInOut",
-              },
-            }}
-            viewport={{ once: false }}
-          >
-            <p className="text-center w-full max-w-[900px] mx-auto pt-12 md:text-2xl text-[16px] font-medium text-primary-base">
-              We specialize in designing and developing fast, secure, and
-              user-friendly websites that drive business growth. From startups
-              to enterprises, we create web solutions that make an impact.
-            </p>
-          </motion.div> */}
+
           <AnimatedParagraph
             text="We specialize in designing and developing fast, secure, and user-friendly websites that drive business growth. From startups to enterprises, we create web solutions that make an impact."
             className="text-center w-full max-w-[900px] mx-auto pt-12 md:text-2xl text-[16px] font-medium text-primary-base"

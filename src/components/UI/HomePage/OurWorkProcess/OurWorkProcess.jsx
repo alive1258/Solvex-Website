@@ -1,12 +1,19 @@
+import AnimatedText from "@/components/common/AnimatedText";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
+import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 
 const OurWorkProcess = () => {
   return (
     <div className="container md:mt-20 mt-12">
       <BadgeLabel text="Our Work Process" />
-      <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
-        A streamlined approach for delivering high-quality <br /> web solutions.
-      </h1>
+
+      <AnimatedText
+        lines={[
+          "A streamlined approach for delivering high-quality",
+          "web solutions.",
+        ]}
+        className="text-2xl font-bold text-primary-base mt-6 text-center"
+      />
 
       <div className="md:mt-36 mt-12 flex justify-center items-center">
         <div>

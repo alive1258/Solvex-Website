@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
+import AnimatedText from "@/components/common/AnimatedText";
+import AnimatedParagraph from "@/components/common/AnimatedParagraph";
+import PricingPlanCard from "./PricingPlanCard";
 
 const PricingPlans = ({ status = false }) => {
   const categories = ["Monthly", "Yearly"];
@@ -166,13 +169,19 @@ const PricingPlans = ({ status = false }) => {
       ></div>
       <div className="container py-14">
         <BadgeLabel text="Pricing Plans" />
-        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
-          Flexible Pricing Plans for Every Business
-        </h1>
-        <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
-          Choose a plan that fits your goals and budget. No hidden fees — <br />{" "}
-          just transparent pricing.
-        </p>
+        <AnimatedText
+          lines={["Flexible Pricing Plans for Every Business"]}
+          className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
+        />
+        <AnimatedParagraph
+          text=" Choose a plan that fits your goals and budget. No hidden fees — <br />
+          just transparent pricing."
+          className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
+          once={false}
+          duration={0.8}
+          yOffset={100}
+        />
+
         <div className="relative">
           <div className="flex justify-center items-center space-x-6">
             <div className="bg-[#F4F4F5] mt-32 absolute w-[182px] h-[62px]  p-2 border border-border-base rounded-xl flex items-center space-x-4">
@@ -246,7 +255,7 @@ const PricingPlans = ({ status = false }) => {
                 </defs>
               </svg>
             </div>
-            <div className="border border-border-base rounded-3xl px-4 py-2 md:rotate-[15deg] md:block hidden    md:relative md:right-2">
+            <div className="border animate-[floatPulse_2s_ease-in-out_infinite]  shadow-[0px_0px_20px_0px_rgba(33,84,255,0.3),0px_0px_40px_0px_rgba(156,39,176,0.1)] border-border-base rounded-3xl px-4 py-2 md:rotate-[15deg] md:block hidden    md:relative md:right-2">
               <p className="text-sm font-medium text-primary-base">
                 {" "}
                 35% OFF on Yearly Plan
@@ -254,7 +263,7 @@ const PricingPlans = ({ status = false }) => {
             </div>
           </div>
           <div className="flex justify-center items-center  md:hidden">
-            <div className="border border-border-base rounded-3xl px-4 py-2 ">
+            <div className="border animate-[floatPulse_2s_ease-in-out_infinite] shadow-[0px_0px_20px_0px_rgba(33,84,255,0.3),0px_0px_40px_0px_rgba(156,39,176,0.1)] border-border-base rounded-3xl px-4 py-2 ">
               <p className="text-sm font-medium text-primary-base">
                 {" "}
                 35% OFF on Yearly Plan
@@ -265,105 +274,12 @@ const PricingPlans = ({ status = false }) => {
         {/*  card section */}
         <div className="md:mt-36 mt-16 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
           {filteredData?.map((item, index) => (
-            <div
-              key={item?.id}
-              className="border border-[#D4D4D8] rounded-2xl bg-white-base "
-            >
-              <div className="bg-[#F4F4F5] rounded-t-2xl p-6">
-                <div className="flex justify-between items-center">
-                  <h3 className="font-bold text-secondary-base text-2xl">
-                    {item?.title}
-                  </h3>
-                  {index === 1 && (
-                    <div className="border rounded-[99px] bg-[#DBEAFE] border-[#3B82F6] px-3 py-1.5">
-                      <p className="text-[#3B82F6] text-sm font-medium">
-                        Most Popular
-                      </p>
-                    </div>
-                  )}
-                </div>
-
-                <div className="mt-6 flex items-center ">
-                  <h1 className="font-bold text-secondary-base text-[32px]">
-                    ${item?.price}
-                  </h1>
-                  <div className="font-medium text-primary-base text-[16px] mt-4 flex space-x-0.5">
-                    <span> /</span>
-                    <div className="lowercase">
-                      <span>per </span>
-                      {item?.category}
-                    </div>
-                  </div>
-                </div>
-                <p className="font-medium text-secondary-base text-lg mt-6 ">
-                  {item?.des}
-                </p>
-                <div className="mt-12 flex justify-center items-center">
-                  <button
-                    className={` ${
-                      index === 1
-                        ? "bg-gradient-to-r from-[#2154FF] to-[#5079FF] text-white-base"
-                        : "bg-[#000]"
-                    } inline-flex w-full uppercase font-medium text-[16px] cursor-pointer h-14 px-6 py-4 justify-center items-center gap-1 rounded-full   text-white-base hover:opacity-90 focus:ring-4 focus:outline-none`}
-                  >
-                    get started
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M6.4 18L16 8.4V17H18V5H6V7H14.6L5 16.6L6.4 18Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div className=" p-6">
-                <h5 className="text-secondary-base font-bold text-lg">
-                  {item?.plan_title}
-                </h5>
-                <div className="mt-4 space-y-4">
-                  {item?.plan?.map((pla) => (
-                    <div key={pla?.id} className="flex items-center gap-x-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12C3 14.3869 3.94821 16.6761 5.63604 18.364C7.32387 20.0518 9.61305 21 12 21ZM11.768 15.64L16.768 9.64L15.232 8.36L10.932 13.519L8.707 11.293L7.293 12.707L10.293 15.707L11.067 16.481L11.768 15.64Z"
-                          fill="url(#paint0_linear_224_141)"
-                        />
-                        <defs>
-                          <linearGradient
-                            id="paint0_linear_224_141"
-                            x1="3"
-                            y1="21"
-                            x2="22.3622"
-                            y2="19.3908"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stopColor="#2154FF" />
-                            <stop offset="1" stopColor="#5079FF" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
-                      <p className="text-primary-base font-medium text-[16px]">
-                        {pla?.plan_des1}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <PricingPlanCard
+              key={item.id}
+              index={index}
+              item={item}
+              delay={index * 0.3}
+            />
           ))}
         </div>
       </div>

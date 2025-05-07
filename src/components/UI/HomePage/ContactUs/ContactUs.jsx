@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Button from "../../Button/Button";
+import AnimatedText from "@/components/common/AnimatedText";
+import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 
 const ContactUs = () => {
   return (
@@ -18,15 +22,35 @@ const ContactUs = () => {
       ></div>
       <div className="container py-14">
         <BadgeLabel text="Contact Us" />
-        <h1 className="text-2xl font-bold text-primary-base mt-6 text-center">
-          Let’s Work Together to Build Something Great
-        </h1>
-        <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center w-full max-w-[420px] mx-auto ">
-          Have a project in mind, or just want to chat? Drop us a line — we’d
-          love to hear from you.
-        </p>
+        <AnimatedText
+          lines={["Let’s Work Together to Build Something Great"]}
+          className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
+        />
+        <AnimatedParagraph
+          text="Have a project in mind, or just want to chat? Drop us a line — we’d
+          love to hear from you."
+          className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
+          once={false}
+          duration={0.8}
+          yOffset={100}
+        />
+
         <div className="mt-12 grid md:grid-cols-5 gap-6">
-          <div className="md:col-span-2 ">
+          {/* section left  */}
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{
+              opacity: 1,
+              x: -0,
+
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+              },
+            }}
+            viewport={{ once: false }}
+            className="md:col-span-2 "
+          >
             <div className="bg-white-base p-6 rounded-xl border border-border-base">
               <h1 className="text-secondary-base text-[32px] uppercase text-center font-bold">
                 get in touch
@@ -256,8 +280,23 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="md:col-span-3">
+          </motion.div>
+
+          {/* section right  */}
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+              },
+            }}
+            viewport={{ once: false }}
+            className="md:col-span-3"
+          >
             <div className="bg-white-base md:p-6 rounded-xl border border-border-base">
               <div className=" mt-3 p-4">
                 <form>
@@ -383,7 +422,7 @@ const ContactUs = () => {
                 </form>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       ;

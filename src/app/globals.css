@@ -76,6 +76,19 @@
   height: 462px;
 }
 
+/* animation to make it "breathe" or "pulse" in a rounded way. */
+@keyframes floatPulse {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+    border-radius: 99px;
+  }
+  50% {
+    transform: translateY(-2px) scale(1.05);
+    border-radius: 99px;
+  }
+}
+
 /* ========= Mobile Responsive ========= */
 @media (max-width: 768px) {
   .work-process-bg {

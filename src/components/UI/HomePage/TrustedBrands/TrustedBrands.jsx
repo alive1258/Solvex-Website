@@ -2,10 +2,21 @@ import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Button from "../../Button/Button";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const TrustedBrands = ({ status = false }) => {
+  const brands = [
+    { id: 1, name: "CloudSync", img: "/images/brands/brand1.png" },
+    { id: 2, name: "CodeCrafters", img: "/images/brands/brand2.png" },
+    { id: 3, name: "TechStore", img: "/images/brands/brand3.png" },
+    { id: 4, name: "TrendyWear", img: "/images/brands/brand4.png" },
+    { id: 5, name: "HealthTrack", img: "/images/brands/brand5.png" },
+    { id: 6, name: "GreenGadget", img: "/images/brands/brand6.png" },
+  ];
+  const duplicatedBrands = [...brands, ...brands]; // duplicate the list for smooth looping
+
   return (
-    <div className="bg-[#F4F4F5]  relative overflow-hidden">
+    <div className="bg-[#F4F4F5] h-[600px]  relative overflow-hidden">
       <div
         className={`absolute ${status === true ? "md:block" : "hidden"}`}
         style={{
@@ -29,9 +40,9 @@ const TrustedBrands = ({ status = false }) => {
         }}
       ></div>
 
-      <div className="container  md:px-32 md:flex md:py-0  py-12">
-        <div className="md:flex md:space-x-[144px] ">
-          <div className="flex items-center">
+      <div className="container md:mr-96   md:px-32 md:flex md:py-0  pb-12">
+        <div className="">
+          <div className="relative top-1/6">
             <div className="md:max-w-[456px] ">
               <p className="text-[#3B82F6] text-sm md:text-start text-center font-medium">
                 We Work With the Best
@@ -49,222 +60,50 @@ const TrustedBrands = ({ status = false }) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col  space-y-3">
-            {/* card 1  */}
-            <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF]  w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand1.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  CloudSync{" "}
-                </h5>
-              </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand1.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  CloudSync{" "}
-                </h5>
-              </div>
+          <div className="flex flex-row space-x-6">
+            <div className="w-[240px] ">
+              <Marquee direction="up" speed={100}>
+                <div className="space-y-3">
+                  {brands.map((brand, index) => (
+                    <div
+                      key={index}
+                      className="bg-[#FFF]  w-full max-w-[224px]  rounded-lg flex items-center space-x-2 border border-border-base p-4"
+                    >
+                      <Image
+                        src={brand?.img}
+                        alt={brand?.name}
+                        height={32}
+                        width={32}
+                      />
+                      <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
+                        {brand?.name}
+                      </h5>
+                    </div>
+                  ))}
+                </div>
+              </Marquee>
             </div>
-            {/* card 2  */}
-            <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand2.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  CodeCrafters{" "}
-                </h5>
-              </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand2.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  CodeCrafters{" "}
-                </h5>
-              </div>
-            </div>
-            {/* card 3  */}
-            <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand3.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  TechStore{" "}
-                </h5>
-              </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand4.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  CloudSync
-                </h5>
-              </div>
-            </div>
-            {/* card 4  */}
-            <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand5.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  TrendyWear
-                </h5>
-              </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand6.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  TrendyWear
-                </h5>
-              </div>
-            </div>
-            {/* card 5  */}
-            <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand2.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  TechStore{" "}
-                </h5>
-              </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand1.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  CodeCrafters
-                </h5>
-              </div>
-            </div>
-            {/* card 6  */}
-            <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand4.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  HealthTrack
-                </h5>
-              </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand6.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  TechStore{" "}
-                </h5>
-              </div>
-            </div>
-            {/* card 7  */}
-            <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand1.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  TechStore{" "}
-                </h5>
-              </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand2.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  TechStore{" "}
-                </h5>
-              </div>
-            </div>
-            {/* card 8  */}
-            <div className="flex items-center space-x-6">
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand4.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  TechStore{" "}
-                </h5>
-              </div>
-              <div className="bg-[#FFF] w-full  max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4">
-                <Image
-                  className=""
-                  src="/images/brands/brand6.png"
-                  alt="brand1.png"
-                  height={32}
-                  width={32}
-                />
-                <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                  HealthTrack
-                </h5>
-              </div>
+            <div className="w-[240px] ">
+              <Marquee direction="down" speed={100}>
+                <div className="space-y-3">
+                  {brands.map((brand, index) => (
+                    <div
+                      key={index}
+                      className="bg-[#FFF] w-full max-w-[224px] space-y-2.5 rounded-lg flex items-center space-x-2 border border-border-base p-4"
+                    >
+                      <Image
+                        src={brand?.img}
+                        alt={brand?.name}
+                        height={32}
+                        width={32}
+                      />
+                      <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
+                        {brand?.name}
+                      </h5>
+                    </div>
+                  ))}
+                </div>
+              </Marquee>
             </div>
           </div>
         </div>

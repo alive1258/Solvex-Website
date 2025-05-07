@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Accordion from "./Accordion";
-
+import { motion } from "framer-motion";
 const AccordionList = () => {
   const faqs = [
     {
@@ -62,7 +62,20 @@ const AccordionList = () => {
   };
 
   return (
-    <div className=" space-y-4 h-[500px] overflow-y-scroll">
+    <motion.div
+      initial={{ opacity: 0, x: 100 }} // Starts lower
+      whileInView={{
+        opacity: 1,
+        x: 0, // Moves up
+        transition: {
+          duration: 0.8,
+          ease: "easeInOut",
+          delay: 0.3,
+        },
+      }}
+      viewport={{ once: false }}
+      className=" space-y-4 h-[500px] overflow-y-scroll"
+    >
       {faqs?.length &&
         faqs?.map((accordion, index) => (
           <Accordion
@@ -72,7 +85,7 @@ const AccordionList = () => {
             onClick={() => handleAccordionClick(index)}
           />
         ))}
-    </div>
+    </motion.div>
   );
 };
 
