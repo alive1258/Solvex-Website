@@ -34,24 +34,23 @@ const OurWorkProcess = () => {
                     },
                   }}
                   viewport={{ once: false }}
+                  className="glassmorphism md:bottom-20 md:left-8 left-[170px] relative"
                 >
-                  <div className="glassmorphism md:bottom-20 md:left-8 left-[170px] relative">
-                    <div className="bg-[#10B981] size-12 rounded-full flex justify-center items-center">
-                      <Image
-                        src="/images/works/work1.svg"
-                        height={32}
-                        width={32}
-                        alt="work"
-                      />
-                    </div>
-                    <h2 className="text-lg pt-6 text-secondary-base font-bold">
-                      Discovery & Planning
-                    </h2>
-                    <p className="text-sm text-tertiary-base font-medium pt-4">
-                      Understanding client needs, project goals, and creating a
-                      roadmap.
-                    </p>
+                  <div className="bg-[#10B981] size-12 rounded-full flex justify-center items-center">
+                    <Image
+                      src="/images/works/work1.svg"
+                      height={32}
+                      width={32}
+                      alt="work"
+                    />
                   </div>
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                    Discovery & Planning
+                  </h2>
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                    Understanding client needs, project goals, and creating a
+                    roadmap.
+                  </p>
                 </motion.div>
 
                 {/* Box 2 with glassmorphism */}
@@ -67,24 +66,23 @@ const OurWorkProcess = () => {
                     },
                   }}
                   viewport={{ once: false }}
+                  className="glassmorphism md:bottom-20 md:left-5 left-[170px] relative"
                 >
-                  <div className="glassmorphism md:bottom-20 md:left-5 left-[170px] relative">
-                    <div className="bg-[#3B82F6] p-3 size-12 rounded-full flex justify-center items-center">
-                      <Image
-                        src="/images/works/work2.svg"
-                        height={32}
-                        width={32}
-                        alt="work"
-                      />
-                    </div>
-                    <h2 className="text-lg pt-6 text-secondary-base font-bold">
-                      Discovery & Planning
-                    </h2>
-                    <p className="text-sm text-tertiary-base font-medium pt-4">
-                      Understanding client needs, project goals, and creating a
-                      roadmap.
-                    </p>
+                  <div className="bg-[#3B82F6] p-3 size-12 rounded-full flex justify-center items-center">
+                    <Image
+                      src="/images/works/work2.svg"
+                      height={32}
+                      width={32}
+                      alt="work"
+                    />
                   </div>
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                    Discovery & Planning
+                  </h2>
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                    Understanding client needs, project goals, and creating a
+                    roadmap.
+                  </p>
                 </motion.div>
 
                 {/* Box 3 with glassmorphism */}
@@ -100,24 +98,23 @@ const OurWorkProcess = () => {
                     },
                   }}
                   viewport={{ once: false }}
+                  className="glassmorphism md:mt-8 md:bottom-20 md:-left-32 left-[170px] relative"
                 >
-                  <div className="glassmorphism md:mt-8 md:bottom-20 md:-left-32 left-[170px] relative">
-                    <div className="bg-[#EAB308] p-3 size-12 rounded-full flex justify-center items-center">
-                      <Image
-                        src="/images/works/work3.svg"
-                        height={32}
-                        width={32}
-                        alt="work"
-                      />
-                    </div>
-                    <h2 className="text-lg pt-6 text-secondary-base font-bold">
-                      Development & Coding
-                    </h2>
-                    <p className="text-sm text-tertiary-base font-medium pt-4">
-                      Understanding client needs, project goals, and creating a
-                      roadmap.
-                    </p>
+                  <div className="bg-[#EAB308] p-3 size-12 rounded-full flex justify-center items-center">
+                    <Image
+                      src="/images/works/work3.svg"
+                      height={32}
+                      width={32}
+                      alt="work"
+                    />
                   </div>
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                    Development & Coding
+                  </h2>
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                    Understanding client needs, project goals, and creating a
+                    roadmap.
+                  </p>
                 </motion.div>
 
                 {/* Box 4 with glassmorphism */}
@@ -133,24 +130,23 @@ const OurWorkProcess = () => {
                     },
                   }}
                   viewport={{ once: false }}
+                  className="glassmorphism md:bottom-20 md:mt-8 md:left-[185px] left-[170px] relative"
                 >
-                  <div className="glassmorphism md:bottom-20 md:mt-8 md:left-[185px] left-[170px] relative">
-                    <div className="bg-[#F43F5E] p-3 size-12 rounded-full flex justify-center items-center">
-                      <Image
-                        src="/images/works/work4.svg"
-                        height={32}
-                        width={32}
-                        alt="work"
-                      />
-                    </div>
-                    <h2 className="text-lg pt-6 text-secondary-base font-bold">
-                      Discovery & Planning
-                    </h2>
-                    <p className="text-sm text-tertiary-base font-medium pt-4">
-                      Understanding client needs, project goals, and creating a
-                      roadmap.
-                    </p>
+                  <div className="bg-[#F43F5E] p-3 size-12 rounded-full flex justify-center items-center">
+                    <Image
+                      src="/images/works/work4.svg"
+                      height={32}
+                      width={32}
+                      alt="work"
+                    />
                   </div>
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                    Discovery & Planning
+                  </h2>
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                    Understanding client needs, project goals, and creating a
+                    roadmap.
+                  </p>
                 </motion.div>
                 {/* Box 5 with glassmorphism */}
                 <motion.div
@@ -165,24 +161,23 @@ const OurWorkProcess = () => {
                     },
                   }}
                   viewport={{ once: false }}
+                  className="glassmorphism md:bottom-20 md:mt-10 md:left-8 left-[170px] relative"
                 >
-                  <div className="glassmorphism md:bottom-20 md:mt-10 md:left-8 left-[170px] relative">
-                    <div className="bg-[#84CC16] p-3 size-12 rounded-full flex justify-center items-center">
-                      <Image
-                        src="/images/works/work5.svg"
-                        height={32}
-                        width={32}
-                        alt="work"
-                      />
-                    </div>
-                    <h2 className="text-lg pt-6 text-secondary-base font-bold">
-                      Discovery & Planning
-                    </h2>
-                    <p className="text-sm text-tertiary-base font-medium pt-4">
-                      Understanding client needs, project goals, and creating a
-                      roadmap.
-                    </p>
+                  <div className="bg-[#84CC16] p-3 size-12 rounded-full flex justify-center items-center">
+                    <Image
+                      src="/images/works/work5.svg"
+                      height={32}
+                      width={32}
+                      alt="work"
+                    />
                   </div>
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                    Discovery & Planning
+                  </h2>
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                    Understanding client needs, project goals, and creating a
+                    roadmap.
+                  </p>
                 </motion.div>
 
                 {/* Box 6 with glassmorphism */}
@@ -198,24 +193,23 @@ const OurWorkProcess = () => {
                     },
                   }}
                   viewport={{ once: false }}
+                  className="glassmorphism md:bottom-20 md:mt-10 md:left-5 left-[170px] relative"
                 >
-                  <div className="glassmorphism md:bottom-20 md:mt-10 md:left-5 left-[170px] relative">
-                    <div className="bg-[#8B5CF6] p-3 size-12 rounded-full flex justify-center items-center">
-                      <Image
-                        src="/images/works/work6.svg"
-                        height={32}
-                        width={32}
-                        alt="work"
-                      />
-                    </div>
-                    <h2 className="text-lg pt-6 text-secondary-base font-bold">
-                      Discovery & Planning
-                    </h2>
-                    <p className="text-sm text-tertiary-base font-medium pt-4">
-                      Understanding client needs, project goals, and creating a
-                      roadmap.
-                    </p>
+                  <div className="bg-[#8B5CF6] p-3 size-12 rounded-full flex justify-center items-center">
+                    <Image
+                      src="/images/works/work6.svg"
+                      height={32}
+                      width={32}
+                      alt="work"
+                    />
                   </div>
+                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                    Discovery & Planning
+                  </h2>
+                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                    Understanding client needs, project goals, and creating a
+                    roadmap.
+                  </p>
                 </motion.div>
               </div>
             </div>

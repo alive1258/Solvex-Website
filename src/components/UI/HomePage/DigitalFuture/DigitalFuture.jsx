@@ -1,5 +1,9 @@
+"use client";
+import { motion } from "framer-motion";
+import AnimatedText from "@/components/common/AnimatedText";
 import Image from "next/image";
 import React from "react";
+import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 
 const DigitalFuture = ({ status = false }) => {
   return (
@@ -38,18 +42,52 @@ const DigitalFuture = ({ status = false }) => {
           {/* Text Content */}
           <div className="flex justify-center md:py-20 py-16">
             <div className="text-white-base text-center ">
-              <h2 className="md:text-[32px] text-2xl font-black">
-                {status === true
-                  ? "Work With Solvex - Let’s Build Your Digital Future!"
-                  : "Your Vision + Our Team = Digital Magic"}
-              </h2>
-              <p className="mt-5 font-medium text-[16px] w-full max-w-[430px] mx-auto">
-                {status === true
-                  ? " Your business deserves a winning digital solution. Let's  collaborate and  create something extraordinary"
-                  : "Let’s connect and create something groundbreaking. Join forces with Solvex today."}
-              </p>
+              <div className="md:text-[32px] text-2xl font-black">
+                {status === true ? (
+                  <AnimatedText
+                    lines={[
+                      "Work With Solvex - Let’s Build Your Digital Future!",
+                    ]}
+                    className="text-[#FAFAFA] text-[32px] font-black m"
+                  />
+                ) : (
+                  <AnimatedText
+                    lines={["Your Vision + Our Team = Digital Magic"]}
+                    className="text-[#FAFAFA] text-[32px] font-black "
+                  />
+                )}
+              </div>
+              <div className="mt-5 font-medium text-[16px] w-full max-w-[430px] mx-auto">
+                {status === true ? (
+                  <AnimatedParagraph
+                    text=" Your business deserves a winning digital solution. Let's  collaborate and  create something extraordinary"
+                    duration={0.8}
+                    yOffset={100}
+                  />
+                ) : (
+                  <AnimatedParagraph
+                    text="Let’s connect and create something groundbreaking. Join forces with Solvex today."
+                    once={false}
+                    duration={0.8}
+                    yOffset={100}
+                  />
+                )}
+              </div>
 
-              <div className="mt-12 flex justify-center items-center">
+              <motion.div
+                initial={{ opacity: 0, y: 100 }} // Starts lower
+                whileInView={{
+                  opacity: 1,
+                  y: 0, // Moves up
+                  transition: {
+                    duration: 0.8,
+                    ease: "easeInOut",
+                    delay: 0.3,
+                  },
+                }}
+                viewport={{ once: false }}
+                className="mt-12 flex justify-center items-center"
+              >
                 <button className="inline-flex uppercase font-medium text-[16px] cursor-pointer h-14 px-6  py-4 justify-center items-center gap-1 rounded-full bg-[#000] text-white-base hover:opacity-90 focus:ring-4 focus:outline-none">
                   Schedule a Free Consultation
                   <svg
@@ -65,7 +103,7 @@ const DigitalFuture = ({ status = false }) => {
                     />
                   </svg>
                 </button>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

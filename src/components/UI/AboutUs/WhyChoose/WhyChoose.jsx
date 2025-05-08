@@ -1,5 +1,8 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 import Button from "../../Button/Button";
+import AnimatedText from "@/components/common/AnimatedText";
 
 const WhyChoose = () => {
   return (
@@ -28,19 +31,55 @@ const WhyChoose = () => {
               Why Choose Solvex?
             </h6>
           </div>
-          <h1 className="text-[#FAFAFA] text-[32px] font-black mt-8">
-            Creative Solutions, Powered by Innovation <br />—{" "}
-            <span className="text-[#3B82F6]">Solvex Brings</span> Your Vision to
-            Life
-          </h1>
-          <div className="md:mt-14 mt-10  uppercase">
-            <Button content=" Get Started" />
+          <AnimatedText
+            lines={["Creative Solutions, Powered by Innovation"]}
+            className="text-[#FAFAFA] text-[32px] font-black mt-8"
+          />
+          <div className="flex mt-8  space-x-2">
+            <AnimatedText
+              lines={["Solvex Brings"]}
+              className="text-[#3B82F6] text-[32px] font-black "
+            />
+            <AnimatedText
+              lines={["Your Vision to Life"]}
+              className="text-[#FAFAFA] text-[32px] font-black "
+            />
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 100 }} // Starts lower
+            whileInView={{
+              opacity: 1,
+              y: 0, // Moves up
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: false }}
+            className="md:mt-14 mt-10  uppercase"
+          >
+            <Button content=" Get Started" />
+          </motion.div>
         </div>
 
         <div className="lg:grid lg:grid-cols-2 grid-cols-1 md:mt-0 mt-10 md:space-y-0 space-y-6">
           {/* card 1  */}
-          <div className="md:border-r border-b border-[#27272A] p-6">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }} // Starts lower
+            whileInView={{
+              opacity: 1,
+              x: 0, // Moves up
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: false }}
+            className="md:border-r border-b border-[#27272A] p-6"
+          >
             <div className="flex  items-center space-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,9 +123,22 @@ const WhyChoose = () => {
               We stay ahead of design trends and technology, ensuring every
               project is modern, impactful, and future-proof.
             </p>
-          </div>
+          </motion.div>
           {/* card 2 */}
-          <div className="border-b border-[#27272A] p-6">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }} // Starts lower
+            whileInView={{
+              opacity: 1,
+              x: 0, // Moves up
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: false }}
+            className="border-b border-[#27272A] p-6"
+          >
             <div className="flex  items-center space-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -130,9 +182,22 @@ const WhyChoose = () => {
               Our user-first approach means your brand connects deeply with its
               audience — blending creativity with functionality.
             </p>
-          </div>
+          </motion.div>
           {/* card 3  */}
-          <div className="md:border-r border-b border-[#27272A] p-6">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }} // Starts lower
+            whileInView={{
+              opacity: 1,
+              x: 0, // Moves up
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: false }}
+            className="md:border-r border-b border-[#27272A] p-6"
+          >
             <div className="flex  items-center space-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -176,9 +241,22 @@ const WhyChoose = () => {
               Design without strategy is just art. We create with purpose —
               focused on boosting engagement, conversions, and growth.
             </p>
-          </div>
+          </motion.div>
           {/* card 4 */}
-          <div className=" border-b border-[#27272A] p-6">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }} // Starts lower
+            whileInView={{
+              opacity: 1,
+              x: 0, // Moves up
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: false }}
+            className=" border-b border-[#27272A] p-6"
+          >
             <div className="flex  items-center space-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -222,9 +300,22 @@ const WhyChoose = () => {
               Your vision + our expertise = extraordinary outcomes. We work
               hand-in-hand with clients to craft tailor-made solutions.
             </p>
-          </div>
+          </motion.div>
           {/* card 5  */}
-          <div className="md:border-r md:border-b-0 border-b  border-[#27272A] p-6">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }} // Starts lower
+            whileInView={{
+              opacity: 1,
+              x: 0, // Moves up
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: false }}
+            className="md:border-r md:border-b-0 border-b  border-[#27272A] p-6"
+          >
             <div className="flex  items-center space-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -268,9 +359,22 @@ const WhyChoose = () => {
               With clients in 15+ countries, we design globally but customize
               every solution to reflect your brand’s unique story.
             </p>
-          </div>
+          </motion.div>
           {/* card 6 */}
-          <div className="   border-[#27272A] p-6">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }} // Starts lower
+            whileInView={{
+              opacity: 1,
+              x: 0, // Moves up
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: false }}
+            className="   border-[#27272A] p-6"
+          >
             <div className="flex  items-center space-x-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -314,7 +418,7 @@ const WhyChoose = () => {
               50+ successful projects, 98% client satisfaction, and 10+ awards —
               our work speaks louder than words.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
