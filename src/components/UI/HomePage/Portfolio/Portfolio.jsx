@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import Button from "../../Button/Button";
 import AnimatedText from "@/components/common/AnimatedText";
 import AnimatedParagraph from "@/components/common/AnimatedParagraph";
@@ -237,9 +237,22 @@ const Portfolio = () => {
           />
         ))}
       </div>
-      <div className="mt-14 flex justify-center uppercase">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }} // Starts lower
+        whileInView={{
+          opacity: 1,
+          y: 0, // Moves up
+          transition: {
+            duration: 0.8,
+            ease: "easeInOut",
+            delay: 0.3,
+          },
+        }}
+        viewport={{ once: false }}
+        className="py-10 flex justify-center uppercase"
+      >
         <Button content="View More Case Studies" />
-      </div>
+      </motion.div>
     </div>
   );
 };

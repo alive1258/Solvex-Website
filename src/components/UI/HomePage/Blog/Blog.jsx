@@ -82,9 +82,22 @@ const Blog = () => {
           <BlogCard blog={blog} key={blog.id} delay={index * 0.3} />
         ))}
       </div>
-      <div className="mt-14 flex justify-center uppercase">
-        <Button content=" More Blogs" />
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }} // Starts lower
+        whileInView={{
+          opacity: 1,
+          y: 0, // Moves up
+          transition: {
+            duration: 0.8,
+            ease: "easeInOut",
+            delay: 0.3,
+          },
+        }}
+        viewport={{ once: false }}
+        className="py-10 flex justify-center uppercase"
+      >
+        <Button content="More Blogs" />
+      </motion.div>
     </div>
   );
 };

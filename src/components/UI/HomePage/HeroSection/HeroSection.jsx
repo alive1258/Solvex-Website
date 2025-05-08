@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 import Button from "../../Button/Button";
 import WorkGallery from "../WorkGallery/WorkGallery";
@@ -70,9 +72,22 @@ const HeroSection = () => {
             yOffset={100}
           />
 
-          <div className="py-10 flex justify-center uppercase">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }} // Starts lower
+            whileInView={{
+              opacity: 1,
+              y: 0, // Moves up
+              transition: {
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.3,
+              },
+            }}
+            viewport={{ once: false }}
+            className="py-10 flex justify-center uppercase"
+          >
             <Button content="View Our Work" />
-          </div>
+          </motion.div>
         </div>
         <WorkGallery />
       </div>
