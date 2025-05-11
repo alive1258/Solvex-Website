@@ -17,7 +17,7 @@ const ServiceCard = ({ service, delay = 0 }) => {
         },
       }}
       viewport={{ once: false }}
-      className="cursor-pointer group w-full max-w-[312px]"
+      className="cursor-pointer  w-full max-w-[312px]"
     >
       <div
         className={`bg-white-base py-6 px-4 rounded-2xl group-hover:border border border-transparent  group-hover:border-[${service.borderColor}]`}
@@ -41,33 +41,34 @@ const ServiceCard = ({ service, delay = 0 }) => {
         <p className="text-[#71717A] font-medium text-[16px] mt-6">
           {service.description}
         </p>
-        <Link
-          href={`/service/${service?.id}`}
-          className={`flex items-center gap-x-2 mt-6 border-b hover:border-[${service.borderColor}]  border-[#71717A] w-fit`}
-        >
-          <span
-            className={`text-[#71717A] uppercase font-bold text-sm hover:text-[${service.borderColor}]`}
+        <div className="group">
+          <div
+            className={`flex transition-transform duration-300 ease-in-out group-hover:translate-x-2 items-center gap-x-2 mt-6 border-b group-hover:border-[#3B82F6]  border-[#71717A] w-fit`}
           >
-            get in touch
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            className="cursor-pointer"
-          >
-            <path
-              d="M14 16L18 12M18 12L14 8M18 12H6"
-              className={`stroke-[#71717A] group-hover:stroke-[${service.borderColor}] transition-all duration-300 ease-in-out`}
-              strokeWidth="1.5"
-              strokeMiterlimit="10"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </Link>
+            <span
+              className={`text-[#71717A] group-hover:text-[#3B82F6] uppercase font-bold text-sm `}
+            >
+              get in touch
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              className="cursor-pointer"
+            >
+              <path
+                d="M14 16L18 12M18 12L14 8M18 12H6"
+                className={`stroke-[#71717A] group-hover:stroke-[#3B82F6] group-hover:stroke-[${service.borderColor}] transition-all duration-300 ease-in-out`}
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </motion.div>
   );

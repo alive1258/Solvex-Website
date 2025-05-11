@@ -199,7 +199,7 @@ const Footer = () => {
                   Follow Us
                 </h4>
 
-                <div className="mt-6   flex items-center space-x-3">
+                <div className="mt-6 flex items-center space-x-3">
                   <div className="footer-social-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -369,13 +369,13 @@ const Footer = () => {
             </h2>
 
             <div className="mt-10 space-y-4">
-              <div className="bg-[#27272A] border border-[#3F3F46] w-full max-w-[334px] flex items-center justify-between px-2 py-2 rounded-lg">
+              <div className="bg-[#27272A] h-14 border border-[#3F3F46] w-full max-w-[334px] flex items-center justify-between px-2 py-2 rounded-lg">
                 <input
                   type="email"
                   placeholder="Email address"
                   className="bg-transparent text-[#A1A1AA] text-[16px] font-medium placeholder-[#A1A1AA] outline-none "
                 />
-                <button className="bg-[#3B82F6] px-4 py-3 rounded-lg text-[#FFF] font-medium">
+                <button className="bg-[#3B82F6] px-4 py-2 rounded-lg text-[#FFF] font-medium">
                   Sign Up
                 </button>
               </div>

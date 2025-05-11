@@ -12,7 +12,7 @@ const ServicePage = () => {
       <OurService />
       <WhyChoose />
       <TrustedBrands />
-      <DigitalFuture />
+      <DigitalFuture status={true} />
     </div>
   );
 };

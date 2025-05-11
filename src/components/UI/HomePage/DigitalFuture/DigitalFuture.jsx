@@ -5,21 +5,25 @@ import Image from "next/image";
 import React from "react";
 import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 
-const DigitalFuture = ({ status = false }) => {
+const DigitalFuture = ({ status = true }) => {
   return (
     <div className="bg-[#EFF6FF]  relative">
       {/* Bottom Gradient Line */}
-      <div
-        className={`absolute ${status === true ? "md:block" : "hidden"}`}
-        style={{
-          width: "594px",
-          height: "4px",
-          left: "0px",
-          bottom: "0px",
-          background:
-            "linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
-        }}
-      ></div>
+      {/* {status === true ? (
+        <div
+          className={`absolute `}
+          style={{
+            width: "594px",
+            height: "4px",
+            left: "0px",
+            bottom: "0px",
+            background:
+              "linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
+          }}
+        ></div>
+      ) : (
+        ""
+      )} */}
       <div className="py-12 container mx-auto">
         <div
           style={{
@@ -73,7 +77,7 @@ const DigitalFuture = ({ status = false }) => {
                   />
                 )}
               </div>
-
+              {/* TODO: */}
               <motion.div
                 initial={{ opacity: 0, y: 100 }} // Starts lower
                 whileInView={{
@@ -88,7 +92,7 @@ const DigitalFuture = ({ status = false }) => {
                 viewport={{ once: false }}
                 className="mt-12 flex justify-center items-center"
               >
-                <button className="inline-flex uppercase font-medium text-[16px] cursor-pointer h-14 px-6  py-4 justify-center items-center gap-1 rounded-full bg-[#000] text-white-base hover:opacity-90 focus:ring-4 focus:outline-none">
+                <button className="inline-flex group uppercase font-medium text-[16px] cursor-pointer h-14 px-6  py-4 justify-center items-center gap-1 rounded-full hover:bg-[#1b1b1b] bg-[#000] text-white-base hover:opacity-90 ">
                   Schedule a Free Consultation
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +100,7 @@ const DigitalFuture = ({ status = false }) => {
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
+                    className="transform transition-all duration-300 ease-in-out group-hover:rotate-45"
                   >
                     <path
                       d="M6.4 18L16 8.4V17H18V5H6V7H14.6L5 16.6L6.4 18Z"

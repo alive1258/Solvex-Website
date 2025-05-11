@@ -34,7 +34,7 @@
   }
   /* footer social icon  */
   .footer-social-icon {
-    @apply size-12 duration-300 transition-all ease-in-out cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center  bg-[#27272A] border border-[#3F3F46];
+    @apply size-14 duration-300 transition-all ease-in-out cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center  bg-[#27272A] border border-[#3F3F46];
   }
 }
 

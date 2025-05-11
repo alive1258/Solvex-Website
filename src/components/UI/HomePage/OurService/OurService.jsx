@@ -100,17 +100,6 @@ const OurService = ({ status = false }) => {
             "linear-gradient(85deg, #2154FF 0%, rgba(255, 255, 255, 0.00) 100%)",
         }}
       ></div>
-      <div
-        className={`absolute ${status === true ? "md:block" : "hidden"}`}
-        style={{
-          width: "594px",
-          height: "4px",
-          left: "0px",
-          top: "0px",
-          background:
-            " linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
-        }}
-      ></div>
 
       <div className="container md:py-16 py-12">
         <BadgeLabel text="Our Services" />
