@@ -1,22 +1,8 @@
-"use client";
-import { motion } from "framer-motion";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const BadgeLabel = ({ text }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        transition: {
-          duration: 0.8,
-          delay: 0,
-          ease: "easeInOut",
-        },
-      }}
-      viewport={{ once: false }}
-      className="border border-[#D4D4D8] bg-white py-2 pl-2 pr-4 rounded-full w-fit mx-auto"
-    >
+    <SlideUp className="border border-[#D4D4D8] bg-white py-2 pl-2 pr-4 rounded-full w-fit mx-auto">
       <div className="flex items-center gap-x-2">
         <div className="border border-[#3B82F6] bg-[#BFDBFE] flex justify-center items-center rounded-full size-7">
           <svg
@@ -71,7 +57,7 @@ const BadgeLabel = ({ text }) => {
         </div>
         <p className="text-[#71717A] text-sm uppercase font-medium">{text}</p>
       </div>
-    </motion.div>
+    </SlideUp>
   );
 };
 

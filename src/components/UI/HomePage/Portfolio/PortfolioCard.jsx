@@ -1,32 +1,24 @@
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const PortfolioCard = ({ item, idx, delay = 0 }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }} // Starts lower
-      whileInView={{
-        opacity: 1,
-        y: 0, // Moves up
-        transition: {
-          duration: 0.8,
-          ease: "easeInOut",
-          delay,
-        },
-      }}
-      viewport={{ once: false }}
+    <SlideUp
+      delay={delay}
       className="bg-[#F5F5F4] p-6 my-8 grid md:grid-cols-2 grid-cols-1 gap-8 rounded-2xl"
     >
       {/* IMAGE SIDE */}
       <div className={`${idx % 2 !== 0 ? "md:order-2" : "md:order-1"}`}>
-        <Image
-          className="rounded-2xl w-full h-full"
-          src={item?.image}
-          alt={item?.company}
-          height={384}
-          width={500}
-        />
+        <div className="relative overflow-hidden rounded-2xl">
+          <Image
+            className="w-full rounded-2xl  hover:scale-105 duration-500 overflow-hidden ease-[cubic-bezier(0.4,0,0.2,1)] transition-transform  object-cover h-full "
+            src={item?.image}
+            alt={item?.company}
+            height={384}
+            width={500}
+          />
+        </div>
       </div>
 
       {/* TEXT SIDE */}
@@ -59,33 +51,32 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
             </span>
           ))}
         </div>
-  <div className="group mt-9 w-fit">
-  <div className="flex items-center transition-transform duration-300 ease-in-out group-hover:translate-x-2 gap-x-2 border-b border-[#71717A] group-hover:border-[#3B82F6]">
-    <p className="text-[#71717A] uppercase font-bold cursor-pointer text-sm group-hover:text-[#3B82F6]">
-      View Live Project
-    </p>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      className="cursor-pointer"
-    >
-      <path
-        d="M14 16L18 12M18 12L14 8M18 12H6"
-        className="stroke-[#71717A] group-hover:stroke-[#3B82F6] transition-all duration-300 ease-in-out"
-        strokeWidth="1.5"
-        strokeMiterlimit="10"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  </div>
-</div>
-
+        <div className="group mt-9 w-fit">
+          <div className="flex items-center transition-transform duration-300 ease-in-out group-hover:translate-x-2 gap-x-2 border-b border-[#71717A] group-hover:border-[#3B82F6]">
+            <p className="text-[#71717A] uppercase font-bold cursor-pointer text-sm group-hover:text-[#3B82F6]">
+              View Live Project
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              className="cursor-pointer"
+            >
+              <path
+                d="M14 16L18 12M18 12L14 8M18 12H6"
+                className="stroke-[#71717A] group-hover:stroke-[#3B82F6] transition-all duration-300 ease-in-out"
+                strokeWidth="1.5"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
-    </motion.div>
+    </SlideUp>
   );
 };
 

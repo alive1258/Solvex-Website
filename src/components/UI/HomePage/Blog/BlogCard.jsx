@@ -1,22 +1,10 @@
-"use client";
-import { motion } from "framer-motion";
+import SlideUp from "@/utils/animations/SlideUp";
+
 import Image from "next/image";
 
 const BlogCard = ({ blog, delay = 0 }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }} // Starts lower
-      whileInView={{
-        opacity: 1,
-        y: 0, // Moves up
-        transition: {
-          duration: 0.8,
-          ease: "easeInOut",
-          delay,
-        },
-      }}
-      viewport={{ once: false }}
-    >
+    <SlideUp delay={delay}>
       <div className="border group cursor-pointer  border-border-base bg-white-base p-4 rounded-2xl">
         <div className="relative overflow-hidden rounded-2xl">
           <Image
@@ -81,7 +69,7 @@ const BlogCard = ({ blog, delay = 0 }) => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </SlideUp>
   );
 };
 

@@ -3,66 +3,10 @@ import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import AnimatedText from "@/components/common/AnimatedText";
-import AnimatedParagraph from "@/components/common/AnimatedParagraph";
+import { testimonials } from "@/utils/fakeData/testimonialsData";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      id: 1,
-      name: "Mike Anderson",
-      position: "CTO of CloudSync",
-      image: "/images/client/client1.png",
-      rating: 5,
-      feedback:
-        "Working with Solvex was a game-changer. They transformed our outdated e-commerce store into a high-converting, visually stunning platform.",
-    },
-    {
-      id: 2,
-      name: "Sarah Thompson",
-      position: "CEO of FinTrack",
-      image: "/images/client/client2.png",
-      rating: 5,
-      feedback:
-        "Solvex brought our vision to life! Their team is creative, responsive, and truly understood our business needs.",
-    },
-    {
-      id: 3,
-      name: "David Lee",
-      position: "Founder of GreenHive",
-      image: "/images/client/client3.png",
-      rating: 5,
-      feedback:
-        "Fantastic collaboration! Our platform is faster, cleaner, and far more engaging thanks to Solvex's expertise.",
-    },
-    {
-      id: 4,
-      name: "Emily Clark",
-      position: "Marketing Director at BrightPath",
-      image: "/images/client/client4.png",
-      rating: 5,
-      feedback:
-        "Their commitment to quality and detail was outstanding. The new website has significantly boosted our brand image.",
-    },
-    {
-      id: 5,
-      name: "Sarah Thompson",
-      position: "CEO of FinTrack",
-      image: "/images/client/client5.png",
-      rating: 5,
-      feedback:
-        "Solvex brought our vision to life! Their team is creative, responsive, and truly understood our business needs.",
-    },
-    {
-      id: 6,
-      name: "David Lee",
-      position: "Founder of GreenHive",
-      image: "/images/client/client6.png",
-      rating: 5,
-      feedback:
-        "Fantastic collaboration! Our platform is faster, cleaner, and far more engaging thanks to Solvex's expertise.",
-    },
-  ];
-
   return (
     <div className="relative ">
       <div
@@ -76,21 +20,19 @@ const Testimonials = () => {
             " linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
         }}
       ></div>
-
       <div className="py-14 md:px-0 px-5">
         <BadgeLabel text="Testimonials" />
         <AnimatedText
           lines={["What Our Clients Say"]}
-          className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
+          className="animated-header"
         />
-        <AnimatedParagraph
-          text=" Our clients love working with us, and their words speak for our success.
-        Here’s what they have to say!"
-          className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
-          once={false}
-          duration={0.8}
-          yOffset={100}
-        />
+
+        <SlideUp>
+          <p className="primary-paragraph">
+            Our clients love working with us, and their words speak for our
+            success. Here’s what they have to say!
+          </p>
+        </SlideUp>
 
         {/* section 1  */}
 
@@ -110,6 +52,7 @@ const Testimonials = () => {
                       height={48}
                       width={48}
                     />
+
                     <div>
                       <h4 className="font-bold text-lg text-tertiary-base">
                         {testimonial.name}

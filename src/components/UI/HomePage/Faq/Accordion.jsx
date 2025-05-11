@@ -1,6 +1,11 @@
+import SlideRight from "@/utils/animations/SlideRight";
+
 const Accordion = ({ accordion, isActive, onClick, delay = 0 }) => {
   return (
-    <div className="flex items-center space-x-4  justify-baseline w-full">
+    <SlideRight
+      delay={delay}
+      className="flex items-center space-x-4  justify-baseline w-full"
+    >
       <div
         className={`rounded-lg max-w-[805px] w-full bg-[#F4F4F5] p-4 ${
           isActive
@@ -59,7 +64,7 @@ const Accordion = ({ accordion, isActive, onClick, delay = 0 }) => {
           </svg>
         )}
       </div>
-    </div>
+    </SlideRight>
   );
 };
 

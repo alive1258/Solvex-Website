@@ -4,6 +4,7 @@ import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 import Button from "../../Button/Button";
 import WorkGallery from "../WorkGallery/WorkGallery";
 import AnimatedText from "@/components/common/AnimatedText";
+import SlideUp from "@/utils/animations/SlideUp";
 const HeroSection = () => {
   return (
     <div className="mobile-hero-section-bg  md:relative  overflow-hidden">
@@ -72,7 +73,7 @@ const HeroSection = () => {
             yOffset={100}
           />
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 100 }} // Starts lower
             whileInView={{
               opacity: 1,
@@ -87,7 +88,13 @@ const HeroSection = () => {
             className="py-10 flex justify-center uppercase"
           >
             <Button content="View Our Work" />
-          </motion.div>
+          </motion.div> */}
+
+          <SlideUp>
+            <div className="py-10 flex justify-center uppercase">
+              <Button content="View Our Work" />
+            </div>
+          </SlideUp>
         </div>
         <WorkGallery />
       </div>

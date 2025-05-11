@@ -147,7 +147,7 @@ const Navbar = () => {
               </Link>
 
               <ul className="absolute left-0 w-[213px] bg-transparent rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
-                <div className="mt-8">
+                <div className="mt-10">
                   <div className="bg-white space-y-2 shadow-2xl">
                     <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
                       <Link href="/digital-agency">Digital Agency</Link>

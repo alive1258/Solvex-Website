@@ -278,7 +278,7 @@ const PricingPlans = ({ status = false }) => {
               key={item.id}
               index={index}
               item={item}
-              delay={index * 0.3}
+              delay={index * 0.4}
             />
           ))}
         </div>

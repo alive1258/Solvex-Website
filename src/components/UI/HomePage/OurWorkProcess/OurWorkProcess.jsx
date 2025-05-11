@@ -3,6 +3,10 @@ import AnimatedText from "@/components/common/AnimatedText";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SlideDown from "@/utils/animations/SlideDown";
+import SlideRight from "@/utils/animations/SlideRight";
+import SlideLeft from "@/utils/animations/SlideLeft";
+import SlideUp from "@/utils/animations/SlideUp";
 const OurWorkProcess = () => {
   return (
     <div className="container md:mt-20 mt-12">
@@ -13,7 +17,7 @@ const OurWorkProcess = () => {
           "A streamlined approach for delivering high-quality",
           "web solutions.",
         ]}
-        className="text-2xl font-bold text-primary-base mt-6 text-center"
+        className="animated-header"
       />
 
       <div className="md:mt-36 mt-12 flex justify-center items-center">
@@ -22,20 +26,7 @@ const OurWorkProcess = () => {
             <div>
               <div className="grid md:grid-cols-2 grid-cols-1 md:gap-x-20 md:gap-y-0 gap-y-8">
                 {/* Box 1 with glassmorphism */}
-                <motion.div
-                  initial={{ opacity: 0, y: -100 }} // Starts lower
-                  whileInView={{
-                    opacity: 1,
-                    y: 0, // Moves up
-                    transition: {
-                      duration: 0.8,
-                      ease: "easeInOut",
-                      delay: 0.3,
-                    },
-                  }}
-                  viewport={{ once: false }}
-                  className="glassmorphism md:bottom-20 md:left-8 left-[170px] relative"
-                >
+                <SlideDown className="glassmorphism md:bottom-20 md:left-8 left-[170px] relative">
                   <div className="bg-[#10B981] size-12 rounded-full flex justify-center items-center">
                     <Image
                       src="/images/works/work1.svg"
@@ -51,23 +42,10 @@ const OurWorkProcess = () => {
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
-                </motion.div>
+                </SlideDown>
 
                 {/* Box 2 with glassmorphism */}
-                <motion.div
-                  initial={{ opacity: 0, y: -100 }} // Starts lower
-                  whileInView={{
-                    opacity: 1,
-                    y: 0, // Moves up
-                    transition: {
-                      duration: 0.8,
-                      ease: "easeInOut",
-                      delay: 0.3,
-                    },
-                  }}
-                  viewport={{ once: false }}
-                  className="glassmorphism md:bottom-20 md:left-5 left-[170px] relative"
-                >
+                <SlideDown className="glassmorphism md:bottom-20 md:left-5 left-[170px] relative">
                   <div className="bg-[#3B82F6] p-3 size-12 rounded-full flex justify-center items-center">
                     <Image
                       src="/images/works/work2.svg"
@@ -83,23 +61,10 @@ const OurWorkProcess = () => {
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
-                </motion.div>
+                </SlideDown>
 
                 {/* Box 3 with glassmorphism */}
-                <motion.div
-                  initial={{ opacity: 0, x: -100 }} // Starts lower
-                  whileInView={{
-                    opacity: 1,
-                    x: 0, // Moves up
-                    transition: {
-                      duration: 0.8,
-                      ease: "easeInOut",
-                      delay: 0.3,
-                    },
-                  }}
-                  viewport={{ once: false }}
-                  className="glassmorphism md:mt-8 md:bottom-20 md:-left-32 left-[170px] relative"
-                >
+                <SlideLeft className="glassmorphism md:mt-8 md:bottom-20 md:-left-32 left-[170px] relative">
                   <div className="bg-[#EAB308] p-3 size-12 rounded-full flex justify-center items-center">
                     <Image
                       src="/images/works/work3.svg"
@@ -115,23 +80,10 @@ const OurWorkProcess = () => {
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
-                </motion.div>
+                </SlideLeft>
 
                 {/* Box 4 with glassmorphism */}
-                <motion.div
-                  initial={{ opacity: 0, x: 100 }} // Starts lower
-                  whileInView={{
-                    opacity: 1,
-                    x: 0, // Moves up
-                    transition: {
-                      duration: 0.8,
-                      ease: "easeInOut",
-                      delay: 0.3,
-                    },
-                  }}
-                  viewport={{ once: false }}
-                  className="glassmorphism md:bottom-20 md:mt-8 md:left-[185px] left-[170px] relative"
-                >
+                <SlideRight className="glassmorphism md:bottom-20 md:mt-8 md:left-[185px] left-[170px] relative">
                   <div className="bg-[#F43F5E] p-3 size-12 rounded-full flex justify-center items-center">
                     <Image
                       src="/images/works/work4.svg"
@@ -147,22 +99,9 @@ const OurWorkProcess = () => {
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
-                </motion.div>
+                </SlideRight>
                 {/* Box 5 with glassmorphism */}
-                <motion.div
-                  initial={{ opacity: 0, y: 100 }} // Starts lower
-                  whileInView={{
-                    opacity: 1,
-                    y: 0, // Moves up
-                    transition: {
-                      duration: 0.8,
-                      ease: "easeInOut",
-                      delay: 0.3,
-                    },
-                  }}
-                  viewport={{ once: false }}
-                  className="glassmorphism md:bottom-20 md:mt-10 md:left-8 left-[170px] relative"
-                >
+                <SlideUp className="glassmorphism md:bottom-20 md:mt-10 md:left-8 left-[170px] relative">
                   <div className="bg-[#84CC16] p-3 size-12 rounded-full flex justify-center items-center">
                     <Image
                       src="/images/works/work5.svg"
@@ -178,23 +117,10 @@ const OurWorkProcess = () => {
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
-                </motion.div>
+                </SlideUp>
 
                 {/* Box 6 with glassmorphism */}
-                <motion.div
-                  initial={{ opacity: 0, y: 100 }} // Starts lower
-                  whileInView={{
-                    opacity: 1,
-                    y: 0, // Moves up
-                    transition: {
-                      duration: 0.8,
-                      ease: "easeInOut",
-                      delay: 0.3,
-                    },
-                  }}
-                  viewport={{ once: false }}
-                  className="glassmorphism md:bottom-20 md:mt-10 md:left-5 left-[170px] relative"
-                >
+                <SlideUp className="glassmorphism md:bottom-20 md:mt-10 md:left-5 left-[170px] relative">
                   <div className="bg-[#8B5CF6] p-3 size-12 rounded-full flex justify-center items-center">
                     <Image
                       src="/images/works/work6.svg"
@@ -210,7 +136,7 @@ const OurWorkProcess = () => {
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
-                </motion.div>
+                </SlideUp>
               </div>
             </div>
           </div>

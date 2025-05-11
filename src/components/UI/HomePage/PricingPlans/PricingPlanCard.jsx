@@ -1,21 +1,8 @@
-"use client";
-import { motion } from "framer-motion";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const PricingPlanCard = ({ item, index, delay = 0 }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }} // Starts lower
-      whileInView={{
-        opacity: 1,
-        y: 0, // Moves up
-        transition: {
-          duration: 0.8,
-          ease: "easeInOut",
-          delay,
-        },
-      }}
-      viewport={{ once: false }}
-    >
+    <SlideUp delay={delay}>
       <div
         key={item?.id}
         className="border border-[#D4D4D8] rounded-2xl bg-white-base h-full"
@@ -125,7 +112,7 @@ const PricingPlanCard = ({ item, index, delay = 0 }) => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </SlideUp>
   );
 };
 

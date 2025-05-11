@@ -1,24 +1,10 @@
-"use client";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { motion } from "framer-motion";
+
+import SlideUp from "@/utils/animations/SlideUp";
 const ServiceCard = ({ service, delay = 0 }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 100 }} // Starts lower
-      whileInView={{
-        opacity: 1,
-        y: 0, // Moves up
-        transition: {
-          duration: 0.8,
-          ease: "easeInOut",
-          delay,
-        },
-      }}
-      viewport={{ once: false }}
-      className="cursor-pointer  w-full max-w-[312px]"
-    >
+    <SlideUp delay={delay} className="cursor-pointer  w-full max-w-[312px]">
       <div
         className={`bg-white-base py-6 px-4 rounded-2xl group-hover:border border border-transparent  group-hover:border-[${service.borderColor}]`}
       >
@@ -70,7 +56,7 @@ const ServiceCard = ({ service, delay = 0 }) => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </SlideUp>
   );
 };
 
