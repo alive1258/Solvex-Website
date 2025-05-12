@@ -1,6 +1,8 @@
 import Button from "@/components/UI/Button/Button";
+import { relatedProjects } from "@/utils/fakeData/relatedProjects";
 import Image from "next/image";
 import React from "react";
+import RelatedProductCard from "./RelatedProductCard";
 
 const RelatedProduct = () => {
   return (
@@ -23,42 +25,13 @@ const RelatedProduct = () => {
         ></div>
 
         <div className="mt-6 md:flex items-center justify-center space-x-6">
-          <div className="">
-            <Image
-              src="/images/portfolio/related1.png"
-              alt="related1"
-              height={500}
-              width={500}
-              className="w-full h-full rounded-2xl"
+          {relatedProjects?.map((project, index) => (
+            <RelatedProductCard
+              project={project}
+              delay={index * 0.4}
+              key={index}
             />
-            <h3 className="text-[24px] hover:text-[#3B82F6] text-[#D4D4D8] font-bold mt-4">
-              Social Media Marketing for TrendyWear
-            </h3>
-          </div>
-          <div className="">
-            <Image
-              src="/images/portfolio/related2.png"
-              alt="related1"
-              height={500}
-              width={500}
-              className="w-full h-full rounded-2xl"
-            />
-            <h3 className="text-[24px] hover:text-[#3B82F6] text-[#D4D4D8] font-bold mt-4">
-              SaaS Website for CloudSync
-            </h3>
-          </div>
-          <div className="">
-            <Image
-              src="/images/portfolio/related3.png"
-              alt="related1"
-              height={500}
-              width={500}
-              className="w-full h-full rounded-2xl"
-            />
-            <h3 className="text-[24px] hover:text-[#3B82F6] text-[#D4D4D8] font-bold mt-4">
-              Healthcare App for Medico+
-            </h3>
-          </div>
+          ))}
         </div>
       </div>
     </div>

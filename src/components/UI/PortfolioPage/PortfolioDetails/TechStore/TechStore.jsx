@@ -1,3 +1,4 @@
+import AnimatedText from "@/components/common/AnimatedText";
 import SlideUp from "@/utils/animations/SlideUp";
 import ZoomIn from "@/utils/animations/ZoomIn";
 import Image from "next/image";
@@ -9,9 +10,10 @@ const TechStore = () => {
   const card3 = 0.9;
   return (
     <div className="container mt-14">
-      <h1 className="text-primary-base text-[48px] font-bold text-center w-full max-w-[890px] mx-auto">
-        TechStore Inc. — Revolutionizing Online Tech Shopping
-      </h1>
+      <AnimatedText
+        lines={["TechStore Inc. — Revolutionizing Online", " Tech Shopping"]}
+        className="text-primary-base text-[48px] font-bold text-center w-full max-w-[890px] mx-auto"
+      />
       <div className="md:flex justify-center items-center space-x-24 mt-16">
         {/* card 1  */}
         <div className="flex items-center space-x-4">

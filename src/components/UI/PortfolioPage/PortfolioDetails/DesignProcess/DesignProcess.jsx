@@ -32,35 +32,6 @@ const DesignProcess = () => {
           />
         ))}
       </div>
-
-      <div className="mt-24 grid lg:grid-cols-2 grid-cols-1 gap-10">
-        <div className="col-span-2">
-          <Image
-            className="object-cover w-full h-full md:min-h-[480px] rounded-2xl"
-            src="/images/portfolio/festure1.png"
-            alt="festure1.png"
-            width={500}
-            height={400}
-          />
-        </div>
-
-        <div className="col-span-2 grid lg:grid-cols-2 grid-cols-1 gap-10">
-          <Image
-            className="object-cover w-full h-full md:max-h-[480px] rounded-2xl"
-            src="/images/portfolio/festure1.png"
-            alt="festure1.png"
-            width={500}
-            height={400}
-          />
-          <Image
-            className="object-cover w-full h-full md:min-h-[480px] rounded-2xl"
-            src="/images/portfolio/festure1.png"
-            alt="festure1.png"
-            width={500}
-            height={400}
-          />
-        </div>
-      </div>
     </div>
   );
 };

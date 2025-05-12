@@ -147,31 +147,31 @@ const SingleTeamMember = () => {
             <div className="mt-6 flex items-center space-x-3">
               <div className="team-social-icon group">
                 <RiFacebookFill
-                  className="text-gray-800 group-hover:text-white"
+                  className="text-gray-500 group-hover:text-white"
                   size={20}
                 />
               </div>
               <div className="team-social-icon group">
                 <RiInstagramLine
-                  className="text-gray-800 group-hover:text-white"
+                  className="text-gray-500 group-hover:text-white"
                   size={20}
                 />
               </div>
               <div className="team-social-icon group">
                 <RiLinkedinFill
-                  className="text-gray-800 group-hover:text-white"
+                  className="text-gray-500 group-hover:text-white"
                   size={20}
                 />
               </div>
               <div className="team-social-icon group">
                 <RiTwitterXLine
-                  className="text-gray-800 group-hover:text-white"
+                  className="text-gray-500 group-hover:text-white"
                   size={20}
                 />
               </div>
               <div className="team-social-icon group">
                 <RiDribbbleLine
-                  className="text-gray-800 group-hover:text-white"
+                  className="text-gray-500 group-hover:text-white"
                   size={20}
                 />
               </div>

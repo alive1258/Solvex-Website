@@ -1,6 +1,7 @@
 "use client";
 import AnimatedText from "@/components/common/AnimatedText";
 import BlogCard from "@/components/UI/HomePage/Blog/BlogCard";
+import SlideUp from "@/utils/animations/SlideUp";
 import { blogPosts } from "@/utils/fakeData/blogData";
 import { blogGridCategories } from "@/utils/fakeData/blogGridCategories";
 import React, { useState } from "react";
@@ -19,10 +20,12 @@ const AllBlogGrid = () => {
         lines={["News, insights and more"]}
         className="animated-header"
       />
-      <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
-        Stay updated with the latest trends, tips, and technologies in <br />
-        web development and design.
-      </p>
+      <SlideUp>
+        <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
+          Stay updated with the latest trends, tips, and technologies in <br />
+          web development and design.
+        </p>
+      </SlideUp>
       {/* Category Filters */}
       <div className="my-10 flex justify-center flex-wrap gap-3">
         {blogGridCategories?.map((cat) => (

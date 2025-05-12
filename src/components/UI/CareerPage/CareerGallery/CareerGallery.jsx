@@ -1,13 +1,16 @@
+import SlideLeft from "@/utils/animations/SlideLeft";
+import SlideRight from "@/utils/animations/SlideRight";
+import { careerGalleryData } from "@/utils/fakeData/careerGalleryData";
 import Image from "next/image";
 import React from "react";
 
 const CareerGallery = () => {
   return (
-    <div className="py-14  overflow-hidden">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-6 relative container ">
-        {/* section 1  */}
+    <div className="py-14 overflow-hidden">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 relative container">
+        {/* Glow Effects */}
         <div
-          className="absolute rounded-full opacity-50 blur-[175px] z-0 "
+          className="absolute rounded-full opacity-50 blur-[175px] z-0"
           style={{
             width: "364px",
             height: "364px",
@@ -15,8 +18,7 @@ const CareerGallery = () => {
             top: "20px",
             backgroundColor: "#84CC16",
           }}
-        ></div>
-        {/* Fuchsia Glow - Right Side */}
+        />
         <div
           className="absolute rounded-full opacity-50 blur-[175px] z-0"
           style={{
@@ -26,60 +28,44 @@ const CareerGallery = () => {
             top: "20px",
             backgroundColor: "#D946EF",
           }}
-        ></div>
+        />
 
-        <div className="grid-cols-2 grid gap-6 z-50 overflow-hidden">
-          <Image
-            src="/images/career/career6.png"
-            alt="Career Image 3"
-            width={500}
-            height={200}
-            className="w-full h-full max-h-[268px] object-cover rounded-lg"
-          />
-          <div className="row-span-2">
-            <Image
-              src="/images/career/career2.png"
-              alt="Career Image 3"
-              width={500}
-              height={200}
-              className="w-full h-full max-h-[560px] object-cover rounded-lg"
-            />
-          </div>
-
-          <Image
-            src="/images/career/career1.png"
-            alt="Career Image 3"
-            width={500}
-            height={200}
-            className="w-full h-full max-h-[268px] object-cover rounded-lg"
-          />
+        {/* Left Section */}
+        <div className="grid-cols-2 grid gap-5 z-50 overflow-hidden">
+          {careerGalleryData?.left?.map((item, index) => (
+            <SlideLeft
+              delay={index * 0.4}
+              key={index}
+              className={item.rowSpan === 2 ? "row-span-2" : ""}
+            >
+              <Image
+                src={item.src}
+                alt={item.alt}
+                width={500}
+                height={200}
+                className="w-full h-full max-h-[268px] md:max-h-[590px] object-cover rounded-lg"
+              />
+            </SlideLeft>
+          ))}
         </div>
-        {/* section 2  */}
-        <div className="grid-cols-2 grid  gap-6 w-full z-50">
-          <div className="col-span-2 ">
-            <Image
-              src="/images/career/career3.png"
-              alt="Career Image 3"
-              width={500}
-              height={200}
-              className="w-full max-h-[296px] h-full object-cover rounded-lg"
-            />
-          </div>
-          <Image
-            src="/images/career/career4.png"
-            alt="Career Image 3"
-            width={500}
-            height={200}
-            className="w-full h-full max-h-[268px] object-cover rounded-lg"
-          />
 
-          <Image
-            src="/images/career/career5.png"
-            alt="Career Image 3"
-            width={500}
-            height={200}
-            className="w-full h-full max-h-[268px] object-cover rounded-lg"
-          />
+        {/* Right Section */}
+        <div className="grid-cols-2 grid gap-5 w-full z-50">
+          {careerGalleryData?.right?.map((item, index) => (
+            <SlideRight
+              delay={index * 0.4}
+              key={index}
+              className={item.colSpan === 2 ? "col-span-2" : ""}
+            >
+              <Image
+                src={item.src}
+                alt={item.alt}
+                width={500}
+                height={200}
+                className="w-full h-full max-h-[268px] md:max-h-[296px] object-cover rounded-lg"
+              />
+            </SlideRight>
+          ))}
         </div>
       </div>
     </div>

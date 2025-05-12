@@ -1,38 +1,14 @@
+"use client";
+import { successRateData } from "@/utils/fakeData/successRateData";
 import React from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const SuccessRate = () => {
-  const cards = [
-    {
-      id: 1,
-      count: "15 +",
-      title: "Designers",
-      description:
-        "Crafting sleek, user-friendly interfaces that speak louder than words.",
-    },
-    {
-      id: 2,
-      count: "25 +",
-      title: "Developers",
-      description:
-        "Turning ideas into high-performance web and mobile applications.",
-    },
-    {
-      id: 3,
-      count: "10 +",
-      title: "Countries",
-      description:
-        "Driving growth through data-driven digital marketing strategies.",
-    },
-    {
-      id: 4,
-      count: "100 +",
-      title: "Countries",
-      description: "Ensuring seamless project delivery on time, every time.",
-    },
-  ];
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   return (
-    <div className="bg-[#FAFAFA] relative">
+    <div className="bg-[#FAFAFA] relative" ref={ref}>
       {/* Bottom Gradient Line */}
       <div
         className="absolute md:block hidden"
@@ -48,14 +24,14 @@ const SuccessRate = () => {
 
       <div className="container py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4 md:px-0">
-          {cards.map((card, index) => (
+          {successRateData?.map((card, index) => (
             <div
               key={card.id}
               className={`px-4 text-center md:text-left ${
-                index !== cards.length - 1 ? "md:border-r-[3px]" : ""
+                index !== successRateData?.length - 1 ? "md:border-r-[3px]" : ""
               }`}
               style={
-                index !== cards.length - 1
+                index !== successRateData?.length - 1
                   ? {
                       borderImage:
                         "linear-gradient(180deg, #3B82F6 -2.76%, rgba(255,255,255,0) 103.04%) 1",
@@ -63,14 +39,21 @@ const SuccessRate = () => {
                   : {}
               }
             >
-              <h3 className="text-[48px]  text-[#3B82F6] font-bold">
-                {card.count}
+              <h3 className="text-[48px] text-[#3B82F6] font-bold">
+                {inView ? (
+                  <>
+                    <CountUp end={parseInt(card.count)} duration={4} />{" "}
+                    <span>+</span>
+                  </>
+                ) : (
+                  0
+                )}
               </h3>
               <h5 className="text-[20px] uppercase font-bold mt-4 text-secondary-base">
-                {card.title}
+                {card?.title}
               </h5>
               <p className="text-sm font-medium mt-4 text-[#71717A]">
-                {card.description}
+                {card?.description}
               </p>
             </div>
           ))}

@@ -42,7 +42,7 @@
   }
   /* team-social-icon */
   .team-social-icon {
-    @apply size-12 duration-300   transition-all ease-in-out  cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8];
+    @apply size-10 duration-300   transition-all ease-in-out  cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8];
   }
   /* contact-border  */
   .contact-border {
