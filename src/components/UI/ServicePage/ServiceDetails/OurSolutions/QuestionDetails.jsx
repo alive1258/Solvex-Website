@@ -1,6 +1,17 @@
-const QuestionDetails = ({ accordion, isActive, onClick, index }) => {
+import SlideRight from "@/utils/animations/SlideRight";
+
+const QuestionDetails = ({
+  accordion,
+  isActive,
+  onClick,
+  index,
+  delay = 0,
+}) => {
   return (
-    <div className="flex items-center space-x-4  justify-baseline w-full">
+    <SlideRight
+      delay={delay}
+      className="flex items-center space-x-4  justify-baseline w-full"
+    >
       <div
         className={`max-w-[805px] w-full border-b border-[#D4D4D8] duration-300 transition-all ease-in-out hover:bg-[#F4F4F5]  py-6 px-2`}
       >
@@ -60,7 +71,7 @@ const QuestionDetails = ({ accordion, isActive, onClick, index }) => {
           </div>
         )}
       </div>
-    </div>
+    </SlideRight>
   );
 };
 

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import SlideUp from "@/utils/animations/SlideUp";
+import Link from "next/link";
 const ServiceCard = ({ service, delay = 0 }) => {
   return (
     <SlideUp delay={delay} className="cursor-pointer  w-full max-w-[312px]">
@@ -31,11 +32,13 @@ const ServiceCard = ({ service, delay = 0 }) => {
           <div
             className={`flex transition-transform duration-300 ease-in-out group-hover:translate-x-2 items-center gap-x-2 mt-6 border-b group-hover:border-[#3B82F6]  border-[#71717A] w-fit`}
           >
-            <span
-              className={`text-[#71717A] group-hover:text-[#3B82F6] uppercase font-bold text-sm `}
-            >
-              get in touch
-            </span>
+            <Link href={`/service/${service.id}`}>
+              <span
+                className={`text-[#71717A] group-hover:text-[#3B82F6] uppercase font-bold text-sm `}
+              >
+                get in touch
+              </span>
+            </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

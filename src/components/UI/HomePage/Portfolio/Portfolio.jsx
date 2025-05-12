@@ -7,6 +7,7 @@ import PortfolioCard from "./PortfolioCard";
 import SlideUp from "@/utils/animations/SlideUp";
 import { caseStudiesData } from "@/utils/fakeData/caseStudiesData";
 import { portfolioCategories } from "@/utils/fakeData/portfolioCategories";
+import Link from "next/link";
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -59,8 +60,10 @@ const Portfolio = () => {
           />
         ))}
       </div>
-      <SlideUp className="py-10 flex justify-center uppercase">
-        <Button content="View More Case Studies" />
+      <SlideUp className="pt-10 flex justify-center uppercase">
+        <Link href="/portfolio">
+          <Button content="View More Case Studies" />
+        </Link>
       </SlideUp>
     </div>
   );

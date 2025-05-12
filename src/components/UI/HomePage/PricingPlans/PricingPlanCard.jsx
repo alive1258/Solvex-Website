@@ -1,4 +1,6 @@
 import SlideUp from "@/utils/animations/SlideUp";
+import { RiArrowRightUpLine } from "@remixicon/react";
+import Link from "next/link";
 
 const PricingPlanCard = ({ item, index, delay = 0 }) => {
   return (
@@ -37,37 +39,27 @@ const PricingPlanCard = ({ item, index, delay = 0 }) => {
             {item?.des}
           </p>
           <div className="mt-12 flex justify-center items-center">
-            <button
-              className={`group  relative inline-flex w-full uppercase font-medium text-[16px] cursor-pointer h-14 px-6 py-4 justify-center items-center gap-1 rounded-full text-white-base overflow-hidden transition-all duration-300 focus:ring-4 focus:outline-none ${
-                index === 1
-                  ? "bg-gradient-to-r  from-[#2154FF] to-[#5079FF]"
-                  : "bg-[#000]"
-              }`}
-            >
-              {/* Gradient background for hover */}
-              {index !== 1 && (
-                <span className="absolute inset-0 bg-gradient-to-r from-[#2154FF] to-[#5079FF] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full z-0" />
-              )}
-
-              {/* Button Content */}
-              <span className="relative z-10 flex items-center gap-1">
-                get started
-                {/* Default Icon */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="transform transition-all duration-300 ease-in-out group-hover:rotate-45"
-                >
-                  <path
-                    d="M6.4 18L16 8.4V17H18V5H6V7H14.6L5 16.6L6.4 18Z"
-                    fill="white"
+            <Link className="w-full" href="/contact">
+              <button
+                type="button"
+                className={`group relative inline-flex w-full uppercase font-medium text-[16px] cursor-pointer h-14 px-6 py-4 justify-center items-center gap-1 rounded-full text-white-base overflow-hidden transition-all duration-300 focus:ring-4 focus:outline-none ${
+                  index === 1
+                    ? "bg-gradient-to-r from-[#2154FF] to-[#5079FF]"
+                    : "bg-[#000]"
+                }`}
+              >
+                {index !== 1 && (
+                  <span className="absolute inset-0 bg-gradient-to-r from-[#2154FF] to-[#5079FF] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full z-0" />
+                )}
+                <span className="relative z-10 flex items-center gap-1">
+                  get started
+                  <RiArrowRightUpLine
+                    className="transform transition-all duration-300 ease-in-out group-hover:rotate-45"
+                    size={24}
                   />
-                </svg>
-              </span>
-            </button>
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className=" p-6">

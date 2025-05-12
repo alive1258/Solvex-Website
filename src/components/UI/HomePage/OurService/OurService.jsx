@@ -48,7 +48,7 @@ const OurService = ({ status = false }) => {
             <ServiceCard
               key={service.id}
               service={service}
-              delay={index * 0.3}
+              delay={index * 0.4}
             />
           ))}
         </div>

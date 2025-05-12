@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import Button from "../../Button/Button";
 import AnimatedText from "@/components/common/AnimatedText";
+import Image from "next/image";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const WhyChoose = () => {
   return (
@@ -10,23 +12,12 @@ const WhyChoose = () => {
       <div className="py-20 container lg:grid lg:grid-cols-2 grid-cols-1 gap-12">
         <div className="md:mt-8">
           <div className="flex items-center space-x-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="13"
-              height="20"
-              viewBox="0 0 13 20"
-              fill="none"
-            >
-              <g clipPath="url(#clip0_314_2064)">
-                <circle cx="1.78544" cy="17.8572" r="8.39286" fill="#3B82F6" />
-                <circle cx="10.089" cy="0.803606" r="9.19643" fill="#3B82F6" />
-              </g>
-              <defs>
-                <clipPath id="clip0_314_2064">
-                  <rect width="12.8571" height="20" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+            <Image
+              src="/images/footer/footerLogo.png"
+              alt="logo"
+              width={13}
+              height={20}
+            />
             <h6 className="text-[#FAFAFA] text-[16px] font-medium">
               Why Choose Solvex?
             </h6>
@@ -46,22 +37,9 @@ const WhyChoose = () => {
             />
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 100 }} // Starts lower
-            whileInView={{
-              opacity: 1,
-              y: 0, // Moves up
-              transition: {
-                duration: 0.8,
-                ease: "easeInOut",
-                delay: 0.3,
-              },
-            }}
-            viewport={{ once: false }}
-            className="md:mt-14 mt-10  uppercase"
-          >
+          <SlideUp className="md:mt-14 mt-10">
             <Button content=" Get Started" />
-          </motion.div>
+          </SlideUp>
         </div>
 
         <div className="lg:grid lg:grid-cols-2 grid-cols-1 md:mt-0 mt-10 md:space-y-0 space-y-6">

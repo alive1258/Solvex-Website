@@ -1,15 +1,13 @@
-"use client";
 import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import Button from "../../Button/Button";
 import AnimatedText from "@/components/common/AnimatedText";
-import AnimatedParagraph from "@/components/common/AnimatedParagraph";
-import { motion } from "framer-motion";
 import FeatureCard from "./FeatureCard";
 import SlideUp from "@/utils/animations/SlideUp";
 import { features } from "@/utils/fakeData/featuresData";
 import ZoomIn from "@/utils/animations/ZoomIn";
+import Link from "next/link";
 
 const WhoWeAre = () => {
   return (
@@ -78,7 +76,9 @@ const WhoWeAre = () => {
             ))}
 
             <SlideUp className="pt-1 uppercase md:block  flex  justify-center">
-              <Button content="get started now" />
+              <Link href="/contact">
+                <Button content="get started now" />
+              </Link>
             </SlideUp>
           </div>
         </div>

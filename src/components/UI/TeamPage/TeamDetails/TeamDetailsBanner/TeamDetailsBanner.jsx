@@ -7,7 +7,7 @@ const TeamDetailsBanner = () => {
         <div className="container flex h-full justify-center items-center">
           <div className="z-50 text-white">
             <h1 className="md:text-[48px] text-[#FAFAFA] text-center uppercase font-extrabold">
-              Portfolio Details
+              Team Details
             </h1>
             <div className="flex justify-center items-center mt-3">
               <div className="bg-[#27272A] w-fit px-4 py-2 rounded-3xl flex items-center justify-center space-x-2">

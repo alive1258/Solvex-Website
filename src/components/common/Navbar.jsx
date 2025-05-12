@@ -126,41 +126,7 @@ const Navbar = () => {
             <li className="relative md:block hidden group md:border-0 border-b  md:mx-0 mx-5 border-border-base md:pb-0 pb-3">
               <Link href="#">
                 <span className="font-medium text-[#18181B] ">Home</span>
-                <div className="absolute right-0  md:pb-0 pb-3 md:left-12 top-1/2 transform -translate-y-1/2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="transition-transform duration-300 group-hover:rotate-180"
-                  >
-                    <path
-                      d="M7 10L12 15L17 10"
-                      stroke="#27272A"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
               </Link>
-
-              <ul className="absolute left-0 w-[213px] bg-transparent rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
-                <div className="mt-10">
-                  <div className="bg-white space-y-2 shadow-2xl">
-                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
-                      <Link href="/digital-agency">Digital Agency</Link>
-                    </li>
-                    <li className="px-4 py-2 border-b border-border-base hover:text-[#3B82F6]">
-                      <Link href="/digital-marketing">Digital Marketing</Link>
-                    </li>
-                    <li className="px-4 py-2 hover:text-[#3B82F6]">
-                      <Link href="/creative-studio">Creative Studio</Link>
-                    </li>
-                  </div>
-                </div>
-              </ul>
             </li>
 
             {/* Services */}
@@ -365,45 +331,7 @@ const Navbar = () => {
             <li className=" pt-14 md:hidden ">
               <div className="md:border-0 flex justify-between items-center border-b md:mx-0 mx-5 border-border-base  pb-3">
                 <span className="font-medium text-[#18181B] ">Home</span>
-                <div onClick={() => toggleModal("home")}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    className="transition-transform duration-300 group-hover:rotate-180"
-                  >
-                    <path
-                      d="M7 10L12 15L17 10"
-                      stroke="#27272A"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
               </div>
-
-              <ul
-                className={`overflow-hidden mx-8 transition-all duration-300 delay-150  ease-in-out ${
-                  isHomeOpen
-                    ? "max-h-[500px] opacity-100 mt-4"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-                <div className="bg-white space-y-2 shadow-2xl">
-                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
-                    <Link href="/digital-agency">Digital Agency</Link>
-                  </li>
-                  <li className=" py-2 border-b border-border-base hover:text-[#3B82F6]">
-                    <Link href="/digital-marketing">Digital Marketing</Link>
-                  </li>
-                  <li className=" py-2 hover:text-[#3B82F6]">
-                    <Link href="/creative-studio">Creative Studio</Link>
-                  </li>
-                </div>
-              </ul>
             </li>
 
             {/*------ mobile menu Services --------- */}

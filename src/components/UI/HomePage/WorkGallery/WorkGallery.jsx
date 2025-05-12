@@ -1,22 +1,12 @@
+import { workGalleryImages } from "@/utils/fakeData/workGalleryData";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-
-const images = [
-  "/images/workGallery/workGallery1.png",
-  "/images/workGallery/workGallery2.png",
-  "/images/workGallery/workGallery1.png",
-  "/images/workGallery/workGallery4.png",
-  "/images/workGallery/workGallery3.png",
-  "/images/workGallery/workGallery4.png",
-  "/images/workGallery/workGallery1.png",
-  "/images/workGallery/workGallery4.png",
-];
 
 const WorkGallery = () => {
   return (
     <div className="relative mt-5 ">
       <Marquee speed={90} pauseOnHover={true} direction="left">
-        {images.map((src, index) => (
+        {workGalleryImages?.map((src, index) => (
           <div
             key={index}
             className="border border-[#3B82F6] bg-[#DBEAFE] p-2 rounded-2xl mx-4"

@@ -3,7 +3,6 @@ import Link from "next/link";
 const BlogGridBanner = () => {
   return (
     <div className="about-us-section-bg md:h-[338px] h-[150px]">
-      //kgf
       <div className="bg-[#000] opacity-70 w-full h-full">
         <div className="container flex h-full justify-center items-center">
           <div className="z-50 text-white">

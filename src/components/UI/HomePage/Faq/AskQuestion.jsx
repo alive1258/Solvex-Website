@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../Button/Button";
 import ZoomIn from "@/utils/animations/ZoomIn";
 import Image from "next/image";
+import Link from "next/link";
 
 const AskQuestion = () => {
   return (
@@ -27,7 +28,9 @@ const AskQuestion = () => {
         further assistance, feel free to contact us.
       </p>
       <div className="mt-8 flex justify-center uppercase">
-        <Button content="ask any question" />
+        <Link href="/contact">
+          <Button content="ask any question" />
+        </Link>
       </div>
     </ZoomIn>
   );

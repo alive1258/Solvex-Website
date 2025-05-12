@@ -7,8 +7,11 @@ import SlideLeft from "@/utils/animations/SlideLeft";
 import SlideRight from "@/utils/animations/SlideRight";
 import {
   RiDribbbleLine,
+  RiFacebookFill,
   RiFacebookLine,
+  RiInstagramFill,
   RiInstagramLine,
+  RiLinkedinFill,
   RiLinkedinLine,
   RiMailLine,
   RiMapPinLine,
@@ -104,7 +107,7 @@ const ContactUs = () => {
 
               <div className="mt-6   flex items-center justify-center space-x-3">
                 <div className="follow-us-social-icon group">
-                  <RiFacebookLine
+                  <RiFacebookFill
                     size={24}
                     className="text-[#3B82F6] group-hover:text-white duration-300 transition-all ease-in-out"
                   />
@@ -116,7 +119,7 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="follow-us-social-icon group">
-                  <RiLinkedinLine
+                  <RiLinkedinFill
                     size={24}
                     className="text-[#3B82F6] group-hover:text-white duration-300 transition-all ease-in-out"
                   />

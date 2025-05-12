@@ -36,9 +36,13 @@
   .footer-social-icon {
     @apply size-12 duration-300 transition-all ease-in-out cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center  bg-[#27272A] border border-[#3F3F46];
   }
-  /* footer social icon  */
+  /* follow us social icon  */
   .follow-us-social-icon {
     @apply size-14 duration-300 transition-all ease-in-out  cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#EFF6FF] border border-[#3B82F6];
+  }
+  /* team-social-icon */
+  .team-social-icon {
+    @apply size-12 duration-300   transition-all ease-in-out  cursor-pointer hover:bg-[#3B82F6] hover:border-[#3B82F6] rounded-full flex justify-center items-center bg-[#E4E4E7] border border-[#D4D4D8];
   }
   /* contact-border  */
   .contact-border {

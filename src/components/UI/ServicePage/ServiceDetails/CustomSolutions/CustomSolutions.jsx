@@ -1,5 +1,7 @@
+import AnimatedText from "@/components/common/AnimatedText";
 import Button from "@/components/UI/Button/Button";
 import WorkGallery from "@/components/UI/HomePage/WorkGallery/WorkGallery";
+import SlideUp from "@/utils/animations/SlideUp";
 import React from "react";
 
 const CustomSolutions = () => {
@@ -63,17 +65,25 @@ const CustomSolutions = () => {
         {/* Text Content */}
         <div className="relative z-10 md:mt-14 mt-12 h-full">
           <div className="flex justify-center">
-            <h1 className="md:text-[56px] text-[32px] font-extrabold max-w-[954px] w-full text-center text-gray-900">
-              Custom Web Development Solutions For Modern Businesses
-            </h1>
+            <AnimatedText
+              lines={[
+                " Custom Web Development Solutions",
+                "For Modern Businesses",
+              ]}
+              className="md:text-[56px] text-[32px] font-extrabold max-w-[954px] w-full text-center text-gray-900"
+            />
           </div>
-          <p className="max-w-[600px] mx-auto mt-10 w-full text-center ">
-            From dynamic websites to complex web applications — we develop
-            solutions that scale with your growth.
-          </p>
-          <div className="md:mt-20 mt-12 flex justify-center uppercase">
-            <Button content=" Let’s Build Your Website" />
-          </div>
+          <SlideUp>
+            <p className="max-w-[600px] mx-auto mt-10 w-full text-center ">
+              From dynamic websites to complex web applications — we develop
+              solutions that scale with your growth.
+            </p>
+          </SlideUp>
+          <SlideUp delay={0.6}>
+            <div className="md:mt-20 mt-12 flex justify-center uppercase">
+              <Button content=" Let’s Build Your Website" />
+            </div>
+          </SlideUp>
           <div className="md:mt-[120px] mt-10">
             <WorkGallery />
           </div>

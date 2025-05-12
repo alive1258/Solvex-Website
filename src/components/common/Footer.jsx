@@ -3,8 +3,10 @@ import Marquee from "react-fast-marquee";
 import FooterLinkSection from "./FooterLinkSection";
 import {
   RiDribbbleLine,
+  RiFacebookFill,
   RiFacebookLine,
   RiInstagramLine,
+  RiLinkedinFill,
   RiLinkedinLine,
   RiTwitterXLine,
 } from "@remixicon/react";
@@ -65,13 +67,13 @@ const Footer = () => {
 
                 <div className="mt-6 flex items-center space-x-3">
                   <div className="footer-social-icon">
-                    <RiFacebookLine size={20} />
+                    <RiFacebookFill size={20} />
                   </div>
                   <div className="footer-social-icon">
                     <RiInstagramLine size={20} />
                   </div>
                   <div className="footer-social-icon">
-                    <RiLinkedinLine size={20} />
+                    <RiLinkedinFill size={20} />
                   </div>
                   <div className="footer-social-icon">
                     <RiTwitterXLine size={20} />

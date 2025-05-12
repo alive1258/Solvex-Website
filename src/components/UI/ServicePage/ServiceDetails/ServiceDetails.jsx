@@ -11,7 +11,7 @@ import ServiceDetailsBanner from "./ServiceDetailsBanner/ServiceDetailsBanner";
 
 const ServiceDetails = () => {
   return (
-    <div>
+    <>
       <ServiceDetailsBanner />
       <CustomSolutions />
       <OurSolutions />
@@ -20,7 +20,7 @@ const ServiceDetails = () => {
       <Technologies />
       <PricingPlans />
       <DigitalFuture />
-    </div>
+    </>
   );
 };
 

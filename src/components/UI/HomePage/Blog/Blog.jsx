@@ -4,7 +4,8 @@ import Button from "../../Button/Button";
 import AnimatedText from "@/components/common/AnimatedText";
 import BlogCard from "./BlogCard";
 import SlideUp from "@/utils/animations/SlideUp";
-import { blogs } from "@/utils/fakeData/blogData";
+import { blogPosts } from "@/utils/fakeData/blogData";
+import Link from "next/link";
 
 const Blog = () => {
   return (
@@ -23,12 +24,14 @@ const Blog = () => {
       </SlideUp>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-6 mt-12">
-        {blogs?.map((blog, index) => (
+        {blogPosts?.slice(0, 3).map((blog, index) => (
           <BlogCard blog={blog} key={blog.id} delay={index * 0.4} />
         ))}
       </div>
       <SlideUp className="py-10 flex justify-center uppercase">
-        <Button content="More Blogs" />
+        <Link href="/blog-grid">
+          <Button content="More Blogs" />
+        </Link>
       </SlideUp>
     </div>
   );

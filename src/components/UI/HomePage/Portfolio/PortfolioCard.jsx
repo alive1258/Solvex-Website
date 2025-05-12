@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import SlideUp from "@/utils/animations/SlideUp";
+import Link from "next/link";
 
 const PortfolioCard = ({ item, idx, delay = 0 }) => {
   return (
@@ -53,9 +54,11 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
         </div>
         <div className="group mt-9 w-fit">
           <div className="flex items-center transition-transform duration-300 ease-in-out group-hover:translate-x-2 gap-x-2 border-b border-[#71717A] group-hover:border-[#3B82F6]">
-            <p className="text-[#71717A] uppercase font-bold cursor-pointer text-sm group-hover:text-[#3B82F6]">
-              View Live Project
-            </p>
+            <Link href={`/portfolio/${item.id}`}>
+              <span className="text-[#71717A] uppercase font-bold cursor-pointer text-sm group-hover:text-[#3B82F6]">
+                View Live Project
+              </span>
+            </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
