@@ -12,27 +12,29 @@ import Link from "next/link";
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+  // FILTERING CASE STUDIES BASED ON SELECTED CATEGORY
   const filteredData =
     selectedCategory === "All"
       ? caseStudiesData
       : caseStudiesData.filter((item) => item.category === selectedCategory);
 
   return (
-    <div className="container md:my-14 my-20">
+    <section className="container md:my-14 my-20">
+      {/* START HEADER SECTION  */}
       <BadgeLabel text="Portfolio" />
       <AnimatedText
         lines={[" Our Work Speaks for Itself"]}
         className="animated-header"
       />
-
       <SlideUp>
         <p className="primary-paragraph">
-          We help brands elevate their digital presence through cutting- edge
+          We help brands elevate their digital presence through cutting-edge
           design and technology.
         </p>
       </SlideUp>
+      {/* END HEADER SECTION  */}
 
-      {/* Category Filters */}
+      {/* START CATEGORY FILTER BUTTONS */}
       <div className="my-10 flex justify-center flex-wrap gap-3">
         {portfolioCategories?.map((cat) => (
           <button
@@ -48,9 +50,10 @@ const Portfolio = () => {
           </button>
         ))}
       </div>
+      {/* END CATEGORY FILTER BUTTONS */}
 
-      {/* Case Studies */}
-      <div className=" ">
+      {/* START FILTERED PORTFOLIO CARD LIST */}
+      <div>
         {filteredData?.slice(0, 5)?.map((item, idx) => (
           <PortfolioCard
             item={item}
@@ -60,12 +63,14 @@ const Portfolio = () => {
           />
         ))}
       </div>
+      {/* END FILTERED PORTFOLIO CARD LIST */}
+
       <SlideUp className="pt-10 flex justify-center uppercase">
         <Link href="/portfolio">
           <Button content="View More Case Studies" />
         </Link>
       </SlideUp>
-    </div>
+    </section>
   );
 };
 

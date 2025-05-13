@@ -6,6 +6,7 @@ import SlideUp from "@/utils/animations/SlideUp";
 import SlideLeft from "@/utils/animations/SlideLeft";
 import SlideRight from "@/utils/animations/SlideRight";
 import {
+  RiArrowDownSLine,
   RiDribbbleLine,
   RiFacebookFill,
   RiFacebookLine,
@@ -163,7 +164,7 @@ const ContactUs = () => {
                       htmlFor="fname"
                       className="text-secondary-base text-lg font-medium"
                     >
-                      Full name:
+                      Full name <span className="text-red-500">*</span>
                     </label>
                     <br />
                     <input
@@ -180,7 +181,7 @@ const ContactUs = () => {
                         htmlFor="fname"
                         className="text-secondary-base text-lg font-medium"
                       >
-                        Email Address *
+                        Email Address <span className="text-red-500">*</span>
                       </label>
                       <br />
                       <input
@@ -196,7 +197,7 @@ const ContactUs = () => {
                         htmlFor="fname"
                         className="text-secondary-base text-lg font-medium"
                       >
-                        Phone Number:
+                        Phone Number
                       </label>
                       <br />
                       <input
@@ -214,7 +215,8 @@ const ContactUs = () => {
                       htmlFor="serviceType"
                       className="text-secondary-base text-lg font-medium"
                     >
-                      Project/Service Type *
+                      Project/Service Type{" "}
+                      <span className="text-red-500">*</span>
                     </label>
                     <br />
                     <select
@@ -239,21 +241,7 @@ const ContactUs = () => {
 
                     {/* Custom Arrow Icon */}
                     <div className="pointer-events-none absolute right-4 top-[58%] transform -translate-y-1/2 text-[#A1A1AA]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M7 10L12 15L17 10"
-                          stroke="#A1A1AA"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                      <RiArrowDownSLine size={23} />
                     </div>
                   </div>
 
@@ -262,7 +250,7 @@ const ContactUs = () => {
                       htmlFor="Massage"
                       className="text-secondary-base text-lg font-medium"
                     >
-                      Massage:
+                      Massage
                     </label>
                     <br />
                     <textarea

@@ -25,7 +25,7 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
               />
             </div>
             <div>
-              <h5 className="text-[20px] font-bold text-[#71717A]">
+              <h5 className="text-[20px] font-bold text-primary-base">
                 {step.title}
               </h5>
               <p className="text-lg font-medium text-primary-base">

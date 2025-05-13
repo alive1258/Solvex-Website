@@ -1,7 +1,8 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import SlideUp from "@/utils/animations/SlideUp";
 import Link from "next/link";
+import { RiArrowRightLine } from "@remixicon/react";
 
 const PortfolioCard = ({ item, idx, delay = 0 }) => {
   return (
@@ -9,11 +10,11 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
       delay={delay}
       className="bg-[#F5F5F4] p-6 my-8 grid md:grid-cols-2 grid-cols-1 gap-8 rounded-2xl"
     >
-      {/* IMAGE SIDE */}
+      {/* START IMAGE SECTION */}
       <div className={`${idx % 2 !== 0 ? "md:order-2" : "md:order-1"}`}>
         <div className="relative overflow-hidden rounded-2xl">
           <Image
-            className="w-full rounded-2xl  hover:scale-105 duration-500 overflow-hidden ease-[cubic-bezier(0.4,0,0.2,1)] transition-transform  object-cover h-full "
+            className="w-full h-full object-cover rounded-2xl hover:scale-105 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
             src={item?.image}
             alt={item?.company}
             height={384}
@@ -21,14 +22,16 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
           />
         </div>
       </div>
+      {/* END IMAGE SECTION */}
 
-      {/* TEXT SIDE */}
+      {/* START TEXT SECTION */}
       <div className={`${idx % 2 !== 0 ? "md:order-1" : "md:order-2"}`}>
+        {/* Company Logo and Name */}
         <div className="flex items-center gap-x-4 mt-8">
           <Image
             className="size-10"
             src={item?.logo}
-            alt={item?.logo}
+            alt={item?.company}
             height={40}
             width={40}
           />
@@ -36,49 +39,50 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
             {item?.company}
           </h4>
         </div>
-        <h1 className="text-primary-base md:text-[32px] text-2xl mt-10 font-bold">
-          {item?.title}
+
+        {/* Project Title */}
+        <h1 className="md:text-[32px] text-2xl mt-10 font-bold">
+          <Link
+            href={`/portfolio/${item.id}`}
+            className="text-primary-base hover:text-blue-base"
+          >
+            {item?.title}
+          </Link>
         </h1>
+
+        {/* Project Description */}
         <p className="text-[#71717A] text-[16px] mt-6 font-medium">
           {item?.description}
         </p>
+
+        {/* Tags */}
         <div className="mt-6 flex flex-wrap gap-3">
           {item?.tags?.map((tag, idx) => (
             <span
               key={idx}
-              className="border cursor-pointer transition-all duration-300 ease-in-out text-tertiary-base hover:text-[#3B82F6] rounded-3xl hover:border-[#3B82F6] border-[#71717A] px-4 py-2 text-sm"
+              className="border border-[#71717A] text-tertiary-base hover:text-[#3B82F6] hover:border-[#3B82F6] cursor-pointer rounded-3xl px-4 py-2 text-sm transition-all duration-300 ease-in-out"
             >
               {tag}
             </span>
           ))}
         </div>
+
+        {/* View Live Project Link */}
         <div className="group mt-9 w-fit">
-          <div className="flex items-center transition-transform duration-300 ease-in-out group-hover:translate-x-2 gap-x-2 border-b border-[#71717A] group-hover:border-[#3B82F6]">
+          <div className="flex items-center gap-x-2 border-b border-[#71717A] group-hover:border-[#3B82F6] transition-transform duration-300 ease-in-out group-hover:translate-x-2">
             <Link href={`/portfolio/${item.id}`}>
-              <span className="text-[#71717A] uppercase font-bold cursor-pointer text-sm group-hover:text-[#3B82F6]">
+              <span className="text-[#71717A] text-sm font-bold uppercase cursor-pointer group-hover:text-[#3B82F6]">
                 View Live Project
               </span>
             </Link>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              className="cursor-pointer"
-            >
-              <path
-                d="M14 16L18 12M18 12L14 8M18 12H6"
-                className="stroke-[#71717A] group-hover:stroke-[#3B82F6] transition-all duration-300 ease-in-out"
-                strokeWidth="1.5"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <RiArrowRightLine
+              size={20}
+              className="text-[#71717A] group-hover:text-blue-base transition-all duration-300 ease-in-out"
+            />
           </div>
         </div>
       </div>
+      {/* END TEXT SECTION */}
     </SlideUp>
   );
 };

@@ -24,7 +24,7 @@ const RelatedProduct = () => {
           }}
         ></div>
 
-        <div className="mt-6 md:flex items-center justify-center space-x-6">
+        <div className="mt-12 md:flex items-center justify-center space-x-6">
           {relatedProjects?.map((project, index) => (
             <RelatedProductCard
               project={project}

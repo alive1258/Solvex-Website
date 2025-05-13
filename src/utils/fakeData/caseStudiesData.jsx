@@ -32,16 +32,7 @@ export const caseStudiesData = [
     tags: ["Mobile Apps"],
     category: "Branding",
   },
-  {
-    id: 4,
-    company: "LegalEase",
-    title: "Document Automation Platform",
-    description: "Legal document creation tool with e-signature and templates.",
-    image: "/images/caseStudies/case10.png",
-    logo: "/images/caseStudies/logo1.png",
-    tags: ["Branding"],
-    category: "Branding",
-  },
+
   {
     id: 5,
     company: "UrbanSpace",
@@ -59,11 +50,12 @@ export const caseStudiesData = [
     title: "Product Launch Campaign Website",
     description:
       "Marketing site with product previews, video stories, and influencers.",
-    image: "/images/caseStudies/case11.png",
+    image: "/images/caseStudies/case4.png",
     logo: "/images/caseStudies/logo2.png",
-    tags: ["Marketing"],
+    tags: ["SEO"],
     category: "Marketing",
   },
+
   {
     id: 7,
 
@@ -83,7 +75,7 @@ export const caseStudiesData = [
     title: "Digital Menu & Ordering System",
     description:
       "We built an in-house ordering system with contactless interface.",
-    image: "/images/caseStudies/case7.png",
+    image: "/images/caseStudies/case1.png",
     logo: "/images/caseStudies/logo1.png",
     tags: ["Mobile Apps"],
     category: "Mobile Apps",
@@ -93,7 +85,7 @@ export const caseStudiesData = [
     company: "QuickDelivery",
     title: "Logistics Tracking App",
     description: "Mobile app for real-time GPS tracking and delivery updates.",
-    image: "/images/caseStudies/case9.png",
+    image: "/images/caseStudies/case2.png",
     logo: "/images/caseStudies/logo3.png",
     tags: ["Mobile Apps"],
     category: "SEO",
@@ -117,7 +109,7 @@ export const caseStudiesData = [
     title: "Portfolio Website for Creatives",
     description:
       "A stunning portfolio site to showcase creative works and VFX.",
-    image: "/images/caseStudies/case8.png",
+    image: "/images/caseStudies/case5.png",
     logo: "/images/caseStudies/logo2.png",
     tags: ["Web Design"],
     category: "Web Design",
@@ -128,7 +120,7 @@ export const caseStudiesData = [
     title: "Travel Booking Website Redesign",
     description:
       "We redesigned Wanderly’s site with focus on UX and conversion.",
-    image: "/images/caseStudies/case13.png",
+    image: "/images/caseStudies/case3.png",
     logo: "/images/caseStudies/logo1.png",
     tags: ["Web Design"],
     category: "Web Design",
@@ -140,7 +132,7 @@ export const caseStudiesData = [
     title: "Big Data Dashboard Interface",
     description:
       "Real-time data visualizations from massive analytics datasets.",
-    image: "/images/caseStudies/case12.png",
+    image: "/images/caseStudies/case3.png",
     logo: "/images/caseStudies/logo3.png",
     tags: ["SEO"],
     category: "SEO",
@@ -150,7 +142,7 @@ export const caseStudiesData = [
     company: "SmartBuild Co.",
     title: "Construction Project Tracker",
     description: "Construction site management dashboard with task tracking.",
-    image: "/images/caseStudies/case14.png",
+    image: "/images/caseStudies/case5.png",
     logo: "/images/caseStudies/logo2.png",
     tags: ["SEO", "Mobile Apps"],
     category: "Mobile Apps",
@@ -160,7 +152,7 @@ export const caseStudiesData = [
     company: "StyleHive",
     title: "Fashion Marketplace Platform",
     description: "Multi-vendor marketplace with payment and order management.",
-    image: "/images/caseStudies/case15.png",
+    image: "/images/caseStudies/case3.png",
     logo: "/images/caseStudies/logo3.png",
     tags: ["Mobile Apps", "SEO"],
     category: "Mobile Apps",

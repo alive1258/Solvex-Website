@@ -4,18 +4,19 @@ import FooterLinkSection from "./FooterLinkSection";
 import {
   RiDribbbleLine,
   RiFacebookFill,
-  RiFacebookLine,
   RiInstagramLine,
   RiLinkedinFill,
-  RiLinkedinLine,
   RiTwitterXLine,
 } from "@remixicon/react";
 import Image from "next/image";
 import { services } from "@/utils/fakeData/serviceList";
+import Link from "next/link";
+import FooterQuickLink from "./FooterQuickLink";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <div>
+    <footer>
       <div className="bg-[#3B82F6] py-4  uppercase">
         {/* service 1  */}
         <Marquee direction="left" pauseOnHover={true} speed={90}>
@@ -35,10 +36,11 @@ const Footer = () => {
         </Marquee>
       </div>
 
-      {/* Footer  */}
+      {/* <!-- START FOOTER SECTION   --> */}
       <div className="bg-[#18181B]">
         <div className="container py-14 grid md:grid-cols-12 grid-cols-1 gap-6 text-white w-full">
           <div className=" md:col-span-5 ">
+            {/* <!-- START FOOTER LOGO DESIGN AREA --> */}
             <div className="flex items-center space-x-4">
               <Image
                 src="/images/footer/footerLogo.png"
@@ -53,6 +55,8 @@ const Footer = () => {
                 height={40}
               />
             </div>
+            {/* <!-- / END FOOTER LOGO DESIGN AREA --> */}
+
             <div className="mt-10">
               <p className="text-[#FAFAFA] font-medium text-[16px] w-full max-w-[410px]">
                 Solvex is a digital agency dedicated to creating innovative,
@@ -60,6 +64,8 @@ const Footer = () => {
                 vision into reality with engaging, responsive, and modern
                 design.
               </p>
+
+              {/* <!-- START FOOTER SOCIAL LINK AREA --> */}
               <div className="mt-10">
                 <h4 className="w-fit  border-b pb-3 border-border-base">
                   Follow Us
@@ -83,9 +89,11 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
+              {/* <!-- / END FOOTER SOCIAL LINK AREA --> */}
             </div>
           </div>
-          {/* Special links  */}
+
+          {/* <!-- START FOOTER SPECIAL LINK AREA --> */}
           <div className=" md:col-span-2  md:mt-0 mt-10">
             <FooterLinkSection
               title="Special links"
@@ -99,21 +107,15 @@ const Footer = () => {
               ]}
             />
           </div>
-          {/* quick links  */}
+          {/* <!-- / END FOOTER SPECIAL LINK AREA --> */}
+
+          {/* <!-- START FOOTER QUICK LINK AREA --> */}
           <div className=" md:col-span-2 md:mt-0 mt-10">
-            <FooterLinkSection
-              title="Quick links"
-              links={[
-                "Home",
-                "Services",
-                "Portfolio",
-                "Contact Us",
-                "About Us",
-                "Support",
-              ]}
-            />
+            <FooterQuickLink />
           </div>
-          {/* Subscribe newsletter  */}
+          {/* <!-- / END FOOTER QUICK LINK AREA --> */}
+
+          {/* <!-- START FOOTER SERVICE AREA --> */}
           <div className=" md:col-span-3 md:mt-0 mt-10">
             <h2 className="text-[#FAFAFA] font-bold text-lg w-fit border-b pb-1 uppercase border-[#3B82F6]">
               Subscribe newsletter
@@ -141,14 +143,22 @@ const Footer = () => {
               </p>
             </div>
           </div>
+          {/* <!-- / END FOOTER SERVICE AREA --> */}
         </div>
-        <div className="">
-          <p className="text-[#D4D4D8] border-t border-[#3F3F46] py-6 text-sm font-medium text-center">
-            © 2025 Solvex. All rights reserved.
+
+        {/* <!-- START FOOTER COPYRIGHT AREA --> */}
+        <div className="text-[#D4D4D8] border-t border-[#3F3F46] py-6 text-sm font-medium text-center">
+          <p>
+            Copyright ©{year} ,
+            <Link className="text-blue-base" href="/">
+              Solvex
+            </Link>
+            All Rights Reserved.
           </p>
         </div>
+        {/* <!-- / END FOOTER COPYRIGHT AREA --> */}
       </div>
-    </div>
+    </footer>
   );
 };
 

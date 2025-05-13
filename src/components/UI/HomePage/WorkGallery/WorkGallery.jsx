@@ -1,10 +1,12 @@
+import React from "react";
 import { workGalleryImages } from "@/utils/fakeData/workGalleryData";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 const WorkGallery = () => {
   return (
-    <div className="relative mt-5 ">
+    <section className="relative mt-5 ">
+      {/* START MARQUEE GALLERY */}
       <Marquee speed={90} pauseOnHover={true} direction="left">
         {workGalleryImages?.map((src, index) => (
           <div
@@ -21,13 +23,15 @@ const WorkGallery = () => {
           </div>
         ))}
       </Marquee>
+      {/* END MARQUEE GALLERY */}
 
-      {/* Gradient overlay */}
+      {/* START GRADIENT OVERLAY (LEFT & RIGHT) */}
       <div className="absolute hidden  z-50 top-0 left-0 w-full h-full md:flex justify-between pointer-events-none">
         <div className="h-full w-[250px] bg-gradient-to-r from-[#fff] from-[3%] to-transparent to-[99%]" />
         <div className="h-full w-[250px] bg-gradient-to-l from-[#fff] from-[3%] to-transparent to-[99%]" />
       </div>
-    </div>
+      {/* END GRADIENT OVERLAY */}
+    </section>
   );
 };
 

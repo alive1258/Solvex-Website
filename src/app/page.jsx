@@ -1,5 +1,4 @@
 import Blog from "@/components/UI/HomePage/Blog/Blog";
-
 import ContactUs from "@/components/UI/HomePage/ContactUs/ContactUs";
 import DigitalFuture from "@/components/UI/HomePage/DigitalFuture/DigitalFuture";
 import Faq from "@/components/UI/HomePage/Faq/Faq";

@@ -1,9 +1,6 @@
 import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
-import Image from "next/image";
-import Link from "next/link";
 import AnimatedText from "@/components/common/AnimatedText";
-import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 import ServiceCard from "./ServiceCard";
 import SlideUp from "@/utils/animations/SlideUp";
 import { servicesData } from "@/utils/fakeData/servicesData";
@@ -12,28 +9,21 @@ const OurService = ({ status = false }) => {
   // decide how many services to show
   const displayedServices = status ? servicesData?.slice(0, 4) : servicesData;
   return (
-    <div
+    <section
       className={`bg-[#F4F4F5] ${
         status === true ? "md:mt-40 mt-[1050px]" : "mt-0"
       }   relative`}
     >
-      <div
-        style={{
-          width: "594px",
-          height: "4px",
-          right: "0px",
-          bottom: "0px",
-          background:
-            "linear-gradient(85deg, #2154FF 0%, rgba(255, 255, 255, 0.00) 100%)",
-        }}
-      ></div>
+      <div className="custom-gradient-line-top"></div>
 
       <div className="container md:py-16 py-12">
+        {/* START: Badge and Animated Header */}
         <BadgeLabel text="Our Services" />
         <AnimatedText
           lines={[" Our Expertise in Web Development"]}
           className="animated-header"
         />
+        {/* END: Badge and Animated Header */}
 
         <SlideUp>
           <p className="primary-paragraph">
@@ -43,6 +33,7 @@ const OurService = ({ status = false }) => {
           </p>
         </SlideUp>
 
+        {/* START: Services Grid */}
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-8 mt-14 place-items-center">
           {displayedServices?.map((service, index) => (
             <ServiceCard
@@ -52,8 +43,9 @@ const OurService = ({ status = false }) => {
             />
           ))}
         </div>
+        {/* END: Services Grid */}
       </div>
-    </div>
+    </section>
   );
 };
 

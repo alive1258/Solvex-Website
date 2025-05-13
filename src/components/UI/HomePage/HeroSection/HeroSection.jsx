@@ -1,61 +1,22 @@
-"use client";
-import { motion } from "framer-motion";
+import React from "react";
 import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 import Button from "../../Button/Button";
 import WorkGallery from "../WorkGallery/WorkGallery";
 import AnimatedText from "@/components/common/AnimatedText";
 import SlideUp from "@/utils/animations/SlideUp";
 import Link from "next/link";
+
 const HeroSection = () => {
   return (
-    <div className="mobile-hero-section-bg  md:relative  overflow-hidden">
+    <section className="mobile-hero-section-bg  md:relative  overflow-hidden">
       <div className="hero-section-bg">
-        {/* Blurred Blue Effect Shape 1 */}
-        <div
-          style={{
-            width: "600px",
-            height: "116px",
-            transform: "rotate(14.814deg)",
-            flexShrink: 0,
-            borderRadius: "600px",
-            opacity: 0.3,
-            background: "#3B82F6",
-            filter: "blur(100px)",
-          }}
-          className="absolute md:block hidden top-10 -left-32"
-        />
+        {/* BLURRED BLUE EFFECT SHAPE 1 */}
+        <div className="blurred-blue-shape-1" />
 
-        {/* Blurred Blue Effect Shape 2 */}
-        <div
-          style={{
-            width: "600px",
-            height: "316px",
-            transform: "rotate(20.582deg)",
-            flexShrink: 0,
-            borderRadius: "600px",
-            opacity: 0.3,
-            background: "#3B82F6",
-            filter: "blur(100px)",
-          }}
-          className="md:absolute md:block hidden top-20 -left-32"
-        />
+        {/* BLURRED BLUE EFFECT SHAPE 2  */}
+        <div className="blurred-blue-shape-2" />
 
-        {/* Blurred Blue Effect Shape 3 */}
-        <div
-          style={{
-            width: "600px",
-            height: "616px",
-            transform: "rotate(20.582deg)",
-            flexShrink: 0,
-            borderRadius: "600px",
-            opacity: 0.3,
-            background: "#3B82F6",
-            filter: "blur(100px)",
-          }}
-          className="md:absolute md:block hidden top-28 -left-32"
-        />
-
-        {/* Main Content */}
+        {/* START HERO  CONTENT  */}
         <div className="pt-12 container ">
           <AnimatedText
             lines={[
@@ -82,9 +43,12 @@ const HeroSection = () => {
             </div>
           </SlideUp>
         </div>
+        {/* END HERO  CONTENT */}
+
+        {/* WORK GALLERY SECTION */}
         <WorkGallery />
       </div>
-    </div>
+    </section>
   );
 };
 

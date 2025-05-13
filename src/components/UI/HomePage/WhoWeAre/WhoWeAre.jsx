@@ -12,36 +12,16 @@ import Link from "next/link";
 const WhoWeAre = () => {
   return (
     <div className="relative md:mt-14 mt-12 md:overflow-hidden">
-      {/* Blurred Blue Circle */}
-      <div
-        className="absolute md:block hidden"
-        style={{
-          width: "455px",
-          height: "455px",
-          right: "-87px",
-          bottom: "-134px",
-          borderRadius: "455px",
-          opacity: 0.16,
-          background: "var(--blue-500, #3B82F6)",
-          filter: "blur(100px)",
-        }}
-      ></div>
+      {/* BLURRED BLUE CIRCLE */}
+      <div className="absolute md:block hidden blurred-blue-circle"></div>
 
-      {/* Bottom Gradient Line */}
-      <div
-        className="absolute md:block hidden"
-        style={{
-          width: "594px",
-          height: "4px",
-          left: "0px",
-          bottom: "0px",
-          background:
-            "linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
-        }}
-      ></div>
+      {/* BOTTOM GRADIENT LINE */}
+      <div className="absolute md:block hidden bottom-gradient-line"></div>
 
       <div className="container md:px-20 px-5">
         <BadgeLabel text="Who We Are" />
+
+        {/* ANIMATED TEXT HEADING */}
         <AnimatedText
           lines={["A Passionate Team of Innovators & Developers."]}
           className="animated-header"
@@ -57,6 +37,7 @@ const WhoWeAre = () => {
         </SlideUp>
 
         <div className="my-14 grid md:grid-cols-2 gap-x-6">
+          {/* START TEAM IMAGE WITH ZOOM EFFECT */}
           <ZoomIn>
             <Image
               className="rounded-2xl w-full md:h-[469px]"
@@ -66,7 +47,10 @@ const WhoWeAre = () => {
               width={536}
             />
           </ZoomIn>
+          {/* END TEAM IMAGE WITH ZOOM EFFECT */}
+
           <div className="grid md:mt-0 mt-10 md:grid-cols-2 grid-cols-1 gap-x-5 md:gap-y-5 gap-y-10">
+            {/* MAPPING THROUGH FEATURES DATA */}
             {features?.map((feature, index) => (
               <FeatureCard
                 key={feature.id}
@@ -74,6 +58,7 @@ const WhoWeAre = () => {
                 delay={index * 0.3}
               />
             ))}
+            {/* END MAPPING THROUGH FEATURES DATA */}
 
             <SlideUp className="pt-1 uppercase md:block  flex  justify-center">
               <Link href="/contact">
