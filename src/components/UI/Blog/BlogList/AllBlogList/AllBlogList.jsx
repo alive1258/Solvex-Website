@@ -2,16 +2,8 @@
 import AnimatedText from "@/components/common/AnimatedText";
 import SlideUp from "@/utils/animations/SlideUp";
 import { blogPosts } from "@/utils/fakeData/blogData";
-import {
-  RiArrowDropLeftLine,
-  RiArrowDropRightLine,
-  RiArrowLeftBoxFill,
-  RiArrowLeftBoxLine,
-  RiArrowLeftFill,
-  RiArrowLeftLine,
-  RiTimeLine,
-} from "@remixicon/react";
-import Image from "next/image";
+import { RiArrowDropLeftLine, RiArrowDropRightLine } from "@remixicon/react";
+
 import React, { useState } from "react";
 import BlogListCard from "./BlogListCard";
 

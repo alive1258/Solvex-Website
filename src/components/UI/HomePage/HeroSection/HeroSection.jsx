@@ -24,7 +24,7 @@ const HeroSection = () => {
               "Performance Websites",
               "That Convert",
             ]}
-            className="text-secondary-base text-center font-bold uppercase max-w-[900px] mx-auto md:text-[64px] text-[32px]"
+            className="text-secondary-base text-center font-bold uppercase w-full max-w-[900px] mx-auto md:text-[64px] text-[28px]"
           />
 
           <AnimatedParagraph

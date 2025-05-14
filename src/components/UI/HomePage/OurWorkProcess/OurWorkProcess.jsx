@@ -15,8 +15,7 @@ const OurWorkProcess = () => {
       {/* ANIMATED HEADER TEXT */}
       <AnimatedText
         lines={[
-          "A streamlined approach for delivering high-quality",
-          "web solutions.",
+          "A Streamlined Approach For Delivering High-Quality Web Solutions.",
         ]}
         className="animated-header"
       />

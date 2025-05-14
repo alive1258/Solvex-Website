@@ -6,7 +6,7 @@ import React from "react";
 
 const CareerGallery = () => {
   return (
-    <div className="py-14 overflow-hidden">
+    <div className="mt-14 overflow-hidden">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 relative container">
         {/* Glow Effects */}
         <div
@@ -31,7 +31,7 @@ const CareerGallery = () => {
         />
 
         {/* Left Section */}
-        <div className="grid-cols-2 grid gap-5 z-50 overflow-hidden">
+        <div className="md:grid-cols-2 grid-cols-1 grid gap-5 z-50 overflow-hidden">
           {careerGalleryData?.left?.map((item, index) => (
             <SlideLeft
               delay={index * 0.4}
@@ -50,12 +50,12 @@ const CareerGallery = () => {
         </div>
 
         {/* Right Section */}
-        <div className="grid-cols-2 grid gap-5 w-full z-50">
+        <div className="md:grid-cols-2 grid-cols-1 grid gap-5 w-full z-50">
           {careerGalleryData?.right?.map((item, index) => (
             <SlideRight
               delay={index * 0.4}
               key={index}
-              className={item.colSpan === 2 ? "col-span-2" : ""}
+              className={item.colSpan === 2 ? "md:col-span-2" : ""}
             >
               <Image
                 src={item.src}

@@ -10,7 +10,7 @@ const Technologies = () => {
       <div className="container py-14">
         <AnimatedText
           lines={[" Technologies We Master"]}
-          className="text-[40px] font-bold  md:text-start text-center text-secondary-base"
+          className="md:text-[40px] text-[34px] font-bold  md:text-start text-center text-secondary-base"
         />
         <div className="mt-12 grid lg:grid-cols-2 grid-cols-1 gap-6">
           {technologiesData?.map((techGroup, index) => (

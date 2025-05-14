@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const AskQuestion = () => {
   return (
-    <ZoomIn className=" h-fit border border-border-base rounded-lg bg-[#F4F4F5] px-4 py-6 md:w-full w-[385px]">
+    <ZoomIn className="h-fit border border-border-base rounded-lg bg-[#F4F4F5] px-4 py-6 md:w-full w-[385px]">
       <div className=" flex justify-center ">
         <div className="flex  md:w-[172px] w-[148px] md:h-[172px] h-[148px] p-[14px] items-center gap-[8px] rounded-full bg-[linear-gradient(357deg,_#FFF_2.79%,_#D9E2FF_97.39%)]">
           <div className="flex animate-[floatPulse_2s_ease-in-out_infinite] md:w-[144px] w-[116px] md:h-[144px] h-[116px] py-[48px] justify-center items-center shrink-0 rounded-full border border-white bg-[linear-gradient(85deg,_#2154FF_0%,_#5079FF_100%)]">

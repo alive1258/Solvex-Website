@@ -10,19 +10,19 @@ const TechnologiesCard = ({ techGroup, delay = 0, index }) => {
       <SlideComponent delay={delay}>
         <div
           key={techGroup?.id}
-          className="bg-[#FFF] px-4  py-6 rounded-2xl relative"
+          className="bg-[#FFF] px-4 h-full  py-6 rounded-2xl relative"
         >
           <h5 className="text-[#3B82F6] text-lg font-bold">
             {techGroup?.title}
           </h5>
 
-          <div className="mt-10">
+          <div className="md:mt-10 mt-5">
             <>
               <div className="flex  md:gap-x-8  gap-x-3 items-center ">
                 {techGroup.items.map((item) => (
                   <div
                     key={item.id}
-                    className="bg-white-base shadow-md py-6 px-4 rounded-lg border border-border-base md:flex  justify-center items-center space-x-2 w-full max-w-[184px]"
+                    className="bg-white-base md:h-full h-20 shadow-md md:py-6 py-4 px-4 rounded-lg border border-border-base md:flex  justify-center items-center space-x-2 w-full max-w-[184px]"
                   >
                     <div className="md:block flex items-center justify-center">
                       <Image

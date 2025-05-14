@@ -38,7 +38,7 @@ const ContactUs = () => {
         <BadgeLabel text="Contact Us" />
         <AnimatedText
           lines={["Let’s Work Together to Build Something Great"]}
-          className="animated-header"
+          className="text-2xl font-bold text-primary-base mt-6 text-center mx-auto max-w-full sm:max-w-lg"
         />
 
         <SlideUp>
@@ -51,8 +51,8 @@ const ContactUs = () => {
         <div className="mt-12 grid md:grid-cols-5 gap-6">
           {/* section left  */}
           <SlideLeft className="md:col-span-2 ">
-            <div className="bg-white-base p-6 rounded-xl border border-border-base">
-              <h1 className="text-secondary-base text-[32px] uppercase text-center font-bold">
+            <div className="bg-white-base p-6 w-full rounded-xl border border-border-base">
+              <h1 className="text-secondary-base md:text-[32px] text-[28px] uppercase text-center font-bold">
                 get in touch
               </h1>
               <div className="mt-10 space-y-8">
@@ -62,7 +62,7 @@ const ContactUs = () => {
                     <RiPhoneLine size={24} className="text-[#3B82F6]" />
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-secondary-base text-lg font-bold">
+                    <h5 className="text-secondary-base uppercase text-lg font-bold">
                       Phone Number
                     </h5>
                     <p className="text-tertiary-base text-[16px]">
@@ -76,7 +76,7 @@ const ContactUs = () => {
                     <RiMailLine size={24} className="text-[#3B82F6]" />
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-secondary-base text-lg font-bold">
+                    <h5 className="text-secondary-base uppercase text-lg font-bold">
                       E-mail Address
                     </h5>
                     <p className="text-tertiary-base text-[16px]">
@@ -90,7 +90,7 @@ const ContactUs = () => {
                     <RiMapPinLine size={24} className="text-[#3B82F6]" />
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-secondary-base text-lg font-bold">
+                    <h5 className="text-secondary-base uppercase text-lg font-bold">
                       Location
                     </h5>
                     <p className="text-tertiary-base text-[16px]">

@@ -6,7 +6,7 @@ import React from "react";
 const BlogListCard = ({ post, delay = 0, idx }) => {
   return (
     <SlideUp delay={delay}>
-      <div className="border grid grid-cols-2 gap-x-8   cursor-pointer  border-border-base bg-white p-4 rounded-2xl">
+      <div className="border grid md:grid-cols-2 grid-cols-1 gap-x-8   cursor-pointer  border-border-base bg-white p-4 rounded-2xl">
         <div
           className={`relative overflow-hidden rounded-2xl ${
             idx % 2 !== 0 ? "md:order-2" : "md:order-1"
@@ -45,7 +45,7 @@ const BlogListCard = ({ post, delay = 0, idx }) => {
               </div>
 
               {/* Title & Excerpt */}
-              <div className="mt-16">
+              <div className="md:mt-16 mt-8">
                 <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
                   {post.title}
                 </h1>
@@ -56,7 +56,7 @@ const BlogListCard = ({ post, delay = 0, idx }) => {
             </div>
 
             {/* Author Section at Bottom */}
-            <div className="">
+            <div className="mt-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4">
                   <Image

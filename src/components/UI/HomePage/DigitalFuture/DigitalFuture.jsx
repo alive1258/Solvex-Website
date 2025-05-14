@@ -41,9 +41,9 @@ const DigitalFuture = ({ status = true }) => {
                   {status === true ? (
                     <AnimatedText
                       lines={[
-                        "Work With Solvex - Let’s Build Your Digital Future!",
+                        "Work With Solvex-Let’s Build Your Digital Future!",
                       ]}
-                      className="text-[#FAFAFA] text-[32px] font-black"
+                      className="text-[#FAFAFA] md:text-[32px] text-[28px] font-black"
                     />
                   ) : (
                     <AnimatedText

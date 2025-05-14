@@ -7,7 +7,7 @@ const Accordion = ({ accordion, isActive, onClick, delay = 0 }) => {
       className="flex items-center space-x-4  justify-baseline w-full"
     >
       <div
-        className={`rounded-lg max-w-[805px] w-full bg-[#F4F4F5] p-4 ${
+        className={`rounded-lg md:max-w-[805px] w-full bg-[#F4F4F5] p-4 ${
           isActive
             ? "border-2 border-[#2154FF]"
             : "border-2 border-transparent hover:border-[#2154FF]"

@@ -33,9 +33,9 @@ const Navbar = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   const handleMenuLinkClick = () => {
-    scrollToTop();
     setOpenModal("");
     closeSidebar();
+    scrollToTop();
   };
 
   const toggleSidebar = () => setOpen((prev) => !prev);

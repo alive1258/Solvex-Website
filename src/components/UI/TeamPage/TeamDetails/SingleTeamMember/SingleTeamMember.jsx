@@ -42,34 +42,7 @@ const SingleTeamMember = () => {
           fill="white"
         />
       </svg>
-      <div
-        className="hidden md:block"
-        style={{
-          width: "672px",
-          height: "672px",
-          position: "absolute",
-          right: "-400px",
-          top: "100px",
-          borderRadius: "672px",
-          opacity: 0.6,
-          background: "#3B82F6",
-          filter: "blur(175px)",
-          zIndex: -1,
-        }}
-      ></div>
-      {/* <div
-        className="absolute"
-        style={{
-          width: "672px",
-          height: "672px",
-          borderRadius: "672px",
-          background: "#10B981",
-          opacity: 0.6,
-          filter: "blur(175px)",
-          top: "-135px",
-          right: "-478px",
-        }}
-      ></div> */}
+      <div className="hidden md:block blue-blur-circle-team"></div>
 
       <div className="container py-14 grid md:grid-cols-2 grid-cols-1 gap-6">
         <div className="relative inline-block">
@@ -103,33 +76,12 @@ const SingleTeamMember = () => {
           <div className="mt-12 space-y-7">
             {features.map((title, index) => (
               <div key={index} className="flex items-center space-x-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="13"
-                  height="20"
-                  viewBox="0 0 13 20"
-                  fill="none"
-                >
-                  <g clipPath="url(#clip0_314_2010)">
-                    <circle
-                      cx="1.78568"
-                      cy="17.8572"
-                      r="8.39286"
-                      fill="#3B82F6"
-                    />
-                    <circle
-                      cx="10.0893"
-                      cy="0.803606"
-                      r="9.19643"
-                      fill="#3B82F6"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_314_2010">
-                      <rect width="12.8571" height="20" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <Image
+                  src="/images/footer/footerLogo.png"
+                  alt="logo"
+                  width={13}
+                  height={20}
+                />
                 <h1 className="text-primary-base text-lg font-bold">{title}</h1>
               </div>
             ))}
@@ -144,7 +96,7 @@ const SingleTeamMember = () => {
               }}
             ></div>
 
-            <div className="mt-6 flex items-center space-x-3">
+            <div className="md:mt-8 mt-10 flex items-center space-x-3">
               <div className="team-social-icon group">
                 <RiFacebookFill
                   className="text-gray-500 group-hover:text-white"

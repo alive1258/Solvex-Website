@@ -11,12 +11,12 @@ const TechStore = () => {
   return (
     <div className="container mt-14">
       <AnimatedText
-        lines={["TechStore Inc. — Revolutionizing Online", " Tech Shopping"]}
-        className="text-primary-base text-[48px] font-bold text-center w-full max-w-[890px] mx-auto"
+        lines={["TechStore Inc. — Revolutionizing Online Tech Shopping"]}
+        className="text-primary-base md:text-[48px] text-[30px] font-bold text-center w-full max-w-[890px] mx-auto"
       />
-      <div className="md:flex justify-center items-center space-x-24 mt-16">
+      <div className="md:flex justify-center items-center space-x-24 md:space-y-0 space-y-5 md:mt-16 mt-10">
         {/* card 1  */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 ">
           <SlideUp delay={card1}>
             <div className="size-14 rounded-full flex justify-center items-center  bg-[#3B82F6]">
               <svg
@@ -102,7 +102,7 @@ const TechStore = () => {
         </div>
       </div>
 
-      <div className="mt-[72px] group">
+      <div className="md:mt-[72px] mt-10 group">
         <ZoomIn className="relative overflow-hidden rounded-2xl">
           <Image
             src="/images/portfolio/bannerDetail.png"

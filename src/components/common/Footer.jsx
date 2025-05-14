@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
 
           {/* <!-- START FOOTER SPECIAL LINK AREA --> */}
-          <div className=" md:col-span-2  md:mt-0 mt-10">
+          <div className=" md:col-span-2  md:mt-0 mt-8">
             <FooterLinkSection
               title="Special links"
               links={[
@@ -110,7 +110,7 @@ const Footer = () => {
           {/* <!-- / END FOOTER SPECIAL LINK AREA --> */}
 
           {/* <!-- START FOOTER QUICK LINK AREA --> */}
-          <div className=" md:col-span-2 md:mt-0 mt-10">
+          <div className=" md:col-span-2 md:mt-0 mt-8">
             <FooterQuickLink />
           </div>
           {/* <!-- / END FOOTER QUICK LINK AREA --> */}
