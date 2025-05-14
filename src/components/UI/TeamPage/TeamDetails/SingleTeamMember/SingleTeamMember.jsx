@@ -1,12 +1,6 @@
-import {
-  RiDribbbleLine,
-  RiFacebookFill,
-  RiInstagramLine,
-  RiLinkedinFill,
-  RiTwitterXLine,
-} from "@remixicon/react";
-import Image from "next/image";
 import React from "react";
+import ShareSocialLink from "@/components/common/ShareSocialLink";
+import Image from "next/image";
 
 const SingleTeamMember = () => {
   const features = [
@@ -74,7 +68,7 @@ const SingleTeamMember = () => {
           </p>
 
           <div className="mt-12 space-y-7">
-            {features.map((title, index) => (
+            {features?.map((title, index) => (
               <div key={index} className="flex items-center space-x-3">
                 <Image
                   src="/images/footer/footerLogo.png"
@@ -96,37 +90,8 @@ const SingleTeamMember = () => {
               }}
             ></div>
 
-            <div className="md:mt-8 mt-10 flex items-center space-x-3">
-              <div className="team-social-icon group">
-                <RiFacebookFill
-                  className="text-gray-500 group-hover:text-white"
-                  size={20}
-                />
-              </div>
-              <div className="team-social-icon group">
-                <RiInstagramLine
-                  className="text-gray-500 group-hover:text-white"
-                  size={20}
-                />
-              </div>
-              <div className="team-social-icon group">
-                <RiLinkedinFill
-                  className="text-gray-500 group-hover:text-white"
-                  size={20}
-                />
-              </div>
-              <div className="team-social-icon group">
-                <RiTwitterXLine
-                  className="text-gray-500 group-hover:text-white"
-                  size={20}
-                />
-              </div>
-              <div className="team-social-icon group">
-                <RiDribbbleLine
-                  className="text-gray-500 group-hover:text-white"
-                  size={20}
-                />
-              </div>
+            <div className="md:mt-8 mt-10 ">
+              <ShareSocialLink />
             </div>
           </div>
         </div>

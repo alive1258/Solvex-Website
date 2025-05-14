@@ -21,7 +21,7 @@ const HomePage = () => {
       <Portfolio />
       <DigitalFuture status={true} />
       <Testimonials />
-      {/* <TrustedBrands status={true} /> */}
+      <TrustedBrands status={true} />
       <Faq />
       <PricingPlans status={true} />
       <Blog />

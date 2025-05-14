@@ -1,21 +1,11 @@
 import React from "react";
-import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Button from "../../Button/Button";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
+import { brands } from "@/utils/fakeData/brands";
 
 const TrustedBrands = ({ status = false }) => {
-  const brands = [
-    { id: 1, name: "CloudSync", img: "/images/brands/brand1.png" },
-    { id: 2, name: "CodeCrafters", img: "/images/brands/brand2.png" },
-    { id: 3, name: "TechStore", img: "/images/brands/brand3.png" },
-    { id: 4, name: "TrendyWear", img: "/images/brands/brand4.png" },
-    { id: 5, name: "HealthTrack", img: "/images/brands/brand5.png" },
-    { id: 6, name: "CloudSync", img: "/images/brands/brand6.png" },
-    { id: 7, name: "TechStore", img: "/images/brands/brand2.png" },
-  ];
-
   return (
     <div className="bg-[#F4F4F5] md:h-[600px]  relative overflow-hidden">
       <div
@@ -41,8 +31,11 @@ const TrustedBrands = ({ status = false }) => {
         }}
       ></div>
 
-      <div className="container md:mr-96   md:px-32 md:flex md:py-0 w-full pb-12">
-        <div className="md:flex space-x-96 ">
+      <div
+        className="container relative mx-auto md:px-32 lg:px-40  md:flex md:py-0 w-full pb-12"
+        style={{ display: "relative" }}
+      >
+        <div className=" grid grid-cols-1 md:grid-cols-2 mt-4 md:mt-0 gap-x-[140px] ">
           <div className="md:relative md:top-1/6">
             <div className=" w-full">
               <p className="text-[#3B82F6] text-sm md:text-start text-center font-medium">
@@ -63,50 +56,53 @@ const TrustedBrands = ({ status = false }) => {
               </div>
             </div>
           </div>
-          <div className="md:flex md:flex-row space-x-6">
-            <div className="w-[240px] ">
-              {/* <Marquee direction="up" speed={100}> */}
-              <div className="space-y-3">
-                {brands.map((brand, index) => (
-                  <div
-                    key={index}
-                    className="bg-[#FFF]  w-full max-w-[224px]  rounded-lg flex items-center space-x-2 border border-border-base p-4"
-                  >
-                    <Image
-                      src={brand?.img}
-                      alt={brand?.name}
-                      height={32}
-                      width={32}
-                    />
-                    <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                      {brand?.name}
-                    </h5>
-                  </div>
-                ))}
-              </div>
-              {/* </Marquee> */}
+          <div className="  absolute top-1 -left-72  md:left-72 md:flex md:flex-row md:space-x-5 w-full">
+            <div className="md:block hidden   w-full md:w-[240px] ">
+              <Marquee direction="up" speed={100} scrollamount="1">
+                <div className="space-y-3">
+                  {brands?.map((brand, index) => (
+                    <div
+                      key={index}
+                      className="bg-[#FFF] w-full max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4"
+                    >
+                      <Image
+                        src={brand?.img}
+                        alt={brand?.name}
+                        height={32}
+                        width={32}
+                      />
+                      <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
+                        {brand?.name}
+                      </h5>
+                    </div>
+                  ))}
+                </div>
+              </Marquee>
             </div>
-            <div className="w-[240px] ">
-              {/* <Marquee direction="down" speed={100}> */}
-              <div className="space-y-3">
-                {brands.map((brand, index) => (
-                  <div
-                    key={index}
-                    className="bg-[#FFF] w-full max-w-[224px] space-y-2.5 rounded-lg flex items-center space-x-2 border border-border-base p-4"
-                  >
-                    <Image
-                      src={brand?.img}
-                      alt={brand?.name}
-                      height={32}
-                      width={32}
-                    />
-                    <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
-                      {brand?.name}
-                    </h5>
-                  </div>
-                ))}
-              </div>
-              {/* </Marquee> */}
+            <div
+              className="w-full pr-[-40px] md:w-[240px] md:block hidden my-2"
+              style={{ paddingRight: "-40px" }}
+            >
+              <Marquee direction="down" speed={100}>
+                <div className="space-y-3">
+                  {brands?.map((brand, index) => (
+                    <div
+                      key={index}
+                      className="bg-[#FFF] w-full max-w-[224px] space-y-2.5 rounded-lg flex items-center space-x-2 border border-border-base p-4"
+                    >
+                      <Image
+                        src={brand?.img}
+                        alt={brand?.name}
+                        height={32}
+                        width={32}
+                      />
+                      <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
+                        {brand?.name}
+                      </h5>
+                    </div>
+                  ))}
+                </div>
+              </Marquee>
             </div>
           </div>
         </div>
