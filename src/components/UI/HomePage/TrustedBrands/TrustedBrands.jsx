@@ -17,7 +17,7 @@ const TrustedBrands = ({ status = false }) => {
   ];
 
   return (
-    <div className="bg-[#F4F4F5] h-[600px]  relative overflow-hidden">
+    <div className="bg-[#F4F4F5] md:h-[600px]  relative overflow-hidden">
       <div
         className={`absolute ${status === true ? "md:block" : "hidden"}`}
         style={{
@@ -41,10 +41,10 @@ const TrustedBrands = ({ status = false }) => {
         }}
       ></div>
 
-      <div className="container md:mr-96   md:px-32 md:flex md:py-0  pb-12">
+      <div className="container md:mr-96   md:px-32 md:flex md:py-0 w-full pb-12">
         <div className="md:flex space-x-96 ">
-          <div className="relative top-1/6">
-            <div className="md:max-w-[450px] ">
+          <div className="md:relative md:top-1/6">
+            <div className=" w-full">
               <p className="text-[#3B82F6] text-sm md:text-start text-center font-medium">
                 We Work With the Best
               </p>
@@ -56,14 +56,14 @@ const TrustedBrands = ({ status = false }) => {
                 innovative companies, helping them scale with cutting-edge
                 digital solutions.
               </p>
-              <div className="md:mt-14 my-14 md:block flex justify-center uppercase">
+              <div className="md:mt-14 my-14 md:block  uppercase">
                 <Link href="/contact">
                   <Button content="Get a Free Consultation" />
                 </Link>
               </div>
             </div>
           </div>
-          <div className="flex flex-row space-x-6">
+          <div className="md:flex md:flex-row space-x-6">
             <div className="w-[240px] ">
               {/* <Marquee direction="up" speed={100}> */}
               <div className="space-y-3">
