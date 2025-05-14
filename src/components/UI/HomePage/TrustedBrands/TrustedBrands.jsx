@@ -7,28 +7,16 @@ import { brands } from "@/utils/fakeData/brands";
 
 const TrustedBrands = ({ status = false }) => {
   return (
-    <div className="bg-[#F4F4F5] md:h-[600px]  relative overflow-hidden">
+    <div className="bg-[#F4F4F5] md:h-[600px] w-full relative overflow-hidden">
       <div
-        className={`absolute ${status === true ? "md:block" : "hidden"}`}
-        style={{
-          width: "594px",
-          height: "4px",
-          right: "0px",
-          bottom: "0px",
-          background:
-            "linear-gradient(85deg, #2154FF 0%, rgba(255, 255, 255, 0.00) 100%)",
-        }}
+        className={`bottom-gradient-line ${
+          status === true ? "md:block" : "hidden"
+        }`}
       ></div>
       <div
-        className={`absolute ${status === true ? "md:block" : "hidden"}`}
-        style={{
-          width: "594px",
-          height: "4px",
-          left: "0px",
-          top: "0px",
-          background:
-            " linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
-        }}
+        className={`custom-gradient-line  ${
+          status === true ? "md:block" : "hidden"
+        }`}
       ></div>
 
       <div

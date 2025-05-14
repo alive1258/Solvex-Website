@@ -6,7 +6,9 @@ import AnimatedText from "@/components/common/AnimatedText";
 
 const Technologies = () => {
   return (
-    <div className="bg-[#F4F4F5]">
+    <div className="bg-[#F4F4F5] w-full relative overflow-hidden">
+      <div className="bottom-gradient-line"></div>
+      <div className="custom-gradient-line"></div>
       <div className="container py-14">
         <AnimatedText
           lines={[" Technologies We Master"]}

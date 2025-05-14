@@ -4,135 +4,10 @@ import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import AnimatedText from "@/components/common/AnimatedText";
 import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 import PricingPlanCard from "./PricingPlanCard";
+import { pricingPlansData } from "@/utils/fakeData/pricingPlansData";
 
 const PricingPlans = ({ status = false }) => {
   const categories = ["Monthly", "Yearly"];
-  const pricingPlansData = [
-    {
-      id: 1,
-      title: "Starter Plan",
-      price: "499",
-      des: "For small businesses and startups",
-      plan_title: "What’s Included",
-      plan: [
-        { id: 1, plan_des1: "Custom 3-page website (Home, About, Contact)" },
-        { id: 2, plan_des1: "Mobile responsive design" },
-        { id: 3, plan_des1: "Basic SEO optimization" },
-        { id: 4, plan_des1: "Contact form integration" },
-        { id: 5, plan_des1: "Social media integration" },
-        { id: 6, plan_des1: "1 round of revision" },
-        { id: 7, plan_des1: "Basic loading speed optimization" },
-        { id: 8, plan_des1: "Google Maps embedding" },
-        { id: 9, plan_des1: "Free consultation" },
-      ],
-      category: "Monthly",
-    },
-    {
-      id: 2,
-      title: "Business Plan",
-      price: "999",
-      des: "Best for growing businesses",
-      plan_title: "What’s Included",
-      plan: [
-        { id: 1, plan_des1: "Custom 5-page website" },
-        { id: 2, plan_des1: "Mobile & tablet responsive" },
-        { id: 3, plan_des1: "SEO-ready pages" },
-        { id: 4, plan_des1: "Blog integration" },
-        { id: 5, plan_des1: "Newsletter setup" },
-        { id: 6, plan_des1: "Analytics setup" },
-        { id: 7, plan_des1: "Custom icons" },
-        { id: 8, plan_des1: "Live chat integration" },
-        { id: 9, plan_des1: "Performance optimization" },
-        { id: 10, plan_des1: "Email & chat support" },
-        { id: 11, plan_des1: "2 months maintenance" },
-      ],
-      category: "Monthly",
-    },
-    {
-      id: 3,
-      title: "Pro Plan",
-      price: "1499",
-      des: "Perfect for advanced needs",
-      plan_title: "What’s Included",
-      plan: [
-        { id: 1, plan_des1: "Custom 10-page website" },
-        { id: 2, plan_des1: "Fully responsive layout" },
-        { id: 3, plan_des1: "Advanced SEO setup" },
-        { id: 4, plan_des1: "E-commerce integration" },
-        { id: 5, plan_des1: "Blog + product showcase" },
-        { id: 6, plan_des1: "Multi-language support" },
-        { id: 7, plan_des1: "Admin dashboard (basic)" },
-        { id: 8, plan_des1: "Database setup" },
-        { id: 9, plan_des1: "3 months priority support" },
-        { id: 10, plan_des1: "Domain & hosting included" },
-        { id: 11, plan_des1: "Ongoing performance monitoring" },
-      ],
-      category: "Monthly",
-    },
-    {
-      id: 4,
-      title: "Starter Yearly",
-      price: "4999",
-      des: "Affordable yearly plan for starters",
-      plan_title: "What’s Included",
-      plan: [
-        { id: 1, plan_des1: "Custom 3-page website (Home, About, Contact)" },
-        { id: 2, plan_des1: "Mobile responsive design" },
-        { id: 3, plan_des1: "Basic SEO optimization" },
-        { id: 4, plan_des1: "Contact form integration" },
-        { id: 5, plan_des1: "Social media integration" },
-        { id: 6, plan_des1: "1 round of revision" },
-        { id: 7, plan_des1: "Basic loading speed optimization" },
-        { id: 8, plan_des1: "Google Maps embedding" },
-        { id: 9, plan_des1: "Free consultation" },
-        { id: 10, plan_des1: "Email support" },
-        { id: 11, plan_des1: "1 year maintenance support" },
-      ],
-      category: "Yearly",
-    },
-    {
-      id: 5,
-      title: "Business Yearly",
-      price: "9999",
-      des: "Great value for medium-sized businesses",
-      plan_title: "What’s Included",
-      plan: [
-        { id: 1, plan_des1: "Custom 5-page website" },
-        { id: 2, plan_des1: "Responsive for all devices" },
-        { id: 3, plan_des1: "SEO-optimized content" },
-        { id: 4, plan_des1: "Blog + newsletter" },
-        { id: 5, plan_des1: "Google Analytics integration" },
-        { id: 6, plan_des1: "Custom illustrations" },
-        { id: 7, plan_des1: "Live support chat" },
-        { id: 8, plan_des1: "Speed optimized assets" },
-        { id: 9, plan_des1: "Free SSL & security setup" },
-        { id: 10, plan_des1: "Email + chat support" },
-        { id: 11, plan_des1: "1 year maintenance & updates" },
-      ],
-      category: "Yearly",
-    },
-    {
-      id: 6,
-      title: "Pro Yearly",
-      price: "14999",
-      des: "Full-featured solution for large businesses",
-      plan_title: "What’s Included",
-      plan: [
-        { id: 1, plan_des1: "Custom 10+ page website" },
-        { id: 2, plan_des1: "Advanced responsiveness" },
-        { id: 3, plan_des1: "Professional SEO tools" },
-        { id: 4, plan_des1: "E-commerce + payment setup" },
-        { id: 5, plan_des1: "Multi-language ready" },
-        { id: 6, plan_des1: "CMS integration" },
-        { id: 7, plan_des1: "Admin dashboard with analytics" },
-        { id: 8, plan_des1: "Advanced database setup" },
-        { id: 9, plan_des1: "Performance reports monthly" },
-        { id: 10, plan_des1: "24/7 Priority support" },
-        { id: 11, plan_des1: "Full-year maintenance & upgrades" },
-      ],
-      category: "Yearly",
-    },
-  ];
 
   const [selectedCategory, setSelectedCategory] = useState("Monthly");
   const filteredData = pricingPlansData?.filter(
@@ -141,31 +16,15 @@ const PricingPlans = ({ status = false }) => {
   // className={`absolute ${status === true ? "md:block" : "hidden"}`}
   return (
     <div
-      className={`bg-[#FAFAFA] ${
+      className={`bg-[#FAFAFA] overflow-hidden w-full ${
         status === true ? "md:my-14 my-12" : "my-0"
-      }  relative overflow-hidden`}
+      }  relative `}
     >
+      <div className="bottom-gradient-line"></div>
       <div
-        className="absolute"
-        style={{
-          width: "594px",
-          height: "4px",
-          right: "0px",
-          bottom: "0px",
-          background:
-            "linear-gradient(85deg, #2154FF 0%, rgba(255, 255, 255, 0.00) 100%)",
-        }}
-      ></div>
-      <div
-        className={`absolute ${status === true ? "md:block" : "hidden"}`}
-        style={{
-          width: "594px",
-          height: "4px",
-          left: "0px",
-          top: "0px",
-          background:
-            " linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
-        }}
+        className={`custom-gradient-line ${
+          status === true ? "md:block" : "hidden"
+        }`}
       ></div>
       <div className="container py-14">
         <BadgeLabel text="Pricing Plans" />

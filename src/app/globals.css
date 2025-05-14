@@ -194,6 +194,44 @@
   bottom: 0px;
   background: linear-gradient(85deg, #2154ff 0%, rgba(255, 255, 255, 0) 100%);
 }
+/* Bottom Gradient Line */
+.bottom-gradient-line {
+  position: absolute;
+  width: 594px;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(85deg, #2154ff 0%, rgba(255, 255, 255, 0) 100%);
+  animation: moveBottomLine 8s linear infinite; /* Slower: 8s */
+}
+
+.custom-gradient-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 594px;
+  height: 4px;
+  background: linear-gradient(85deg, rgba(255, 255, 255, 0) 0%, #2154ff 100%);
+  animation: moveLine 8s linear infinite; /* Slower: 8s */
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translateX(-594px); /* Start completely left off screen */
+  }
+  100% {
+    transform: translateX(100vw); /* Move completely past the screen */
+  }
+}
+@keyframes moveBottomLine {
+  100% {
+    transform: translateX(-594px); /* Start completely left off screen */
+  }
+  0% {
+    transform: translateX(100vw); /* Move completely past the screen */
+  }
+}
+
 /* Blurred Blue Circle */
 .blurred-blue-circle {
   width: 455px;
@@ -250,15 +288,6 @@
   background: #3b82f6;
   filter: blur(175px);
   z-index: -1;
-}
-
-/* Bottom Gradient Line */
-.bottom-gradient-line {
-  width: 594px;
-  height: 4px;
-  left: 0;
-  bottom: 0;
-  background: linear-gradient(85deg, rgba(255, 255, 255, 0) 0%, #2154ff 100%);
 }
 
 @media (min-width: 768px) {

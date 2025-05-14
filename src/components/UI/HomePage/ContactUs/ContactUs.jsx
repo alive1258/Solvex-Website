@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Button from "../../Button/Button";
@@ -5,42 +6,33 @@ import AnimatedText from "@/components/common/AnimatedText";
 import SlideUp from "@/utils/animations/SlideUp";
 import SlideLeft from "@/utils/animations/SlideLeft";
 import SlideRight from "@/utils/animations/SlideRight";
+
 import {
   RiArrowDownSLine,
   RiDribbbleLine,
   RiFacebookFill,
-  RiFacebookLine,
-  RiInstagramFill,
   RiInstagramLine,
   RiLinkedinFill,
-  RiLinkedinLine,
   RiMailLine,
   RiMapPinLine,
   RiPhoneLine,
   RiTwitterXLine,
 } from "@remixicon/react";
 
+// ======================= START CONTACT US SECTION =======================
 const ContactUs = () => {
   return (
-    <div className="bg-[#FAFAFA]  relative overflow-hidden">
-      <div
-        className="absolute"
-        style={{
-          width: "594px",
-          height: "4px",
-          left: "0px",
-          top: "0px",
-          background:
-            " linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
-        }}
-      ></div>
+    <div className="bg-[#FAFAFA] relative overflow-hidden w-full">
+      {/* Decorative Gradient Top Line */}
+      <div className="custom-gradient-line"></div>
+
       <div className="container py-14">
+        {/* Section Header */}
         <BadgeLabel text="Contact Us" />
         <AnimatedText
           lines={["Let’s Work Together to Build Something Great"]}
           className="text-2xl font-bold text-primary-base mt-6 text-center mx-auto max-w-full sm:max-w-lg"
         />
-
         <SlideUp>
           <p className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base">
             Have a project in mind, or just want to chat? Drop us a line — we’d
@@ -48,16 +40,19 @@ const ContactUs = () => {
           </p>
         </SlideUp>
 
+        {/* ======================= START GRID WRAPPER ======================= */}
         <div className="mt-12 grid md:grid-cols-5 gap-6">
-          {/* section left  */}
-          <SlideLeft className="md:col-span-2 ">
+          {/* ======================= START LEFT CONTACT INFO ======================= */}
+          <SlideLeft className="md:col-span-2">
+            {/* Contact Details Box */}
             <div className="bg-white-base p-6 w-full rounded-xl border border-border-base">
               <h1 className="text-secondary-base md:text-[32px] text-[28px] uppercase text-center font-bold">
-                get in touch
+                Get In Touch
               </h1>
+
               <div className="mt-10 space-y-8">
-                {/* contact 1 */}
-                <div className="contact-border ">
+                {/* Contact Item 1 */}
+                <div className="contact-border">
                   <div className="contact-icon">
                     <RiPhoneLine size={24} className="text-[#3B82F6]" />
                   </div>
@@ -70,8 +65,9 @@ const ContactUs = () => {
                     </p>
                   </div>
                 </div>
-                {/* contact 2 */}
-                <div className="contact-border ">
+
+                {/* Contact Item 2 */}
+                <div className="contact-border">
                   <div className="contact-icon">
                     <RiMailLine size={24} className="text-[#3B82F6]" />
                   </div>
@@ -84,8 +80,9 @@ const ContactUs = () => {
                     </p>
                   </div>
                 </div>
-                {/* contact 3 */}
-                <div className="contact-border ">
+
+                {/* Contact Item 3 */}
+                <div className="contact-border">
                   <div className="contact-icon">
                     <RiMapPinLine size={24} className="text-[#3B82F6]" />
                   </div>
@@ -100,65 +97,39 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            {/* follow us on  */}
+
+            {/* Social Links Box */}
             <div className="bg-white-base p-6 mt-6 rounded-xl border border-border-base">
               <h1 className="text-secondary-base border-b pb-1 border-border-base text-[28px] uppercase text-center font-bold">
-                follow us on
+                Follow Us On
               </h1>
 
-              <div className="mt-6   flex items-center justify-center space-x-3">
-                <div className="follow-us-social-icon group">
-                  <RiFacebookFill
-                    size={24}
-                    className="text-[#3B82F6] group-hover:text-white duration-300 transition-all ease-in-out"
-                  />
-                </div>
-                <div className="follow-us-social-icon group">
-                  <RiInstagramLine
-                    size={24}
-                    className="text-[#3B82F6] group-hover:text-white duration-300 transition-all ease-in-out"
-                  />
-                </div>
-                <div className="follow-us-social-icon group">
-                  <RiLinkedinFill
-                    size={24}
-                    className="text-[#3B82F6] group-hover:text-white duration-300 transition-all ease-in-out"
-                  />
-                </div>
-                <div className="follow-us-social-icon group">
-                  <RiTwitterXLine
-                    size={24}
-                    className="text-[#3B82F6] group-hover:text-white duration-300 transition-all ease-in-out"
-                  />
-                </div>
-                <div className="follow-us-social-icon group">
-                  <RiDribbbleLine
-                    size={24}
-                    className="text-[#3B82F6] group-hover:text-white duration-300 transition-all ease-in-out"
-                  />
-                </div>
+              <div className="mt-6 flex items-center justify-center space-x-3">
+                {[
+                  RiFacebookFill,
+                  RiInstagramLine,
+                  RiLinkedinFill,
+                  RiTwitterXLine,
+                  RiDribbbleLine,
+                ].map((Icon, index) => (
+                  <div key={index} className="follow-us-social-icon group">
+                    <Icon
+                      size={24}
+                      className="text-[#3B82F6] group-hover:text-white transition-all duration-300 ease-in-out"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </SlideLeft>
+          {/* ======================= END LEFT CONTACT INFO ======================= */}
 
-          {/* section right  */}
-          <SlideRight
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-
-              transition: {
-                duration: 0.8,
-                ease: "easeInOut",
-              },
-            }}
-            viewport={{ once: false }}
-            className="md:col-span-3"
-          >
+          {/* ======================= START RIGHT FORM ======================= */}
+          <SlideRight className="md:col-span-3">
             <div className="bg-white-base md:p-6 rounded-xl border border-border-base">
-              <div className=" mt-3 p-4">
+              <div className="mt-3 p-4">
                 <form>
+                  {/* Full Name */}
                   <div>
                     <label
                       htmlFor="fname"
@@ -166,7 +137,6 @@ const ContactUs = () => {
                     >
                       Full name <span className="text-red-500">*</span>
                     </label>
-                    <br />
                     <input
                       type="text"
                       id="fname"
@@ -175,41 +145,42 @@ const ContactUs = () => {
                       className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
                     />
                   </div>
+
+                  {/* Email & Phone */}
                   <div className="grid md:grid-cols-2 gap-4 mt-3">
                     <div>
                       <label
-                        htmlFor="fname"
+                        htmlFor="email"
                         className="text-secondary-base text-lg font-medium"
                       >
                         Email Address <span className="text-red-500">*</span>
                       </label>
-                      <br />
                       <input
-                        type="text"
-                        id="fname"
-                        name="fname"
-                        placeholder="Enter Email Address "
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter Email Address"
                         className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
                       />
                     </div>
                     <div>
                       <label
-                        htmlFor="fname"
+                        htmlFor="phone"
                         className="text-secondary-base text-lg font-medium"
                       >
                         Phone Number
                       </label>
-                      <br />
                       <input
                         type="text"
-                        id="fname"
-                        name="fname"
+                        id="phone"
+                        name="phone"
                         placeholder="Enter Phone Number"
                         className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
                       />
                     </div>
                   </div>
 
+                  {/* Service Type */}
                   <div className="mt-3 relative">
                     <label
                       htmlFor="serviceType"
@@ -218,7 +189,6 @@ const ContactUs = () => {
                       Project/Service Type{" "}
                       <span className="text-red-500">*</span>
                     </label>
-                    <br />
                     <select
                       id="serviceType"
                       name="serviceType"
@@ -238,42 +208,43 @@ const ContactUs = () => {
                       <option value="seo">SEO Services</option>
                       <option value="other">Other</option>
                     </select>
-
-                    {/* Custom Arrow Icon */}
                     <div className="pointer-events-none absolute right-4 top-[58%] transform -translate-y-1/2 text-[#A1A1AA]">
                       <RiArrowDownSLine size={23} />
                     </div>
                   </div>
 
+                  {/* Message */}
                   <div className="mt-3">
                     <label
-                      htmlFor="Massage"
+                      htmlFor="message"
                       className="text-secondary-base text-lg font-medium"
                     >
-                      Massage
+                      Message
                     </label>
-                    <br />
                     <textarea
-                      id="Massage"
-                      name="Massage"
-                      placeholder="Enter Massage"
+                      id="message"
+                      name="message"
+                      placeholder="Enter Message"
                       className="border border-border-base p-4 w-full mt-1 mb-3 rounded-lg"
                       rows={4}
                     />
                   </div>
 
+                  {/* Submit Button */}
                   <div className="mt-2">
-                    <Button content="Send Massage" />
+                    <Button content="Send Message" />
                   </div>
                 </form>
               </div>
             </div>
           </SlideRight>
+          {/* ======================= END RIGHT FORM ======================= */}
         </div>
+        {/* ======================= END GRID WRAPPER ======================= */}
       </div>
-      ;
     </div>
   );
 };
 
 export default ContactUs;
+// ======================= END CONTACT US SECTION =======================

@@ -14,17 +14,7 @@ const MeetOurTeam = ({ status = false }) => {
   return (
     <div className="bg-[#FAFAFA] relative">
       {/* Bottom Gradient Line */}
-      <div
-        className={`absolute ${status === true ? "md:block" : "hidden"}`}
-        style={{
-          width: "594px",
-          height: "4px",
-          left: "0px",
-          bottom: "0px",
-          background:
-            "linear-gradient(85deg, rgba(255, 255, 255, 0.00) 0%, #2154FF 100%)",
-        }}
-      ></div>
+
       <div className="container py-14">
         <BadgeLabel text="Meet Our Team" />
 

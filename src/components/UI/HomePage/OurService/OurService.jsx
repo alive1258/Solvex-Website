@@ -10,11 +10,12 @@ const OurService = ({ status = false }) => {
   const displayedServices = status ? servicesData?.slice(0, 4) : servicesData;
   return (
     <section
-      className={`bg-[#F4F4F5] ${
+      className={`bg-[#F4F4F5] overflow-hidden w-full ${
         status === true ? "md:mt-40 mt-[1050px]" : "mt-0"
       }   relative`}
     >
-      <div className="custom-gradient-line-top"></div>
+      <div className="bottom-gradient-line"></div>
+      <div className={`custom-gradient-line `}></div>
 
       <div className="container md:py-16 py-12">
         {/* START: Badge and Animated Header */}
