@@ -35,7 +35,7 @@ const PricingPlans = ({ status = false }) => {
         />
 
         <AnimatedParagraph
-          text={`Choose a plan that fits your goals and budget. No hidden fees — <br />
+          text={`Choose a plan that fits your goals and budget. No hidden fees
             just transparent pricing.`}
           className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
           once={false}

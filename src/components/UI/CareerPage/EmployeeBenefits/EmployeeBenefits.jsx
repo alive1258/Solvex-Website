@@ -7,7 +7,7 @@ import BenefitCard from "./BenefitCard";
 
 const EmployeeBenefits = () => {
   return (
-    <div className="bg-[#F4F4F5] mt-14 w-full overflow-hidden relative">
+    <section className="bg-[#F4F4F5] mt-14 w-full overflow-hidden relative">
       <div className="bottom-gradient-line"></div>
       <div className="custom-gradient-line"></div>
       <div className="container py-12">
@@ -32,7 +32,7 @@ const EmployeeBenefits = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
