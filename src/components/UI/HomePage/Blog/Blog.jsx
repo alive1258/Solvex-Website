@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <div className="container md:my-14 my-12">
+    <section className="container md:my-14 my-12">
       <BadgeLabel text="Blog" />
       <AnimatedText
         lines={[" News, insights and more"]}
@@ -33,7 +33,7 @@ const Blog = () => {
           <Button content="More Blogs" />
         </Link>
       </SlideUp>
-    </div>
+    </section>
   );
 };
 

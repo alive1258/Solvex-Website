@@ -1,12 +1,13 @@
 import SlideUp from "@/utils/animations/SlideUp";
 import { RiTimeLine } from "@remixicon/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const BlogListCard = ({ post, delay = 0, idx }) => {
   return (
     <SlideUp delay={delay}>
-      <div className="border grid md:grid-cols-2 grid-cols-1 gap-x-8   cursor-pointer  border-border-base bg-white p-4 rounded-2xl">
+      <div className="border hover:shadow-xl transition-all duration-300 ease-in-out group grid md:grid-cols-2 grid-cols-1 gap-x-8   cursor-pointer  border-border-base bg-white p-4 rounded-2xl">
         <div
           className={`relative overflow-hidden rounded-2xl ${
             idx % 2 !== 0 ? "md:order-2" : "md:order-1"
@@ -46,9 +47,12 @@ const BlogListCard = ({ post, delay = 0, idx }) => {
 
               {/* Title & Excerpt */}
               <div className="md:mt-16 mt-8">
-                <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
-                  {post.title}
-                </h1>
+                <Link href={`blog-list/${post.id}`}>
+                  <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
+                    {post.title}
+                  </h1>
+                </Link>
+
                 <p className="mt-7 text-[#71717A] text-[16px] font-medium">
                   {post.excerpt}
                 </p>

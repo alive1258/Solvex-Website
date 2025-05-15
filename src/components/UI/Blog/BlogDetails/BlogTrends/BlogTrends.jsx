@@ -1,5 +1,4 @@
 import { blogTrends } from "@/utils/fakeData/blogTrends";
-import Image from "next/image";
 import React from "react";
 import TrendsCard from "./TrendsCard";
 

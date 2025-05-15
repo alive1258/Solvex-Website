@@ -1,47 +1,52 @@
+import React from "react";
 import AnimatedText from "@/components/common/AnimatedText";
 import Image from "next/image";
-import React from "react";
 import SlideUp from "@/utils/animations/SlideUp";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import Link from "next/link";
 
 const DigitalFuture = ({ status = true }) => {
-  // Define delay values
+  // === ANIMATION DELAY TIMINGS ===
   const titleDelay = 0.1;
   const paragraphDelay = 0.3;
   const buttonDelay = 0.6;
 
   return (
-    <div className="bg-[#EFF6FF] relative">
+    <div className="bg-[#EFF6FF] relative overflow-hidden w-full">
+      {/* GRADIENT LINE DECORATION */}
+      <div className="custom-gradient-line"></div>
+
+      {/* =======================START MAIN CONTENT AREA ======================= */}
+
       <div className="py-12 container mx-auto">
+        {/* CTA CARD */}
         <div
+          className="md:p-8 px-6 overflow-hidden text-white relative"
           style={{
             borderRadius: "16px",
             background: "linear-gradient(85deg, #2154FF 0%, #5079FF 100%)",
           }}
-          className="md:p-8 px-6 overflow-hidden text-white relative"
         >
-          {/* Decorative image */}
+          {/* DECORATIVE IMAGE (HIDDEN ON SMALL SCREENS) */}
           <div className="absolute md:block hidden top-0 right-0">
             <Image
               className="rounded-2xl"
-              src="/images/degitalFuture/decorativeElements.png"
-              alt="workGallery1"
+              src="/images/digitalFuture/decorativeElements.png"
+              alt="Decorative Elements"
               height={455}
               width={402}
             />
           </div>
 
-          {/* Content */}
           <div className="flex justify-center md:py-20 py-16">
             <div className="text-white-base text-center">
-              {/* Title */}
+              {/* === START TITLE SECTION === */}
               <SlideUp delay={titleDelay}>
                 <div className="md:text-[32px] text-2xl font-black">
-                  {status === true ? (
+                  {status ? (
                     <AnimatedText
                       lines={[
-                        "Work With Solvex-Let’s Build Your Digital Future!",
+                        "Work With Solvex – Let’s Build Your Digital Future!",
                       ]}
                       className="text-[#FAFAFA] md:text-[32px] text-[28px] font-black"
                     />
@@ -53,20 +58,21 @@ const DigitalFuture = ({ status = true }) => {
                   )}
                 </div>
               </SlideUp>
+              {/* === END TITLE SECTION === */}
 
-              {/* Paragraph */}
+              {/* === START PARAGRAPH TEXT === */}
               <SlideUp
                 delay={paragraphDelay}
                 className="mt-5 font-medium text-[16px] w-full max-w-[430px] mx-auto"
               >
                 <p>
-                  {status === true
-                    ? "Your business deserves a winning digital solution. Let's collaborate and create something extraordinary"
+                  {status
+                    ? "Your business deserves a winning digital solution. Let's collaborate and create something extraordinary."
                     : "Let’s connect and create something groundbreaking. Join forces with Solvex today."}
                 </p>
               </SlideUp>
+              {/* === END PARAGRAPH TEXT === */}
 
-              {/* Button */}
               <SlideUp
                 delay={buttonDelay}
                 className="mt-12 flex justify-center items-center"
@@ -85,6 +91,8 @@ const DigitalFuture = ({ status = true }) => {
           </div>
         </div>
       </div>
+
+      {/* ======================= END MAIN CONTAINER ======================= */}
     </div>
   );
 };

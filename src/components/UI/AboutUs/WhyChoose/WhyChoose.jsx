@@ -8,9 +8,11 @@ import ChooseCard from "./ChooseCard";
 
 const WhyChoose = () => {
   return (
-    <div className="bg-[#18181B]">
+    <section className="bg-[#18181B]">
       <div className="py-20 container lg:grid lg:grid-cols-2 grid-cols-1 gap-12">
+        {/* ======= START LEFT CONTENT: LOGO, HEADING, BUTTON ======= */}
         <div className="md:mt-8">
+          {/* ======= START LOGO AND SUBTITLE ======= */}
           <div className="flex items-center space-x-2">
             <Image
               src="/images/footer/footerLogo.png"
@@ -22,6 +24,8 @@ const WhyChoose = () => {
               Why Choose Solvex?
             </h6>
           </div>
+          {/* ======= END LOGO AND SUBTITLE ======= */}
+
           <SlideLeft>
             <h1 className="text-[#FAFAFA] text-start text-[32px] max-w-[600px] font-black mt-8">
               Creative Solutions, Powered by Innovation{" "}
@@ -31,10 +35,12 @@ const WhyChoose = () => {
           </SlideLeft>
 
           <SlideUp className="md:mt-14 mt-10">
-            <Button content=" Get Started" />
+            <Button content="Get Started" />
           </SlideUp>
         </div>
+        {/* ======= END LEFT CONTENT: LOGO, HEADING, BUTTON ======= */}
 
+        {/* ======= START RIGHT CONTENT: FEATURE CARDS ======= */}
         <div className="lg:grid lg:grid-cols-2 grid-cols-1 md:mt-0 mt-10 md:space-y-0 space-y-6">
           {features?.map((feature, index) => (
             <ChooseCard
@@ -45,8 +51,9 @@ const WhyChoose = () => {
             />
           ))}
         </div>
+        {/* ======= END RIGHT CONTENT: FEATURE CARDS ======= */}
       </div>
-    </div>
+    </section>
   );
 };
 

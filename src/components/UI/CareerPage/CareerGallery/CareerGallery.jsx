@@ -7,30 +7,13 @@ import React from "react";
 const CareerGallery = () => {
   return (
     <div className="mt-14 overflow-hidden">
+      {/* CONTAINER GRID WRAPPER */}
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 relative container">
-        {/* Glow Effects */}
-        <div
-          className="absolute rounded-full opacity-50 blur-[175px] z-0"
-          style={{
-            width: "364px",
-            height: "364px",
-            left: "140px",
-            top: "20px",
-            backgroundColor: "#84CC16",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-50 blur-[175px] z-0"
-          style={{
-            width: "364px",
-            height: "364px",
-            right: "140px",
-            top: "20px",
-            backgroundColor: "#D946EF",
-          }}
-        />
+        {/* GLOW EFFECTS */}
+        <div className="blur-circle-green" />
+        <div className="blur-circle-purple" />
 
-        {/* Left Section */}
+        {/* LEFT IMAGE SECTION */}
         <div className="md:grid-cols-2 grid-cols-1 grid gap-5 z-50 overflow-hidden">
           {careerGalleryData?.left?.map((item, index) => (
             <SlideLeft
@@ -49,7 +32,7 @@ const CareerGallery = () => {
           ))}
         </div>
 
-        {/* Right Section */}
+        {/* RIGHT IMAGE SECTION */}
         <div className="md:grid-cols-2 grid-cols-1 grid gap-5 w-full z-50">
           {careerGalleryData?.right?.map((item, index) => (
             <SlideRight

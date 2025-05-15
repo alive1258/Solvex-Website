@@ -7,13 +7,13 @@ import BlogTrends from "./BlogTrends/BlogTrends";
 
 const BlogDetails = () => {
   return (
-    <div>
+    <>
       <BlogDetailsBanner />
       <BlogDetailSection />
       <BlogTrends />
       <TagSection />
       <DigitalFuture status={true} />
-    </div>
+    </>
   );
 };
 

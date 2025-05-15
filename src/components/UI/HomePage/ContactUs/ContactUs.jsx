@@ -19,13 +19,12 @@ import {
   RiTwitterXLine,
 } from "@remixicon/react";
 
-// ======================= START CONTACT US SECTION =======================
 const ContactUs = () => {
   return (
-    <div className="bg-[#FAFAFA] relative overflow-hidden w-full">
+    <section className="bg-[#FAFAFA] relative overflow-hidden w-full">
       {/* Decorative Gradient Top Line */}
       <div className="custom-gradient-line"></div>
-
+      {/*  ======================= START CONTACT US SECTION ======================= */}
       <div className="container py-14">
         {/* Section Header */}
         <BadgeLabel text="Contact Us" />
@@ -242,9 +241,9 @@ const ContactUs = () => {
         </div>
         {/* ======================= END GRID WRAPPER ======================= */}
       </div>
-    </div>
+      {/*  ======================= END CONTACT US SECTION ======================= */}
+    </section>
   );
 };
 
 export default ContactUs;
-// ======================= END CONTACT US SECTION =======================

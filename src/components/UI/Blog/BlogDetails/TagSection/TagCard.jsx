@@ -1,56 +1,44 @@
+import React from "react";
 import SlideUp from "@/utils/animations/SlideUp";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const TagCard = ({ blog, delay = 0 }) => {
   return (
-    <>
-      <SlideUp delay={delay}>
-        <Link href={`blog-grid/${blog.id}`} className="group">
-          <div className="border group cursor-pointer border-border-base bg-white-base p-4 rounded-2xl flex flex-col h-full">
-            {/* Image */}
-            <div className="relative overflow-hidden rounded-2xl">
-              <Image
-                className="w-full rounded-2xl shadow-lg hover:scale-105 duration-500 overflow-hidden ease-[cubic-bezier(0.4,0,0.2,1)] transition-transform object-cover h-full"
-                src={blog?.image}
-                alt={blog?.title}
-                height={240}
-                width={500}
-              />
-            </div>
+    <SlideUp delay={delay}>
+      <div className="border border-border-base bg-white-base p-4 rounded-2xl flex flex-col h-full group cursor-pointer transition-all duration-300 ease-in-out hover:shadow-xl">
+        {/* ========== START: BLOG IMAGE ========== */}
+        <div className="relative overflow-hidden rounded-2xl">
+          <Image
+            className="w-full h-full rounded-2xl shadow-lg object-cover transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:scale-105"
+            src={blog?.image}
+            alt={blog?.title}
+            width={500}
+            height={240}
+          />
+        </div>
+        {/* ========== END: BLOG IMAGE ========== */}
 
-            {/* Category */}
-            <div className="mt-6 flex justify-between items-center">
-              <div
-                className="rounded-[99px] w-fit px-3 py-1.5 border"
-                style={{
-                  backgroundColor: blog?.categoryBg,
-                  borderColor: blog?.categoryBorder,
-                }}
-              >
-                <p
-                  className="text-sm font-medium"
-                  style={{ color: blog?.categoryText }}
-                >
-                  {blog?.category}
-                </p>
-              </div>
-            </div>
+        <div
+          className={`mt-6 w-fit px-3 py-1.5 border text-sm font-medium rounded-[99px] ${blog?.categoryColor}`}
+        >
+          <p className="text-sm font-medium">{blog?.category}</p>
+        </div>
 
-            {/* Title + excerpt (this grows) */}
-            <div className="mt-6 ">
-              <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
-                {blog?.title}
-              </h1>
-              <p className="mt-6 text-[#71717A] text-[16px] font-medium">
-                {blog?.excerpt}
-              </p>
-            </div>
-          </div>
-        </Link>
-      </SlideUp>
-    </>
+        {/* ========== START: TITLE AND EXCERPT ========== */}
+        <div className="mt-6">
+          <Link href={`blog-grid/${blog.id}`}>
+            <h1 className="text-2xl font-bold text-secondary-base group-hover:text-[#3B82F6]">
+              {blog?.title}
+            </h1>
+          </Link>
+          <p className="mt-6 text-[16px] font-medium text-[#71717A]">
+            {blog?.excerpt}
+          </p>
+        </div>
+        {/* ========== END: TITLE AND EXCERPT ========== */}
+      </div>
+    </SlideUp>
   );
 };
 

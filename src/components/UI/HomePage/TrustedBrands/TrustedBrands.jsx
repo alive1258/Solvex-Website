@@ -20,7 +20,7 @@ const TrustedBrands = ({ status = false }) => {
       ></div>
 
       <div
-        className="container relative mx-auto md:px-32 lg:px-40  md:flex md:py-0 w-full pb-12"
+        className="container relative mx-auto md:px-32 lg:px-40   md:flex md:py-0 w-full pb-12"
         style={{ display: "relative" }}
       >
         <div className=" grid grid-cols-1 md:grid-cols-2 mt-4 md:mt-0 gap-x-[140px] ">

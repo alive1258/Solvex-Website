@@ -5,10 +5,10 @@ import AllBlogGrid from "./AllBlogGrid/AllBlogGrid";
 
 export const BlogGrid = () => {
   return (
-    <div>
+    <>
       <BlogGridBanner />
       <AllBlogGrid />
       <DigitalFuture status={true} />
-    </div>
+    </>
   );
 };

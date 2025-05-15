@@ -5,6 +5,7 @@ import { jobDescriptionData } from "@/utils/fakeData/jobDescriptionData";
 import AnimatedText from "@/components/common/AnimatedText";
 import JobDescriptionCard from "./JobDescriptionCard";
 import SlideUp from "@/utils/animations/SlideUp";
+import SlideRight from "@/utils/animations/SlideRight";
 
 const JobDescription = () => {
   return (
@@ -21,10 +22,11 @@ const JobDescription = () => {
       <div>
         {jobDescriptionData?.sections?.map((section, index) => (
           <div className="mt-14" key={index}>
-            <AnimatedText
-              lines={[section?.title]}
-              className="text-2xl text-primary-base font-bold"
-            />
+            <SlideRight>
+              <h1 className="text-2xl  font-bold text-primary-base">
+                {section?.title}
+              </h1>
+            </SlideRight>
 
             <div className="mt-6 space-y-4">
               {section?.items.map((item, index) => (

@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import AnimatedText from "@/components/common/AnimatedText";
@@ -8,33 +9,34 @@ import { pricingPlansData } from "@/utils/fakeData/pricingPlansData";
 
 const PricingPlans = ({ status = false }) => {
   const categories = ["Monthly", "Yearly"];
-
   const [selectedCategory, setSelectedCategory] = useState("Monthly");
-  const filteredData = pricingPlansData?.filter(
+
+  const filteredData = pricingPlansData.filter(
     (item) => item.category === selectedCategory
   );
-  // className={`absolute ${status === true ? "md:block" : "hidden"}`}
+
   return (
     <div
       className={`bg-[#FAFAFA] overflow-hidden w-full ${
-        status === true ? "md:my-14 my-12" : "my-0"
-      }  relative `}
+        status ? "md:my-14 my-12" : "my-0"
+      } relative`}
     >
       <div className="bottom-gradient-line"></div>
       <div
-        className={`custom-gradient-line ${
-          status === true ? "md:block" : "hidden"
-        }`}
+        className={`custom-gradient-line ${status ? "md:block" : "hidden"}`}
       ></div>
+
       <div className="container py-14">
         <BadgeLabel text="Pricing Plans" />
+
         <AnimatedText
           lines={["Flexible Pricing Plans for Every Business"]}
           className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
         />
+
         <AnimatedParagraph
-          text=" Choose a plan that fits your goals and budget. No hidden fees — <br />
-          just transparent pricing."
+          text={`Choose a plan that fits your goals and budget. No hidden fees — <br />
+            just transparent pricing.`}
           className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
           once={false}
           duration={0.8}
@@ -43,15 +45,15 @@ const PricingPlans = ({ status = false }) => {
 
         <div className="relative">
           <div className="flex justify-center items-center space-x-6">
-            <div className="bg-[#F4F4F5] mt-32 absolute w-[182px] h-[62px]  p-2 border border-border-base rounded-xl flex items-center space-x-4">
-              {categories?.map((cat) => (
+            <div className="bg-[#F4F4F5] mt-32 absolute w-[182px] h-[62px] p-2 border border-border-base rounded-xl flex items-center space-x-4">
+              {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={` transition-all duration-300 ease-in-out ${
+                  className={`transition-all duration-300 ease-in-out ${
                     selectedCategory === cat
                       ? "bg-[#FFF] cursor-pointer border border-border-base rounded-lg px-4 py-2"
-                      : "cursor-pointer border border-transparent "
+                      : "cursor-pointer border border-transparent"
                   }`}
                 >
                   {cat}
@@ -59,7 +61,9 @@ const PricingPlans = ({ status = false }) => {
               ))}
             </div>
           </div>
+
           <div className="md:flex md:absolute md:top-14 md:mt-0 mt-32 md:ml-60 ml-64 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            {/* Desktop SVG */}
             <div className="mt-4 md:block hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,6 +91,8 @@ const PricingPlans = ({ status = false }) => {
                 </defs>
               </svg>
             </div>
+
+            {/* Mobile SVG */}
             <div className="block md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,25 +120,28 @@ const PricingPlans = ({ status = false }) => {
                 </defs>
               </svg>
             </div>
-            <div className="border animate-[floatPulse_2s_ease-in-out_infinite]  shadow-[0px_0px_20px_0px_rgba(33,84,255,0.3),0px_0px_40px_0px_rgba(156,39,176,0.1)] border-border-base rounded-3xl px-4 py-2 md:rotate-[15deg] md:block hidden    md:relative md:right-2">
+
+            {/* Discount Badge Desktop */}
+            <div className="border animate-[floatPulse_2s_ease-in-out_infinite] shadow-[0px_0px_20px_0px_rgba(33,84,255,0.3),0px_0px_40px_0px_rgba(156,39,176,0.1)] border-border-base rounded-3xl px-4 py-2 md:rotate-[15deg] md:block hidden md:relative md:right-2">
               <p className="text-sm font-medium text-primary-base">
-                {" "}
                 35% OFF on Yearly Plan
               </p>
             </div>
           </div>
-          <div className="flex justify-center items-center  md:hidden">
-            <div className="border animate-[floatPulse_2s_ease-in-out_infinite] shadow-[0px_0px_20px_0px_rgba(33,84,255,0.3),0px_0px_40px_0px_rgba(156,39,176,0.1)] border-border-base rounded-3xl px-4 py-2 ">
+
+          {/* Discount Badge Mobile */}
+          <div className="flex justify-center items-center md:hidden">
+            <div className="border animate-[floatPulse_2s_ease-in-out_infinite] shadow-[0px_0px_20px_0px_rgba(33,84,255,0.3),0px_0px_40px_0px_rgba(156,39,176,0.1)] border-border-base rounded-3xl px-4 py-2">
               <p className="text-sm font-medium text-primary-base">
-                {" "}
                 35% OFF on Yearly Plan
               </p>
             </div>
           </div>
         </div>
-        {/*  card section */}
+
+        {/* Pricing cards */}
         <div className="md:mt-36 mt-16 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
-          {filteredData?.map((item, index) => (
+          {filteredData.map((item, index) => (
             <PricingPlanCard
               key={item.id}
               index={index}

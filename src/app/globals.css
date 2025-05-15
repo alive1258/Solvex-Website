@@ -82,6 +82,12 @@
   .arrow-down-icon {
     @apply transition-transform duration-300 group-hover:rotate-180;
   }
+  .tags-btn {
+    @apply flex w-fit items-center justify-center gap-2 px-4 py-2 rounded-full bg-[#D4D4D8];
+  }
+  .pagination {
+    @apply border bg-white-base hover:bg-[#3B82F6] cursor-pointer hover:text-white-base duration-300 transition-all ease-in-out text-[#71717A] border-[#D4D4D8] rounded-[6px] size-10 flex justify-center items-center;
+  }
   .service-card-link {
     @apply flex transition-transform duration-300 ease-in-out group-hover:translate-x-2 items-center gap-x-2 mt-6 border-b group-hover:border-[#3B82F6]  border-[#71717A] w-fit;
   }
@@ -142,19 +148,33 @@
   width: 297px;
   height: 462px;
 }
-
-/* animation to make it "breathe" or "pulse" in a rounded way. */
-@keyframes floatPulse {
-  0%,
-  100% {
-    transform: translateY(0px) scale(1);
-    border-radius: 99px;
-  }
-  50% {
-    transform: translateY(-2px) scale(1.05);
-    border-radius: 99px;
-  }
+/* globals.css or your global stylesheet */
+.blur-circle-green {
+  position: absolute;
+  border-radius: 9999px; /* rounded-full */
+  opacity: 0.5;
+  filter: blur(175px);
+  width: 364px;
+  height: 364px;
+  left: 140px;
+  top: 30px;
+  background-color: #84cc16;
+  z-index: 0;
 }
+
+.blur-circle-purple {
+  position: absolute;
+  border-radius: 9999px; /* rounded-full */
+  opacity: 0.5;
+  filter: blur(175px);
+  width: 364px;
+  height: 364px;
+  right: 140px;
+  top: 80px;
+  background-color: #d946ef;
+  z-index: 0;
+}
+
 /* ========== Blurred Shape Styles ========== */
 
 .blurred-blue-shape-1 {
@@ -214,24 +234,6 @@
   background: linear-gradient(85deg, rgba(255, 255, 255, 0) 0%, #2154ff 100%);
   animation: moveLine 8s linear infinite; /* Slower: 8s */
 }
-
-@keyframes moveLine {
-  0% {
-    transform: translateX(-594px); /* Start completely left off screen */
-  }
-  100% {
-    transform: translateX(100vw); /* Move completely past the screen */
-  }
-}
-@keyframes moveBottomLine {
-  100% {
-    transform: translateX(-594px); /* Start completely left off screen */
-  }
-  0% {
-    transform: translateX(100vw); /* Move completely past the screen */
-  }
-}
-
 /* Blurred Blue Circle */
 .blurred-blue-circle {
   width: 455px;
@@ -288,6 +290,35 @@
   background: #3b82f6;
   filter: blur(175px);
   z-index: -1;
+}
+
+@keyframes moveLine {
+  0% {
+    transform: translateX(-594px); /* Start completely left off screen */
+  }
+  100% {
+    transform: translateX(100vw); /* Move completely past the screen */
+  }
+}
+@keyframes moveBottomLine {
+  100% {
+    transform: translateX(-594px); /* Start completely left off screen */
+  }
+  0% {
+    transform: translateX(100vw); /* Move completely past the screen */
+  }
+}
+/* animation to make it "breathe" or "pulse" in a rounded way. */
+@keyframes floatPulse {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+    border-radius: 99px;
+  }
+  50% {
+    transform: translateY(-2px) scale(1.05);
+    border-radius: 99px;
+  }
 }
 
 @media (min-width: 768px) {

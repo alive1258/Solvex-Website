@@ -15,7 +15,7 @@ const OurService = ({ status = false }) => {
       }   relative`}
     >
       <div className="bottom-gradient-line"></div>
-      <div className={`custom-gradient-line `}></div>
+      <div className="custom-gradient-line"></div>
 
       <div className="container md:py-16 py-12">
         {/* START: Badge and Animated Header */}

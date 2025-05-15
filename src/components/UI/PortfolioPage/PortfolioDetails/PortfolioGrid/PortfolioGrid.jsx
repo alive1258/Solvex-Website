@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const portfolioImages = [
-  { src: "/images/portfolio/festure1.png", alt: "feature1" },
-  { src: "/images/portfolio/festure1.png", alt: "feature2" },
-  { src: "/images/portfolio/festure1.png", alt: "feature3" },
+  { src: "/images/portfolio/frame1.png", alt: "feature1" },
+  { src: "/images/portfolio/frame2.png", alt: "feature2" },
+  { src: "/images/portfolio/frame3.png", alt: "feature3" },
 ];
 
 const PortfolioGrid = () => {
@@ -13,11 +13,13 @@ const PortfolioGrid = () => {
       {portfolioImages[0] && (
         <div className="col-span-2">
           <Image
-            className="object-cover w-full h-full md:min-h-[480px] rounded-2xl"
+            className="object-cover w-full h-full  rounded-2xl"
             src={portfolioImages[0].src}
             alt={portfolioImages[0].alt}
-            width={500}
-            height={400}
+            width={1000} // real image width in px
+            height={1100} // real image height in px
+            quality={90} // good balance of quality and size
+            layout="responsive" // responsive layout with aspect ratio maintained
           />
         </div>
       )}
@@ -27,7 +29,7 @@ const PortfolioGrid = () => {
         {portfolioImages.slice(1).map((image, idx) => (
           <Image
             key={idx}
-            className="object-cover w-full h-full md:min-h-[480px] rounded-2xl"
+            className="object-cover w-full h-full  rounded-2xl"
             src={image.src}
             alt={image.alt}
             width={500}

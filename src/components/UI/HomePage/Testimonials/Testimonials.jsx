@@ -9,7 +9,6 @@ import SlideUp from "@/utils/animations/SlideUp";
 const Testimonials = () => {
   return (
     <div className="relative w-full overflow-hidden">
-      <div className="custom-gradient-line"></div>
       <div className="py-14 md:px-0 px-5">
         <BadgeLabel text="Testimonials" />
         <AnimatedText
