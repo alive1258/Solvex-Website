@@ -43,10 +43,10 @@ const Testimonials = () => {
                     />
 
                     <div>
-                      <h4 className="font-bold text-lg text-tertiary-base">
+                      <h4 className="font-satoshi font-bold text-lg text-tertiary-base">
                         {testimonial.name}
                       </h4>
-                      <p className="font-medium text-sm text-[#71717A]">
+                      <p className=" text-sm text-[#71717A]">
                         {testimonial.position}
                       </p>
                     </div>
@@ -64,13 +64,13 @@ const Testimonials = () => {
                         fill="#EAB308"
                       />
                     </svg>
-                    <p className="text-[#71717A] text-sm font-medium">
+                    <p className="text-[#71717A] text-sm ">
                       {testimonial.rating}
                     </p>
                   </div>
                 </div>
 
-                <h4 className="font-bold mt-8 text-lg text-tertiary-base">
+                <h4 className="font-satoshi font-bold mt-8 text-lg text-tertiary-base">
                   {testimonial.name}
                 </h4>
                 <p>{testimonial.feedback}</p>
@@ -107,10 +107,10 @@ const Testimonials = () => {
                       width={48}
                     />
                     <div>
-                      <h4 className="font-bold text-lg text-tertiary-base">
+                      <h4 className="font-satoshi font-bold text-lg text-tertiary-base">
                         {testimonial.name}
                       </h4>
-                      <p className="font-medium text-sm text-[#71717A]">
+                      <p className=" text-sm text-[#71717A]">
                         {testimonial.position}
                       </p>
                     </div>
@@ -128,13 +128,13 @@ const Testimonials = () => {
                         fill="#EAB308"
                       />
                     </svg>
-                    <p className="text-[#71717A] text-sm font-medium">
+                    <p className="text-[#71717A] text-sm ">
                       {testimonial.rating}
                     </p>
                   </div>
                 </div>
 
-                <h4 className="font-bold mt-8 text-lg text-tertiary-base">
+                <h4 className="font-satoshi font-bold mt-8 text-lg text-tertiary-base">
                   {testimonial.name}
                 </h4>
                 <p>{testimonial.feedback}</p>

@@ -12,7 +12,7 @@ const TechnologiesCard = ({ techGroup, delay = 0, index }) => {
           key={techGroup?.id}
           className="bg-[#FFF] px-4 h-full  py-6 rounded-2xl relative"
         >
-          <h5 className="text-[#3B82F6] text-lg font-bold">
+          <h5 className="text-[#3B82F6] text-lg font-satoshi font-bold">
             {techGroup?.title}
           </h5>
 

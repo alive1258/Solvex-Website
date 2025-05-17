@@ -10,7 +10,9 @@ const TagSection = () => {
       <div className="border-t  border-[#D4D4D8] ">
         <div className="mt-6 md:flex items-center justify-between">
           <div className="md:flex items-center space-x-4 md:space-y-0 space-y-4">
-            <h4 className="text-primary-base text-2xl font-bold">Tags:</h4>
+            <h4 className="text-primary-base text-2xl font-satoshi font-bold">
+              Tags:
+            </h4>
             <div className="tags-btn">
               <p className="text-primary-base text-lg">Web Design</p>
             </div>
@@ -24,7 +26,9 @@ const TagSection = () => {
           {/* Share  */}
           <div className="md:mt-0 mt-6">
             <div className="flex items-center space-x-4">
-              <h4 className="text-primary-base text-2xl font-bold">Share:</h4>
+              <h4 className="text-primary-base text-2xl font-satoshi font-bold">
+                Share:
+              </h4>
               <ShareSocialLink />
             </div>
           </div>

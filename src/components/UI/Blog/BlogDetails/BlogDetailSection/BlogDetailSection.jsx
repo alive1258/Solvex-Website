@@ -26,7 +26,7 @@ const BlogDetailSection = () => {
               </div>
 
               {/* BLOG TITLE */}
-              <h1 className="text-[28px] mt-10 md:text-[40px] font-bold text-white leading-tight">
+              <h1 className="text-[28px] mt-10 md:text-[40px] font-satoshi font-bold text-white leading-tight">
                 TOP 5 WEB DEVELOPMENT TRENDS IN 2025
               </h1>
 
@@ -42,32 +42,26 @@ const BlogDetailSection = () => {
                     width={48}
                   />
                   <div>
-                    <h4 className="font-bold text-lg text-white-base">
+                    <h4 className="font-satoshi font-bold text-lg text-white-base">
                       JANE COOPER
                     </h4>
-                    <p className="font-medium text-sm text-[#A1A1AA]">
-                      WEB DEVELOPER
-                    </p>
+                    <p className=" text-sm text-[#A1A1AA]">WEB DEVELOPER</p>
                   </div>
                 </div>
 
                 {/* DATE & READING TIME */}
                 <div className="flex md:mt-0 mt-4 space-x-8">
                   <div>
-                    <h4 className="font-bold text-lg text-white-base">
+                    <h4 className="font-satoshi font-bold text-lg text-white-base">
                       FEBRUARY 18, 2025
                     </h4>
-                    <p className="font-medium text-sm text-[#A1A1AA]">
-                      DATE PUBLISHED
-                    </p>
+                    <p className=" text-sm text-[#A1A1AA]">DATE PUBLISHED</p>
                   </div>
                   <div>
-                    <h4 className="font-bold text-lg text-white-base">
+                    <h4 className="font-satoshi font-bold text-lg text-white-base">
                       5 MIN READ
                     </h4>
-                    <p className="font-medium text-sm text-[#A1A1AA]">
-                      READING TIME
-                    </p>
+                    <p className=" text-sm text-[#A1A1AA]">READING TIME</p>
                   </div>
                 </div>
               </div>

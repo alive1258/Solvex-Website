@@ -1,6 +1,6 @@
 import ContactPage from "@/components/UI/ContactPage/ContactPage";
 
-const page = () => {
+const Contact = () => {
   return (
     <>
       <ContactPage />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

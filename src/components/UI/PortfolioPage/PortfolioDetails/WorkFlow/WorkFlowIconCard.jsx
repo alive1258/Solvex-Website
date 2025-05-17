@@ -12,7 +12,7 @@ const WorkFlowIconCard = ({ item, delay = 0 }) => {
               <Image src={item.icon} alt="workflow" width={24} height={24} />
             </div>
           </div>
-          <p className="text-lg mt-4 font-bold text-primary-base text-center">
+          <p className="text-lg mt-4 font-satoshi font-bold text-primary-base text-center">
             {item.title}
           </p>
         </div>

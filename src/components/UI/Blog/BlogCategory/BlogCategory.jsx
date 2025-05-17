@@ -1,5 +1,5 @@
-import { blogGridCategories } from "@/utils/fakeData/blogGridCategories";
 import React from "react";
+import { blogGridCategories } from "@/utils/fakeData/blogGridCategories";
 
 const BlogCategory = ({ selectedCategory, handleCategoryClick }) => {
   return (

@@ -1,6 +1,6 @@
 import CareerPage from "@/components/UI/CareerPage/CareerPage";
 
-const page = () => {
+const Career = () => {
   return (
     <>
       <CareerPage />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Career;

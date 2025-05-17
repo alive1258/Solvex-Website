@@ -21,7 +21,7 @@ const QuestionDetails = ({
         >
           <div className="flex items-center justify-between">
             <h1
-              className={`text-tertiary-base font-bold text-[18px] md:text-2xl`}
+              className={`text-tertiary-base font-satoshi font-bold text-[18px] md:text-2xl`}
             >
               <span className="mr-1">0{index + 1}.</span>
               <span>{accordion?.question}</span>

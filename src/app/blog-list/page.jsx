@@ -1,6 +1,6 @@
 import BlogList from "@/components/UI/Blog/BlogList/BlogList";
 
-const page = () => {
+const BlogsList = () => {
   return (
     <>
       <BlogList />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BlogsList;

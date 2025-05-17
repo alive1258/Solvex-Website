@@ -10,7 +10,7 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
     >
       {/* Content Side */}
       <div className={`${idx % 2 !== 0 ? "md:order-2" : "md:order-1"}`}>
-        <h1 className="text-2xl font-bold text-primary-base">
+        <h1 className="text-2xl font-satoshi font-bold text-primary-base">
           {feature.main_title}
         </h1>
 
@@ -25,12 +25,10 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
               />
             </div>
             <div>
-              <h5 className="text-[20px] font-bold text-primary-base">
+              <h5 className="text-[20px] font-satoshi font-bold text-primary-base">
                 {step.title}
               </h5>
-              <p className="text-lg font-medium text-primary-base">
-                {step.description}
-              </p>
+              <p className="text-lg  text-primary-base">{step.description}</p>
             </div>
           </div>
         ))}
@@ -43,18 +41,14 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
           }}
           className="mt-12"
         >
-          <h5 className="text-[20px] font-medium text-white px-4 py-2">
-            Tools Used:
-          </h5>
+          <h5 className="text-[20px]  text-white px-4 py-2">Tools Used:</h5>
         </div>
 
         <div className="mt-6 flex flex-wrap gap-6 items-center">
           {feature.tools.map((tool, idx) => (
             <div key={idx} className="flex items-center space-x-2">
               <img src={tool.icon} alt={tool.name} className="w-6 h-6" />
-              <span className="text-primary-base text-lg font-medium">
-                {tool.name}
-              </span>
+              <span className="text-primary-base text-lg ">{tool.name}</span>
             </div>
           ))}
         </div>

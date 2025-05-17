@@ -9,7 +9,7 @@ const RelatedProduct = () => {
     <div className="mt-14 bg-[#18181B]">
       <div className="container py-16">
         <div className="md:flex items-center justify-between ">
-          <h1 className="text-[32px] text-[#D4D4D8]  font-bold">
+          <h1 className="text-[32px] text-[#D4D4D8]  font-satoshi font-bold">
             Related Product
           </h1>
           <div className=" uppercase">

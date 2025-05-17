@@ -26,11 +26,11 @@ const ServiceCard = ({ service, delay = 0 }) => {
         {/* END: Icon Wrapper */}
 
         <h4
-          className={`text-lg  font-bold group-hover:text-[${service.borderColor}] mt-6`}
+          className={`text-lg  font-satoshi font-bold group-hover:text-[${service.borderColor}] mt-6`}
         >
           {service.title}
         </h4>
-        <p className="text-[#71717A] font-medium text-[16px] mt-6">
+        <p className="text-[#71717A]  text-[16px] mt-6">
           {service.description}
         </p>
         {/* START: Link & Arrow */}
@@ -38,7 +38,7 @@ const ServiceCard = ({ service, delay = 0 }) => {
           <div className="service-card-link">
             <Link href={`/service/${service.id}`}>
               <span
-                className={`text-[#71717A] group-hover:text-[#3B82F6] uppercase font-bold text-sm `}
+                className={`text-[#71717A] group-hover:text-[#3B82F6] uppercase font-satoshi font-bold text-sm `}
               >
                 get in touch
               </span>

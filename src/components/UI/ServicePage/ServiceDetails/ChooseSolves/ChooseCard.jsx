@@ -21,13 +21,18 @@ const ChooseCard = ({ card, delay = 0 }) => {
           }}
           className="border rounded-full size-16 flex justify-center items-center"
         >
-          <span style={{ color: card.color }} className="text-2xl font-bold">
+          <span
+            style={{ color: card.color }}
+            className="text-2xl font-satoshi font-bold"
+          >
             {card.number}
           </span>
         </div>
 
         {/* Title & Description */}
-        <h2 className="text-2xl font-bold text-white">{card.title}</h2>
+        <h2 className="text-2xl font-satoshi font-bold text-white">
+          {card.title}
+        </h2>
         <p className="text-center text-[16px] font-medium text-[#D4D4D8]">
           {card.description}
         </p>

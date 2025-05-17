@@ -23,7 +23,7 @@ const BlogCard = ({ blog, delay = 0 }) => {
         {/* START BLOG CATEGORY BADGE */}
         <div className="mt-6 flex justify-between items-center">
           <div
-            className={`rounded-[99px] w-fit px-3 py-1.5 border text-sm font-medium ${blog?.categoryColor}`}
+            className={`rounded-[99px] w-fit px-3 py-1.5 border text-sm  ${blog?.categoryColor}`}
           >
             {blog?.category}
           </div>
@@ -33,13 +33,11 @@ const BlogCard = ({ blog, delay = 0 }) => {
         {/* START BLOG TITLE AND EXCERPT */}
         <div className="mt-6">
           <Link href={`blog-grid/${blog.id}`}>
-            <h2 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl capitalize">
+            <h2 className="text-secondary-base group-hover:text-[#3B82F6] font-satoshi font-bold text-2xl capitalize">
               {blog?.title}
             </h2>
           </Link>
-          <p className="mt-6 text-[#71717A] text-[16px] font-medium">
-            {blog?.excerpt}
-          </p>
+          <p className="mt-6 text-[#71717A] text-[16px] ">{blog?.excerpt}</p>
         </div>
         {/* END BLOG TITLE AND EXCERPT */}
 
@@ -55,18 +53,16 @@ const BlogCard = ({ blog, delay = 0 }) => {
                 width={48}
               />
               <div>
-                <h4 className="font-bold text-lg text-tertiary-base capitalize">
+                <h4 className="font-satoshi font-bold text-lg text-tertiary-base capitalize">
                   {blog?.author?.name}
                 </h4>
-                <p className="font-medium text-sm text-[#71717A] capitalize">
+                <p className=" text-sm text-[#71717A] capitalize">
                   {blog?.author?.role}
                 </p>
               </div>
             </div>
             <div className="bg-[#F4F4F5] px-4 py-2 rounded-lg">
-              <p className="text-[#71717A] text-sm font-medium">
-                {blog?.readTime}
-              </p>
+              <p className="text-[#71717A] text-sm ">{blog?.readTime}</p>
             </div>
           </div>
         </div>

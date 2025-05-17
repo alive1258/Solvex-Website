@@ -23,7 +23,7 @@ const OurSolutions = () => {
                       height={14}
                     />
                   </div>
-                  <p className="text-[#71717A] text-sm uppercase font-medium">
+                  <p className="text-[#71717A] text-sm uppercase ">
                     Our Web Development Solutions
                   </p>
                 </div>
@@ -34,11 +34,11 @@ const OurSolutions = () => {
           <div className="mt-8">
             <AnimatedText
               lines={[" Custom Web Solutions Designed for Impact"]}
-              className="md:text-[40px] text-[35px] md:text-start text-center font-bold text-primary-base"
+              className="md:text-[40px] text-[35px] md:text-start text-center font-satoshi font-bold text-primary-base"
             />
 
             <SlideUp delay={0.6}>
-              <p className="text-[20px] md:text-start text-center font-medium text-primary-base mt-8">
+              <p className="text-[20px] md:text-start text-center  text-primary-base mt-8">
                 From sleek websites to dynamic web applications, we build
                 solutions that don’t just look good — they work flawlessly.
               </p>

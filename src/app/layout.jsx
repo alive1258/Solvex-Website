@@ -3,10 +3,50 @@ import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 
-// Define the local font correctly
-const myFont = localFont({
-  src: "../../public/font/Satoshi-Regular.otf",
+// SATOSHI FONT
+const satoshi = localFont({
+  src: [
+    {
+      path: "../../public/font/Satoshi-Regular.otf",
+      weight: "500",
+      style: "medium",
+    },
+    {
+      path: "../../public/font/Satoshi-Regular.otf",
+      weight: "600",
+      style: "semiBold",
+    },
+    {
+      path: "../../public/font/Satoshi-Bold.otf",
+      weight: "700",
+      style: "bold",
+    },
+  ],
   display: "swap",
+  variable: "--font-satoshi",
+});
+
+// PLUS JAKARTA SANS
+const plusJakartaSans = localFont({
+  src: [
+    {
+      path: "../../public/font/static/PlusJakartaSans-Regular.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/font/static/PlusJakartaSans-SemiBold.ttf",
+      weight: "600",
+      style: "semiBold",
+    },
+    {
+      path: "../../public/font/static/PlusJakartaSans-Bold.ttf",
+      weight: "700",
+      style: "bold",
+    },
+  ],
+  display: "swap",
+  variable: "--font-plusjakarta",
 });
 
 export const metadata = {
@@ -17,7 +57,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${myFont.className} bg-white-base`}>
+      <body
+        className={`${satoshi.variable} ${plusJakartaSans.variable} bg-white-base`}
+      >
         <Navbar />
         <main>{children}</main>
         <Footer />

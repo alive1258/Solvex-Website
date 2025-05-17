@@ -9,7 +9,7 @@ const ChooseSolves = () => {
       <div className="container py-14">
         <AnimatedText
           lines={[" Why Choose Solvex for Web Development"]}
-          className="md:text-[40px] text-[34px] font-bold text-[#FFF] max-w-[532px] mx-auto text-center"
+          className="md:text-[40px] text-[34px] font-satoshi font-bold text-[#FFF] max-w-[532px] mx-auto text-center"
         />
 
         <div className="mt-14 flex flex-col items-center justify-center space-y-6 md:flex-row md:space-x-6 md:space-y-0 flex-wrap">

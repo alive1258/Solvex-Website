@@ -1,6 +1,6 @@
 import TeamPage from "@/components/UI/TeamPage/TeamPage";
 
-const page = () => {
+const Team = () => {
   return (
     <>
       <TeamPage />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Team;

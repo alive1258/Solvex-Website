@@ -40,11 +40,12 @@ const WhoWeAre = () => {
           {/* START TEAM IMAGE WITH ZOOM EFFECT */}
           <ZoomIn>
             <Image
-              className="rounded-2xl w-full md:h-[469px]"
               src="/images/workGallery/team.png"
               alt="workGallery1"
-              height={459}
-              width={536}
+              width={1000}
+              height={1100}
+              quality={90}
+              className="rounded-2xl md:h-[460px]"
             />
           </ZoomIn>
           {/* END TEAM IMAGE WITH ZOOM EFFECT */}

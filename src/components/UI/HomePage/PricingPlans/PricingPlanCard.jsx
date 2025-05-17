@@ -11,23 +11,21 @@ const PricingPlanCard = ({ item, index, delay = 0 }) => {
       >
         <div className="bg-[#F4F4F5] rounded-t-2xl p-6">
           <div className="flex justify-between items-center">
-            <h3 className="font-bold text-secondary-base text-2xl">
+            <h3 className="font-satoshi font-bold text-secondary-base text-2xl">
               {item?.title}
             </h3>
             {index === 1 && (
               <div className="border rounded-[99px] bg-[#DBEAFE] border-[#3B82F6] px-3 py-1.5 shadow-[-5px_5px_0px_0px_rgba(33,84,255,0.4),-10px_10px_0px_0px_rgba(46,100,240,0.3),-15px_15px_0px_0px_rgba(46,114,240,0.2),-20px_20px_0px_0px_rgba(46,141,240,0.1),-25px_25px_0px_0px_rgba(46,148,240,0.05)]">
-                <p className="text-[#3B82F6] text-sm font-medium">
-                  Most Popular
-                </p>
+                <p className="text-[#3B82F6] text-sm ">Most Popular</p>
               </div>
             )}
           </div>
 
           <div className="mt-6 flex items-center ">
-            <h1 className="font-bold text-secondary-base text-[32px]">
+            <h1 className="font-satoshi font-bold text-secondary-base text-[32px]">
               ${item?.price}
             </h1>
-            <div className="font-medium text-primary-base text-[16px] mt-4 flex space-x-0.5">
+            <div className=" text-primary-base text-[16px] mt-4 flex space-x-0.5">
               <span> /</span>
               <div className="lowercase">
                 <span>per </span>
@@ -35,14 +33,12 @@ const PricingPlanCard = ({ item, index, delay = 0 }) => {
               </div>
             </div>
           </div>
-          <p className="font-medium text-secondary-base text-lg mt-6 ">
-            {item?.des}
-          </p>
+          <p className=" text-secondary-base text-lg mt-6 ">{item?.des}</p>
           <div className="mt-12 flex justify-center items-center">
             <Link className="w-full" href="/contact">
               <button
                 type="button"
-                className={`group relative inline-flex w-full uppercase font-medium text-[16px] cursor-pointer h-14 px-6 py-4 justify-center items-center gap-1 rounded-full text-white-base overflow-hidden transition-all duration-300 focus:ring-4 focus:outline-none ${
+                className={`group relative inline-flex w-full uppercase  text-[16px] cursor-pointer h-14 px-6 py-4 justify-center items-center gap-1 rounded-full text-white-base overflow-hidden transition-all duration-300 focus:ring-4 focus:outline-none ${
                   index === 1
                     ? "bg-gradient-to-r from-[#2154FF] to-[#5079FF]"
                     : "bg-[#000]"
@@ -63,7 +59,7 @@ const PricingPlanCard = ({ item, index, delay = 0 }) => {
           </div>
         </div>
         <div className=" p-6">
-          <h5 className="text-secondary-base font-bold text-lg">
+          <h5 className="text-secondary-base font-satoshi font-bold text-lg">
             {item?.plan_title}
           </h5>
           <div className="mt-4 space-y-4">
@@ -96,7 +92,7 @@ const PricingPlanCard = ({ item, index, delay = 0 }) => {
                     </linearGradient>
                   </defs>
                 </svg>
-                <p className="text-primary-base font-medium text-[16px]">
+                <p className="text-primary-base  text-[16px]">
                   {pla?.plan_des1}
                 </p>
               </div>

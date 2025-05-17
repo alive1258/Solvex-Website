@@ -26,13 +26,13 @@ const TrustedBrands = ({ status = false }) => {
         <div className=" grid grid-cols-1 md:grid-cols-2 mt-4 md:mt-0 gap-x-[140px] ">
           <div className="md:relative md:top-1/6">
             <div className=" w-full">
-              <p className="text-[#3B82F6] text-sm md:text-start text-center font-medium">
+              <p className="text-[#3B82F6] text-sm md:text-start text-center ">
                 We Work With the Best
               </p>
-              <h1 className="md:text-start text-center text-tertiary-base mt-6 text-2xl font-bold">
+              <h1 className="md:text-start text-center text-tertiary-base mt-6 text-2xl font-satoshi font-bold">
                 Trusted by Leading Brands & Businesses
               </h1>
-              <p className="text-[#71717A] md:text-start text-center mt-6 text-[16px] font-medium">
+              <p className="text-[#71717A] md:text-start text-center mt-6 text-[16px] ">
                 We’ve had the privilege of working with some of the world’s most
                 innovative companies, helping them scale with cutting-edge
                 digital solutions.
@@ -59,7 +59,7 @@ const TrustedBrands = ({ status = false }) => {
                         height={32}
                         width={32}
                       />
-                      <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
+                      <h5 className="text-tertiary-base font-satoshi font-bold md:text-[28px] text-[18px]">
                         {brand?.name}
                       </h5>
                     </div>
@@ -84,7 +84,7 @@ const TrustedBrands = ({ status = false }) => {
                         height={32}
                         width={32}
                       />
-                      <h5 className="text-tertiary-base font-bold md:text-[28px] text-[18px]">
+                      <h5 className="text-tertiary-base font-satoshi font-bold md:text-[28px] text-[18px]">
                         {brand?.name}
                       </h5>
                     </div>

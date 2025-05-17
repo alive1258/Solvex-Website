@@ -1,6 +1,6 @@
 import { BlogGrid } from "@/components/UI/Blog/BlogGrid/BlogGrid";
 
-const page = () => {
+const BlogsGrid = () => {
   return (
     <>
       <BlogGrid />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BlogsGrid;

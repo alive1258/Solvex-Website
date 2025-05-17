@@ -43,15 +43,6 @@ export default function AnimatedText({ lines, className = "", once = false }) {
       animate={controls}
       className={`leading-tight space-y-2 ${className}`}
     >
-      {/* {lines.map((line, lineIndex) => (
-        <div key={lineIndex}>
-          {line.split("").map((char, charIndex) => (
-            <motion.span key={charIndex} variants={child}>
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          ))}
-        </div>
-      ))} */}
       {lines.map((line, lineIndex) => (
         <div key={lineIndex} className="flex flex-wrap justify-center">
           {line.split("").map((char, charIndex) => (

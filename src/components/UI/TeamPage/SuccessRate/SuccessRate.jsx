@@ -39,7 +39,7 @@ const SuccessRate = () => {
                   : {}
               }
             >
-              <h3 className="text-[48px] text-[#3B82F6] font-bold">
+              <h3 className="text-[48px] text-[#3B82F6] font-satoshi font-bold">
                 {inView ? (
                   <>
                     <CountUp end={parseInt(card.count)} duration={4} />{" "}
@@ -49,10 +49,10 @@ const SuccessRate = () => {
                   0
                 )}
               </h3>
-              <h5 className="text-[20px] uppercase font-bold mt-4 text-secondary-base">
+              <h5 className="text-[20px] uppercase font-satoshi font-bold mt-4 text-secondary-base">
                 {card?.title}
               </h5>
-              <p className="text-sm font-medium mt-4 text-[#71717A]">
+              <p className="text-sm  mt-4 text-[#71717A]">
                 {card?.description}
               </p>
             </div>

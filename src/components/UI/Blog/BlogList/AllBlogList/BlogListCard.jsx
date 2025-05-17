@@ -31,7 +31,7 @@ const BlogListCard = ({ post, delay = 0, idx }) => {
                 <div
                   className={`border rounded-[99px] w-fit px-3 py-1.5 ${post.categoryColor}`}
                 >
-                  <p className="text-sm font-medium">{post.category}</p>
+                  <p className="text-sm ">{post.category}</p>
                 </div>
                 {/* Date */}
                 <div className="flex items-center space-x-3">
@@ -39,21 +39,19 @@ const BlogListCard = ({ post, delay = 0, idx }) => {
                     {/* Clock Icon */}
                     <RiTimeLine size={20} />
                   </div>
-                  <p className="text-[#71717A] text-[16px] font-medium">
-                    {post.date}
-                  </p>
+                  <p className="text-[#71717A] text-[16px] ">{post.date}</p>
                 </div>
               </div>
 
               {/* Title & Excerpt */}
               <div className="md:mt-16 mt-8">
                 <Link href={`blog-list/${post.id}`}>
-                  <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-bold text-2xl">
+                  <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-satoshi font-bold text-2xl">
                     {post.title}
                   </h1>
                 </Link>
 
-                <p className="mt-7 text-[#71717A] text-[16px] font-medium">
+                <p className="mt-7 text-[#71717A] text-[16px] ">
                   {post.excerpt}
                 </p>
               </div>
@@ -71,18 +69,16 @@ const BlogListCard = ({ post, delay = 0, idx }) => {
                     width={48}
                   />
                   <div>
-                    <h4 className="font-bold text-lg text-tertiary-base">
+                    <h4 className="font-satoshi font-bold text-lg text-tertiary-base">
                       {post.author.name}
                     </h4>
-                    <p className="font-medium text-sm text-[#71717A]">
+                    <p className=" text-sm text-[#71717A]">
                       {post.author.role}
                     </p>
                   </div>
                 </div>
                 <div className="bg-[#F4F4F5] px-4 py-2 rounded-lg">
-                  <p className="text-[#71717A] text-sm font-medium">
-                    {post.readTime}
-                  </p>
+                  <p className="text-[#71717A] text-sm ">{post.readTime}</p>
                 </div>
               </div>
             </div>

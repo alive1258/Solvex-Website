@@ -20,10 +20,10 @@ const AskQuestion = () => {
         </div>
       </div>
 
-      <h3 className="text-secondary-base mt-8 font-bold text-2xl text-center">
+      <h3 className="text-secondary-base mt-8 font-satoshi font-bold text-2xl text-center">
         Ask a Questions
       </h3>
-      <p className="text-tertiary-base mt-8 font-medium text-[16px] text-center">
+      <p className="text-tertiary-base mt-8  text-[16px] text-center">
         Have questions about our services? Find quick answers below! If you need
         further assistance, feel free to contact us.
       </p>

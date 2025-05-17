@@ -60,7 +60,7 @@ const TrendsCard = ({ index, delay = 0, trend }) => {
       {/* ========== START: TEXT CONTENT ========== */}
       <div className="mt-11">
         <SlideRight>
-          <h1 className="text-2xl text-primary-base font-bold">
+          <h1 className="text-2xl text-primary-base font-satoshi font-bold">
             {trend?.title}
           </h1>
         </SlideRight>
@@ -73,7 +73,7 @@ const TrendsCard = ({ index, delay = 0, trend }) => {
 
         <div className="mt-14">
           <SlideUp>
-            <p className="text-[20px] font-medium text-tertiary-base">
+            <p className="text-[20px]  text-tertiary-base">
               {trend?.description}
             </p>
           </SlideUp>

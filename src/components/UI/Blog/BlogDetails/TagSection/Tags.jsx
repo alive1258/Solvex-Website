@@ -1,15 +1,8 @@
+import React from "react";
 import ShareSocialLink from "@/components/common/ShareSocialLink";
 import Button from "@/components/UI/Button/Button";
 import SlideUp from "@/utils/animations/SlideUp";
-import {
-  RiDribbbleLine,
-  RiFacebookFill,
-  RiInstagramLine,
-  RiLinkedinFill,
-  RiTwitterXLine,
-} from "@remixicon/react";
 import Image from "next/image";
-import React from "react";
 
 const Tags = () => {
   return (
@@ -29,15 +22,13 @@ const Tags = () => {
             width={88}
           />
           <div>
-            <h4 className="font-bold text-2xl text-secondary-base">
+            <h4 className="font-satoshi font-bold text-2xl text-secondary-base">
               Ethan Carter
             </h4>
-            <p className="font-medium text-lg text-[#71717A]">
-              Senior Web Developer
-            </p>
+            <p className=" text-lg text-[#71717A]">Senior Web Developer</p>
           </div>
         </div>
-        <p className="font-medium text-lg mt-8 text-primary-base">
+        <p className=" text-lg mt-8 text-primary-base">
           Ethan Carter is a Senior Web Developer at Solvex with over 8 years of
           experience in front-end and back-end technologies. Passionate about
           AI-driven web development, he specializes in creating
@@ -52,7 +43,7 @@ const Tags = () => {
       </SlideUp>
 
       <div className="mt-20">
-        <h2 className="text-[#3B82F6] text-2xl font-bold border-b border-[#D4D4D8] pb-4">
+        <h2 className="text-[#3B82F6] text-2xl font-satoshi font-bold border-b border-[#D4D4D8] pb-4">
           2 Comments
         </h2>
 
@@ -66,10 +57,10 @@ const Tags = () => {
               width={48}
             />
             <div>
-              <h4 className="font-bold text-[20px] text-secondary-base">
+              <h4 className="font-satoshi font-bold text-[20px] text-secondary-base">
                 John Doe
               </h4>
-              <p className="font-medium text-sm text-[#71717A]">12 July 2025</p>
+              <p className=" text-sm text-[#71717A]">12 July 2025</p>
 
               <p className="text-primary-base text-lg mt-6">
                 I totally agree! AI-powered coding assistants will definitely
@@ -91,7 +82,7 @@ const Tags = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <p className="text-[#3B82F6] text-lg font-medium">Reply</p>
+                <p className="text-[#3B82F6] text-lg ">Reply</p>
               </div>
               <div className="mt-10 border-b-2 border-dashed border-[#D4D4D8] w-full"></div>
             </div>
@@ -106,10 +97,10 @@ const Tags = () => {
               width={48}
             />
             <div>
-              <h4 className="font-bold text-[20px] text-secondary-base">
+              <h4 className="font-satoshi font-bold text-[20px] text-secondary-base">
                 John Doe
               </h4>
-              <p className="font-medium text-sm text-[#71717A]">12 July 2025</p>
+              <p className=" text-sm text-[#71717A]">12 July 2025</p>
 
               <p className="text-primary-base text-lg mt-6">
                 I totally agree! AI-powered coding assistants will definitely
@@ -120,7 +111,7 @@ const Tags = () => {
         </div>
 
         <div className="mt-20">
-          <h2 className="text-[#3B82F6] uppercase text-2xl font-bold">
+          <h2 className="text-[#3B82F6] uppercase text-2xl font-satoshi font-bold">
             leave a comment
           </h2>
           <SlideUp className="bg-white-base mt-12 p-7  rounded-xl border border-border-base">
@@ -130,7 +121,7 @@ const Tags = () => {
                   <div>
                     <label
                       htmlFor="fname"
-                      className="text-secondary-base text-lg font-medium"
+                      className="text-secondary-base text-lg "
                     >
                       Full name:
                     </label>
@@ -146,7 +137,7 @@ const Tags = () => {
                   <div>
                     <label
                       htmlFor="fname"
-                      className="text-secondary-base text-lg font-medium"
+                      className="text-secondary-base text-lg "
                     >
                       Email Address *
                     </label>
@@ -164,7 +155,7 @@ const Tags = () => {
                 <div className="mt-3">
                   <label
                     htmlFor="Massage"
-                    className="text-secondary-base text-lg font-medium"
+                    className="text-secondary-base text-lg "
                   >
                     Massage:
                   </label>

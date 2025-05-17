@@ -70,13 +70,13 @@ const SingleTeamMember = () => {
         {/* START: TEAM MEMBER INFO */}
         <div>
           {/* Name & Role */}
-          <h1 className="text-[32px] font-bold text-primary-base">Sarah Lee</h1>
-          <p className="text-lg font-medium text-primary-base">
-            Lead UI/UX Designer
-          </p>
+          <h1 className="text-[32px] font-satoshi font-bold text-primary-base">
+            Sarah Lee
+          </h1>
+          <p className="text-lg  text-primary-base">Lead UI/UX Designer</p>
 
           {/* Bio */}
-          <p className="text-[16px] font-medium text-[#71717A] mt-8">
+          <p className="text-[16px]  text-[#71717A] mt-8">
             Sarah is a creative powerhouse with over 6 years of experience in
             designing intuitive user interfaces and seamless user experiences.
             She specializes in turning complex ideas into clean, user-centric
@@ -93,7 +93,9 @@ const SingleTeamMember = () => {
                   width={13}
                   height={20}
                 />
-                <h1 className="text-primary-base text-lg font-bold">{title}</h1>
+                <h1 className="text-primary-base text-lg font-satoshi font-bold">
+                  {title}
+                </h1>
               </div>
             ))}
           </div>
@@ -101,7 +103,9 @@ const SingleTeamMember = () => {
 
           {/* START: SOCIAL LINKS */}
           <div className="mt-16">
-            <h2 className="text-lg font-bold text-primary-base">Social Link</h2>
+            <h2 className="text-lg font-satoshi font-bold text-primary-base">
+              Social Link
+            </h2>
 
             {/* Gradient Line */}
             <div

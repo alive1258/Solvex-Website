@@ -58,7 +58,7 @@ const Navbar = () => {
       <header
         className={`sticky top-0 w-full z-[500] bg-white-base shadow-sm transition-all duration-500 ease-in-out `}
       >
-        <div className="max-w-[1440px]  uppercase mx-auto w-full md:px-6 px-5 flex items-center justify-between  h-[96px] text-[#18181B] text-[16px] font-medium">
+        <div className="max-w-[1440px]  uppercase mx-auto w-full md:px-6 px-5 flex items-center justify-between  h-[96px] text-[#18181B] text-[16px] ">
           {/* START LOGO DESIGN AREA  */}
           <Link href="/">
             <Image
@@ -69,7 +69,6 @@ const Navbar = () => {
               alt="logo"
             />
           </Link>
-
           {/* / END LOGO DESIGN AREA */}
 
           {/*  START HAMBURGER BUTTON FOR MOBILE  */}
@@ -238,7 +237,6 @@ const Navbar = () => {
             </li>
 
             {/* MOBILE MENU START  */}
-            {/* mobile menu Home  */}
             <li className=" pt-14 md:hidden ">
               <div className="mobile-nav-menu">
                 <Link href="/">Home</Link>
@@ -460,7 +458,7 @@ const Navbar = () => {
               <Link
                 onClick={handleMenuLinkClick}
                 href="/contact"
-                className={`block px-5 py-2 font-medium transition-colors duration-300 `}
+                className={`block px-5 nav-menu py-2  transition-colors duration-300 `}
               >
                 Contact
               </Link>
@@ -531,7 +529,7 @@ const Navbar = () => {
                 }}
               >
                 {/* Inner Circle with Percentage */}
-                <div className="size-11 bg-white rounded-full flex items-center justify-center text-sm font-medium text-[#3B82F6]">
+                <div className="size-11 bg-white rounded-full flex items-center justify-center text-sm  text-[#3B82F6]">
                   {scrollPercent}%
                 </div>
 

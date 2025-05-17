@@ -12,9 +12,7 @@ const PortfolioDetailsBanner = () => {
             <div className="flex justify-center items-center mt-3">
               <div className="bg-[#27272A] w-fit px-4 py-2 rounded-3xl flex items-center justify-center space-x-2">
                 <Link href="/">
-                  <span className="text-[#A1A1AA] text-[16px] font-medium">
-                    Home
-                  </span>
+                  <span className="text-[#A1A1AA] text-[16px] ">Home</span>
                 </Link>
                 <span>
                   <svg
@@ -34,9 +32,7 @@ const PortfolioDetailsBanner = () => {
                   </svg>
                 </span>
                 <Link href="/portfolio">
-                  <span className="text-[#A1A1AA] text-[16px] font-medium">
-                    Portfolio
-                  </span>
+                  <span className="text-[#A1A1AA] text-[16px] ">Portfolio</span>
                 </Link>
                 <span>
                   <svg
@@ -55,7 +51,7 @@ const PortfolioDetailsBanner = () => {
                     />
                   </svg>
                 </span>
-                <span className="text-[#FAFAFA] text-[16px] font-medium">
+                <span className="text-[#FAFAFA] text-[16px] ">
                   Portfolio Details
                 </span>
               </div>

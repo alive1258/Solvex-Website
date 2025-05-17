@@ -20,21 +20,19 @@ const TagCard = ({ blog, delay = 0 }) => {
         {/* ========== END: BLOG IMAGE ========== */}
 
         <div
-          className={`mt-6 w-fit px-3 py-1.5 border text-sm font-medium rounded-[99px] ${blog?.categoryColor}`}
+          className={`mt-6 w-fit px-3 py-1.5 border text-sm  rounded-[99px] ${blog?.categoryColor}`}
         >
-          <p className="text-sm font-medium">{blog?.category}</p>
+          <p className="text-sm ">{blog?.category}</p>
         </div>
 
         {/* ========== START: TITLE AND EXCERPT ========== */}
         <div className="mt-6">
           <Link href={`blog-grid/${blog.id}`}>
-            <h1 className="text-2xl font-bold text-secondary-base group-hover:text-[#3B82F6]">
+            <h1 className="text-2xl font-satoshi font-bold text-secondary-base group-hover:text-[#3B82F6]">
               {blog?.title}
             </h1>
           </Link>
-          <p className="mt-6 text-[16px] font-medium text-[#71717A]">
-            {blog?.excerpt}
-          </p>
+          <p className="mt-6 text-[16px]  text-[#71717A]">{blog?.excerpt}</p>
         </div>
         {/* ========== END: TITLE AND EXCERPT ========== */}
       </div>

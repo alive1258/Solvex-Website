@@ -1,7 +1,7 @@
 import React from "react";
 import BlogDetails from "@/components/UI/Blog/BlogDetails/BlogDetails";
 
-const page = async ({ params }) => {
+const BlogDetail = async ({ params }) => {
   const id = await params;
   return (
     <>
@@ -10,4 +10,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default BlogDetail;

@@ -1,6 +1,6 @@
 import PortfolioDetails from "@/components/UI/PortfolioPage/PortfolioDetails/PortfolioDetails";
 
-const page = () => {
+const PortfolioDetail = () => {
   return (
     <>
       <PortfolioDetails />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default PortfolioDetail;

@@ -63,7 +63,7 @@ const DigitalFuture = ({ status = true }) => {
               {/* === START PARAGRAPH TEXT === */}
               <SlideUp
                 delay={paragraphDelay}
-                className="mt-5 font-medium text-[16px] w-full max-w-[430px] mx-auto"
+                className="mt-5  text-[16px] w-full max-w-[430px] mx-auto"
               >
                 <p>
                   {status
@@ -78,7 +78,7 @@ const DigitalFuture = ({ status = true }) => {
                 className="mt-12 flex justify-center items-center"
               >
                 <Link href="/contact">
-                  <button className="flex space-x-2 group uppercase font-medium text-[16px] cursor-pointer h-14 px-6 py-4 justify-center items-center gap-1 rounded-full hover:bg-[#131313] bg-[#000] text-white-base hover:opacity-90">
+                  <button className="flex space-x-2 group uppercase  text-[16px] cursor-pointer h-14 px-6 py-4 justify-center items-center gap-1 rounded-full hover:bg-[#131313] bg-[#000] text-white-base hover:opacity-90">
                     <span>Schedule a Free Consultation</span>
                     <RiArrowRightUpLine
                       className="transform transition-all duration-300 ease-in-out group-hover:rotate-45"

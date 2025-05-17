@@ -1,12 +1,12 @@
-import ServiceDetails from "@/components/UI/ServicePage/ServiceDetails/ServiceDetails";
 import React from "react";
+import ServiceDetails from "@/components/UI/ServicePage/ServiceDetails/ServiceDetails";
 
-const page = () => {
+const ServiceDetail = () => {
   return (
-    <div>
+    <>
       <ServiceDetails />
-    </div>
+    </>
   );
 };
 
-export default page;
+export default ServiceDetail;

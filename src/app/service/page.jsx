@@ -1,6 +1,6 @@
 import ServicePage from "@/components/UI/ServicePage/ServicePage";
 
-const page = () => {
+const Service = () => {
   return (
     <>
       <ServicePage />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Service;

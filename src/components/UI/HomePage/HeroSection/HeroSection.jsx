@@ -20,20 +20,20 @@ const HeroSection = () => {
         <div className="pt-12 container ">
           <AnimatedText
             lines={[
-              "We Build Scalable & High-",
+              "We Build Scalable & High",
               "Performance Websites",
               "That Convert",
             ]}
-            className="text-secondary-base text-center font-bold uppercase w-full max-w-[900px] mx-auto md:text-[64px] text-[28px]"
+            className="text-secondary-base text-center font-satoshi font-bold uppercase w-full max-w-[900px] mx-auto md:text-[64px] text-[28px]"
           />
 
-          <AnimatedParagraph
-            text="We specialize in designing and developing fast, secure, and user-friendly websites that drive business growth. From startups to enterprises, we create web solutions that make an impact."
-            className="text-center w-full max-w-[900px] mx-auto pt-12 md:text-2xl text-[16px] font-medium text-primary-base"
-            once={false}
-            duration={0.8}
-            yOffset={100}
-          />
+          <SlideUp>
+            <p className="text-center w-full max-w-[900px] mx-auto pt-12 md:text-2xl text-[16px] font-satoshi font-medium text-primary-base">
+              We specialize in designing and developing fast, secure, and
+              user-friendly websites that drive business growth. From startups
+              to enterprises, we create web solutions that make an impact.
+            </p>
+          </SlideUp>
 
           <SlideUp>
             <div className="py-10 flex justify-center uppercase">

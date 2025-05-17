@@ -28,7 +28,7 @@ const Footer = () => {
                 width={21}
                 height={32}
               />
-              <span className="text-white-base text-[20px] font-bold">
+              <span className="text-white-base text-[20px] font-satoshi font-bold">
                 {service}
               </span>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
             {/* <!-- / END FOOTER LOGO DESIGN AREA --> */}
 
             <div className="mt-10">
-              <p className="text-[#FAFAFA] font-medium text-[16px] w-full max-w-[410px]">
+              <p className="text-[#FAFAFA]  text-[16px] w-full max-w-[410px]">
                 Solvex is a digital agency dedicated to creating innovative,
                 user-centered designs for startups and businesses. We turn your
                 vision into reality with engaging, responsive, and modern
@@ -117,7 +117,7 @@ const Footer = () => {
 
           {/* <!-- START FOOTER SERVICE AREA --> */}
           <div className=" md:col-span-3 md:mt-0 mt-10">
-            <h2 className="text-[#FAFAFA] font-bold text-lg w-fit border-b pb-1 uppercase border-[#3B82F6]">
+            <h2 className="text-[#FAFAFA] font-satoshi font-bold text-lg w-fit border-b pb-1 uppercase border-[#3B82F6]">
               Subscribe newsletter
             </h2>
 
@@ -126,19 +126,19 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Email address"
-                  className="bg-transparent text-[#A1A1AA] text-[16px] font-medium placeholder-[#A1A1AA] outline-none "
+                  className="bg-transparent text-[#A1A1AA] text-[16px]  placeholder-[#A1A1AA] outline-none "
                 />
-                <button className="bg-[#3B82F6] px-4 py-2 rounded-lg uppercase text-[#FFF] font-medium">
+                <button className="bg-[#3B82F6] px-4 py-2 rounded-lg uppercase text-[#FFF] ">
                   Sign Up
                 </button>
               </div>
             </div>
 
             <div className="mt-10">
-              <h4 className="text-[#FAFAFA] md:text-start text-center uppercase font-bold text-[16px]">
+              <h4 className="text-[#FAFAFA] md:text-start text-center uppercase font-satoshi font-bold text-[16px]">
                 we are available{" "}
               </h4>
-              <p className="mt-1 text-[#D4D4D8] md:text-start text-center font-medium text-sm">
+              <p className="mt-1 text-[#D4D4D8] md:text-start text-center  text-sm">
                 Mon-sat - 9.00 am to 7.00 pm{" "}
               </p>
             </div>
@@ -147,12 +147,12 @@ const Footer = () => {
         </div>
 
         {/* <!-- START FOOTER COPYRIGHT AREA --> */}
-        <div className="text-[#D4D4D8] border-t border-[#3F3F46] py-6 text-sm font-medium text-center">
+        <div className="text-[#D4D4D8] border-t border-[#3F3F46] py-6 text-sm  text-center">
           <p>
-            Copyright ©{year} ,
+            Copyright © {year},{" "}
             <Link className="text-blue-base" href="/">
               Solvex
-            </Link>
+            </Link>{" "}
             All Rights Reserved.
           </p>
         </div>

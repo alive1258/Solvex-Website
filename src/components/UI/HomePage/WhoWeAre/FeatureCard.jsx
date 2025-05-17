@@ -16,7 +16,7 @@ const FeatureCard = ({ feature, delay = 0 }) => {
           />
         </div>
         <div>
-          <h4 className="text-secondary-base text-lg font-bold">
+          <h4 className="text-secondary-base text-lg font-satoshi font-bold">
             {feature?.title}
           </h4>
           <p className="text-[#71717A] text-sm font-medium mt-2">

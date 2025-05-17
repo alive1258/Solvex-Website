@@ -1,74 +1,10 @@
-// "use client";
-// import Link from "next/link";
-// import React from "react";
-// import { usePathname } from "next/navigation";
-
-// // Capitalize function
-// const formatPageName = (path) => {
-//   if (path === "/") return "Home";
-//   const cleaned = path.replace("/", "").replaceAll("-", " ");
-//   return cleaned
-//     .split(" ")
-//     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-//     .join(" ");
-// };
-
-// const AboutBanner = () => {
-//   const pathname = usePathname();
-
-//   const pageName = formatPageName(pathname);
-
-//   return (
-//     <div className="about-us-section-bg md:h-[338px] h-[150px]">
-//       <div className="bg-[#000] opacity-70 w-full h-full">
-//         <div className="container flex h-full justify-center items-center">
-//           <div className="z-50 text-white">
-//             <h1 className="md:text-[48px] text-[#FAFAFA] text-center uppercase font-extrabold">
-//               {pageName}
-//             </h1>
-//             <div className="flex justify-center items-center mt-3">
-//               <div className="bg-[#27272A] w-fit px-4 py-2 rounded-3xl flex items-center justify-center space-x-2">
-//                 <Link href="/">
-//                   <span className="text-[#A1A1AA] text-[16px] font-medium">
-//                     Home
-//                   </span>
-//                 </Link>
-//                 <span>
-//                   <svg
-//                     xmlns="http://www.w3.org/2000/svg"
-//                     width="18"
-//                     height="18"
-//                     viewBox="0 0 18 18"
-//                     fill="none"
-//                   >
-//                     <path
-//                       d="M7.5 12.75L11.25 9L7.5 5.25"
-//                       stroke="white"
-//                       strokeWidth="1.5"
-//                       strokeLinecap="round"
-//                       strokeLinejoin="round"
-//                     />
-//                   </svg>
-//                 </span>
-//                 <span className="text-[#FAFAFA] text-[16px] font-medium">
-//                   {pageName}
-//                 </span>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default AboutBanner;
 "use client";
-import Link from "next/link";
-import React from "react";
-import { usePathname } from "next/navigation";
 
-// Format a single breadcrumb segment (e.g., "web-design" → "Web Design")
+import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { RiArrowRightSLine } from "@remixicon/react";
+
 const formatSegment = (segment) => {
   return segment
     .replaceAll("-", " ")
@@ -80,67 +16,55 @@ const formatSegment = (segment) => {
 const AboutBanner = () => {
   const pathname = usePathname();
 
+  // SPLIT PATH INTO SEGMENTS (e.g. /about/team => ['about', 'team'])
   const pathSegments = pathname.split("/").filter(Boolean);
 
   return (
-    <div className="about-us-section-bg md:h-[338px] h-[150px]">
+    <div className="about-us-section-bg h-[150px] md:h-[338px]">
+      {/* OVERLAY */}
       <div className="bg-[#000] opacity-70 w-full h-full">
-        <div className="container flex h-full justify-center items-center">
-          <div className="z-50 text-white text-center">
-            {/* Page Title (last segment) */}
-
-            <h1 className="md:text-[48px] text-[#FAFAFA] text-center uppercase font-extrabold">
-              {pathSegments}
+        <div className="container flex justify-center items-center h-full">
+          <div className="z-50 text-center text-white">
+            {/* ========== PAGE TITLE START ========== */}
+            <h1 className="text-[#FAFAFA] text-center uppercase font-extrabold text-[28px] md:text-[48px]">
+              {formatSegment(pathSegments[pathSegments.length - 1] || "Home")}
             </h1>
+            {/* ========== PAGE TITLE END ========== */}
 
-            {/* Breadcrumb */}
+            {/* ========== BREADCRUMB START ========== */}
             <div className="flex justify-center items-center mt-3">
-              <div className="bg-[#27272A] w-fit px-4 py-2 rounded-3xl flex items-center space-x-2">
-                {/* Always start with Home */}
+              <div className="bg-[#27272A] px-4 py-2 rounded-3xl flex items-center space-x-2 w-fit">
+                {/* HOME LINK */}
                 <Link href="/">
-                  <span className="text-[#A1A1AA] text-[16px] font-medium">
-                    Home
-                  </span>
+                  <span className="text-[#A1A1AA] text-[16px] ">Home</span>
                 </Link>
 
-                {pathSegments.map((segment, index) => {
+                {/* DYNAMIC PATH LINKS */}
+                {pathSegments?.map((segment, index) => {
                   const href = "/" + pathSegments.slice(0, index + 1).join("/");
                   const isLast = index === pathSegments.length - 1;
+
                   return (
-                    <React.Fragment key={index}>
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M7.5 12.75L11.25 9L7.5 5.25"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </span>
+                    <div key={index} className="flex items-center space-x-2">
+                      <RiArrowRightSLine size={22} />
+
                       {isLast ? (
-                        <span className="text-[#FAFAFA] text-[16px] font-medium">
+                        <span className="text-[#FAFAFA] text-[16px] ">
                           {formatSegment(segment)}
                         </span>
                       ) : (
                         <Link href={href}>
-                          <span className="text-[#A1A1AA] text-[16px] font-medium hover:underline">
+                          <span className="text-[#A1A1AA] text-[16px]  hover:underline">
                             {formatSegment(segment)}
                           </span>
                         </Link>
                       )}
-                    </React.Fragment>
+                    </div>
                   );
                 })}
               </div>
             </div>
+            {/* ========== BREADCRUMB END ========== */}
           </div>
         </div>
       </div>

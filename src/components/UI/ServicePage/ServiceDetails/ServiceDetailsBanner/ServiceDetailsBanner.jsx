@@ -12,9 +12,7 @@ const ServiceDetailsBanner = () => {
             <div className="flex justify-center items-center mt-3">
               <div className="bg-[#27272A] w-fit px-4 py-2 rounded-3xl flex items-center justify-center space-x-2">
                 <Link href="/">
-                  <span className="text-[#A1A1AA] text-[16px] font-medium">
-                    Home
-                  </span>
+                  <span className="text-[#A1A1AA] text-[16px] ">Home</span>
                 </Link>
                 <span>
                   <svg
@@ -34,9 +32,7 @@ const ServiceDetailsBanner = () => {
                   </svg>
                 </span>
                 <Link href="/service">
-                  <span className="text-[#A1A1AA] text-[16px] font-medium">
-                    Service
-                  </span>
+                  <span className="text-[#A1A1AA] text-[16px] ">Service</span>
                 </Link>
                 <span>
                   <svg
@@ -55,7 +51,7 @@ const ServiceDetailsBanner = () => {
                     />
                   </svg>
                 </span>
-                <span className="text-[#FAFAFA] text-[16px] font-medium">
+                <span className="text-[#FAFAFA] text-[16px] ">
                   Service Details
                 </span>
               </div>

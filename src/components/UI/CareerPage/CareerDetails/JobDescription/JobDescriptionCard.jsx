@@ -12,7 +12,7 @@ const JobDescriptionCard = ({ item, delay = 0 }) => {
           width={24}
           height={24}
         />
-        <p className="text-[20px] font-medium text-tertiary-base">{item}</p>
+        <p className="text-[20px]  text-tertiary-base">{item}</p>
       </div>
     </SlideRight>
   );

@@ -36,10 +36,10 @@ const OurWorkProcess = () => {
                       alt="work"
                     />
                   </div>
-                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-satoshi font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                  <p className="text-sm text-tertiary-base   pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -56,10 +56,10 @@ const OurWorkProcess = () => {
                       alt="work"
                     />
                   </div>
-                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-satoshi font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                  <p className="text-sm text-tertiary-base  pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -76,10 +76,10 @@ const OurWorkProcess = () => {
                       alt="work"
                     />
                   </div>
-                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-satoshi font-bold">
                     Development & Coding
                   </h2>
-                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                  <p className="text-sm text-tertiary-base  pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -96,10 +96,10 @@ const OurWorkProcess = () => {
                       alt="work"
                     />
                   </div>
-                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-satoshi font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                  <p className="text-sm text-tertiary-base  pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -116,10 +116,10 @@ const OurWorkProcess = () => {
                       alt="work"
                     />
                   </div>
-                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-satoshi font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                  <p className="text-sm text-tertiary-base  font-satoshi  pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>
@@ -136,10 +136,10 @@ const OurWorkProcess = () => {
                       alt="work"
                     />
                   </div>
-                  <h2 className="text-lg pt-6 text-secondary-base font-bold">
+                  <h2 className="text-lg pt-6 text-secondary-base font-satoshi font-bold">
                     Discovery & Planning
                   </h2>
-                  <p className="text-sm text-tertiary-base font-medium pt-4">
+                  <p className="text-sm text-tertiary-base  pt-4">
                     Understanding client needs, project goals, and creating a
                     roadmap.
                   </p>

@@ -28,9 +28,9 @@ const OurService = ({ status = false }) => {
 
         <SlideUp>
           <p className="primary-paragraph">
-            We provide full-cycle web development solutions to bring your vision
-            to life. We provide full-cycle web development solutions to bring
-            your vision to life.
+            From responsive websites to complex web applications, we turn ideas
+            into interactive digital experiences. We blend design and technology
+            to deliver measurable results.
           </p>
         </SlideUp>
 

@@ -12,9 +12,7 @@ const FaqBanner = () => {
             <div className="flex justify-center items-center mt-3">
               <div className="bg-[#27272A] w-fit px-4 py-2 rounded-3xl flex items-center justify-center space-x-2">
                 <Link href="/">
-                  <span className="text-[#A1A1AA] text-[16px] font-medium">
-                    Home
-                  </span>
+                  <span className="text-[#A1A1AA] text-[16px] ">Home</span>
                 </Link>
                 <span>
                   <svg
@@ -33,9 +31,7 @@ const FaqBanner = () => {
                     />
                   </svg>
                 </span>
-                <span className="text-[#FAFAFA] text-[16px] font-medium">
-                  FAQ'S
-                </span>
+                <span className="text-[#FAFAFA] text-[16px] ">FAQ'S</span>
               </div>
             </div>
           </div>

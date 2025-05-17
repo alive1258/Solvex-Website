@@ -22,7 +22,7 @@ const Accordion = ({ accordion, isActive, onClick, delay = 0 }) => {
           <h1
             className={`md:text-[20px] text-[18px] ${
               isActive ? "border-b pb-1 border-[#D4D4D8]" : ""
-            }  font-bold text-secondary-base`}
+            }  font-satoshi font-bold text-secondary-base`}
           >
             {accordion?.question}
           </h1>

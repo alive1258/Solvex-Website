@@ -1,8 +1,8 @@
+import React from "react";
 import SlideLeft from "@/utils/animations/SlideLeft";
 import SlideRight from "@/utils/animations/SlideRight";
 import { careerGalleryData } from "@/utils/fakeData/careerGalleryData";
 import Image from "next/image";
-import React from "react";
 
 const CareerGallery = () => {
   return (

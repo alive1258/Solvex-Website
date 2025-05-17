@@ -28,7 +28,7 @@ const AllBlogList = () => {
         className="animated-header"
       />
       <SlideUp>
-        <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center">
+        <p className="text-[16px]  text-[#71717A] mt-6 text-center">
           Stay updated with the latest trends, tips, and technologies in <br />
           web development and design.
         </p>
@@ -51,7 +51,7 @@ const AllBlogList = () => {
       </div>
       {/* ==================== START PAGINATION ======================= */}
       <div className="mt-20 flex justify-center items-center">
-        <div className="flex items-center space-x-4 text-lg font-medium">
+        <div className="flex items-center space-x-4 text-lg ">
           {/* PREVIOUS PAGE BUTTON */}
           <div className="pagination">
             <RiArrowDropLeftLine size={30} />

@@ -22,14 +22,12 @@ const WorkFlowCard = ({ step, index, delay = 0 }) => {
           <div className="bg-[#DBEAFE] flex justify-center items-center size-12 rounded-lg border border-[#BFDBFE]">
             <Image src={step.icon} alt="logo" width={21} height={24} />
           </div>
-          <h2 className="text-secondary-base font-bold text-2xl">
+          <h2 className="text-secondary-base font-satoshi font-bold text-2xl">
             {step.title}
           </h2>
         </div>
 
-        <p className="text-[#71717A] text-[16px] font-medium">
-          {step.description}
-        </p>
+        <p className="text-[#71717A] text-[16px] ">{step.description}</p>
       </SlideUp>
     </>
   );

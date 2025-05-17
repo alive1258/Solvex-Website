@@ -30,10 +30,10 @@ const ContactUs = () => {
         <BadgeLabel text="Contact Us" />
         <AnimatedText
           lines={["Let’s Work Together to Build Something Great"]}
-          className="text-2xl font-bold text-primary-base mt-6 text-center mx-auto max-w-full sm:max-w-lg"
+          className="text-2xl font-satoshi font-bold text-primary-base mt-6 text-center mx-auto max-w-full sm:max-w-lg"
         />
         <SlideUp>
-          <p className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base">
+          <p className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px]  text-primary-base">
             Have a project in mind, or just want to chat? Drop us a line — we’d
             love to hear from you.
           </p>
@@ -45,7 +45,7 @@ const ContactUs = () => {
           <SlideLeft className="md:col-span-2">
             {/* Contact Details Box */}
             <div className="bg-white-base p-6 w-full rounded-xl border border-border-base">
-              <h1 className="text-secondary-base md:text-[32px] text-[28px] uppercase text-center font-bold">
+              <h1 className="text-secondary-base md:text-[32px] text-[28px] uppercase text-center font-satoshi font-bold">
                 Get In Touch
               </h1>
 
@@ -56,7 +56,7 @@ const ContactUs = () => {
                     <RiPhoneLine size={24} className="text-[#3B82F6]" />
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-secondary-base uppercase text-lg font-bold">
+                    <h5 className="text-secondary-base uppercase text-lg font-satoshi font-bold">
                       Phone Number
                     </h5>
                     <p className="text-tertiary-base text-[16px]">
@@ -71,7 +71,7 @@ const ContactUs = () => {
                     <RiMailLine size={24} className="text-[#3B82F6]" />
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-secondary-base uppercase text-lg font-bold">
+                    <h5 className="text-secondary-base uppercase text-lg font-satoshi font-bold">
                       E-mail Address
                     </h5>
                     <p className="text-tertiary-base text-[16px]">
@@ -86,7 +86,7 @@ const ContactUs = () => {
                     <RiMapPinLine size={24} className="text-[#3B82F6]" />
                   </div>
                   <div className="space-y-1">
-                    <h5 className="text-secondary-base uppercase text-lg font-bold">
+                    <h5 className="text-secondary-base uppercase text-lg font-satoshi font-bold">
                       Location
                     </h5>
                     <p className="text-tertiary-base text-[16px]">
@@ -99,7 +99,7 @@ const ContactUs = () => {
 
             {/* Social Links Box */}
             <div className="bg-white-base p-6 mt-6 rounded-xl border border-border-base">
-              <h1 className="text-secondary-base border-b pb-1 border-border-base text-[28px] uppercase text-center font-bold">
+              <h1 className="text-secondary-base border-b pb-1 border-border-base text-[28px] uppercase text-center font-satoshi font-bold">
                 Follow Us On
               </h1>
 
@@ -132,7 +132,7 @@ const ContactUs = () => {
                   <div>
                     <label
                       htmlFor="fname"
-                      className="text-secondary-base text-lg font-medium"
+                      className="text-secondary-base text-lg "
                     >
                       Full name <span className="text-red-500">*</span>
                     </label>
@@ -150,7 +150,7 @@ const ContactUs = () => {
                     <div>
                       <label
                         htmlFor="email"
-                        className="text-secondary-base text-lg font-medium"
+                        className="text-secondary-base text-lg "
                       >
                         Email Address <span className="text-red-500">*</span>
                       </label>
@@ -165,7 +165,7 @@ const ContactUs = () => {
                     <div>
                       <label
                         htmlFor="phone"
-                        className="text-secondary-base text-lg font-medium"
+                        className="text-secondary-base text-lg "
                       >
                         Phone Number
                       </label>
@@ -183,7 +183,7 @@ const ContactUs = () => {
                   <div className="mt-3 relative">
                     <label
                       htmlFor="serviceType"
-                      className="text-secondary-base text-lg font-medium"
+                      className="text-secondary-base text-lg "
                     >
                       Project/Service Type{" "}
                       <span className="text-red-500">*</span>
@@ -216,7 +216,7 @@ const ContactUs = () => {
                   <div className="mt-3">
                     <label
                       htmlFor="message"
-                      className="text-secondary-base text-lg font-medium"
+                      className="text-secondary-base text-lg "
                     >
                       Message
                     </label>

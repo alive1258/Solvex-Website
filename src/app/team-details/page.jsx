@@ -1,6 +1,6 @@
 import TeamDetails from "@/components/UI/TeamPage/TeamDetails/TeamDetails";
 
-const page = () => {
+const TeamDetail = () => {
   return (
     <>
       <TeamDetails />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default TeamDetail;

@@ -21,6 +21,12 @@
   --color-gray-muted: #3e4044cb;
   --color-border-base: #e4e4e7;
 }
+.font-satoshi {
+  font-family: var(--font-satoshi);
+}
+.font-plusjakarta {
+  font-family: var(--font-plusjakarta);
+}
 
 @layer components {
   .container {
@@ -54,7 +60,7 @@
   }
   /* primary-paragraph */
   .primary-paragraph {
-    @apply text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base;
+    @apply text-center w-full max-w-[550px] mx-auto mt-6 text-[16px]  text-primary-base;
   }
   /* animated-header  */
   .animated-header {
@@ -62,22 +68,23 @@
   }
 
   .menu {
-    @apply flex cursor-pointer items-center  text-[16px] uppercase font-medium text-[#18181B] hover:text-blue-base focus:outline-none;
+    @apply flex cursor-pointer items-center  text-[16px] uppercase  text-[#18181B] hover:text-blue-base focus:outline-none;
   }
   .sub-menu {
-    @apply absolute left-0 w-[213px] bg-transparent rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50;
+    @apply absolute left-0 w-[220px] bg-transparent rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50;
   }
   .menu-item {
-    @apply px-4 py-2 border-b border-border-base hover:text-[#3B82F6] tracking-widest;
+    @apply px-4 py-2 border-b border-border-base hover:text-[#3B82F6];
   }
   .nav-menu {
-    @apply relative md:block hidden  md:border-0 border-b  md:mx-0 mx-5 border-border-base md:pb-0 pb-3;
+    @apply relative md:block hidden font-normal  md:border-0 border-b  md:mx-0 mx-5 border-border-base md:pb-0 pb-3;
+    font-family: var(--font-plusjakarta);
   }
   .mobile-nav-menu {
     @apply md:border-0 flex  justify-between items-center border-b md:mx-0 mx-5 border-border-base  pb-3;
   }
   .mobile-sub-menu-link {
-    @apply py-2 border-b border-border-base hover:text-[#3B82F6] tracking-widest;
+    @apply py-2 border-b border-border-base hover:text-[#3B82F6];
   }
   .arrow-down-icon {
     @apply transition-transform duration-300 group-hover:rotate-180;

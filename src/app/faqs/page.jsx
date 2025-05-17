@@ -1,6 +1,6 @@
 import FaqPage from "@/components/UI/FaqPage/FaqPage";
 
-const page = () => {
+const Faq = () => {
   return (
     <>
       <FaqPage />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Faq;

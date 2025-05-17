@@ -1,6 +1,6 @@
 import PricingPage from "@/components/UI/PricingPage/PricingPage";
 
-const page = () => {
+const Pricing = () => {
   return (
     <>
       <PricingPage />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Pricing;

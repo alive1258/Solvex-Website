@@ -33,13 +33,13 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
               height={40}
               width={40}
             />
-            <h4 className="text-secondary-base md:text-2xl text-[20px] font-bold">
+            <h4 className="text-secondary-base md:text-2xl text-[20px] font-satoshi font-bold">
               {item?.company}
             </h4>
           </div>
 
           {/* Project Title */}
-          <h1 className="md:text-[32px] text-2xl mt-10 font-bold">
+          <h1 className="md:text-[32px] text-2xl mt-10 font-satoshi font-bold">
             <Link
               href={`/portfolio/${item.id}`}
               className="text-primary-base hover:text-blue-base"
@@ -49,7 +49,7 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
           </h1>
 
           {/* Project Description */}
-          <p className="text-[#71717A] text-[16px] mt-6 font-medium">
+          <p className="text-[#71717A] text-[16px] mt-6 ">
             {item?.description}
           </p>
 
@@ -69,7 +69,7 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
           <div className="group mt-9 w-fit">
             <div className="flex items-center gap-x-2 border-b border-[#71717A] group-hover:border-[#3B82F6] transition-transform duration-300 ease-in-out group-hover:translate-x-2">
               <Link href={`/portfolio/${item.id}`}>
-                <span className="text-[#71717A] text-sm font-bold uppercase cursor-pointer group-hover:text-[#3B82F6]">
+                <span className="text-[#71717A] text-sm font-satoshi font-bold uppercase cursor-pointer group-hover:text-[#3B82F6]">
                   View Live Project
                 </span>
               </Link>

@@ -1,6 +1,6 @@
 import BlogDetails from "@/components/UI/Blog/BlogDetails/BlogDetails";
 
-const page = () => {
+const BlogDetail = () => {
   return (
     <>
       <BlogDetails />
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BlogDetail;

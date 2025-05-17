@@ -5,11 +5,11 @@ import AllBlogList from "./AllBlogList/AllBlogList";
 
 const BlogList = () => {
   return (
-    <div>
+    <>
       <BlogListBanner />
       <AllBlogList />
       <DigitalFuture status={true} />
-    </div>
+    </>
   );
 };
 

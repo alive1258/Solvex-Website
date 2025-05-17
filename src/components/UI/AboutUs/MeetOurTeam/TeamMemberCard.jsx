@@ -21,9 +21,7 @@ const TeamMemberCard = ({ member, delay = 0 }) => {
             <h3 className="text-2xl font-black uppercase text-[#FAFAFA]">
               {member?.name}
             </h3>
-            <p className="text-[16px] font-medium text-[#FAFAFA]">
-              {member?.role}
-            </p>
+            <p className="text-[16px]  text-[#FAFAFA]">{member?.role}</p>
           </div>
         </div>
       </div>

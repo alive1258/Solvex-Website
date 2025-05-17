@@ -11,12 +11,10 @@ const StatsCard = ({ stat, index, stats }) => {
           hasPlus={stat?.count.includes("+")}
         />
 
-        <h3 className="text-secondary-base md:text-[20px] text-lg font-bold uppercase mt-4">
+        <h3 className="text-secondary-base md:text-[20px] text-lg font-satoshi font-bold uppercase mt-4">
           {stat.title}
         </h3>
-        <p className="text-[#71717A] text-sm font-medium mt-4">
-          {stat.description}
-        </p>
+        <p className="text-[#71717A] text-sm  mt-4">{stat.description}</p>
       </div>
       {/* ========== END STAT CARD ========== */}
 

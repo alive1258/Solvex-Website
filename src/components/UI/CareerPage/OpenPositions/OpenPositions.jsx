@@ -4,14 +4,14 @@ import OpenPositionsCard from "./OpenPositionsCard";
 
 const OpenPositions = () => {
   return (
-    <div className="container my-14">
+    <section className="container my-14">
       <div
         style={{
           background:
             "linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0.06%, #3B82F6 26.53%, #3B82F6 68.99%, rgba(255, 255, 255, 0.00) 99.96%)",
         }}
       >
-        <h1 className="md:text-2xl text-[16px] font-bold text-[#FFF] py-3 text-center">
+        <h1 className="md:text-2xl text-[16px] font-satoshi font-bold text-[#FFF] py-3 text-center">
           Open Positions — Join Our Team at Solvex!
         </h1>
       </div>
@@ -26,7 +26,7 @@ const OpenPositions = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

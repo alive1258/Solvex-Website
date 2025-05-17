@@ -10,7 +10,7 @@ const BenefitCard = ({ benefit, delay = 0 }) => {
           {/* Replace this static SVG with dynamic icon rendering if needed */}
           <Image height={30} width={30} src={benefit?.icon} alt="icon" />
         </div>
-        <h3 className="text-lg mt-4 text-primary-base font-bold">
+        <h3 className="text-lg mt-4 text-primary-base font-satoshi font-bold">
           {benefit.title}
         </h3>
         <p className="text-[#71717A] text-sm font-medium mt-4">

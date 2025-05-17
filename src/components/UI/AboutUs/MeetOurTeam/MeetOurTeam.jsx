@@ -9,7 +9,7 @@ import AnimatedText from "@/components/common/AnimatedText";
 
 const MeetOurTeam = ({ status = false }) => {
   return (
-    <div className="bg-[#FAFAFA] relative">
+    <section className="bg-[#FAFAFA] relative">
       {/* ========================== START: CONTAINER ========================== */}
       <div className="container py-14">
         <BadgeLabel text="Meet Our Team" />
@@ -56,7 +56,7 @@ const MeetOurTeam = ({ status = false }) => {
         {/* ========================== END: CTA BUTTON ========================== */}
       </div>
       {/* ========================== END: CONTAINER ========================== */}
-    </div>
+    </section>
   );
 };
 

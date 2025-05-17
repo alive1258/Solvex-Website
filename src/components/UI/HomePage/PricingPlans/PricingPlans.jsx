@@ -31,13 +31,13 @@ const PricingPlans = ({ status = false }) => {
 
         <AnimatedText
           lines={["Flexible Pricing Plans for Every Business"]}
-          className="text-2xl font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
+          className="text-2xl font-satoshi font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
         />
 
         <AnimatedParagraph
           text={`Choose a plan that fits your goals and budget. No hidden fees
             just transparent pricing.`}
-          className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px] font-medium text-primary-base"
+          className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px]  text-primary-base"
           once={false}
           duration={0.8}
           yOffset={100}
@@ -123,7 +123,7 @@ const PricingPlans = ({ status = false }) => {
 
             {/* Discount Badge Desktop */}
             <div className="border animate-[floatPulse_2s_ease-in-out_infinite] shadow-[0px_0px_20px_0px_rgba(33,84,255,0.3),0px_0px_40px_0px_rgba(156,39,176,0.1)] border-border-base rounded-3xl px-4 py-2 md:rotate-[15deg] md:block hidden md:relative md:right-2">
-              <p className="text-sm font-medium text-primary-base">
+              <p className="text-sm  text-primary-base">
                 35% OFF on Yearly Plan
               </p>
             </div>
@@ -132,7 +132,7 @@ const PricingPlans = ({ status = false }) => {
           {/* Discount Badge Mobile */}
           <div className="flex justify-center items-center md:hidden">
             <div className="border animate-[floatPulse_2s_ease-in-out_infinite] shadow-[0px_0px_20px_0px_rgba(33,84,255,0.3),0px_0px_40px_0px_rgba(156,39,176,0.1)] border-border-base rounded-3xl px-4 py-2">
-              <p className="text-sm font-medium text-primary-base">
+              <p className="text-sm  text-primary-base">
                 35% OFF on Yearly Plan
               </p>
             </div>

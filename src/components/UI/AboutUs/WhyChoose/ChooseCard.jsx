@@ -19,7 +19,9 @@ const ChooseCard = ({ feature, index, delay = 0 }) => {
           width={13}
           height={20}
         />
-        <h1 className="text-[#FAFAFA] text-lg font-bold">{feature.title}</h1>
+        <h1 className="text-[#FAFAFA] text-lg font-satoshi font-bold">
+          {feature.title}
+        </h1>
       </div>
       <div
         style={{

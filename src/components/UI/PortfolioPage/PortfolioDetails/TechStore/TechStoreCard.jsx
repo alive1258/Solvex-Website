@@ -11,7 +11,9 @@ const TechStoreCard = ({ tech, delay = 0 }) => {
         </div>
         <div>
           <p className="font-medium text-[#33F3F46] text-lg">{tech?.title}</p>
-          <h6 className="font-bold text-[#33F3F46] text-lg">{tech?.value}</h6>
+          <h6 className="font-satoshi font-bold text-[#33F3F46] text-lg">
+            {tech?.value}
+          </h6>
         </div>
       </div>
     </SlideUp>

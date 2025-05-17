@@ -13,7 +13,7 @@ const RelatedProductCard = ({ project, delay = 0 }) => {
           width={500}
           className="w-full h-full rounded-2xl"
         />
-        <h3 className="text-[24px] hover:text-[#3B82F6] text-[#D4D4D8] font-bold mt-4">
+        <h3 className="text-[24px] hover:text-[#3B82F6] text-[#D4D4D8] font-satoshi font-bold mt-4">
           {project.title}
         </h3>
       </SlideUp>

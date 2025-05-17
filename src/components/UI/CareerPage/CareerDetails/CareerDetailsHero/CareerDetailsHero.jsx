@@ -10,15 +10,17 @@ import React from "react";
 
 const CareerDetailsHero = () => {
   return (
-    <div className="bg-[#F4F4F5]">
+    <section className="bg-[#F4F4F5]">
       <div className="container py-[72px]">
         <div className="md:flex justify-between items-center border-b pb-4  border-[#D4D4D8]">
           <AnimatedText
             lines={[" Senior UI/UX Designer"]}
-            className="md:text-[56px] text-3xl text-[#18181B] font-bold"
+            className="md:text-[56px] text-3xl text-[#18181B] font-satoshi font-bold"
           />
           <div className="flex space-x-3 md:mt-0 mt-4 items-center ">
-            <p className="text-primary-base font-bold text-lg ">Share:</p>
+            <p className="text-primary-base font-satoshi font-bold text-lg ">
+              Share:
+            </p>
             <div className=" flex items-center space-x-3">
               <div className="team-social-icon group">
                 <RiFacebookFill
@@ -55,10 +57,10 @@ const CareerDetailsHero = () => {
         </div>
 
         <div className="md:flex mt-6 justify-between items-center md:space-y-0 space-y-2">
-          <p className="text-[#71717A] text-lg font-medium">
+          <p className="text-[#71717A] text-lg ">
             <span className="text-[#3B82F6]">Atlassian</span> - Sydney Australia
           </p>
-          <p className="text-primary-base text-lg font-medium">
+          <p className="text-primary-base text-lg ">
             Posted 1 week ago - 15 Applicants
           </p>
         </div>
@@ -69,10 +71,10 @@ const CareerDetailsHero = () => {
             className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
-            <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
+            <h5 className="text-[#71717A] text-center text-[20px]  border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-satoshi font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
@@ -81,10 +83,10 @@ const CareerDetailsHero = () => {
             className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
-            <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
+            <h5 className="text-[#71717A] text-center text-[20px]  border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-satoshi font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
@@ -93,10 +95,10 @@ const CareerDetailsHero = () => {
             className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
-            <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
+            <h5 className="text-[#71717A] text-center text-[20px]  border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-satoshi font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
@@ -105,10 +107,10 @@ const CareerDetailsHero = () => {
             className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
-            <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
+            <h5 className="text-[#71717A] text-center text-[20px]  border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-satoshi font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
@@ -117,16 +119,16 @@ const CareerDetailsHero = () => {
             className="border w-full max-w-[244px] border-border-base bg-[#F4F4F5] rounded-lg  p-4"
             style={{ boxShadow: "0px 12px 16px 0px #EBEBEB" }}
           >
-            <h5 className="text-[#71717A] text-center text-[20px] font-medium border-b border-[#D4D4D8] pb-2">
+            <h5 className="text-[#71717A] text-center text-[20px]  border-b border-[#D4D4D8] pb-2">
               Employment Type
             </h5>
-            <h3 className="text-secondary-base text-2xl font-bold text-center mt-4">
+            <h3 className="text-secondary-base text-2xl font-satoshi font-bold text-center mt-4">
               Full Time
             </h3>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
