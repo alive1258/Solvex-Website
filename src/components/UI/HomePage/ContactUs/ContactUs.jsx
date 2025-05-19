@@ -30,7 +30,7 @@ const ContactUs = () => {
         <BadgeLabel text="Contact Us" />
         <AnimatedText
           lines={["Let’s Work Together to Build Something Great"]}
-          className="text-2xl font-satoshi font-bold text-primary-base mt-6 text-center mx-auto max-w-full sm:max-w-lg"
+          className="animated-header font-satoshi"
         />
         <SlideUp>
           <p className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px]  text-primary-base">
