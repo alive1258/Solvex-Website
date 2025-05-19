@@ -38,7 +38,7 @@ const CustomSolutions = () => {
                 " Custom Web Development Solutions",
                 "For Modern Businesses",
               ]}
-              className="md:text-[56px] text-[33px] font-extrabold max-w-[954px] w-full text-center text-gray-900"
+              className="md:text-[56px] text-[32px] font-extrabold max-w-[1054px] w-full text-center text-gray-900"
             />
           </div>
           <SlideUp>

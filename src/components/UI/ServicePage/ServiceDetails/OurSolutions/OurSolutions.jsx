@@ -34,7 +34,7 @@ const OurSolutions = () => {
           <div className="mt-8">
             <AnimatedText
               lines={[" Custom Web Solutions Designed for Impact"]}
-              className="md:text-[40px] text-[35px] md:text-start text-center font-satoshi font-bold text-primary-base"
+              className="md:text-[40px] max-w-[470px] text-[35px] md:text-start text-center font-satoshi font-bold text-primary-base"
             />
 
             <SlideUp delay={0.6}>
