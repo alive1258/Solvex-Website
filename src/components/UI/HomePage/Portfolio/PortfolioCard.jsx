@@ -28,8 +28,8 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
           <div className="flex items-center gap-x-4 mt-8">
             <Image
               className="size-10"
-              src={item?.logo}
-              alt={item?.company}
+              src="/images/caseStudies/logo1.png"
+              alt="logo"
               height={40}
               width={40}
             />
