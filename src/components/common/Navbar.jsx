@@ -239,7 +239,9 @@ const Navbar = () => {
             {/* MOBILE MENU START  */}
             <li className=" pt-14 md:hidden ">
               <div className="mobile-nav-menu">
-                <Link href="/">Home</Link>
+                <Link onClick={handleMenuLinkClick} href="/">
+                  Home
+                </Link>
               </div>
             </li>
 
