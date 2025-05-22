@@ -22,7 +22,7 @@ const AllBlogList = () => {
 
   return (
     <div className="container md:my-14 my-12">
-      {/* Section Header */} n
+      {/* Section Header */}
       <AnimatedText
         lines={["News, insights and more"]}
         className="animated-header"
