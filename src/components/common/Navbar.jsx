@@ -63,7 +63,7 @@ const Navbar = () => {
           <Link href="/">
             <Image
               className="w-[125px] h-10"
-              src={"images/logo/LogoSolvex.svg"}
+              src={"/images/logo/LogoSolvex.svg"}
               height={40}
               width={125}
               alt="logo"
