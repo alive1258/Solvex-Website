@@ -11,7 +11,7 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
       {/* Content Side */}
       <div className={`${idx % 2 !== 0 ? "md:order-2" : "md:order-1"}`}>
         <h1 className="text-2xl font-satoshi font-bold text-primary-base">
-          {feature.main_title}
+          {feature?.main_title}
         </h1>
 
         {feature.steps.map((step, i) => (
@@ -26,9 +26,9 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
             </div>
             <div>
               <h5 className="text-[20px] font-satoshi font-bold text-primary-base">
-                {step.title}
+                {step?.title}
               </h5>
-              <p className="text-lg  text-primary-base">{step.description}</p>
+              <p className="text-lg  text-primary-base">{step?.description}</p>
             </div>
           </div>
         ))}
@@ -45,10 +45,16 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
         </div>
 
         <div className="mt-6 flex flex-wrap gap-6 items-center">
-          {feature.tools.map((tool, idx) => (
+          {feature?.tools?.map((tool, idx) => (
             <div key={idx} className="flex items-center space-x-2">
-              <img src={tool.icon} alt={tool.name} className="w-6 h-6" />
-              <span className="text-primary-base text-lg ">{tool.name}</span>
+              <Image
+                height={24}
+                width={24}
+                src={tool?.icon}
+                alt={tool?.name}
+                className="w-6 h-6"
+              />
+              <span className="text-primary-base text-lg ">{tool?.name}</span>
             </div>
           ))}
         </div>
@@ -59,8 +65,8 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
         <div className="relative overflow-hidden rounded-2xl">
           <Image
             className="w-full   max-h-[550px] rounded-2xl shadow-lg hover:scale-105 duration-500 overflow-hidden ease-[cubic-bezier(0.4,0,0.2,1)] transition-transform object-cover h-full"
-            src={feature.image}
-            alt={feature.main_title}
+            src={feature?.image}
+            alt={feature?.main_title}
             width={500}
             height={400}
           />

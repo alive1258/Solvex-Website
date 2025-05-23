@@ -86,7 +86,6 @@ export const designProcessData = [
     ],
     tools: [
       { name: "HTML", icon: "/images/portfolio/htmlIcon.svg" },
-      { name: "Css3", icon: "/images/portfolio/css3Icon.svg" },
       { name: "Javascript", icon: "/images/portfolio/javascriptIcon.svg" },
     ],
     note: "Mobile-first is preferred",

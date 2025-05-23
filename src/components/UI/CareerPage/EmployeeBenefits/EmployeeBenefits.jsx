@@ -17,7 +17,7 @@ const EmployeeBenefits = () => {
         {/* =================== START HEADER ============================= */}
         <BadgeLabel text="Employee Benefits" />
         <AnimatedText
-          lines={[" Employee Benefits at Solvex — Empowering You to Thrive"]}
+          lines={[" Employee Benefits at Solvex Empowering You to Thrive"]}
           className="animated-header"
         />
         <SlideUp>

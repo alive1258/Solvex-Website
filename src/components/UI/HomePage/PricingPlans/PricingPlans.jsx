@@ -21,7 +21,9 @@ const PricingPlans = ({ status = false }) => {
         status ? "md:my-14 my-12" : "my-0"
       } relative`}
     >
-      <div className="bottom-gradient-line"></div>
+      <div
+        className={`bottom-gradient-line ${status ? "md:block" : "hidden"}`}
+      ></div>
       <div
         className={`custom-gradient-line ${status ? "md:block" : "hidden"}`}
       ></div>

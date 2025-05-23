@@ -10,8 +10,8 @@ const TechStore = () => {
     <section className="container mt-14">
       {/* ================= START: HEADING ================= */}
       <AnimatedText
-        lines={["TechStore Inc. — Revolutionizing Online Tech Shopping"]}
-        className="text-primary-base md:text-[48px] text-[30px] font-satoshi font-bold text-center w-full max-w-[890px] mx-auto"
+        lines={["TechStore Inc.Revolutionizing Online Tech Shopping"]}
+        className="text-primary-base md:text-[48px] text-[30px] font-satoshi font-bold text-center w-full max-w-[830px] mx-auto"
       />
       {/* ================= END: HEADING ================= */}
 

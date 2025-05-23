@@ -36,18 +36,18 @@ const Testimonials = () => {
                   <div className="flex items-center space-x-4">
                     <Image
                       className="rounded-full size-12"
-                      src={testimonial.image}
-                      alt={testimonial.name}
+                      src={testimonial?.image}
+                      alt={testimonial?.name}
                       height={48}
                       width={48}
                     />
 
                     <div>
                       <h4 className="font-satoshi font-bold text-lg text-tertiary-base">
-                        {testimonial.name}
+                        {testimonial?.name}
                       </h4>
                       <p className=" text-sm text-[#71717A]">
-                        {testimonial.position}
+                        {testimonial?.position}
                       </p>
                     </div>
                   </div>
@@ -65,15 +65,15 @@ const Testimonials = () => {
                       />
                     </svg>
                     <p className="text-[#71717A] text-sm ">
-                      {testimonial.rating}
+                      {testimonial?.rating}
                     </p>
                   </div>
                 </div>
 
                 <h4 className="font-satoshi font-bold mt-8 text-lg text-tertiary-base">
-                  {testimonial.name}
+                  {testimonial?.title}
                 </h4>
-                <p>{testimonial.feedback}</p>
+                <p>{testimonial?.feedback}</p>
               </div>
             ))}
           </Marquee>
@@ -101,17 +101,17 @@ const Testimonials = () => {
                   <div className="flex items-center space-x-4">
                     <Image
                       className="rounded-full size-12"
-                      src={testimonial.image}
-                      alt={testimonial.name}
+                      src={testimonial?.image}
+                      alt={testimonial?.name}
                       height={48}
                       width={48}
                     />
                     <div>
                       <h4 className="font-satoshi font-bold text-lg text-tertiary-base">
-                        {testimonial.name}
+                        {testimonial?.name}
                       </h4>
                       <p className=" text-sm text-[#71717A]">
-                        {testimonial.position}
+                        {testimonial?.position}
                       </p>
                     </div>
                   </div>
@@ -129,15 +129,15 @@ const Testimonials = () => {
                       />
                     </svg>
                     <p className="text-[#71717A] text-sm ">
-                      {testimonial.rating}
+                      {testimonial?.rating}
                     </p>
                   </div>
                 </div>
 
                 <h4 className="font-satoshi font-bold mt-8 text-lg text-tertiary-base">
-                  {testimonial.name}
+                  {testimonial?.title}
                 </h4>
-                <p>{testimonial.feedback}</p>
+                <p>{testimonial?.feedback}</p>
               </div>
             ))}
           </Marquee>
