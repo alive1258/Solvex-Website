@@ -1,3 +1,4 @@
+import SlideUp from "@/utils/animations/SlideUp";
 import {
   RiDribbbleLine,
   RiFacebookFill,
