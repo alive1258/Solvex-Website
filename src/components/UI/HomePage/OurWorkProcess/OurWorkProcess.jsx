@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedText from "@/components/common/AnimatedText";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import SlideDown from "@/utils/animations/SlideDown";
@@ -13,12 +12,12 @@ const OurWorkProcess = () => {
       <BadgeLabel text="Our Work Process" />
 
       {/* ANIMATED HEADER TEXT */}
-      <AnimatedText
-        lines={[
-          "A Streamlined Approach For Delivering High-Quality Web Solutions.",
-        ]}
-        className="animated-header"
-      />
+
+      <SlideUp>
+        <h1 className="animated-header">
+          A Streamlined Approach For Delivering High-Quality Web Solutions
+        </h1>
+      </SlideUp>
 
       {/* WORK PROCESS GRID CONTAINER */}
       <div className="md:mt-36 mt-12 flex justify-center items-center">

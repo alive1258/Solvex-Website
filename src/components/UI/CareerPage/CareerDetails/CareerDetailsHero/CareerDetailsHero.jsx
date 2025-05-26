@@ -1,4 +1,3 @@
-import AnimatedText from "@/components/common/AnimatedText";
 import {
   RiDribbbleLine,
   RiFacebookFill,
@@ -13,10 +12,11 @@ const CareerDetailsHero = () => {
     <section className="bg-[#F4F4F5]">
       <div className="container py-[72px]">
         <div className="md:flex justify-between items-center border-b pb-4  border-[#D4D4D8]">
-          <AnimatedText
-            lines={[" Senior UI/UX Designer"]}
-            className="md:text-[56px] text-3xl text-[#18181B] font-satoshi font-bold"
-          />
+          <SlideUp>
+            <h1 className="md:text-[56px] text-3xl text-[#18181B] font-satoshi font-bold">
+              Senior UI/UX Designer
+            </h1>
+          </SlideUp>
           <div className="flex space-x-3 md:mt-0 mt-4 items-center ">
             <p className="text-primary-base font-satoshi font-bold text-lg ">
               Share:

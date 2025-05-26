@@ -1,8 +1,6 @@
-import AnimatedText from "@/components/common/AnimatedText";
 import BadgeLabel from "@/components/UI/BadgeLabel/BadgeLabel";
 import SlideUp from "@/utils/animations/SlideUp";
 import { designProcessData } from "@/utils/fakeData/designPorcessData";
-import Image from "next/image";
 import React from "react";
 import DesignProcessCard from "./DesignProcessCard";
 
@@ -10,10 +8,12 @@ const DesignProcess = () => {
   return (
     <div className="container mt-24">
       <BadgeLabel text="design process " />
-      <AnimatedText
-        lines={["From Concept to Conversion — A Strategic Design Journey"]}
-        className="animated-header"
-      />
+
+      <SlideUp>
+        <h1 className="animated-header">
+          From Concept to Conversion — A Strategic Design Journey
+        </h1>
+      </SlideUp>
       <SlideUp>
         <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center w-full max-w-[420px] mx-auto">
           Our design process blends creativity, data, and user insights —

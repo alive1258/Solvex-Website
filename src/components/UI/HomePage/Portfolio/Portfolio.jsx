@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Button from "../../Button/Button";
-import AnimatedText from "@/components/common/AnimatedText";
 import PortfolioCard from "./PortfolioCard";
 import SlideUp from "@/utils/animations/SlideUp";
 import { caseStudiesData } from "@/utils/fakeData/caseStudiesData";
@@ -22,10 +21,10 @@ const Portfolio = () => {
     <section className="container md:my-14 my-20">
       {/* START HEADER SECTION  */}
       <BadgeLabel text="Portfolio" />
-      <AnimatedText
-        lines={[" Our Work Speaks for Itself"]}
-        className="animated-header"
-      />
+
+      <SlideUp>
+        <h1 className="animated-header">Our Work Speaks for Itself</h1>
+      </SlideUp>
       <SlideUp>
         <p className="primary-paragraph">
           We help brands elevate their digital presence through cutting-edge

@@ -1,8 +1,6 @@
 import React from "react";
-import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 import Button from "../../Button/Button";
 import WorkGallery from "../WorkGallery/WorkGallery";
-import AnimatedText from "@/components/common/AnimatedText";
 import SlideUp from "@/utils/animations/SlideUp";
 import Link from "next/link";
 
@@ -18,15 +16,11 @@ const HeroSection = () => {
 
         {/* START HERO  CONTENT  */}
         <div className="pt-12 container ">
-          <AnimatedText
-            lines={[
-              "We Build Scalable & High",
-              "Performance Websites",
-              "That Convert",
-            ]}
-            className="text-secondary-base text-center font-satoshi font-bold uppercase w-full max-w-[900px] mx-auto md:text-[64px] text-[28px]"
-          />
-
+          <SlideUp>
+            <h1 className="text-secondary-base text-center font-satoshi font-bold uppercase w-full max-w-[900px] mx-auto  md:text-[64px] text-[28px]">
+              We Build Scalable & High Performance Websites That Convert
+            </h1>
+          </SlideUp>
           <SlideUp>
             <p className="text-center w-full max-w-[900px] mx-auto pt-12 md:text-2xl text-[16px] font-satoshi font-medium text-primary-base">
               We specialize in designing and developing fast, secure, and

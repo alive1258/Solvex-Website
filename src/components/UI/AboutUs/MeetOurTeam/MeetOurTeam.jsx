@@ -5,7 +5,6 @@ import Link from "next/link";
 import { teamMembers } from "@/utils/fakeData/teamMembers";
 import TeamMemberCard from "./TeamMemberCard";
 import SlideUp from "@/utils/animations/SlideUp";
-import AnimatedText from "@/components/common/AnimatedText";
 
 const MeetOurTeam = ({ status = false }) => {
   return (
@@ -15,10 +14,10 @@ const MeetOurTeam = ({ status = false }) => {
         <BadgeLabel text="Meet Our Team" />
 
         {/* ========================== START: HEADER TEXT SUBTITLE ========================== */}
-        <AnimatedText
-          lines={["The Creative Minds Behind Solvex"]}
-          className="animated-header"
-        />
+
+        <SlideUp>
+          <h1 className="animated-header">The Creative Minds Behind Solvex</h1>
+        </SlideUp>
 
         <SlideUp>
           <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center w-full max-w-[520px] mx-auto">

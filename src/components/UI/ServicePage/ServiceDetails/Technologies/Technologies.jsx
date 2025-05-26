@@ -1,8 +1,7 @@
 import { technologiesData } from "@/utils/fakeData/technologiesData";
-import Image from "next/image";
 import React from "react";
 import TechnologiesCard from "./TechnologiesCard";
-import AnimatedText from "@/components/common/AnimatedText";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const Technologies = () => {
   return (
@@ -10,10 +9,11 @@ const Technologies = () => {
       <div className="bottom-gradient-line"></div>
       <div className="custom-gradient-line"></div>
       <div className="container py-14">
-        <AnimatedText
-          lines={[" Technologies We Master"]}
-          className="md:text-[40px] text-[34px] font-satoshi font-bold  md:text-start text-center text-secondary-base"
-        />
+        <SlideUp>
+          <h1 className="md:text-[40px] text-[34px] font-satoshi font-bold  md:text-start text-center text-secondary-base">
+            Technologies We Master
+          </h1>
+        </SlideUp>
         <div className="mt-12 grid lg:grid-cols-2 grid-cols-1 gap-6">
           {technologiesData?.map((techGroup, index) => (
             <TechnologiesCard

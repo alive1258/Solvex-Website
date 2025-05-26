@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
-import AnimatedText from "@/components/common/AnimatedText";
 import SlideUp from "@/utils/animations/SlideUp";
 import StatsCard from "./StatsCard";
 import { stats } from "@/utils/fakeData/starsData";
@@ -13,10 +12,12 @@ const AboutWhoWeAre = () => {
       <BadgeLabel text="Who We Are" />
 
       {/* ========== START HEADER TEXT ========== */}
-      <AnimatedText
-        lines={["A Passionate Team of Innovators & Developers."]}
-        className="animated-header"
-      />
+
+      <SlideUp>
+        <h1 className="animated-header">
+          A Passionate Team of Innovators & Developers.
+        </h1>
+      </SlideUp>
       <SlideUp>
         <p className="text-[16px] font-medium text-[#71717A] mt-6 text-center max-w-[520px] mx-auto">
           We are a team of dedicated professionals committed to building digital

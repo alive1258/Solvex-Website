@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedText from "@/components/common/AnimatedText";
 import ZoomIn from "@/utils/animations/ZoomIn";
 import Image from "next/image";
 import TechStoreCard from "./TechStoreCard";
@@ -9,10 +8,12 @@ const TechStore = () => {
   return (
     <section className="container mt-14">
       {/* ================= START: HEADING ================= */}
-      <AnimatedText
-        lines={["TechStore Inc.Revolutionizing Online Tech Shopping"]}
-        className="text-primary-base md:text-[48px] text-[30px] font-satoshi font-bold text-center w-full max-w-[830px] mx-auto"
-      />
+
+      <SlideUp>
+        <h1 className="text-primary-base md:text-[48px] text-[30px] font-satoshi font-bold text-center w-full max-w-[830px] mx-auto">
+          Our Expertise in Web Development
+        </h1>
+      </SlideUp>
       {/* ================= END: HEADING ================= */}
 
       {/* ================= START: TECH PRODUCT CARDS ================= */}

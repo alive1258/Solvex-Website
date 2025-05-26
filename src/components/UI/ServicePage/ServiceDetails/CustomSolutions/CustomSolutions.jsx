@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedText from "@/components/common/AnimatedText";
 import Button from "@/components/UI/Button/Button";
 import WorkGallery from "@/components/UI/HomePage/WorkGallery/WorkGallery";
 import SlideUp from "@/utils/animations/SlideUp";
@@ -33,13 +32,11 @@ const CustomSolutions = () => {
         {/* TEXTUAL CONTENT */}
         <div className="relative z-10 md:mt-14 mt-12 h-full">
           <div className="flex justify-center">
-            <AnimatedText
-              lines={[
-                " Custom Web Development Solutions",
-                "For Modern Businesses",
-              ]}
-              className="md:text-[56px] text-[32px] font-extrabold max-w-[1054px] w-full text-center text-gray-900"
-            />
+            <SlideUp>
+              <h1 className="md:text-[56px] text-[32px] font-extrabold max-w-[1054px] w-full text-center text-gray-900">
+                Custom Web Development Solutions <br /> For Modern Businesses
+              </h1>
+            </SlideUp>
           </div>
           <SlideUp>
             <p className="max-w-[600px] mx-auto mt-10 w-full text-center ">

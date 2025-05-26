@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
-import AnimatedText from "@/components/common/AnimatedText";
 import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 import PricingPlanCard from "./PricingPlanCard";
 import { pricingPlansData } from "@/utils/fakeData/pricingPlansData";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const PricingPlans = ({ status = false }) => {
   const categories = ["Monthly", "Yearly"];
@@ -31,10 +31,11 @@ const PricingPlans = ({ status = false }) => {
       <div className="container py-14">
         <BadgeLabel text="Pricing Plans" />
 
-        <AnimatedText
-          lines={["Flexible Pricing Plans for Every Business"]}
-          className="text-2xl font-satoshi font-bold text-primary-base mt-6 text-center w-full md:max-w-[450px] max-w-[230px] mx-auto"
-        />
+        <SlideUp>
+          <h1 className="animated-header">
+            Flexible Pricing Plans for Every Business
+          </h1>
+        </SlideUp>
 
         <AnimatedParagraph
           text={`Choose a plan that fits your goals and budget. No hidden fees

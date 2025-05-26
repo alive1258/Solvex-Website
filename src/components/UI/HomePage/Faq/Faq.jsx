@@ -1,7 +1,6 @@
 import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import AccordionList from "./AccordionList";
-import AnimatedText from "@/components/common/AnimatedText";
 import AskQuestion from "./AskQuestion";
 import SlideUp from "@/utils/animations/SlideUp";
 
@@ -9,10 +8,10 @@ const Faq = () => {
   return (
     <div className="container md:my-14 mt-12">
       <BadgeLabel text="Got Questions? We’ve Got Answers!" />
-      <AnimatedText
-        lines={[" Our Work Speaks for Itself"]}
-        className="animated-header"
-      />
+
+      <SlideUp>
+        <h1 className="animated-header">Our Work Speaks for Itself</h1>
+      </SlideUp>
 
       <SlideUp>
         <p className="primary-paragraph">

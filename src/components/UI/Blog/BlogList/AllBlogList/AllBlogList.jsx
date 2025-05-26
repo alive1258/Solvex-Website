@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import AnimatedText from "@/components/common/AnimatedText";
 import SlideUp from "@/utils/animations/SlideUp";
 import { blogPosts } from "@/utils/fakeData/blogData";
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "@remixicon/react";
@@ -23,10 +22,10 @@ const AllBlogList = () => {
   return (
     <div className="container md:my-14 my-12">
       {/* Section Header */}
-      <AnimatedText
-        lines={["News, insights and more"]}
-        className="animated-header"
-      />
+
+      <SlideUp>
+        <h1 className="animated-header">News, insights and more</h1>
+      </SlideUp>
       <SlideUp>
         <p className="text-[16px]  text-[#71717A] mt-6 text-center">
           Stay updated with the latest trends, tips, and technologies in <br />

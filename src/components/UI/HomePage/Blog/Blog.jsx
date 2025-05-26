@@ -1,7 +1,6 @@
 import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Button from "../../Button/Button";
-import AnimatedText from "@/components/common/AnimatedText";
 import BlogCard from "./BlogCard";
 import SlideUp from "@/utils/animations/SlideUp";
 import { blogPosts } from "@/utils/fakeData/blogData";
@@ -11,10 +10,10 @@ const Blog = () => {
   return (
     <section className="container md:my-14 my-12">
       <BadgeLabel text="Blog" />
-      <AnimatedText
-        lines={[" News, insights and more"]}
-        className="animated-header"
-      />
+
+      <SlideUp>
+        <h1 className="animated-header">News, insights and more</h1>
+      </SlideUp>
 
       <SlideUp>
         <p className="primary-paragraph">

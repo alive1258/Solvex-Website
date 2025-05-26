@@ -2,7 +2,6 @@ import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import Button from "../../Button/Button";
-import AnimatedText from "@/components/common/AnimatedText";
 import FeatureCard from "./FeatureCard";
 import SlideUp from "@/utils/animations/SlideUp";
 import { features } from "@/utils/fakeData/featuresData";
@@ -21,11 +20,11 @@ const WhoWeAre = () => {
       <div className="container md:px-20 px-5">
         <BadgeLabel text="Who We Are" />
 
-        {/* ANIMATED TEXT HEADING */}
-        <AnimatedText
-          lines={["A Passionate Team of Innovators & Developers."]}
-          className="animated-header"
-        />
+        <SlideUp>
+          <h1 className="animated-header">
+            A Passionate Team of Innovators & Developers
+          </h1>
+        </SlideUp>
 
         <SlideUp>
           <p className="primary-paragraph">

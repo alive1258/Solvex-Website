@@ -1,6 +1,5 @@
 import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
-import AnimatedText from "@/components/common/AnimatedText";
 import ServiceCard from "./ServiceCard";
 import SlideUp from "@/utils/animations/SlideUp";
 import { servicesData } from "@/utils/fakeData/servicesData";
@@ -20,10 +19,10 @@ const OurService = ({ status = false }) => {
       <div className="container md:py-16 py-12">
         {/* START: Badge and Animated Header */}
         <BadgeLabel text="Our Services" />
-        <AnimatedText
-          lines={[" Our Expertise in Web Development"]}
-          className="animated-header"
-        />
+
+        <SlideUp>
+          <h1 className="animated-header">Our Expertise in Web Development</h1>
+        </SlideUp>
         {/* END: Badge and Animated Header */}
 
         <SlideUp>

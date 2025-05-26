@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedText from "@/components/common/AnimatedText";
 import Image from "next/image";
 import SlideUp from "@/utils/animations/SlideUp";
 import { RiArrowRightUpLine } from "@remixicon/react";
@@ -44,17 +43,17 @@ const DigitalFuture = ({ status = true }) => {
               <SlideUp delay={titleDelay}>
                 <div className="md:text-[32px] text-2xl font-black">
                   {status ? (
-                    <AnimatedText
-                      lines={[
-                        "Work With Solvex – Let’s Build Your Digital Future!",
-                      ]}
-                      className="text-[#FAFAFA] md:text-[32px] text-[28px] font-black"
-                    />
+                    <SlideUp>
+                      <h1 className="text-[#FAFAFA] md:text-[32px] text-[28px] font-black">
+                        Work With Solvex – Let’s Build Your Digital Future!
+                      </h1>
+                    </SlideUp>
                   ) : (
-                    <AnimatedText
-                      lines={["Your Vision + Our Team = Digital Magic"]}
-                      className="text-[#FAFAFA] text-[32px] font-black"
-                    />
+                    <SlideUp>
+                      <h1 className="text-[#FAFAFA] text-[32px] font-black">
+                        Your Vision + Our Team = Digital Magic
+                      </h1>
+                    </SlideUp>
                   )}
                 </div>
               </SlideUp>

@@ -2,7 +2,6 @@ import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import AnimatedText from "@/components/common/AnimatedText";
 import { testimonials } from "@/utils/fakeData/testimonialsData";
 import SlideUp from "@/utils/animations/SlideUp";
 
@@ -11,10 +10,10 @@ const Testimonials = () => {
     <div className="relative w-full overflow-hidden">
       <div className="py-14 md:px-0 px-5">
         <BadgeLabel text="Testimonials" />
-        <AnimatedText
-          lines={["What Our Clients Say"]}
-          className="animated-header"
-        />
+
+        <SlideUp>
+          <h1 className="animated-header">What Our Clients Say</h1>
+        </SlideUp>
 
         <SlideUp>
           <p className="primary-paragraph">

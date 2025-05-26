@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import Questions from "./Questions";
 import SlideUp from "@/utils/animations/SlideUp";
-import AnimatedText from "@/components/common/AnimatedText";
 import SlideLeft from "@/utils/animations/SlideLeft";
 
 const OurSolutions = () => {
@@ -32,10 +31,11 @@ const OurSolutions = () => {
           </SlideUp>
 
           <div className="mt-8">
-            <AnimatedText
-              lines={[" Custom Web Solutions Designed for Impact"]}
-              className="md:text-[40px] max-w-[470px] text-[35px] md:text-start text-center font-satoshi font-bold text-primary-base"
-            />
+            <SlideUp>
+              <h1 className="md:text-[40px] max-w-[470px] text-[35px] md:text-start text-center font-satoshi font-bold text-primary-base">
+                Custom Web Solutions Designed for Impact
+              </h1>
+            </SlideUp>
 
             <SlideUp delay={0.6}>
               <p className="text-[20px] md:text-start text-center  text-primary-base mt-8">

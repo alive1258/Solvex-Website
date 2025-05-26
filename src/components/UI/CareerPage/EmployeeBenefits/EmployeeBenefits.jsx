@@ -2,7 +2,7 @@ import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import { employeeBenefitsData } from "@/utils/fakeData/employeeBenefitsData";
 import SlideUp from "@/utils/animations/SlideUp";
-import AnimatedText from "@/components/common/AnimatedText";
+
 import BenefitCard from "./BenefitCard";
 
 const EmployeeBenefits = () => {
@@ -16,10 +16,12 @@ const EmployeeBenefits = () => {
       <div className="container py-12">
         {/* =================== START HEADER ============================= */}
         <BadgeLabel text="Employee Benefits" />
-        <AnimatedText
-          lines={[" Employee Benefits at Solvex Empowering You to Thrive"]}
-          className="animated-header"
-        />
+
+        <SlideUp>
+          <h1 className="animated-header">
+            Employee Benefits at Solvex Empowering You to Thrive
+          </h1>
+        </SlideUp>
         <SlideUp>
           <p className="text-[16px] w-full max-w-[560px] mx-auto text-[#71717A] mt-6 text-center">
             At Solvex, we believe that happy employees create exceptional work.

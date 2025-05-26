@@ -2,7 +2,6 @@
 import React from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
 import Button from "../../Button/Button";
-import AnimatedText from "@/components/common/AnimatedText";
 import SlideUp from "@/utils/animations/SlideUp";
 import SlideLeft from "@/utils/animations/SlideLeft";
 import SlideRight from "@/utils/animations/SlideRight";
@@ -28,10 +27,12 @@ const ContactUs = () => {
       <div className="container py-14">
         {/* Section Header */}
         <BadgeLabel text="Contact Us" />
-        <AnimatedText
-          lines={["Let’s Work Together to Build Something Great"]}
-          className="animated-header font-satoshi"
-        />
+
+        <SlideUp>
+          <h1 className="animated-header font-satoshi">
+            Let’s Work Together to Build Something Great
+          </h1>
+        </SlideUp>
         <SlideUp>
           <p className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px]  text-primary-base">
             Have a project in mind, or just want to chat? Drop us a line — we’d
