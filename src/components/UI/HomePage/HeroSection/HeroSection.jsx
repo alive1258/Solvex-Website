@@ -17,7 +17,7 @@ const HeroSection = () => {
         {/* START HERO  CONTENT  */}
         <div className="pt-12 container ">
           <SlideUp>
-            <h1 className="text-secondary-base text-center font-satoshi font-bold uppercase w-full max-w-[900px] mx-auto  md:text-[64px] text-[28px]">
+            <h1 className="text-secondary-base text-center font-satoshi font-bold uppercase w-full  mx-auto  md:text-[64px] text-[24px]">
               We Build Scalable & High Performance Websites That Convert
             </h1>
           </SlideUp>
