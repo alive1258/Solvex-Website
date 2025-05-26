@@ -33,7 +33,7 @@ const CustomSolutions = () => {
         <div className="relative z-10 md:mt-14 mt-12 h-full">
           <div className="flex justify-center">
             <SlideUp>
-              <h1 className="md:text-[56px] text-[32px] font-extrabold max-w-[1054px] w-full text-center text-gray-900">
+              <h1 className="md:text-[56px] text-[30px] font-extrabold max-w-[1054px] w-full text-center text-gray-900">
                 Custom Web Development Solutions <br /> For Modern Businesses
               </h1>
             </SlideUp>
