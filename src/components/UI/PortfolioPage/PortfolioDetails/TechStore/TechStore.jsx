@@ -3,6 +3,7 @@ import ZoomIn from "@/utils/animations/ZoomIn";
 import Image from "next/image";
 import TechStoreCard from "./TechStoreCard";
 import { techData } from "@/utils/fakeData/techData";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const TechStore = () => {
   return (
