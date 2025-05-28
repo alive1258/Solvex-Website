@@ -6,13 +6,20 @@ const Points = ({ point, delay = 0 }) => {
   return (
     <>
       <SlideRight delay={delay} className="flex items-center space-x-4">
-        <Image
-          src="/images/career/icons/checkBox.svg"
-          alt="check"
-          width={24}
-          height={24}
-        />
-        <p className="text-[20px] font-medium text-tertiary-base">{point}</p>
+        <div className="flex flex-row sm:items-start gap-2 sm:gap-4 w-full">
+          <div className="shrink-0">
+            <Image
+              src="/images/career/icons/checkBox.svg"
+              alt="check"
+              width={24}
+              height={24}
+              className="w-6 h-6 "
+            />
+          </div>
+          <p className="text-base sm:text-lg lg:text-xl text-tertiary-base">
+            {point}
+          </p>
+        </div>
       </SlideRight>
     </>
   );

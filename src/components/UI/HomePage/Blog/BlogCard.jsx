@@ -21,7 +21,7 @@ const BlogCard = ({ blog, delay = 0 }) => {
         {/* END BLOG IMAGE */}
 
         {/* START BLOG CATEGORY BADGE */}
-        <div className="mt-6 flex justify-between items-center">
+        <div className="md:mt-6 mt-4 flex justify-between items-center">
           <div
             className={`rounded-[99px] w-fit px-3 py-1.5 border text-sm  ${blog?.categoryColor}`}
           >
@@ -31,18 +31,20 @@ const BlogCard = ({ blog, delay = 0 }) => {
         {/* END BLOG CATEGORY BADGE */}
 
         {/* START BLOG TITLE AND EXCERPT */}
-        <div className="mt-6">
+        <div className="md:mt-6 mt-4">
           <Link href={`blog-grid/${blog.id}`}>
-            <h2 className="text-secondary-base group-hover:text-[#3B82F6] font-satoshi font-bold text-2xl capitalize">
+            <h2 className="text-secondary-base group-hover:text-[#3B82F6] font-satoshi font-bold md:text-2xl text-[20px] capitalize">
               {blog?.title}
             </h2>
           </Link>
-          <p className="mt-6 text-[#71717A] text-[16px] ">{blog?.excerpt}</p>
+          <p className="md:mt-6 mt-4 text-[#71717A] text-[16px] ">
+            {blog?.excerpt}
+          </p>
         </div>
         {/* END BLOG TITLE AND EXCERPT */}
 
         {/* START BLOG AUTHOR AND READING TIME */}
-        <div className="mt-auto pt-6">
+        <div className="mt-auto md:pt-6 pt-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Image

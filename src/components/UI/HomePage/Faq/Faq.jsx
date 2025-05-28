@@ -21,10 +21,10 @@ const Faq = () => {
       </SlideUp>
 
       <div className="mt-14 grid md:grid-cols-3 gap-8">
-        <div className="col-span-1">
+        <div className="md:col-span-1 ">
           <AskQuestion />
         </div>
-        <div className="col-span-2">
+        <div className="md:col-span-2">
           <AccordionList />
         </div>
       </div>

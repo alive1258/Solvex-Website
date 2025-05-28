@@ -9,9 +9,9 @@ export const brands = [
   { id: 8, name: "InnovateX", img: "/images/brands/brand2.png" },
   { id: 9, name: "NextEraTech", img: "/images/brands/brand3.png" },
   { id: 10, name: "CloudSync", img: "/images/brands/brand4.png" },
-  { id: 11, name: "CloudSync", img: "/images/brands/brand5.png" },
+  { id: 11, name: "FutureTech", img: "/images/brands/brand1.png" },
   { id: 12, name: "TrendyWear", img: "/images/brands/brand6.png" },
   { id: 13, name: "CloudSync", img: "/images/brands/brand1.png" },
   { id: 14, name: "TrendyWear", img: "/images/brands/brand2.png" },
-  { id: 15, name: "CloudSync", img: "/images/brands/brand3.png" },
+  { id: 15, name: "TechStore", img: "/images/brands/brand4.png" },
 ];

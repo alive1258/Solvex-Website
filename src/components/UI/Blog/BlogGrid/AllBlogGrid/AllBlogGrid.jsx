@@ -60,7 +60,7 @@ const AllBlogGrid = () => {
           </div>
 
           {/* PAGE NUMBERS */}
-          {[1, 2, 3, 4, 5].map((num) => (
+          {[1, 2, 3, 4].map((num) => (
             <div key={num} className="pagination">
               <p>{num}</p>
             </div>

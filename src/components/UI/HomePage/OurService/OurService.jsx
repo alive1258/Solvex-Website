@@ -10,7 +10,7 @@ const OurService = ({ status = false }) => {
   return (
     <section
       className={`bg-[#F4F4F5] overflow-hidden w-full ${
-        status === true ? "md:mt-40 mt-[1050px]" : "mt-0"
+        status === true ? "md:mt-40 mt-20" : "mt-0"
       }   relative`}
     >
       <div className="bottom-gradient-line"></div>

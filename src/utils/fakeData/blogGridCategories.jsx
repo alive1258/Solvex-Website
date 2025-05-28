@@ -3,7 +3,7 @@ export const blogGridCategories = [
   "Design & UI/UX",
   "Digital Marketing",
   "Web Development",
-  "Business & Startup Growth",
-  "Case Studies & Success Stories",
+  "Business & Startup ",
+  "Case Studies ",
   "Creative Inspiration",
 ];

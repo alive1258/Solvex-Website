@@ -1,12 +1,10 @@
-import SlideLeft from "@/utils/animations/SlideLeft";
-import SlideRight from "@/utils/animations/SlideRight";
+import SlideUp from "@/utils/animations/SlideUp";
 import React from "react";
 
 const OpenPositionsCard = ({ job, delay = 0, index }) => {
-  const SlideComponent = index % 2 === 0 ? SlideLeft : SlideRight;
   return (
     <>
-      <SlideComponent delay={delay}>
+      <SlideUp delay={delay}>
         <div className="p-6 rounded-2xl hover:scale-105 transition-all ease-in-out duration-300 bg-white-base shadow-[0px_0px_96px_0px_rgba(59,130,246,0.16)]">
           <div className="bg-[#F4F4F5] rounded-full px-4 py-2 w-fit">
             <p className="text-[#71717A] text-sm  text-center">{job?.type}</p>
@@ -22,7 +20,7 @@ const OpenPositionsCard = ({ job, delay = 0, index }) => {
             </button>
           </div>
         </div>
-      </SlideComponent>
+      </SlideUp>
     </>
   );
 };

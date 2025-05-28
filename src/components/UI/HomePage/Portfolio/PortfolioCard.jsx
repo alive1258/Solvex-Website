@@ -25,9 +25,9 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
         {/* START TEXT SECTION */}
         <div className={`${idx % 2 !== 0 ? "md:order-1" : "md:order-2"}`}>
           {/* Company Logo and Name */}
-          <div className="flex items-center gap-x-4 mt-8">
+          <div className="flex items-center gap-x-4 md:mt-8 mt-4">
             <Image
-              className="size-10"
+              className="md:size-10 size-7"
               src="/images/caseStudies/logo1.png"
               alt="logo"
               height={40}
@@ -39,7 +39,7 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
           </div>
 
           {/* Project Title */}
-          <h1 className="md:text-[32px] text-2xl mt-10 font-satoshi font-bold">
+          <h1 className="md:text-[32px] text-[20px] md:mt-10 mt-4 font-satoshi font-bold">
             <Link
               href={`/portfolio/${item.id}`}
               className="text-primary-base hover:text-blue-base"
@@ -54,7 +54,7 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
           </p>
 
           {/* Tags */}
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="md:mt-6 mt-4 flex flex-wrap gap-3">
             {item?.tags?.map((tag, idx) => (
               <span
                 key={idx}
@@ -66,7 +66,7 @@ const PortfolioCard = ({ item, idx, delay = 0 }) => {
           </div>
 
           {/* View Live Project Link */}
-          <div className="group mt-9 w-fit">
+          <div className="group md:mt-9 mt-5 w-fit">
             <div className="flex items-center gap-x-2 border-b border-[#71717A] group-hover:border-[#3B82F6] transition-transform duration-300 ease-in-out group-hover:translate-x-2">
               <Link href={`/portfolio/${item.id}`}>
                 <span className="text-[#71717A] text-sm font-satoshi font-bold uppercase cursor-pointer group-hover:text-[#3B82F6]">

@@ -32,7 +32,7 @@ const JobDescription = () => {
 
             {/* SECTION ITEMS */}
             <div className="mt-6 space-y-4">
-              {section?.items.map((item, index) => (
+              {section?.items?.map((item, index) => (
                 <JobDescriptionCard
                   item={item}
                   key={index}

@@ -12,17 +12,17 @@ const TechnologiesCard = ({ techGroup, delay = 0, index }) => {
           key={techGroup?.id}
           className="bg-[#FFF] px-4 h-full  py-6 rounded-2xl relative"
         >
-          <h5 className="text-[#3B82F6] text-lg font-satoshi font-bold">
+          <h5 className="text-[#3B82F6] md:text-start text-center text-lg font-satoshi font-bold">
             {techGroup?.title}
           </h5>
 
           <div className="md:mt-10 mt-5">
             <>
-              <div className="flex  md:gap-x-8  gap-x-3 items-center ">
+              <div className="grid md:grid-cols-3 grid-cols-1 md:gap-y-0 gap-y-3  md:gap-x-8  gap-x-3 items-center ">
                 {techGroup.items.map((item) => (
                   <div
                     key={item.id}
-                    className="bg-white-base md:h-full h-20 shadow-md md:py-6 py-4 px-4 rounded-lg border border-border-base md:flex  justify-center items-center space-x-2 w-full max-w-[184px]"
+                    className="bg-white-base md:h-full h-20 shadow-md md:py-6 py-4 px-4 rounded-lg border border-border-base md:flex  justify-center items-center space-x-2 w-full md:w-[184px]"
                   >
                     <div className="md:block flex items-center justify-center">
                       <Image

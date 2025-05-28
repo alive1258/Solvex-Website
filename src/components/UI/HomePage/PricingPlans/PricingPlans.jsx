@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import BadgeLabel from "../../BadgeLabel/BadgeLabel";
-import AnimatedParagraph from "@/components/common/AnimatedParagraph";
 import PricingPlanCard from "./PricingPlanCard";
 import { pricingPlansData } from "@/utils/fakeData/pricingPlansData";
 import SlideUp from "@/utils/animations/SlideUp";
@@ -11,8 +10,8 @@ const PricingPlans = ({ status = false }) => {
   const categories = ["Monthly", "Yearly"];
   const [selectedCategory, setSelectedCategory] = useState("Monthly");
 
-  const filteredData = pricingPlansData.filter(
-    (item) => item.category === selectedCategory
+  const filteredData = pricingPlansData?.filter(
+    (item) => item?.category === selectedCategory
   );
 
   return (
@@ -36,15 +35,13 @@ const PricingPlans = ({ status = false }) => {
             Flexible Pricing Plans for Every Business
           </h1>
         </SlideUp>
-
-        <AnimatedParagraph
-          text={`Choose a plan that fits your goals and budget. No hidden fees
-            just transparent pricing.`}
-          className="text-center w-full max-w-[550px] mx-auto mt-6 text-[16px]  text-primary-base"
-          once={false}
-          duration={0.8}
-          yOffset={100}
-        />
+        <SlideUp>
+          <p className="text-center  mt-6 text-[16px]  text-primary-base">
+            Choose a plan that fits your goals and budget. No hidden fees just{" "}
+            <br />
+            transparent pricing.
+          </p>
+        </SlideUp>
 
         <div className="relative">
           <div className="flex justify-center items-center space-x-6">
@@ -144,7 +141,7 @@ const PricingPlans = ({ status = false }) => {
 
         {/* Pricing cards */}
         <div className="md:mt-36 mt-16 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
-          {filteredData.map((item, index) => (
+          {filteredData?.map((item, index) => (
             <PricingPlanCard
               key={item.id}
               index={index}

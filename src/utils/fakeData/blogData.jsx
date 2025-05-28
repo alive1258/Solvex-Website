@@ -50,7 +50,7 @@ export const blogPosts = [
   {
     id: 4,
     image: "/images/blogs/blog4.png",
-    category: "Business & Startup Growth",
+    category: "Business & Startup ",
     categoryColor: "bg-[#DCFCE7] border-[#86EFAC] text-[#22C55E]",
     date: "May 10, 2025",
     title: "E-Commerce Trends in 2025: What You Need to Know",
@@ -130,7 +130,7 @@ export const blogPosts = [
   {
     id: 9,
     image: "/images/blogs/blog6.png",
-    category: "Business & Startup Growth",
+    category: "Business & Startup ",
     categoryColor: "bg-[#DCFCE7] border-[#86EFAC] text-[#22C55E]",
     date: "July 15, 2025",
     title: "How Startups Can Leverage Data in 2025",
@@ -146,12 +146,12 @@ export const blogPosts = [
   {
     id: 10,
     image: "/images/blogs/blog1.png",
-    category: "Case Studies & Success Stories",
+    category: "Case Studies ",
     categoryColor: "bg-[#E0E7FF] border-[#A5B4FC] text-[#4F46E5]",
     date: "August 1, 2025",
     title: "How We Grew Our SaaS Revenue 10x in One Year",
     excerpt:
-      "Behind-the-scenes of a SaaS company's rapid growth story, fueled by strategic decisions.",
+      "Behind-the-scenes of a SaaS company's rapid  story, fueled by strategic decisions.",
     author: {
       name: "Floyd Miles",
       role: "CEO & Founder",
@@ -210,12 +210,12 @@ export const blogPosts = [
   {
     id: 17,
     image: "/images/blogs/blog5.png",
-    category: "Case Studies & Success Stories",
+    category: "Case Studies ",
     categoryColor: "bg-[#FEF3C7] border-[#FCD34D] text-[#F59E0B]",
     date: "March 20, 2025",
     title: "The Rebrand That Tripled Revenue",
     excerpt:
-      "See how a complete brand overhaul helped a mid-tier SaaS company skyrocket growth.",
+      "See how a complete brand overhaul helped a mid-tier SaaS company skyrocket .",
     author: {
       name: "Wade Warren",
       role: "E-Commerce Strategist",
@@ -242,7 +242,7 @@ export const blogPosts = [
   {
     id: 19,
     image: "/images/blogs/blog1.png",
-    category: "Business & Startup Growth",
+    category: "Business & Startup ",
     categoryColor: "bg-[#DCFCE7] border-[#86EFAC] text-[#22C55E]",
     date: "March 26, 2025",
     title: "How to Build a Winning SaaS Funnel",
@@ -306,12 +306,11 @@ export const blogPosts = [
   {
     id: 23,
     image: "/images/blogs/blog5.png",
-    category: "Business & Startup Growth",
+    category: "Business & Startup ",
     categoryColor: "bg-[#DCFCE7] border-[#86EFAC] text-[#22C55E]",
     date: "April 7, 2025",
     title: "Bootstrapping vs. Raising Capital",
-    excerpt:
-      "Weigh the pros and cons of self-funding versus investor-backed growth.",
+    excerpt: "Weigh the pros and cons of self-funding versus investor-backed .",
     author: {
       name: "Wade Warren",
       role: "E-Commerce Strategist",
@@ -354,7 +353,7 @@ export const blogPosts = [
   {
     id: 26,
     image: "/images/blogs/blog2.png",
-    category: "Business & Startup Growth",
+    category: "Business & Startup ",
     categoryColor: "bg-[#DCFCE7] border-[#86EFAC] text-[#22C55E]",
     date: "April 4, 2025",
     title: "Product-Market Fit: How to Find It and Keep It",
@@ -401,7 +400,7 @@ export const blogPosts = [
   {
     id: 29,
     image: "/images/blogs/blog5.png",
-    category: "Case Studies & Success Stories",
+    category: "Case Studies ",
     categoryColor: "bg-[#FEF3C7] border-[#FCD34D] text-[#F59E0B]",
     date: "April 13, 2025",
     title: "How a Local Brand Went Global in 6 Months",

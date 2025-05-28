@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Accordion from "./Accordion";
 import { faqs } from "@/utils/fakeData/faqData";
-import SlideRight from "@/utils/animations/SlideRight";
+
 const AccordionList = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const handleAccordionClick = (index) => {
@@ -10,7 +10,7 @@ const AccordionList = () => {
   };
 
   return (
-    <div className=" space-y-4 ">
+    <div className="space-y-4 ">
       {faqs?.length &&
         faqs?.map((accordion, index) => (
           <Accordion

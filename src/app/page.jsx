@@ -5,6 +5,7 @@ import Faq from "@/components/UI/HomePage/Faq/Faq";
 import HeroSection from "@/components/UI/HomePage/HeroSection/HeroSection";
 import OurService from "@/components/UI/HomePage/OurService/OurService";
 import OurWorkProcess from "@/components/UI/HomePage/OurWorkProcess/OurWorkProcess";
+import WorkProcess from "@/components/UI/HomePage/OurWorkProcess/WorkProcess";
 import Portfolio from "@/components/UI/HomePage/Portfolio/Portfolio";
 import PricingPlans from "@/components/UI/HomePage/PricingPlans/PricingPlans";
 import Testimonials from "@/components/UI/HomePage/Testimonials/Testimonials";
@@ -15,7 +16,7 @@ const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <OurWorkProcess />
+      <WorkProcess />
       <OurService status={true} />
       <WhoWeAre />
       <Portfolio />

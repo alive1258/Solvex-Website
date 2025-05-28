@@ -6,19 +6,20 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="mobile-hero-section-bg  md:relative  overflow-hidden">
+    <section className="mobile-hero-section-bg  ">
+      {/* <section className="mobile-hero-section-bg  md:relative  overflow-hidden"> */}
       <div className="hero-section-bg">
         {/* BLURRED BLUE EFFECT SHAPE 1 */}
-        <div className="blurred-blue-shape-1" />
+        {/* <div className="blurred-blue-shape-1" /> */}
 
         {/* BLURRED BLUE EFFECT SHAPE 2  */}
-        <div className="blurred-blue-shape-2" />
+        {/* <div className="blurred-blue-shape-2" /> */}
 
         {/* START HERO  CONTENT  */}
         <div className="pt-12 container ">
           <SlideUp>
             <h1 className="text-secondary-base text-center font-satoshi font-bold uppercase w-full  mx-auto  md:text-[64px] text-[20px]">
-              We Build Scalable & High Performance Websites That Convert
+              We Build Scalable & High Performance <br /> Websites That Convert
             </h1>
           </SlideUp>
           <SlideUp>

@@ -6,8 +6,11 @@ export const pricingPlansData = [
     des: "For small businesses and startups",
     plan_title: "What’s Included",
     plan: [
-      { id: 1, plan_des1: "Custom 3-page website (Home, About, Contact)" },
-      { id: 2, plan_des1: "Mobile responsive design" },
+      { id: 1, plan_des1: "Custom 3-page website " },
+      {
+        id: 2,
+        plan_des1: "Mobile responsive design ",
+      },
       { id: 3, plan_des1: "Basic SEO optimization" },
       { id: 4, plan_des1: "Contact form integration" },
       { id: 5, plan_des1: "Social media integration" },
@@ -67,7 +70,7 @@ export const pricingPlansData = [
     des: "Affordable yearly plan for starters",
     plan_title: "What’s Included",
     plan: [
-      { id: 1, plan_des1: "Custom 3-page website (Home, About, Contact)" },
+      { id: 1, plan_des1: "Custom 2-page website (Home, About)" },
       { id: 2, plan_des1: "Mobile responsive design" },
       { id: 3, plan_des1: "Basic SEO optimization" },
       { id: 4, plan_des1: "Contact form integration" },

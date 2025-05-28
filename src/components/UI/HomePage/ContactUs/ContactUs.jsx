@@ -20,11 +20,12 @@ import {
 
 const ContactUs = () => {
   return (
+    // <section className="bg-[#FAFAFA] ">
     <section className="bg-[#FAFAFA] relative overflow-hidden w-full">
       {/* Decorative Gradient Top Line */}
       <div className="custom-gradient-line"></div>
       {/*  ======================= START CONTACT US SECTION ======================= */}
-      <div className="container py-14">
+      <div className="container px-6 py-14">
         {/* Section Header */}
         <BadgeLabel text="Contact Us" />
 
@@ -45,22 +46,21 @@ const ContactUs = () => {
           {/* ======================= START LEFT CONTACT INFO ======================= */}
           <SlideLeft className="md:col-span-2">
             {/* Contact Details Box */}
-            <div className="bg-white-base p-6 w-full rounded-xl border border-border-base">
-              <h1 className="text-secondary-base md:text-[32px] text-[28px] uppercase text-center font-satoshi font-bold">
+            <div className="bg-white-base md:p-6 p-4 w-full rounded-xl border border-border-base">
+              <h1 className="text-secondary-base md:text-[32px] text-[24px] uppercase text-center font-satoshi font-bold">
                 Get In Touch
               </h1>
-
-              <div className="mt-10 space-y-8">
+              <div className="md:mt-10 mt-8 md:space-y-8 space-y-6">
                 {/* Contact Item 1 */}
                 <div className="contact-border">
-                  <div className="contact-icon">
-                    <RiPhoneLine size={24} className="text-[#3B82F6]" />
+                  <div className="contact-icon ">
+                    <RiPhoneLine className="text-[#3B82F6]" />
                   </div>
-                  <div className="space-y-1">
-                    <h5 className="text-secondary-base uppercase text-lg font-satoshi font-bold">
+                  <div>
+                    <h5 className="text-secondary-base uppercase md:text-lg font-satoshi font-bold">
                       Phone Number
                     </h5>
-                    <p className="text-tertiary-base text-[16px]">
+                    <p className="text-tertiary-base md:text-[16px] pt-1">
                       +123 456 789
                     </p>
                   </div>
@@ -69,13 +69,13 @@ const ContactUs = () => {
                 {/* Contact Item 2 */}
                 <div className="contact-border">
                   <div className="contact-icon">
-                    <RiMailLine size={24} className="text-[#3B82F6]" />
+                    <RiMailLine className="text-[#3B82F6]" />
                   </div>
-                  <div className="space-y-1">
-                    <h5 className="text-secondary-base uppercase text-lg font-satoshi font-bold">
+                  <div>
+                    <h5 className="text-secondary-base uppercase md:text-lg font-satoshi font-bold ">
                       E-mail Address
                     </h5>
-                    <p className="text-tertiary-base text-[16px]">
+                    <p className="text-tertiary-base text-[16px] pt-1">
                       hello@solvexagency.com
                     </p>
                   </div>
@@ -84,14 +84,14 @@ const ContactUs = () => {
                 {/* Contact Item 3 */}
                 <div className="contact-border">
                   <div className="contact-icon">
-                    <RiMapPinLine size={24} className="text-[#3B82F6]" />
+                    <RiMapPinLine className="text-[#3B82F6]" />
                   </div>
-                  <div className="space-y-1">
-                    <h5 className="text-secondary-base uppercase text-lg font-satoshi font-bold">
+                  <div>
+                    <p className="text-secondary-base uppercase md:text-lg font-satoshi font-bold">
                       Location
-                    </h5>
-                    <p className="text-tertiary-base text-[16px]">
-                      123 Creative Street, New York, USA
+                    </p>
+                    <p className="text-tertiary-base text-[16px] pt-1">
+                      123 Creative Street, New York, USA 123
                     </p>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const ContactUs = () => {
 
             {/* Social Links Box */}
             <div className="bg-white-base p-6 mt-6 rounded-xl border border-border-base">
-              <h1 className="text-secondary-base border-b pb-1 border-border-base text-[28px] uppercase text-center font-satoshi font-bold">
+              <h1 className="text-secondary-base border-b pb-1 border-border-base md:text-[28px] text-[20px] uppercase text-center font-satoshi font-bold">
                 Follow Us On
               </h1>
 
@@ -113,10 +113,7 @@ const ContactUs = () => {
                   RiDribbbleLine,
                 ].map((Icon, index) => (
                   <div key={index} className="follow-us-social-icon group">
-                    <Icon
-                      size={24}
-                      className="text-[#3B82F6] group-hover:text-white transition-all duration-300 ease-in-out"
-                    />
+                    <Icon className="text-[#3B82F6] group-hover:text-white transition-all duration-300 ease-in-out" />
                   </div>
                 ))}
               </div>
@@ -125,8 +122,8 @@ const ContactUs = () => {
           {/* ======================= END LEFT CONTACT INFO ======================= */}
 
           {/* ======================= START RIGHT FORM ======================= */}
-          <SlideRight className="md:col-span-3">
-            <div className="bg-white-base md:p-6 rounded-xl border border-border-base">
+          <div className="md:col-span-3">
+            <SlideRight className="bg-white-base md:p-6 rounded-xl border border-border-base">
               <div className="mt-3 p-4">
                 <form>
                   {/* Full Name */}
@@ -236,8 +233,8 @@ const ContactUs = () => {
                   </div>
                 </form>
               </div>
-            </div>
-          </SlideRight>
+            </SlideRight>
+          </div>
           {/* ======================= END RIGHT FORM ======================= */}
         </div>
         {/* ======================= END GRID WRAPPER ======================= */}

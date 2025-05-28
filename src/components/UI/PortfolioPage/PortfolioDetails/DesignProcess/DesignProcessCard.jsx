@@ -14,21 +14,21 @@ const DesignProcessCard = ({ feature, idx, delay = 0 }) => {
           {feature?.main_title}
         </h1>
 
-        {feature.steps.map((step, i) => (
-          <div key={i} className="flex space-x-4 mt-6">
-            <div className="mt-2 ">
-              <Image
-                src="/images/footer/footerLogo.png"
-                alt="logo"
-                width={15}
-                height={24}
-              />
-            </div>
+        {feature?.steps?.map((step, i) => (
+          <div key={i} className="flex gap-x-4 mt-6 items-start">
+            <Image
+              className="mt-2 "
+              src="/images/footer/footerLogo.png"
+              alt="logo"
+              width={18} // fallback size
+              height={20}
+            />
+
             <div>
               <h5 className="text-[20px] font-satoshi font-bold text-primary-base">
                 {step?.title}
               </h5>
-              <p className="text-lg  text-primary-base">{step?.description}</p>
+              <p className="text-lg text-primary-base">{step?.description}</p>
             </div>
           </div>
         ))}

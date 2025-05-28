@@ -1,8 +1,7 @@
 import React from "react";
-import SlideLeft from "@/utils/animations/SlideLeft";
-import SlideRight from "@/utils/animations/SlideRight";
 import { careerGalleryData } from "@/utils/fakeData/careerGalleryData";
 import Image from "next/image";
+import SlideUp from "@/utils/animations/SlideUp";
 
 const CareerGallery = () => {
   return (
@@ -16,7 +15,7 @@ const CareerGallery = () => {
         {/* LEFT IMAGE SECTION */}
         <div className="md:grid-cols-2 grid-cols-1 grid gap-5 z-50 overflow-hidden">
           {careerGalleryData?.left?.map((item, index) => (
-            <SlideLeft
+            <SlideUp
               delay={index * 0.4}
               key={index}
               className={item.rowSpan === 2 ? "row-span-2" : ""}
@@ -28,14 +27,14 @@ const CareerGallery = () => {
                 height={200}
                 className="w-full h-full max-h-[268px] md:max-h-[590px] object-cover rounded-lg"
               />
-            </SlideLeft>
+            </SlideUp>
           ))}
         </div>
 
         {/* RIGHT IMAGE SECTION */}
         <div className="md:grid-cols-2 grid-cols-1 grid gap-5 w-full z-50">
           {careerGalleryData?.right?.map((item, index) => (
-            <SlideRight
+            <SlideUp
               delay={index * 0.4}
               key={index}
               className={item.colSpan === 2 ? "md:col-span-2" : ""}
@@ -47,7 +46,7 @@ const CareerGallery = () => {
                 height={200}
                 className="w-full h-full max-h-[268px] md:max-h-[296px] object-cover rounded-lg"
               />
-            </SlideRight>
+            </SlideUp>
           ))}
         </div>
       </div>

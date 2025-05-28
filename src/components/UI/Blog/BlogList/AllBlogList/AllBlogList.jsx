@@ -49,7 +49,7 @@ const AllBlogList = () => {
         ))}
       </div>
       {/* ==================== START PAGINATION ======================= */}
-      <div className="mt-20 flex justify-center items-center">
+      <div className="md:mt-20 mt-10 flex justify-center items-center">
         <div className="flex items-center space-x-4 text-lg ">
           {/* PREVIOUS PAGE BUTTON */}
           <div className="pagination">
@@ -57,7 +57,7 @@ const AllBlogList = () => {
           </div>
 
           {/* PAGE NUMBERS */}
-          {[1, 2, 3, 4, 5].map((num) => (
+          {[1, 2, 3, 4].map((num) => (
             <div key={num} className="pagination">
               <p>{num}</p>
             </div>

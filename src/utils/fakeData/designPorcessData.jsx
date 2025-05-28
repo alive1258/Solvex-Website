@@ -13,8 +13,7 @@ export const designProcessData = [
       },
       {
         title: "Product Pages",
-        description:
-          "High-res images, detailed descriptions, and “Add to Cart” CTAs.",
+        description: "High-res images, detailed descriptions, & Add to Cart",
       },
       {
         title: "Checkout Flow",
@@ -35,7 +34,7 @@ export const designProcessData = [
       {
         title: "Color Palette",
         description:
-          "Dark blue and electric yellow — conveying tech innovation.",
+          "Dark blue and electric yellow  conveying tech innovation.",
       },
       {
         title: "Typography",
@@ -45,7 +44,7 @@ export const designProcessData = [
       {
         title: "Microinteractions",
         description:
-          "Added hover effects on buttons, animations for loading screens, and smooth scrolling.",
+          "Added hover effects on buttons, animations for loading screens",
       },
       {
         title: "Product Cards",
@@ -65,8 +64,9 @@ export const designProcessData = [
     main_title: "Development & Integration",
     steps: [
       {
-        title: "Platform",
-        description: "Built on Shopify for flexibility and scalability.",
+        title: "Platform Selection",
+        description:
+          "Built on Shopify for flexibility and scalability. this is a must have",
       },
       {
         title: "Payment Integration",
@@ -76,12 +76,12 @@ export const designProcessData = [
       {
         title: "Speed Optimization",
         description:
-          "Used lazy loading, compressed images, and clean code to achieve a 1.2s page load time.",
+          "Used lazy loading, compressed images, and clean code to achieve.",
       },
       {
         title: "SEO",
         description:
-          "Implemented meta tags, structured data, and optimized product descriptions.",
+          "Implemented meta tags, structured data, and optimized URLs.",
       },
     ],
     tools: [

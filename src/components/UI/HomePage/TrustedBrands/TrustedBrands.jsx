@@ -7,7 +7,7 @@ import { brands } from "@/utils/fakeData/brands";
 
 const TrustedBrands = ({ status = false }) => {
   return (
-    <div className="bg-[#F4F4F5] md:h-[600px] w-full relative overflow-hidden">
+    <div className="bg-[#F4F4F5] md:h-[550px] w-full relative overflow-hidden">
       <div
         className={`bottom-gradient-line ${
           status === true ? "md:block" : "hidden"
@@ -44,14 +44,14 @@ const TrustedBrands = ({ status = false }) => {
               </div>
             </div>
           </div>
-          <div className="  absolute top-1 -left-72  md:left-72 md:flex md:flex-row md:space-x-5 w-full">
-            <div className="md:block hidden   w-full md:w-[240px] ">
-              <Marquee direction="up" speed={100} scrollamount="1">
-                <div className="space-y-3">
+          <div className="absolute top-1 -left-72  md:left-72 md:flex md:flex-row md:space-x-5 w-full">
+            <div className="md:block hidden   w-full md:w-[240px]  ">
+              <Marquee direction="down" speed={100} scrollamount="1">
+                <div className="space-y-3.5">
                   {brands?.map((brand, index) => (
                     <div
                       key={index}
-                      className="bg-[#FFF] w-full max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-4"
+                      className="bg-[#FFF] my-2 w-full max-w-[224px] rounded-lg flex items-center space-x-2 border border-border-base p-[17px]"
                     >
                       <Image
                         src={brand?.img}
@@ -72,11 +72,11 @@ const TrustedBrands = ({ status = false }) => {
               style={{ paddingRight: "-40px" }}
             >
               <Marquee direction="down" speed={100}>
-                <div className="space-y-3">
+                <div className="space-y-3.5">
                   {brands?.map((brand, index) => (
                     <div
                       key={index}
-                      className="bg-[#FFF] w-full max-w-[224px] space-y-2.5 rounded-lg flex items-center space-x-2 border border-border-base p-4"
+                      className="bg-[#FFF] my-2 w-full max-w-[224px] space-y-2.5 rounded-lg flex items-center space-x-2 border border-border-base p-[17px]"
                     >
                       <Image
                         src={brand?.img}

@@ -26,7 +26,7 @@ const BlogListCard = ({ post, delay = 0, idx }) => {
           <div className="flex flex-col h-full justify-between">
             <div>
               {/* Top Content */}
-              <div className="mt-6 flex justify-between items-center">
+              <div className="md:mt-6 mt-4 flex justify-between items-center">
                 {/* Category */}
                 <div
                   className={`border rounded-[99px] w-fit px-3 py-1.5 ${post.categoryColor}`}
@@ -46,7 +46,7 @@ const BlogListCard = ({ post, delay = 0, idx }) => {
               {/* Title & Excerpt */}
               <div className="md:mt-16 mt-8">
                 <Link href={`blog-list/${post.id}`}>
-                  <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-satoshi font-bold text-2xl">
+                  <h1 className="text-secondary-base group-hover:text-[#3B82F6] font-satoshi font-bold text-xl md:text-2xl">
                     {post.title}
                   </h1>
                 </Link>

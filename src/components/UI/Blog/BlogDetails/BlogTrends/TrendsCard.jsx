@@ -13,7 +13,7 @@ const TrendsCard = ({ index, delay = 0, trend }) => {
       <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
         {!trend?.reverse ? (
           <>
-            <SlideLeft delay={delay} className="md:col-span-2">
+            <SlideUp delay={delay} className="md:col-span-2">
               <Image
                 className="w-full h-full md:max-h-[480px] rounded-2xl"
                 src={trend?.images[0]}
@@ -21,8 +21,8 @@ const TrendsCard = ({ index, delay = 0, trend }) => {
                 width={500}
                 height={500}
               />
-            </SlideLeft>
-            <SlideRight delay={delay} className="md:col-span-1">
+            </SlideUp>
+            <SlideUp delay={delay} className="md:col-span-1">
               <Image
                 className="w-full h-full md:max-h-[480px] rounded-2xl"
                 src={trend?.images[1]}
@@ -30,11 +30,11 @@ const TrendsCard = ({ index, delay = 0, trend }) => {
                 width={500}
                 height={500}
               />
-            </SlideRight>
+            </SlideUp>
           </>
         ) : (
           <>
-            <SlideLeft delay={delay} className="md:col-span-1">
+            <SlideUp delay={delay} className="md:col-span-1">
               <Image
                 className="w-full h-full md:max-h-[480px] rounded-2xl"
                 src={trend?.images[0]}
@@ -42,8 +42,8 @@ const TrendsCard = ({ index, delay = 0, trend }) => {
                 width={500}
                 height={500}
               />
-            </SlideLeft>
-            <SlideRight delay={delay} className="md:col-span-2">
+            </SlideUp>
+            <SlideUp delay={delay} className="md:col-span-2">
               <Image
                 className="w-full h-full md:max-h-[480px] rounded-2xl"
                 src={trend?.images[1]}
@@ -51,7 +51,7 @@ const TrendsCard = ({ index, delay = 0, trend }) => {
                 width={500}
                 height={500}
               />
-            </SlideRight>
+            </SlideUp>
           </>
         )}
       </div>

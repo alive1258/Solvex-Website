@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const SlideRight = ({ children, className = "", delay = 1 }) => {
-  const slideLeftVariants = {
+  const slideRightVariants = {
     offscreen: {
       x: 100,
       opacity: 0,
@@ -17,16 +17,19 @@ const SlideRight = ({ children, className = "", delay = 1 }) => {
       },
     },
   };
+
   return (
-    <motion.div
-      className={className}
-      variants={slideLeftVariants}
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: false, amount: 0 }}
-    >
-      {children}
-    </motion.div>
+    <div className="overflow-hidden">
+      <motion.div
+        className={`w-full max-w-[99%] mx-auto ${className}`}
+        variants={slideRightVariants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 };
 
