@@ -98,7 +98,11 @@
   .service-card-link {
     @apply flex transition-transform duration-300 ease-in-out group-hover:translate-x-2 items-center gap-x-2 mt-6 border-b group-hover:border-[#3B82F6]  border-[#71717A] w-fit;
   }
-}
+} /* ===================================================
+  Animations
+=================================================== */
+
+/* Vertical Scroll Animation */
 @keyframes scrollUp {
   0% {
     transform: translateY(100%);
@@ -107,215 +111,28 @@
     transform: translateY(-100%);
   }
 }
-.vertical-marquee {
-  overflow: hidden;
-  height: 300px; /* Adjust height as needed */
-  position: relative;
-}
-.vertical-marquee-inner {
-  display: flex;
-  flex-direction: column;
-  animation: scrollUp 20s linear infinite;
-}
 
-/* ========= Work Process Background ========= */
-.work-process-bg {
-  background-image: url("/images/backround/workPorcess.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 636px;
-  width: 636px;
-  position: relative;
-}
-
-/* ========= Hero Section Background ========= */
-.hero-section-bg {
-  background-image: url("/images/backround/lines.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 1000px;
-  width: 100%;
-  position: relative;
-}
-/* ========= About US Section Background ========= */
-.about-us-section-bg {
-  background-image: url("/images/aboutUs/aboutBG.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-}
-.single-team-section-bg {
-  background-image: url("/images/team/frame.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 297px;
-  height: 462px;
-}
-/* globals.css or your global stylesheet */
-.blur-circle-green {
-  position: absolute;
-  border-radius: 9999px; /* rounded-full */
-  opacity: 0.5;
-  filter: blur(175px);
-  width: 364px;
-  height: 364px;
-  left: 140px;
-  top: 30px;
-  background-color: #84cc16;
-  z-index: 0;
-}
-
-.blur-circle-purple {
-  position: absolute;
-  border-radius: 9999px; /* rounded-full */
-  opacity: 0.5;
-  filter: blur(175px);
-  width: 364px;
-  height: 364px;
-  right: 140px;
-  top: 80px;
-  background-color: #d946ef;
-  z-index: 0;
-}
-
-/* ========== Blurred Shape Styles ========== */
-
-.blurred-blue-shape-1 {
-  width: 600px;
-  height: 216px;
-  transform: rotate(14.814deg);
-  flex-shrink: 0;
-  border-radius: 600px;
-  opacity: 0.3;
-  background-color: #3b82f6;
-  filter: blur(100px);
-  position: absolute;
-  top: 2.5rem; /* top-10 */
-  left: -8rem; /* -left-32 */
-  display: none;
-}
-
-.blurred-blue-shape-2 {
-  width: 600px;
-  height: 326px;
-  transform: rotate(20.582deg);
-  flex-shrink: 0;
-  border-radius: 600px;
-  opacity: 0.3;
-  background-color: #3b82f6;
-  filter: blur(100px);
-  position: absolute;
-  top: 2.5rem; /* top-10 */
-  left: -8rem; /* -left-32 */
-  display: none;
-}
-
-.custom-gradient-line-top {
-  width: 594px;
-  height: 4px;
-  right: 0px;
-  bottom: 0px;
-  background: linear-gradient(85deg, #2154ff 0%, rgba(255, 255, 255, 0) 100%);
-}
-/* Bottom Gradient Line */
-.bottom-gradient-line {
-  position: absolute;
-  width: 594px;
-  height: 4px;
-  left: 0;
-  bottom: 0;
-  background: linear-gradient(85deg, #2154ff 0%, rgba(255, 255, 255, 0) 100%);
-  animation: moveBottomLine 8s linear infinite; /* Slower: 8s */
-}
-
-.custom-gradient-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 594px;
-  height: 4px;
-  background: linear-gradient(85deg, rgba(255, 255, 255, 0) 0%, #2154ff 100%);
-  animation: moveLine 8s linear infinite; /* Slower: 8s */
-}
-/* Blurred Blue Circle */
-.blurred-blue-circle {
-  width: 455px;
-  height: 455px;
-  right: -87px;
-  bottom: -134px;
-  border-radius: 455px;
-  opacity: 0.16;
-  background: var(--blue-500, #3b82f6);
-  filter: blur(100px);
-}
-.service-detail-blurred-circle {
-  position: absolute;
-  width: 672px;
-  height: 672px;
-  border-radius: 672px;
-  background: #3b82f6;
-  opacity: 0.6;
-  filter: blur(175px);
-  top: -328px;
-  left: -461px;
-}
-.green-blur-circle {
-  position: absolute;
-  width: 672px;
-  height: 672px;
-  border-radius: 50%;
-  background: #10b981;
-  opacity: 0.6;
-  filter: blur(175px);
-  top: -335px;
-  right: -478px;
-}
-.white-rotated-shape {
-  width: 312px;
-  height: 989px;
-  transform: rotate(5deg);
-  position: absolute;
-  right: 0;
-  top: -250px;
-  background: white;
-  opacity: 0.3;
-  z-index: 0;
-}
-
-.blue-blur-circle-team {
-  width: 672px;
-  height: 672px;
-  position: absolute;
-  right: -400px;
-  top: 100px;
-  border-radius: 672px;
-  opacity: 0.6;
-  background: #3b82f6;
-  filter: blur(175px);
-  z-index: -1;
-}
-
+/* Gradient Line Movement - Top */
 @keyframes moveLine {
   0% {
-    transform: translateX(-594px); /* Start completely left off screen */
+    transform: translateX(-594px);
   }
   100% {
-    transform: translateX(100vw); /* Move completely past the screen */
+    transform: translateX(100vw);
   }
 }
+
+/* Gradient Line Movement - Bottom */
 @keyframes moveBottomLine {
   100% {
-    transform: translateX(-594px); /* Start completely left off screen */
+    transform: translateX(-594px);
   }
   0% {
-    transform: translateX(100vw); /* Move completely past the screen */
+    transform: translateX(100vw);
   }
 }
-/* animation to make it "breathe" or "pulse" in a rounded way. */
+
+/* Floating Pulse Animation */
 @keyframes floatPulse {
   0%,
   100% {
@@ -328,14 +145,205 @@
   }
 }
 
-@media (min-width: 768px) {
-  .blurred-blue-shape-1,
-  .blurred-blue-shape-2 {
-    display: block;
-  }
+/* ===================================================
+  Marquee Section
+=================================================== */
+
+.vertical-marquee {
+  overflow: hidden;
+  height: 300px; /* Adjust as needed */
+  position: relative;
 }
 
-/* ========= Mobile Responsive ========= */
+.vertical-marquee-inner {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 20s linear infinite;
+}
+
+/* ===================================================
+  Background Section Styles
+=================================================== */
+
+/* Work Process Background */
+.work-process-bg {
+  background-image: url("/images/backround/workPorcess.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 636px;
+  width: 636px;
+  position: relative;
+}
+
+/* Hero Section Background */
+.hero-section-bg {
+  background-image: url("/images/backround/lines.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+/* About Us Section Background */
+.about-us-section-bg {
+  background-image: url("/images/aboutUs/aboutBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+/* Single Team Section Frame */
+.single-team-section-bg {
+  background-image: url("/images/team/frame.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 297px;
+  height: 462px;
+}
+
+/* ===================================================
+  Blurred Shape Effects
+=================================================== */
+
+/* Green Circle Blur */
+.blur-circle-green {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  left: 140px;
+  top: 30px;
+  background-color: #84cc16;
+  opacity: 0.5;
+  filter: blur(175px);
+  border-radius: 9999px;
+  z-index: 0;
+}
+
+/* Purple Circle Blur */
+.blur-circle-purple {
+  position: absolute;
+  width: 364px;
+  height: 364px;
+  right: 140px;
+  top: 80px;
+  background-color: #d946ef;
+  opacity: 0.5;
+  filter: blur(175px);
+  border-radius: 9999px;
+  z-index: 0;
+}
+
+/* Blue Circle Blur - General */
+.blurred-blue-circle {
+  position: absolute;
+  width: 455px;
+  height: 455px;
+  right: -87px;
+  bottom: -134px;
+  border-radius: 455px;
+  opacity: 0.16;
+  background: var(--blue-500, #3b82f6);
+  filter: blur(100px);
+}
+
+/* Blue Circle Blur - Service Detail */
+.service-detail-blurred-circle {
+  position: absolute;
+  width: 672px;
+  height: 672px;
+  border-radius: 672px;
+  background: #3b82f6;
+  opacity: 0.6;
+  filter: blur(175px);
+  top: -328px;
+  left: -461px;
+}
+
+/* Green Circle Blur - Alternative */
+.green-blur-circle {
+  position: absolute;
+  width: 672px;
+  height: 672px;
+  border-radius: 50%;
+  background: #10b981;
+  opacity: 0.6;
+  filter: blur(175px);
+  top: -335px;
+  right: -478px;
+}
+
+/* Blue Circle Blur - Team Section */
+.blue-blur-circle-team {
+  width: 672px;
+  height: 672px;
+  position: absolute;
+  right: -400px;
+  top: 100px;
+  border-radius: 672px;
+  background: #3b82f6;
+  opacity: 0.6;
+  filter: blur(175px);
+  z-index: -1;
+}
+
+/* Rotated White Shape (Decorative) */
+.white-rotated-shape {
+  width: 312px;
+  height: 989px;
+  transform: rotate(5deg);
+  position: absolute;
+  right: 0;
+  top: -250px;
+  background: white;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* ===================================================
+  Gradient Lines
+=================================================== */
+
+/* Top Gradient Line */
+.custom-gradient-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 594px;
+  height: 4px;
+  background: linear-gradient(85deg, rgba(255, 255, 255, 0) 0%, #2154ff 100%);
+  animation: moveLine 8s linear infinite;
+}
+
+/* Top Gradient Line - Static Version */
+.custom-gradient-line-top {
+  width: 594px;
+  height: 4px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(85deg, #2154ff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Bottom Gradient Line */
+.bottom-gradient-line {
+  position: absolute;
+  width: 594px;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(85deg, #2154ff 0%, rgba(255, 255, 255, 0) 100%);
+  animation: moveBottomLine 8s linear infinite;
+}
+
+/* ===================================================
+  Responsive Utilities
+=================================================== */
+
+/* Mobile-Specific Styles */
 @media (max-width: 768px) {
   .work-process-bg {
     background-image: none;
@@ -345,8 +353,53 @@
     background-image: none;
     height: 100%;
   }
+
   .mobile-hero-section-bg {
     background: url("/images/backround/lines.png") rgb(250, 250, 250) 0% 0% /
       30px 30px repeat;
   }
+}
+
+/* Desktop-Only Blur Effects */
+@media (min-width: 768px) {
+  .blurred-blue-shape-1,
+  .blurred-blue-shape-2 {
+    display: block;
+  }
+}
+
+/* ===================================================
+  Blue Blurred Shape (Extra)
+=================================================== */
+
+/* Large Blurred Blue Shape - Top Left */
+.blurred-blue-shape-1 {
+  width: 600px;
+  height: 216px;
+  transform: rotate(14.814deg);
+  flex-shrink: 0;
+  border-radius: 600px;
+  opacity: 0.3;
+  background-color: #3b82f6;
+  filter: blur(100px);
+  position: absolute;
+  top: 2.5rem;
+  left: -8rem;
+  display: none;
+}
+
+/* Large Blurred Blue Shape - Bottom Left */
+.blurred-blue-shape-2 {
+  width: 600px;
+  height: 326px;
+  transform: rotate(20.582deg);
+  flex-shrink: 0;
+  border-radius: 600px;
+  opacity: 0.3;
+  background-color: #3b82f6;
+  filter: blur(100px);
+  position: absolute;
+  top: 2.5rem;
+  left: -8rem;
+  display: none;
 }

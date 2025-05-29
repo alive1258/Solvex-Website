@@ -1,4 +1,3 @@
-import React from "react";
 import BlogDetails from "@/components/UI/Blog/BlogDetails/BlogDetails";
 
 const BlogDetail = async ({ params }) => {
