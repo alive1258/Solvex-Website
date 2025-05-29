@@ -10,7 +10,7 @@ export const features = [
   },
   {
     id: 2,
-    title: "Expert Team of Developers & Designers",
+    title: "Expert Team of Developers ",
     description:
       "A decade of experience in building web solutions for diverse industries.",
     iconColor: "#FFF1F2",

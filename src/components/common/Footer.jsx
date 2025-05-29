@@ -122,7 +122,7 @@ const Footer = () => {
             </h2>
 
             <div className="mt-10 space-y-4">
-              <div className="bg-[#27272A] h-14 border border-[#3F3F46] w-full max-w-[334px] flex items-center justify-between px-2 py-2 rounded-lg">
+              <div className="bg-[#27272A] h-14 border border-[#3F3F46] w-full  flex items-center justify-between px-2 py-2 rounded-lg">
                 <input
                   type="email"
                   placeholder="Email address"

@@ -20,7 +20,7 @@ const TrustedBrands = ({ status = false }) => {
       ></div>
 
       <div
-        className="container relative mx-auto md:px-32 lg:px-40   md:flex md:py-0 w-full pb-12"
+        className="container relative mx-auto md:px-32 lg:px-40   md:flex md:py-0 pt-8 w-full md:pb-12"
         style={{ display: "relative" }}
       >
         <div className=" grid grid-cols-1 md:grid-cols-2 mt-4 md:mt-0 gap-x-[140px] ">
@@ -37,7 +37,7 @@ const TrustedBrands = ({ status = false }) => {
                 innovative companies, helping them scale with cutting-edge
                 digital solutions.
               </p>
-              <div className="md:mt-14 my-14 md:block  uppercase">
+              <div className="md:mt-14 my-14 w-full flex md:justify-start justify-center md:items-start items-center uppercase">
                 <Link href="/contact">
                   <Button content="Get a Free Consultation" />
                 </Link>

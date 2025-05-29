@@ -1,20 +1,22 @@
 import SlideRight from "@/utils/animations/SlideRight";
+import { RiAddLine, RiSubtractLine } from "@remixicon/react";
 
 const Accordion = ({ accordion, isActive, onClick, delay = 0 }) => {
   return (
     <SlideRight
       delay={delay}
-      className="flex items-center space-x-4  justify-baseline w-full"
+      className="flex md:items-center gap-y-2 md:gap-y-0 gap-x-2 w-full"
     >
+      {/* Content Section */}
       <div
-        className={`rounded-lg  w-full bg-[#F4F4F5] p-4 ${
+        className={`rounded-lg w-full bg-[#F4F4F5] p-4 ${
           isActive
             ? "border-2 border-[#2154FF]"
             : "border-2 border-transparent hover:border-[#2154FF]"
         }`}
       >
         <div
-          className={` font-medium cursor-pointer  rounded-lg duration-150 ${
+          className={`font-medium cursor-pointer rounded-lg duration-150 ${
             isActive ? "" : "text-secondary-base group"
           }`}
           onClick={onClick}
@@ -22,7 +24,7 @@ const Accordion = ({ accordion, isActive, onClick, delay = 0 }) => {
           <h1
             className={`md:text-[20px] text-[18px] ${
               isActive ? "border-b pb-1 border-[#D4D4D8]" : ""
-            }  font-satoshi font-bold text-secondary-base`}
+            } font-satoshi font-bold text-secondary-base`}
           >
             {accordion?.question}
           </h1>
@@ -35,34 +37,13 @@ const Accordion = ({ accordion, isActive, onClick, delay = 0 }) => {
           </div>
         )}
       </div>
+
+      {/* Icon Button  */}
       <div
-        className={`bg-[#F4F4F5]  hidden cursor-pointer border size-14 md:flex justify-center items-center border-border-base rounded-full`}
+        className="bg-[#F4F4F5] md:flex hidden cursor-pointer border w-14 aspect-square flex-shrink-0 justify-center items-center border-border-base rounded-full"
         onClick={onClick}
       >
-        {isActive ? (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path d="M6.50195 11H17.502V13H6.50195V11Z" fill="#3F3F46" />
-          </svg>
-        ) : (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <path
-              d="M19 12.998H13V18.998H11V12.998H5V10.998H11V4.99805H13V10.998H19V12.998Z"
-              fill="#3F3F46"
-            />
-          </svg>
-        )}
+        {!isActive ? <RiAddLine /> : <RiSubtractLine />}
       </div>
     </SlideRight>
   );
